@@ -5,6 +5,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+exclude: ['README.markdown']
+
 # Site settings
 title: Matt Grey Design
 email: info@himatt.com

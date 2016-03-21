@@ -5,6 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems: [bourbon, neat]
 exclude: ['README.markdown']
 
 # Site settings
@@ -15,15 +16,31 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
+
 twitter_username: mattgreydesign
 github_username:  mattgreydesign
+
+cdn_path: "http://static.himatt.com" # <img src="{{ site.cdn_path }}/projects/img.jpg">
 
 # Build settings
 markdown: kramdown
 
+kramdown:
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
 # Sass output
 sass:
   style: compressed
+
+navigation:
+ - title: Projects
+   url: /projects
+ - title: Fonts
+   url: /fonts
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
 
 # Configure site collections
 collections:

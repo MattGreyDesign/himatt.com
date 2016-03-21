@@ -1,10 +1,13 @@
 ---
 layout: page
-title:  "Starta.space"
-time_period: 2015 onwards
-categories: illustration
+published: true
+title: "Starta.space"
 description: "An ongoing project to create site/portfolio building service"
+categories: illustration
 thumbnail: ""
+
+time_period: 2015 onwards
+
 live_link: { title: "See www.starta.space", url: "http://starta.space" }
 ---
 

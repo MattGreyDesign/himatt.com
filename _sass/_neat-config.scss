@@ -1,0 +1,34 @@
+// Neat Configuration Variables
+//
+// Used to configure Neat's grid. See [Neat Documentation](http://thoughtbot.github.io/neat-docs/latest/#variable).
+
+$disable-warnings: false !default;                  // Disable all deprecation warnings.
+$column: modular-scale(3, 1em, $golden) !default;   // Sets the relative width of a single grid column.
+$gutter: modular-scale(1, 1em, $golden) !default;   // Sets the relative width of a single grid gutter.
+$grid-columns: 12 !default;                         // Sets the total number of columns in the grid.
+$max-width: em(1200px) !default;                    // Sets the max-width property of the element that includes outer-container(). 1200 was default
+$border-box-sizing: true !default;                  // When set to true, it sets the box-sizing property of all elements to border-box
+$default-feature: min-width;                        // Sets the default media feature that media() and new-breakpoint() revert to when only a breakpoint value is passed.
+$default-layout-direction: LTR !default;            // Sets the default layout direction of the grid.
+$visual-grid: false !default;                       // Displays the visual grid when set to true.
+$visual-grid-color: #eee !default;                  // Sets the visual grid color.
+$visual-grid-index: back !default;                  // Sets the z-index property of the visual grid.
+$visual-grid-opacity: 0.4 !default;                 // Sets the opacity property of the visual grid.
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+/* include for responsiveness
+.element {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+  @include media($desktop) {
+    @include span-columns(12);
+  }
+}
+*/
+
+//Neat additions
+$all-text-inputs-disabled:  assign-inputs($text-inputs-list, disabled);

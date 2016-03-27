@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<div {% include accent.html %}>
+  <img src="{{ page.banner | prepend: site.cdn_path }}" alt="">
+
+  <aside>
+    <section class="vendors">
+      <h2>Get {{ page.title }}</h2>
+      {% if page.vendors %}
+        {% for vendor in page.vendors %}
+        <section>
+          <header>
+            <a class="button {{ vendor.title | downcase   }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
+            <p>{{ vendor.licence }}</p>
+          </header>
+        </section>
+        {% endfor %}
+      {% endif %}
+    </section>
+  </aside>
+</div>
+
+<section>
+  {{ content }}
+</section>
+
+<section class="features">
+{% if page.features %}
+  <h2>Features</h2>
+  <ul>
+  {% for feature in page.features %}
+    <li>{{ feature }}</li>
+  {% endfor %}
+  </ul>
+{% endif %}
+</section>
+
+<section class="weights">
+{% if page.font_weights %}
+  <h2>Available Weights</h2>
+  <ul>
+  {% for weight in page.font_weights %}
+    <li>{{ weight }}</li>
+  {% endfor %}
+  </ul>
+{% endif %}
+</section>
+
+<section>
+  <dl>
+  <dt>First released</dt>
+  <dd>{{ page.initial_release }}</dd>
+  </dl>
+
+  <dl>
+  <dt>Latest revision</dt>
+  {% if page.releases %}
+    {% for release in page.releases reversed %}
+      {% if forloop.first == true %}
+        <dd>{{ release.version }}: {{ release.date }}</dd>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  </dl>
+</section>
+
+
+<section class="releases">
+  <header>
+    <h2>Releases</h2>
+  </header>
+  {% if page.releases %}
+    {% for release in page.releases reversed %}
+    <section>
+      <header>
+        <h3>{{ release.version }}</h3>
+        <p>{{ release.date }}</p>
+      </header>
+      <dl>
+        <dt>Details</dt>
+        <dd>
+          {{ release.details | markdownify }}
+        </dd>
+      </dl>
+      <br>
+    </section>
+    {% endfor %}
+  {% endif %}
+</section>

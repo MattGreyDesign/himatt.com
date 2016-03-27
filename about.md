@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
+Matt Grey is a designer
 
 ## This site
-Designed and made with &hearts; by Matt Grey
+Designed and made by Matt Grey
 
-- Built using Jekyll
-- Styles utilised SASS and Bourbon Neat
+- Built from scratch using [Jekyll](https://jekyllrb.com/)
+- Styles utilised [SASS](http://sass-lang.com/) CSS pre-processor, [Thoughtbot](https://thoughtbot.com/)'s [Bourbon Neat](http://neat.bourbon.io/) and Normalize.css.
+- Font used is [Europa](http://www.europatype.com/articledetail/17), from [EuropaType](http://www.europatype.com/), served by [Typekit](https://typekit.com/fonts)
+- Other libraries: [jQuery](https://jquery.com/)

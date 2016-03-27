@@ -1,0 +1,17 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+
+<form action="https://getsimpleform.com/messages?form_api_token=00cc1007b3bff2ea60bb86e9bb4d9c49" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+
+  <input autofocus type="text" name="name"><br>
+  <input required type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+  <textarea required name="message"></textarea>
+
+  <input type="submit" value="Send Message"><br>
+</form>
+

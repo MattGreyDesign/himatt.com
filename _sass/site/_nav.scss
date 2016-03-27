@@ -1,0 +1,85 @@
+body > header nav {
+
+  .mobile-nav {
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    text-decoration: none;
+
+    @include media($mobile-size) {
+      display: none;
+    }
+  }
+
+  ul {
+    //display: none;
+    position: fixed;
+    left: $inner-padding-mobile;
+    right: $inner-padding-mobile;
+    top: 100px;
+    height: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    background: white;
+
+    li {
+      display: block;
+
+      a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: $inner-padding-mobile;
+        margin-bottom: 1px;
+        background: rgba(red, 0.5);
+
+        &:hover {
+        }
+
+        &.current {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    @include media($mobile-size) {
+      display: block;
+      position: static;
+      text-align: right;
+      background: inherit;
+
+      li {
+        display: inline-block;
+        position: relative;
+        padding-left: 1em;
+
+        a {
+          text-decoration: none;
+          padding: 0 0 .2em 0;
+          background-color: inherit;
+
+          &:hover {
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid;
+            border-left: none;
+          }
+
+          &.current {
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid;
+            border-left: none;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

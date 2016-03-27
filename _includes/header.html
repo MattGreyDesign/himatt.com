@@ -1,22 +1,35 @@
-<header class="site-header">
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<header {% include accent.html %}>
+  <div class="header-content">
 
-  <div class="wrapper">
+    <div class="logo">
+      <a href="{{ site.baseurl }}/">
+        {% include logo.svg %}
+        <span>{{ site.title }}</span>
+      </a>
+    </div>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav>
+    <nav role="navigation">
+      <a href="javascript:void(0)" class="mobile-nav">Menu</a>
       <ul>
       {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url contains link.url %}
-            {% assign current = 'current' %}
+            {% assign current = 'class="current"' %}
         {% endif %}
-        <li class="{{ current }}">
-          <a href="{{ link.url }}">{{ link.title }}</a>
+        <li>
+          <a {{ current }} href="{{ link.url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
       </ul>
     </nav>
   </div>
 
+  {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
+  <div class="page-title">
+    <h1>{{ page.title }}</h1>
+  </div>
+  {% endif %}
 </header>

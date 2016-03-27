@@ -9,4 +9,17 @@
   <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <script src="https://use.typekit.net/ymn7szw.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+      $(window).load(function() {
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('body').delay(350).css({'overflow':'visible'});
+      })
+    //]]>
+  </script>
 </head>

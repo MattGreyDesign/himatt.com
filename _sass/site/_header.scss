@@ -1,0 +1,53 @@
+body > header {
+  background-color: $site-color;
+  padding: $inner-padding-mobile;
+
+  @include media($mobile-size) {
+    padding: $inner-padding;
+  }
+
+  .header-content {
+    @include outer-container;
+  }
+
+  .logo {
+    @include span-columns(3);
+
+    span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+
+  nav {
+    @include span-columns(9);
+  }
+
+  .page-title {
+    @include outer-container;
+
+    h1 {
+      color: white;
+    }
+  }
+}
+
+
+body > header, body > footer {
+  &.inverted {
+
+    .logo-fill {
+      fill: red;
+    }
+
+    h1, p, a {
+      color: red;
+    }
+  }
+}

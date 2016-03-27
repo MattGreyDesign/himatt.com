@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // // Our variables
 // $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $base-font-size:   16px;
@@ -43,6 +41,7 @@
     }
 }
 
+// Vendor
 @import "bourbon";
 @import 'neat-config';
 @import 'neat-helpers';
@@ -50,10 +49,12 @@
 
 @import "normalize";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+@import "site/base/variables";
+@import "site/base/preloader";
+@import "site/base/typography";
+@import "site/base/images";
 
-// @import
-//   "base",
-//   "layout",
-//   "syntax-highlighting"
-// ;
+@import "site/page";
+@import "site/header";
+@import "site/footer";
+@import "site/nav"

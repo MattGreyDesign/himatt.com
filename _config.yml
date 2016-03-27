@@ -11,15 +11,23 @@ exclude: ['README.markdown']
 # Site settings
 title: Matt Grey Design
 email: info@himatt.com
-description: > # this means to ignore newlines until "baseurl:"
-  Portfolio of Matt Grey&mdash;visual, UX and type designer
+description: "Portfolio of Matt Grey&mdash;graphic, UX and type designer"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
 
-twitter_username: mattgreydesign
-github_username:  mattgreydesign
+# Personal Meta
+username:
+  twitter: "@mattgreydesign"
+  linkedin: "himatt"
+  github: "mattgreydesign"
+  medium: "@mattgreydesign"
+  pinterest: "mattgreydesign"
+  instagram: "mattgreydesign"
+  flickr: "mattgreydesign"
+  lastfm: "mattdabest"
 
+# Content
 cdn_path: "http://static.himatt.com" # <img src="{{ site.cdn_path }}/projects/img.jpg">
 
 # Build settings
@@ -30,8 +38,17 @@ kramdown:
 
 # Sass output
 sass:
-  style: compressed
+  style: compressed # :nested :compact :expanded :compressed
 
+compress_html: # http://jch.penibelst.de/
+  #enabled: true # compress html
+  clippings: all # clip safe tags
+  blanklines: true # boolean - strip blank lines and breaks
+  #profile: true # boolean - print table of data saved
+  #ignore:
+  #  envs: [local]
+
+# Structure
 navigation:
  - title: Projects
    url: /projects

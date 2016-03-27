@@ -3,15 +3,22 @@ layout: page
 published: true
 title: "Starta.space"
 description: "An ongoing project to create site/portfolio building service"
-categories: illustration
+categories: ux, design, personal
 thumbnail: ""
+accent:
+  color: "black"
+  inverted: true
 
 time_period: 2015 onwards
 
-live_link: { title: "See www.starta.space", url: "http://starta.space" }
+live_link:
+  title: "See starta.space"
+  url: "http://starta.space"
 ---
 
-{{ page.live_link.url }}
+
+
+<a href="{{ page.live_link.url }}">{{ page.live_link.title }}</a>
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

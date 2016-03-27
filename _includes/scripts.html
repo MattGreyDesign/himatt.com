@@ -1,0 +1,13 @@
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="{{ "/javascript/site.js" | prepend: site.baseurl }}"></script>
+
+  <script type="text/javascript">
+  //<![CDATA[
+    $(window).load(function() {
+      $('#status').fadeOut();
+      $('#preloader').delay(350).fadeOut('slow');
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+  //]]>
+  </script>

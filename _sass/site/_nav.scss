@@ -17,16 +17,24 @@ body > header nav {
   }
 
   ul {
-    //display: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    transition: max-height 150ms ease-in-out, padding 150ms ease-in-out;
     position: fixed;
     left: $inner-padding-mobile;
     right: $inner-padding-mobile;
     top: 100px;
     height: auto;
     list-style-type: none;
-    margin: 0;
-    padding: 1px;
     background: white;
+
+    &.show {
+      max-height: 500px;
+      display: block;
+      padding: 1px;
+    }
 
     li {
       display: block;
@@ -37,9 +45,10 @@ body > header nav {
         display: block;
         padding: $inner-padding-mobile;
         margin-bottom: 1px;
-        background: rgba(red, 0.5);
+        background: $site-color;
 
         &:hover {
+          background: $site-color;
         }
 
         &.current {
@@ -50,6 +59,7 @@ body > header nav {
 
     @include media($mobile-size) {
       display: block;
+      max-height: none;
       position: static;
       text-align: right;
       background: inherit;
@@ -65,6 +75,7 @@ body > header nav {
           background-color: inherit;
 
           &:hover {
+            background: inherit;
             border-top: none;
             border-right: none;
             border-bottom: 1px solid;

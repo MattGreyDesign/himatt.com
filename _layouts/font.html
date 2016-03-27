@@ -12,7 +12,7 @@ layout: default
         {% for vendor in page.vendors %}
         <section>
           <header>
-            <a class="button {{ vendor.title | downcase   }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
+            <a class="button {{ vendor.title | downcase }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
             <p>{{ vendor.licence }}</p>
           </header>
         </section>

@@ -1,0 +1,12 @@
+.contact {
+  @include outer-container;
+  @include padding(sides);
+
+  > aside {
+    @include span-columns(6);
+  }
+
+  > article {
+    @include span-columns(6);
+  }
+}

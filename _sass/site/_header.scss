@@ -10,15 +10,22 @@ body > header {
     @include span-columns(3);
     z-index: 3;
 
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        background: inherit;
+        border-top: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        border-left: none;
+        opacity: 1;
+        outline: 0;
+      }
+    }
+
     span {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
+      @include visually-hidden;
     }
   }
 
@@ -29,6 +36,7 @@ body > header {
       color: white;
       text-transform: uppercase;
       letter-spacing: 0.10em;
+      margin-top: 0.6em;
     }
   }
 }
@@ -38,17 +46,17 @@ body > header, body > footer {
   &.inverted {
 
     .logo-fill {
-      fill: black;
+      fill: $site-accent-inverted-color;
     }
 
     h1, p, a {
-      color: black;
+      color: $site-accent-inverted-color;
     }
 
     nav {
       ul, li, .mobile-nav {
-        border-color: black;
-        color: black;
+        border-color: $site-accent-inverted-color;
+        color: $site-accent-inverted-color;
       }
     }
   }

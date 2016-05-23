@@ -1,3 +1,18 @@
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin element-padding {
+  padding: ($measure-xsmall / 1.5) $measure-xsmall;
+}
+
 @mixin padding($type: sides) {
   $set-padding-mobile: 0;
   $set-padding-desktop: 0;

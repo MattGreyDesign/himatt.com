@@ -1,8 +1,8 @@
 html {
-  background: invert($site-color);
+  background: $site-background-color;//invert($site-color);
 
   @include media($tablet-size) {
-    //padding: $page-padding;
+    padding: $page-padding;
   }
 }
 

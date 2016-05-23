@@ -41,23 +41,23 @@ sass:
   style: compressed # :nested :compact :expanded :compressed
 
 compress_html: # http://jch.penibelst.de/
-  #enabled: true # compress html
+  enabled: true # compress html
   clippings: all # clip safe tags
   blanklines: true # boolean - strip blank lines and breaks
   #profile: true # boolean - print table of data saved
   #ignore:
-  #  envs: [local]
+  #envs: [local]
 
 # Structure
 navigation:
- - title: Projects
-   url: /projects
- - title: Fonts
-   url: /fonts
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
+  - title: Projects
+    url: /projects
+  - title: Fonts
+    url: /fonts
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
 
 # Configure site collections
 collections:

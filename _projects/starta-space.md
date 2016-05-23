@@ -1,7 +1,7 @@
 ---
 layout: page
 published: true
-title: "Starta.space"
+title: "Starta Space"
 description: "An ongoing project to create site/portfolio building service"
 categories: ux, design, personal
 thumbnail: ""

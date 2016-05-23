@@ -19,21 +19,16 @@
           transition: opacity .2s ease-in-out;
 }
 
-$font-size-small: rem(14px);
-$font-size-normal: rem(16px);
-$font-size-large: rem(18px);
-$font-size-xlarge: rem(20px);
-$font-size-xxlarge: rem(24px);
-$font-size-xxxlarge: rem(32px);
-$font-size-xxxxlarge: rem(40px);
-
 html {
   font-family: sans-serif;
-  font-family: "europa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Europa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: $font-size-normal;
   line-height: 1.6;
   font-size: 16px;
   letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
@@ -43,23 +38,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
 }
 
 h1 {
-  font-size: $font-size-xxxlarge;
+  font-size: $font-size-xxlarge;
+
+  @include media($mobile-size) {
+    font-size: $font-size-xxxlarge;
+  }
 }
 
 h2 {
-  font-size: $font-size-xxxlarge;
-}
-
-h3 {
   font-size: $font-size-xxlarge;
 }
 
-h4 {
+h3 {
   font-size: $font-size-xlarge;
 }
 
+h4 {
+  font-size: $font-size-large;
+}
+
 p {
-  margin: 1em 0;
+  margin: 0.6em 0;
 
   @include media($mobile-size) {
     font-size: $font-size-large;

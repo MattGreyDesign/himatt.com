@@ -8,10 +8,14 @@ accent:
   inverted: false
 ---
 
-{% for project in site.projects limit:include.limit %}
-  <a href="{{ project.url | prepend: site.baseurl }}">
-    <img src="{{ project.thumbnail | prepend: site.cdn_path }}" alt="{{ project.title }}">
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
-  </a>
-{% endfor %}
+<div class="projects">
+  {% for project in site.projects limit:include.limit %}
+  <article>
+    <a href="{{ project.url | prepend: site.baseurl }}">
+      <img src="{{ project.thumbnail | prepend: site.cdn_path }}" alt="{{ project.title }}">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+    </a>
+  </article>
+  {% endfor %}
+</div>

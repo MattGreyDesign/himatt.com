@@ -1,0 +1,39 @@
+form {
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    width: 100%;
+    font-size: $font-size-large;
+  }
+
+  section {
+    margin-bottom: $measure-xsmall;
+  }
+
+  input:not([type='submit']),
+  textarea {
+    @include element-padding;
+
+    width: 100%;
+    font-size: $font-size-xlarge;
+  }
+
+  #{$all-text-inputs} {
+    border: 2px solid $site-line-color;
+    outline: 0;
+  }
+
+  #{$all-text-inputs-focus},
+  #{$all-text-inputs-active},
+  #{$all-text-inputs-hover} {
+    border-color: mix($site-line-color, black, 90%);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}

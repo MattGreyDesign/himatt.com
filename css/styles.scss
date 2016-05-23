@@ -4,10 +4,9 @@
 @charset "utf-8";
 
 // Vendor
-@import "bourbon";
+@import "bourbon/bourbon";
 @import 'neat-config';
-@import 'neat-helpers';
-@import "neat";
+@import "neat/neat";
 
 @import "normalize";
 
@@ -18,9 +17,11 @@
 @import "site/base/typography";
 @import "site/base/links";
 @import "site/base/images";
+@import "site/base/lists";
 @import "site/base/buttons";
+@import "site/base/forms";
 
-// Partials
+// Partials / organisms
 @import "site/page";
 @import "site/header";
 @import "site/footer";

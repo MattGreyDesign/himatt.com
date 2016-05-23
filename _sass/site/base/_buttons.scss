@@ -1,0 +1,51 @@
+%btn {
+  @include element-padding;
+
+  @include media($mobile-size) {
+    display: inline-block;
+    width: auto;
+  }
+
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: $font-size-large;
+
+  &:focus {
+    outline:0;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+
+  &:disabled,
+  &.disabled{
+    cursor: not-allowed;
+    transform: scale(1);
+  }
+}
+
+.button-primary {
+  @extend %btn;
+
+  background: $site-accent-color;
+  border: none;
+
+  &:hover {
+    background: $site-accent-color-light;
+  }
+
+  &:active {
+    background: $site-accent-color-lightest;
+  }
+
+  &:disabled,
+  &.disabled{
+    background: $site-accent-color-lightest;
+  }
+
+}

@@ -9,7 +9,7 @@ banner: "/fonts/sni/overview.png"
 pricing: commercial
 
 accent:
-  color: "#005B7C"
+  color: "#189ACA"
   inverted: false
 
 features:

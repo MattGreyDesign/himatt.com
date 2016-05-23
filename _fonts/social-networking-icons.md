@@ -126,4 +126,6 @@ releases:
         - Forrst
 ---
 
-Back in 2012 I struggled to find a set of flat, uniform vector website icons that I could use readily for any application. This is when I had the idea to collect them into one, easily usable form—a font. I released a trial version which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which, to this date, is my most popular font. It has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor myfonts.com. The latest version of Social Networking Icons (3.0), now includes 158 individual icons in 6 different styles.
+Back in mid-2011 I was working on a website that required some links to social network pages, and struggled to find a set of flat, uniform vector website icons that I could use readily for any application. I decided that it would be useful to collect them into a portable and well supported format—a font.
+
+I released a trial version a month later which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which has proven to be popular; it has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor [Myfonts](www.myfonts.com). The latest version of Social Networking Icons (3.0), now includes 158 individual icons in 6 different styles.

@@ -1,4 +1,4 @@
-<header {% include accent.html %}>
+<header class="{% include accent.html %}">
   <div class="header-content">
 
     <div class="logo">
@@ -8,9 +8,9 @@
       </a>
     </div>
 
-    <nav role="navigation">
-      <a href="javascript:void(0)" class="mobile-nav">Menu</a>
-      <ul class="mobile-dropdown">
+    <nav class="navigation" role="navigation">
+      <a href="javascript:void(0)" class="mobile-nav {% include accent.html %}">Menu</a>
+      <ul class="mobile-dropdown {% include accent.html %}">
       {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url contains link.url %}

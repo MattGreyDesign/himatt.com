@@ -1,12 +1,48 @@
-// Function to convert px to rem
-@function rem($pxVal, $base: 16px) {
-  @if (unitless($pxVal)) {
-    $pxVal: $pxVal * 1px;
+@mixin padding($type: sides) {
+  $set-padding-mobile: 0;
+  $set-padding-desktop: 0;
+
+  @if $type == sides {
+    $set-padding-mobile: 0 $page-inner-padding-mobile;
+    $set-padding-desktop: 0 $page-inner-padding;
+  } @else if $type == full {
+    $set-padding-mobile: $page-inner-padding-mobile;
+    $set-padding-desktop: $page-inner-padding;
   }
 
-  @if (unitless($base)) {
-    $base: $base * 1px;
+  padding: $set-padding-mobile;
+
+  @include media($mobile-size) {
+    padding: $set-padding-desktop;
+  }
+}
+
+@mixin margin($type: sides) {
+  $set-margin-mobile: 0;
+  $set-margin-desktop: 0;
+
+  @if $type == sides {
+    $set-margin-mobile: 0 $page-inner-padding-mobile;
+    $set-margin-desktop: 0 $page-inner-padding;
+  } @else if $type == full {
+    $set-margin-mobile: $page-inner-padding-mobile;
+    $set-margin-desktop: $page-inner-padding;
   }
 
-  @return $pxVal / $base * 1rem;
+  margin: $set-margin-mobile;
+
+  @include media($mobile-size) {
+    margin: $set-margin-desktop;
+  }
+}
+
+// @include media-query($mobile) { ... }
+// will compile to:
+//
+// @media only screen and (max-width: 480px) { ... }
+
+@mixin media-query($device: $desktop) { //desktop for default
+  @media only screen and ($responsive-property: $device) {
+    @content;
+  }
 }

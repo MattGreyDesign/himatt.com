@@ -6,7 +6,7 @@ description: "An ongoing project to create site/portfolio building service"
 categories: ux, design, personal
 thumbnail: ""
 accent:
-  color: "black"
+  color: "#f8924d"
   inverted: true
 
 time_period: 2015 onwards

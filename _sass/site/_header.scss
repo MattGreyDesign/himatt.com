@@ -1,10 +1,6 @@
 body > header {
+  @include padding(full);
   background-color: $site-color;
-  padding: $inner-padding-mobile;
-
-  @include media($mobile-size) {
-    padding: $inner-padding;
-  }
 
   .header-content {
     @include outer-container;
@@ -12,6 +8,7 @@ body > header {
 
   .logo {
     @include span-columns(3);
+    z-index: 3;
 
     span {
       border: 0;
@@ -25,15 +22,13 @@ body > header {
     }
   }
 
-  nav {
-    @include span-columns(9);
-  }
-
   .page-title {
     @include outer-container;
 
     h1 {
       color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
     }
   }
 }
@@ -43,11 +38,18 @@ body > header, body > footer {
   &.inverted {
 
     .logo-fill {
-      fill: red;
+      fill: black;
     }
 
     h1, p, a {
-      color: red;
+      color: black;
+    }
+
+    nav {
+      ul, li, .mobile-nav {
+        border-color: black;
+        color: black;
+      }
     }
   }
 }

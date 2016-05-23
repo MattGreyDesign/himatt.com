@@ -1,8 +1,44 @@
 body > header nav {
 
+  &:before {
+      opacity: 0;
+      content: '';
+    }
+
+  &.show {
+    &:before {
+      transition: opacity 150ms ease-in-out;
+      content: '';
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.8);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 1;
+
+      @include media($mobile-size) {
+        display: none;
+      }
+    }
+
+    .mobile-nav {
+      position: fixed;
+    }
+
+    ul {
+      max-height: 500px;
+      display: block;
+      opacity: 1;
+    }
+  }
+
   .mobile-nav {
     display: inline-block;
     float: right;
+    right: $page-inner-padding-mobile;
     padding: 10px 20px;
     margin-top: 5px;
     border: 1px solid white;
@@ -10,6 +46,7 @@ body > header nav {
     letter-spacing: 0.05em;
     color: white;
     text-decoration: none;
+    position: static;
 
     @include media($mobile-size) {
       display: none;
@@ -18,41 +55,44 @@ body > header nav {
 
   ul {
     max-height: 0;
-    overflow: hidden;
     padding: 0;
     margin: 0;
-    transition: max-height 150ms ease-in-out, padding 150ms ease-in-out;
+    opacity: 0;
+    transition: max-height 150ms ease-in-out;
     position: fixed;
-    left: $inner-padding-mobile;
-    right: $inner-padding-mobile;
+    overflow: hidden;
+    left: $page-inner-padding-mobile;
+    right: $page-inner-padding-mobile;
     top: 100px;
     height: auto;
     list-style-type: none;
     background: white;
-
-    &.show {
-      max-height: 500px;
-      display: block;
-      padding: 1px;
-    }
+    background: $site-color;
+    border: 1px solid white;
+    font-size: $font-size-xlarge;
+    letter-spacing: 0.05em;
 
     li {
       display: block;
+
+      border-bottom: 1px solid white;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
 
       a {
         text-decoration: none;
         color: white;
         display: block;
-        padding: $inner-padding-mobile;
-        margin-bottom: 1px;
-        background: $site-color;
+        padding: $page-inner-padding-mobile;
 
         &:hover {
-          background: $site-color;
+          background: rgba(#fff, 0.3);
         }
 
         &.current {
-          opacity: 0.7;
+          background: rgba(#fff, 0.3);
         }
       }
     }
@@ -63,31 +103,40 @@ body > header nav {
       position: static;
       text-align: right;
       background: inherit;
+      opacity: 1;
+      border: 0;
 
       li {
         display: inline-block;
         position: relative;
         padding-left: 1em;
+        padding-bottom: 1em;
+        border: 0;
 
         a {
           text-decoration: none;
           padding: 0 0 .2em 0;
           background-color: inherit;
+          border-bottom: 0px solid;
+          opacity: 0.7;
+          transition: all 100ms ease-in-out;
 
           &:hover {
             background: inherit;
             border-top: none;
             border-right: none;
-            border-bottom: 1px solid;
+            border-bottom: 2px solid;
             border-left: none;
+            opacity: 1;
           }
 
           &.current {
             border-top: none;
             border-right: none;
-            border-bottom: 1px solid;
+            border-bottom: 2px solid;
             border-left: none;
-            opacity: 0.7;
+            opacity: 1;
+            background: inherit;
           }
         }
       }

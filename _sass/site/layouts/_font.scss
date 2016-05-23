@@ -1,0 +1,22 @@
+.behind {
+  height: $accent-behind-height;
+  margin-bottom: -($accent-behind-height);
+  width: 100%;
+}
+
+.font-header {
+  @include padding(sides);
+
+  .font-header-content {
+    @include outer-container;
+
+    > section {
+      @include span-columns(9);
+    }
+
+    > aside {
+      @include span-columns(3);
+      background: red;
+    }
+  }
+}

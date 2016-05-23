@@ -1,0 +1,9 @@
+@mixin link-style {
+  color: inherit;
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+}
+
+p a {
+  @include link-style;
+}

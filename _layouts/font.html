@@ -1,25 +1,29 @@
 ---
 layout: default
 ---
-
-<div {% include accent.html %}>
-  <img src="{{ page.banner | prepend: site.cdn_path }}" alt="">
-
-  <aside>
-    <section class="vendors">
-      <h2>Get {{ page.title }}</h2>
-      {% if page.vendors %}
-        {% for vendor in page.vendors %}
-        <section>
-          <header>
-            <a class="button {{ vendor.title | downcase }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
-            <p>{{ vendor.licence }}</p>
-          </header>
-        </section>
-        {% endfor %}
-      {% endif %}
+<div class="behind {% include accent.html %}"></div>
+<div class="font-header {% include accent.html %}">
+  <div class="font-header-content">
+    <section class="banner">
+      <img src="{{ page.banner | prepend: site.cdn_path }}" alt="">
     </section>
-  </aside>
+
+    <aside class="buy">
+      <section class="vendors">
+        <h2>Buy</h2>
+        {% if page.vendors %}
+          {% for vendor in page.vendors %}
+          <section>
+            <header>
+              <a class="button {{ vendor.title | downcase }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
+              <p>{{ vendor.licence }}</p>
+            </header>
+          </section>
+          {% endfor %}
+        {% endif %}
+      </section>
+    </aside>
+  </div>
 </div>
 
 <section>

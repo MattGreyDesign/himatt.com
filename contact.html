@@ -8,10 +8,22 @@ permalink: /contact/
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
 
-  <input autofocus type="text" name="name"><br>
-  <input required type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
-  <textarea required name="message"></textarea>
+  <fieldset>
+    <section>
+      <label for="name">Name</label>
+      <input autofocus type="text" name="name" id="name">
+    </section>
 
-  <input type="submit" value="Send Message"><br>
+    <section>
+      <label for="email">Email</label>
+      <input required type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+    </section>
+
+    <section>
+      <label for="message">Message</label>
+      <textarea required name="message" id="message"></textarea>
+    </section>
+
+    <input type="submit" value="Send Message">
+  </fieldset>
 </form>
-

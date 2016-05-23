@@ -12,4 +12,11 @@
 
   <script src="https://use.typekit.net/ymn7szw.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  {% if page.accent %}
+  <style>
+    .accent {
+      background-color: {{ page.accent.color }};
+    }
+  </style>
+  {% endif %}
 </head>

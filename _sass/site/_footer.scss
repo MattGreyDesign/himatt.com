@@ -1,12 +1,7 @@
 body > footer {
+  @include padding(full);
   background-color: $site-color;
   color: #fff;
-
-  padding: $inner-padding-mobile;
-
-  @include media($mobile-size) {
-    padding: $inner-padding;
-  }
 
   .footer-content {
     @include outer-container;

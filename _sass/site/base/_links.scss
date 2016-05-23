@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-p a, li a {
+main p a, main li a {
   @include link-style;
 }
 

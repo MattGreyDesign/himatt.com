@@ -30,9 +30,9 @@ $largedesktop: new-breakpoint($default-feature $largedesktop-size 12);
 /* include for responsiveness
 .element {
   @include media($mobile) {
-    @include span-columns(4);
+    @include span-columns(4, block-collapse); //collapses gutter
   }
-}
+
   @include media($desktop) {
     @include span-columns(12);
   }

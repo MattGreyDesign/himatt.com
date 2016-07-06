@@ -1,32 +1,15 @@
-@mixin link-style {
+%link-style {
   color: inherit;
   border-bottom: 2px solid $site-accent-color;
   text-decoration: none;
+
+  &:hover {}
+}
+
+a {
+  color: inherit;
 }
 
 main p a, main li a {
-  @include link-style;
-}
-
-a.accessibility-skip {
-  @include visually-hidden;
-
-  &:focus {
-    top: $page-padding;
-    left: $page-padding;
-    z-index: 1;
-    width: auto;
-    height: auto;
-    padding: 0 10px;
-    clip: auto;
-    font-weight: bold;
-    line-height: 49px;
-    color: white;
-    text-decoration: none;
-    background: rgba(white, 0.1);
-    outline: 0;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  @extend %link-style;
 }

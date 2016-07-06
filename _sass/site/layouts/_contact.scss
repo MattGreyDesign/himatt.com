@@ -1,12 +1,15 @@
-.contact {
-  @include outer-container;
-  @include padding(sides);
+.contact-wrapper {
 
-  > aside {
-    @include span-columns(6);
-  }
+  .contact {
+    @include outer-container;
+    @include padding(full);
 
-  > article {
-    @include span-columns(6);
+    > aside {
+      @include span-columns(6);
+    }
+
+    > article {
+      @include span-columns(6);
+    }
   }
 }

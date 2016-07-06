@@ -4,5 +4,6 @@ $(document).ready(function() {
     $('.mobile-nav').html(function(i, label){
       return label === 'Menu' ? '&times; Close' : 'Menu'
     })
+    $("body").toggleClass("prevent-scroll");
   });
 });

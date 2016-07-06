@@ -1,0 +1,106 @@
+//Layout
+
+.projects-wrapper {
+  @include outer-container;
+
+  .projects {
+    @include padding(full);
+
+    > article {
+      @include media($tablet-size) {
+        @include span-columns(6);
+      }
+
+      @include media($desktop-size) {
+        @include span-columns(4);
+      }
+
+      @include media($largedesktop-size) {
+        @include span-columns(3);
+      }
+    }
+  }
+}
+
+.projects {
+
+  .projects-wrapper {
+
+    article {
+
+      padding-bottom: $measure-medium;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+
+      .thumbnail-wrapper {
+        position: relative;
+        a {
+
+          h3 {
+            display: block;
+            color: white;
+            background: black;
+          }
+
+          p {
+            @include visually-hidden;
+            opacity: 0;
+          }
+
+          &:hover p {
+            @include element-padding;
+            display: block;
+            width: 100%;
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            bottom: 64px;
+            margin: 0;
+            padding: $page-element-padding;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            clip: auto;
+            opacity: 0.75;
+            transition: opacity 1s ease-in-out;
+            text-align: center;
+
+            span {
+              opacity: 1;
+              color: white;
+            }
+          }
+
+          img {
+            background: $site-background-color;
+            display: block;
+            min-height: 150px;
+          }
+        }
+      }
+    }
+
+    @include media($tablet-size) {
+      > article {
+        background: red;
+
+        a {
+          text-decoration: none;
+
+          h3 {
+
+          }
+
+          p {
+
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
+> “Some people think design means how it looks. But of course, if you dig deeper, it’s really how it works.”
+>
+> — Steve Jobs, former CEO, Apple
+
 ## Some things
 I am a multi-disciplined designer, particularly focussed around User Experience (UX) and Usability.
 
@@ -22,11 +26,10 @@ In my spare time I paint, cycle, travel.
 ## What I know
 
 ### Tools
-Sketchapp
+- Sketch app
+- Adobe Suite
 
-Adobe Suite
-
-## Languages and frameworks
+### Languages and frameworks
 - HTML5
 - CSS, [Sass (SCSS)](http://sass-lang.com/) and media queries
 - Jekyll

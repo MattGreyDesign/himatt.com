@@ -23,6 +23,9 @@
   } @else if $type == full {
     $set-padding-mobile: $page-inner-padding-mobile;
     $set-padding-desktop: $page-inner-padding;
+  } @else if $type == topbottom {
+    $set-padding-mobile: $page-inner-padding-mobile 0;
+    $set-padding-desktop: $page-inner-padding 0;
   }
 
   padding: $set-padding-mobile;
@@ -42,6 +45,9 @@
   } @else if $type == full {
     $set-margin-mobile: $page-inner-padding-mobile;
     $set-margin-desktop: $page-inner-padding;
+  } @else if $type == topbottom {
+    $set-margin-mobile: $page-inner-padding-mobile 0;
+    $set-margin-desktop: $page-inner-padding 0;
   }
 
   margin: $set-margin-mobile;

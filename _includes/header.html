@@ -3,32 +3,39 @@
 
     <a class="accessibility-skip" href="#maincontent">Skip to main content</a>
 
-    <div class="logo">
-      <a href="{{ site.baseurl }}/">
-        {% include logo.svg %}
-        <span>{{ site.title }} Home</span>
-      </a>
+    <div class="logo-nav-wrapper">
+
+      <div class="logo">
+        <a href="{{ site.baseurl }}/">
+          {% include logo.svg %}
+          <span>{{ site.title }} Home</span>
+        </a>
+      </div>
+
+      <nav class="navigation" role="navigation" aria-label="main navigation">
+        <a href="javascript:void(0)" class="mobile-nav {% include accent.html %}">Menu</a>
+        <div class="mobile-nav-wrapper">
+          <ul class="mobile-dropdown {% include accent.html %}">
+          {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% if page.url contains link.url %}
+                {% assign current = ' class="current"' %}
+            {% endif %}
+            <li>
+              <a{{ current }} href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </nav>
+
     </div>
 
-    <nav class="navigation" role="navigation" aria-label="main navigation">
-      <a href="javascript:void(0)" class="mobile-nav {% include accent.html %}">Menu</a>
-      <ul class="mobile-dropdown {% include accent.html %}">
-      {% for link in site.navigation %}
-        {% assign current = nil %}
-        {% if page.url contains link.url %}
-            {% assign current = 'class="current" aria-selected="true"' %}
-        {% endif %}
-        <li>
-          <a {{ current }} href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </nav>
-  </div>
+    {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
+    <div id="maincontent" class="page-title">
+      <h1>{{ page.title }}</h1>
+    </div>
+    {% endif %}
 
-  {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
-  <div id="maincontent" class="page-title">
-    <h1>{{ page.title }}</h1>
   </div>
-  {% endif %}
 </header>

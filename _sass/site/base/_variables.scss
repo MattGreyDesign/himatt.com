@@ -12,10 +12,15 @@ $page-padding: $measure-medium;
 $page-inner-padding: $measure-large;
 $page-inner-padding-mobile: $measure-small;
 
+$page-inner-margin: $measure-xsmall;
+$page-inner-margin-mobile: 0;
+
 $footer-height: ($measure-medium * 2);
 
 $accent-behind-height: 200px;
 
+$page-element-padding: $measure-small;
+$page-element-padding-mobile: $measure-xsmall;
 
 /*
 TYPOGRAPHY

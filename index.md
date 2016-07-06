@@ -14,7 +14,7 @@ layout: default
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 30;
+    z-index: 60;
   }
 
   .nts p, .nts h1 {

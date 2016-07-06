@@ -1,5 +1,6 @@
+//Global site layout
 html {
-  background: $site-background-color;//invert($site-color);
+  background: $site-background-color;
 
   @include media($tablet-size) {
     padding: $page-padding;
@@ -8,7 +9,6 @@ html {
 
 body {
   overflow: hidden;
-  background: white; //#e9e9e9;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -22,3 +22,44 @@ main {
   flex: 1;
   background: white;
 }
+
+@include media($tablet-size) {
+  main {
+    margin-bottom: $measure-small;
+    margin-top: $measure-small;
+  }
+}
+
+// Page element stacking order
+body {
+ z-index: 0;
+
+  & > header {
+
+    z-index: 1;
+
+    & > nav {
+      z-index: 2;
+    }
+
+  }
+
+  & > main {
+    z-index: inherit;
+  }
+
+  & > footer {
+    z-index: inherit;
+  }
+}
+
+// body.prevent-scroll {
+//   position: fixed;
+//   width: 100%;
+// }
+
+// @include media($tablet-size) {
+//   body.prevent-scroll {
+//     position: relative;
+//   }
+// }

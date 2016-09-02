@@ -44,19 +44,19 @@ initial_release: 2012
 
 releases:
   - version: v0.2
-    date: April 2011
+    releasedate: April 2011
     details: >
       - Free trial
         - Released on Dafont and fontspace
 
   - version: v1.0
-    date: 05 January 2012
+    releasedate: 05 January 2012
     details: >
       - Commercial release
         - Now for sale on Myfonts.com in both regular and rounded versions
 
   - version: v2.0
-    date: 06 September 2012
+    releasedate: 06 September 2012
     details: >
       - New weight
         - Minimal
@@ -80,7 +80,7 @@ releases:
 
 
   - version: v3.0
-    date: 13 February 2013
+    releasedate: 13 February 2013
     details: >
       - New weights
         - Square
@@ -109,7 +109,7 @@ releases:
         - All other utility icons
 
   - version: v3.5 (Closed beta)
-    date: 10 December 2015
+    releasedate: 10 December 2015
     details: >
       - New additions
         - Vine

@@ -63,7 +63,7 @@ layout: default
   {% if page.releases %}
     {% for release in page.releases reversed %}
       {% if forloop.first == true %}
-        <dd>{{ release.version }}: {{ release.date }}</dd>
+        <dd>{{ release.version }}: {{ release.releasedate }}</dd>
       {% endif %}
     {% endfor %}
   {% endif %}
@@ -80,7 +80,7 @@ layout: default
     <section>
       <header>
         <h3>{{ release.version }}</h3>
-        <p>{{ release.date }}</p>
+        <p>{{ release.releasedate }}</p>
       </header>
       <dl>
         <dt>Details</dt>

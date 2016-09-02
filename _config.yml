@@ -11,13 +11,13 @@ exclude: ['README.markdown']
 # Site settings
 title: Matt Grey Design
 email: info@himatt.com
-description: "Portfolio of Matt Grey&mdash;graphic, UX and type designer"
+description: "Portfolio of graphic, UX and type designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
 
-# Personal Meta
-username:
+# Social networks
+social-username:
   twitter: "@mattgreydesign"
   linkedin: "himatt"
   github: "mattgreydesign"

@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
 year: 2016
+sitemap: false
 
 # Social networks
 social-username:

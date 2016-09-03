@@ -1,6 +1,6 @@
 ---
 ---
-<?xml version="1.0" encoding="UTF-8"?>
+{% if site.sitemap %}<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 {% capture site_url %}{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ site.github.url }}{% endif %}{% endcapture %}
   <url>
@@ -29,14 +29,4 @@
     <priority>0.7</priority>
   </url>
   {% endunless %}{% endfor %}{% endunless %}{% endfor %}
-</urlset>
-
-
-
-
-
-
-
-
-
-
+</urlset>{% endif %}

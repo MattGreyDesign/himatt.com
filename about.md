@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+priority: 0.8
 ---
 
 > “Some people think design means how it looks. But of course, if you dig deeper, it’s really how it works.”

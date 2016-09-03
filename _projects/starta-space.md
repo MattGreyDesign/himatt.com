@@ -3,7 +3,7 @@ layout: page
 published: true
 title: "Starta Space"
 description: "An ongoing project to create site/portfolio building service"
-categories: ux, design, personal
+categories: ux design personal
 thumbnail: ""
 accent:
   color: "#f8924d"

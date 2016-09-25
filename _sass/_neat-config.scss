@@ -4,11 +4,11 @@
 
 $disable-warnings: false !default;                  // Disable all deprecation warnings.
 $column: modular-scale(3, 1em, $golden) !default;   // Sets the relative width of a single grid column.
-$gutter: modular-scale(1, 2em, $golden) !default;   // Sets the relative width of a single grid gutter.
+$gutter: modular-scale(1, 1em, $golden) !default;   // Sets the relative width of a single grid gutter.
 $grid-columns: 12 !default;                         // Sets the total number of columns in the grid.
-$max-width: em(1600px) !default;                    // Sets the max-width property of the element that includes outer-container(). 1200 was default
+$max-width: 1600px !default;                        // Sets the max-width property of the element that includes outer-container(). 1200 was default
 $border-box-sizing: true !default;                  // When set to true, it sets the box-sizing property of all elements to border-box
-$default-feature: min-width;                        // Sets the default media feature that media() and new-breakpoint() revert to when only a breakpoint value is passed.
+$default-feature: max-width;                        // Sets the default media feature that media() and new-breakpoint() revert to when only a breakpoint value is passed.
 $default-layout-direction: LTR !default;            // Sets the default layout direction of the grid.
 $visual-grid: false !default;                       // Displays the visual grid when set to true.
 $visual-grid-color: #eee !default;                  // Sets the visual grid color.
@@ -22,17 +22,16 @@ $desktop-size: 960px;
 $largedesktop-size: 1200px;
 
 // Bourbon Neat Breakpoints
-$mobile: new-breakpoint($default-feature $mobile-size 4);
-$tablet: new-breakpoint($default-feature $tablet-size 8);
-$desktop: new-breakpoint($default-feature $desktop-size 12);
-$largedesktop: new-breakpoint($default-feature $largedesktop-size 12);
+$mobile: $default-feature $mobile-size 4;
+$tablet: $default-feature $tablet-size 8;
+$desktop: $default-feature $desktop-size 12;
+$largedesktop: $default-feature $largedesktop-size 12;
 
 /* include for responsiveness
 .element {
   @include media($mobile) {
-    @include span-columns(4, block-collapse); //collapses gutter
+    @include span-columns(4);
   }
-
   @include media($desktop) {
     @include span-columns(12);
   }

@@ -1,21 +1,28 @@
-<header class="{% include accent.html %}">
+<header>
   <div class="header-content">
 
     <a class="accessibility-skip" href="#maincontent">Skip to main content</a>
 
     <div class="logo-nav-wrapper">
+      <div class="logo-title-wrapper">
+        <div class="logo">
+          <a href="{{ site.baseurl }}/">
+            {% include logo.svg %}
+            <span>{{ site.title }} Home</span>
+          </a>
+        </div>
 
-      <div class="logo">
-        <a href="{{ site.baseurl }}/">
-          {% include logo.svg %}
-          <span>{{ site.title }} Home</span>
-        </a>
+        {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
+        <div class="page-title">
+          <h1>{{ page.title }}</h1>
+        </div>
+        {% endif %}
       </div>
 
       <nav class="navigation" role="navigation" aria-label="main navigation">
-        <a href="javascript:void(0)" class="mobile-nav {% include accent.html %}">Menu</a>
+        <a href="javascript:void(0)" class="mobile-nav">Menu</a>
         <div class="mobile-nav-wrapper">
-          <ul class="mobile-dropdown {% include accent.html %}">
+          <ul class="mobile-dropdown">
           {% for link in site.navigation %}
             {% assign current = nil %}
             {% if page.url contains link.url %}
@@ -30,12 +37,6 @@
       </nav>
 
     </div>
-
-    {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
-    <div id="maincontent" class="page-title">
-      <h1>{{ page.title }}</h1>
-    </div>
-    {% endif %}
 
   </div>
 </header>

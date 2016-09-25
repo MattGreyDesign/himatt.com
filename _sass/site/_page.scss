@@ -1,56 +1,38 @@
 //Global site layout
 html {
-  background: $site-background-color;
 
-  @include media($tablet-size) {
-    padding: $page-padding;
-  }
 }
 
 body {
-  overflow: hidden;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-
-  @include media($tablet-size) {
-    min-height: calc(100vh - #{($page-padding*2)});
-  }
+  background: $site-background-color;
 }
 
 main {
-  flex: 1;
-  background: white;
+  background: red;
 }
 
-@include media($tablet-size) {
-  main {
-    margin-bottom: $measure-small;
-    margin-top: $measure-small;
-  }
-}
 
 // Page element stacking order
 body {
- z-index: 0;
+ // z-index: 0;
 
-  & > header {
+ //  & > header {
 
-    z-index: 1;
+ //    z-index: 1;
 
-    & > nav {
-      z-index: 2;
-    }
+ //    & > nav {
+ //      z-index: 2;
+ //    }
 
-  }
+ //  }
 
-  & > main {
-    z-index: inherit;
-  }
+ //  & > main {
+ //    z-index: inherit;
+ //  }
 
-  & > footer {
-    z-index: inherit;
-  }
+ //  & > footer {
+ //    z-index: inherit;
+ //  }
 }
 
 // body.prevent-scroll {

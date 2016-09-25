@@ -1,26 +1,61 @@
 body > header {
-
-  background-color: $site-color;
-
   .header-content {
     @include outer-container;
-    @include padding(full);
 
     .logo-nav-wrapper {
-      .logo {
-        @include span-columns(2);
-      }
-      nav {
-        @include span-columns(10);
-      }
-    }
+      .logo-title-wrapper {
+        @include span-columns(9);
+        background: green;
 
-    .page-title {
-      @include span-columns(12);
+        .logo {
+            vertical-align: top;
+          display: inline-block;
+        }
+
+        .page-title {
+          display: inline-block;
+          max-width: 400px;
+          hyphens: none;
+        }
+      }
+
+      nav.navigation {
+        @include span-columns(3);
+        background: orange;
+
+        @include media($mobile) {
+          @include span-columns(12);
+        }
+      }
     }
   }
 
   .logo-nav-wrapper {
+
+    a.accessibility-skip {
+      @include visually-hidden;
+
+      &:focus {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        width: auto;
+        height: auto;
+        padding: 0 10px;
+        clip: auto;
+        font-weight: bold;
+        line-height: 49px;
+        color: white;
+        text-decoration: none;
+        background: black;
+        outline: 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
 
     .logo {
 
@@ -44,11 +79,21 @@ body > header {
   }
 
   .page-title {
-    h1 {
+    h2 {
       color: white;
+      font-size: $font-size-small;
       text-transform: uppercase;
-      letter-spacing: 0.10em;
-      margin-top: 0.6em;
+      letter-spacing: 0.1em;
+    }
+
+    h1 {
+      margin-left: .4em;
+      vertical-align: center;
+      color: white;
+      margin-top: .1em;
+      letter-spacing: .02em;
+      font-size: $font-size-xxxxlarge;
+      line-height: 1.1;
     }
   }
 
@@ -80,21 +125,5 @@ body > header {
 
 
 body > header, body > footer {
-  &.inverted {
 
-    .logo-fill {
-      fill: $site-accent-inverted-color;
-    }
-
-    h1, p, a {
-      color: $site-accent-inverted-color;
-    }
-
-    nav {
-      ul, li, .mobile-nav {
-        border-color: $site-accent-inverted-color;
-        color: $site-accent-inverted-color;
-      }
-    }
-  }
 }

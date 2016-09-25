@@ -40,6 +40,6 @@ Designed and made by Matt Grey, built from scratch using [Jekyll](https://jekyll
 
 Styles are mobile first and responsive and utilised [Sass](http://sass-lang.com/), [Bourbon Neat](http://neat.bourbon.io/) for the grid, and [Normalize.css](http://github.com/necolas/normalize.css).
 
-The typeface used is [Europa](http://www.europatype.com/articledetail/17), from [EuropaType](http://www.europatype.com/), the font is served by [Typekit](https://typekit.com/fonts).
+The typeface used is [HK Grotesk](https://www.behance.net/gallery/28749913/HK-Grotesk-Open-Source-Typeface), from [Alfredo Marco Pradil](http://alfredomarcopradil.com/).
 
 Other tools and libraries used include [jQuery](https://jquery.com/), [Zammu SimpleForm](https://getsimpleform.com/), [Dropbox](http://dropbox.com) and [Google Analytics](http://google.com/analytics).

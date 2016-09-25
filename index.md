@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<style>
+<!-- <style>
   .nts {
     background-color: black;
     position: absolute;
@@ -20,7 +20,7 @@ layout: default
   .nts p, .nts h1 {
     text-align: center;
   }
-</style>
+</style> -->
 
 <div class="nts">
   <div>

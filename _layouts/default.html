@@ -6,11 +6,10 @@ layout: compress
 {% include head.html %}
 <body>
   {% include header.html %}
-  <main{% if page.class %} class="{{ page.class }}"{% endif %}>
+  <main{% if page.class %} class="{{ page.class }}"{% endif %} id="maincontent">
     {{ content }}
   </main>
   {% include footer.html %}
-
   {% include scripts.html %}
 </body>
 </html>

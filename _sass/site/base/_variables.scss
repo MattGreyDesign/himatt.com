@@ -1,6 +1,6 @@
 /*
-GEOMETRY
-*/
+ * GEOMETRY
+ */
 
 //Base
 $measure-xsmall: 12px;
@@ -10,9 +10,11 @@ $measure-large: 64px;
 
 $page-padding: $measure-medium;
 $page-inner-padding: $measure-large;
+$page-inner-padding-tablet: $measure-medium;
 $page-inner-padding-mobile: $measure-small;
 
 $page-inner-margin: $measure-xsmall;
+$page-inner-margin-tablet: 0;
 $page-inner-margin-mobile: 0;
 
 $footer-height: ($measure-medium * 2);
@@ -23,8 +25,8 @@ $page-element-padding: $measure-small;
 $page-element-padding-mobile: $measure-xsmall;
 
 /*
-TYPOGRAPHY
-*/
+ * TYPOGRAPHY
+ */
 
 //Base
 $font-size-small: rem(14px);
@@ -35,16 +37,15 @@ $font-size-xxlarge: rem(24px);
 $font-size-xxxlarge: rem(32px);
 $font-size-xxxxlarge: rem(40px);
 
-
 /*
-COLOUR
-*/
+ * COLOUR
+ */
 
 //Base
 $site-color: #2d2925;
 $site-accent-color: #65ff80;
 $site-accent-inverted-color: black;
-$site-background-color: #ececec;
+$site-background-color: #202F3F; //ececec
 $site-line-color: #e2e2e2;
 
 //Accent tints

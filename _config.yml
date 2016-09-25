@@ -13,7 +13,7 @@ title: Matt Grey Design
 email: info@himatt.com
 description: "Portfolio of graphic, UX and type designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://himatt.com" # the base hostname & protocol for your site
+url: "https://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
 year: 2016
 sitemap: false
@@ -30,7 +30,7 @@ social-username:
   lastfm: "mattdabest"
 
 # Content
-cdn_path: "http://static.himatt.com" # <img src="{{ site.cdn_path }}/projects/img.jpg">
+cdn_path: "//static.himatt.com" # <img src="{{ site.cdn_path }}/projects/img.jpg">
 
 # Build settings
 markdown: kramdown

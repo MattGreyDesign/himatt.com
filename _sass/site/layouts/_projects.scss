@@ -1,33 +1,36 @@
 //Layout
+.projects-page {
+  @include padding(full);
 
-.projects-wrapper {
-  @include outer-container;
+  .projects-wrapper {
+    @include outer-container;
 
-  .projects {
-    @include padding(full);
+    .projects {
 
-    > article {
-      @include media($tablet-size) {
-        @include span-columns(6);
-      }
+      > article.project-listing {
+        @include media($tablet-size) {
+          @include span-columns(6);
+        }
 
-      @include media($desktop-size) {
-        @include span-columns(4);
-      }
+        @include media($desktop-size) {
+          @include span-columns(4);
+        }
 
-      @include media($largedesktop-size) {
-        @include span-columns(3);
+        @include media($largedesktop-size) {
+          @include span-columns(3);
+        }
       }
     }
   }
 }
 
-.projects {
+//Styling
+
+.projects-page {
 
   .projects-wrapper {
 
     article {
-
       padding-bottom: $measure-medium;
 
       &:last-of-type {
@@ -80,25 +83,6 @@
             display: block;
             min-height: 150px;
           }
-        }
-      }
-    }
-
-    @include media($tablet-size) {
-      > article {
-        background: red;
-
-        a {
-          text-decoration: none;
-
-          h3 {
-
-          }
-
-          p {
-
-          }
-
         }
       }
     }

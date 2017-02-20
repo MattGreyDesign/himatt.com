@@ -1,5 +1,13 @@
 //Global site layout
 html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
 
 }
 
@@ -8,7 +16,7 @@ body {
 }
 
 main {
-  background: red;
+  //background: red;
 }
 
 

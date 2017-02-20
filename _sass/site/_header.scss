@@ -1,27 +1,30 @@
 body > header {
+  @include padding(full);
   .header-content {
-    @include outer-container;
 
     .logo-nav-wrapper {
+       @include outer-container;
+
       .logo-title-wrapper {
-        @include span-columns(9);
+        @include span-columns(6);
         background: green;
 
-        .logo {
-            vertical-align: top;
-          display: inline-block;
+        @include media($tablet) {
+          @include span-columns(12);
         }
 
-        .page-title {
-          display: inline-block;
-          max-width: 400px;
-          hyphens: none;
+        @include media($mobile) {
+          @include span-columns(12);
         }
       }
 
       nav.navigation {
-        @include span-columns(3);
+        @include span-columns(6);
         background: orange;
+
+        @include media($tablet) {
+          @include span-columns(12);
+        }
 
         @include media($mobile) {
           @include span-columns(12);
@@ -58,6 +61,8 @@ body > header {
     }
 
     .logo {
+      vertical-align: top;
+      display: inline-block;
 
       a {
         &:focus,
@@ -79,6 +84,10 @@ body > header {
   }
 
   .page-title {
+    display: inline-block;
+    max-width: 400px;
+    hyphens: none;
+
     h2 {
       color: white;
       font-size: $font-size-small;

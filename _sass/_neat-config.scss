@@ -16,10 +16,10 @@ $visual-grid-index: back !default;                  // Sets the z-index property
 $visual-grid-opacity: 0.4 !default;                 // Sets the opacity property of the visual grid.
 
 // Breakpoint sizes
-$mobile-size: 480px;
-$tablet-size: 768px;
-$desktop-size: 960px;
-$largedesktop-size: 1200px;
+$mobile-size: em(480px);
+$tablet-size: em(768px);
+$desktop-size: em(960px);
+$largedesktop-size: em(1200px);
 
 // Bourbon Neat Breakpoints
 $mobile: $default-feature $mobile-size 4;

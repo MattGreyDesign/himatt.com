@@ -1,3 +1,14 @@
+
+/*
+ * MEDIA QUERIES
+ */
+$default-feature: min-width;
+
+$mobile-size: em(480px);
+$tablet-size: em(768px);
+$desktop-size: em(960px);
+$largedesktop-size: em(1200px);
+
 /*
  * GEOMETRY
  */
@@ -36,6 +47,12 @@ $font-size-xlarge: rem(20px);
 $font-size-xxlarge: rem(24px);
 $font-size-xxxlarge: rem(32px);
 $font-size-xxxxlarge: rem(40px);
+
+$h1-font-size: $font-size-xxxlarge;
+$h2-font-size: $font-size-xxlarge;
+
+$body-font-size-desktop: $font-size-large;
+$body-font-size-mobile: $font-size-large;
 
 /*
  * COLOUR

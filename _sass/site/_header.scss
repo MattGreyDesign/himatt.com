@@ -1,33 +1,31 @@
 body > header {
-  @include padding(full);
   .header-content {
 
     .logo-nav-wrapper {
-       @include outer-container;
+       @include grid-container;
 
       .logo-title-wrapper {
-        @include span-columns(6);
-        background: green;
+        @include grid-column(12);
 
-        @include media($tablet) {
-          @include span-columns(12);
+        @include grid-media($grid-tablet){
+          @include grid-column(6);
         }
 
-        @include media($mobile) {
-          @include span-columns(12);
+        @include grid-media($grid-desktop) {
+          @include grid-column(6);
         }
       }
 
       nav.navigation {
-        @include span-columns(6);
+        @include grid-column(12);
         background: orange;
 
-        @include media($tablet) {
-          @include span-columns(12);
+        @include grid-media($grid-tablet) {
+          @include grid-column(6);
         }
 
-        @include media($mobile) {
-          @include span-columns(12);
+        @include grid-media($grid-desktop) {
+          @include grid-column(6);
         }
       }
     }

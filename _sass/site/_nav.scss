@@ -19,7 +19,7 @@ body > header nav {
       bottom: 0;
       opacity: 1;
 
-      @include media($mobile-size) {
+      @include media($desktop-size) {
         display: none;
       }
     }

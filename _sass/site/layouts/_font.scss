@@ -6,14 +6,14 @@
 
 .font-header {
   .font-header-content {
-    @include outer-container;
+    @include grid-container;
 
     > section {
-      @include span-columns(9);
+      @include grid-column(9);
     }
 
     > aside {
-      @include span-columns(3);
+      @include grid-column(3);
       //background: red;
     }
   }

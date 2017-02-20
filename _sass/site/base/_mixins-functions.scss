@@ -1,3 +1,14 @@
+// @include media-query($mobile) { ... }
+// will compile to:
+//
+// @media only screen and (max-width: 480px) { ... }
+
+@mixin media($device: $desktop) { //desktop for default
+  @media only screen and ($device) {
+    @content;
+  }
+}
+
 @mixin visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -54,16 +65,5 @@
 
   @include media($mobile-size) {
     margin: $set-margin-desktop;
-  }
-}
-
-// @include media-query($mobile) { ... }
-// will compile to:
-//
-// @media only screen and (max-width: 480px) { ... }
-
-@mixin media-query($device: $desktop) { //desktop for default
-  @media only screen and ($responsive-property: $device) {
-    @content;
   }
 }

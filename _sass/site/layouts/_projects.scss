@@ -3,21 +3,21 @@
   @include padding(full);
 
   .projects-wrapper {
-    @include outer-container;
+    @include grid-container;
 
     .projects {
 
       > article.project-listing {
         @include media($tablet-size) {
-          @include span-columns(6);
+          @include grid-column(6);
         }
 
         @include media($desktop-size) {
-          @include span-columns(4);
+          @include grid-column(4);
         }
 
         @include media($largedesktop-size) {
-          @include span-columns(3);
+          @include grid-column(3);
         }
       }
     }

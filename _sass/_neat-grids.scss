@@ -1,0 +1,19 @@
+//Mobile
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
+//Tablet
+$grid-tablet: (
+  columns: 12,
+  gutter: 24px,
+  media: $tablet-size,
+);
+
+//Desktop
+$grid-desktop: (
+  columns: 12,
+  gutter: 28px,
+  media: $desktop-size,
+);

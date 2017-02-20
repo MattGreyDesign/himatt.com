@@ -3,7 +3,7 @@ body > footer {
   color: #fff;
 
   .footer-content {
-    @include outer-container;
+    @include grid-container;
     position: relative;
 
     a.license {

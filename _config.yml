@@ -69,23 +69,3 @@ collections:
   fonts:
     output: true
     permalink: /fonts/:path/
-
-# Set default post types
-
-# defaults:
-#   -
-#     scope:
-#       path: "projects"
-#       type: "pages"
-#     values:
-#       layout: "project"
-#       author: "Matt"
-#       category: "project"
-#   -
-#     scope:
-#       path: "fonts"
-#       type: "pages"
-#     values:
-#       layout: "font"
-#       author: "Matt"
-#       category: "font"

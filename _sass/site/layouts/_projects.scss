@@ -1,6 +1,5 @@
 //Layout
 .projects-page {
-  @include padding(full);
 
   .projects-wrapper {
     @include grid-container;
@@ -8,16 +7,14 @@
     .projects {
 
       > article.project-listing {
-        @include media($tablet-size) {
-          @include grid-column(6);
-        }
+        @include grid-column(6);
 
-        @include media($desktop-size) {
+        @include grid-media($grid-tablet) {
           @include grid-column(4);
         }
 
-        @include media($largedesktop-size) {
-          @include grid-column(3);
+        @include grid-media($grid-desktop) {
+          @include grid-column(4);
         }
       }
     }
@@ -39,6 +36,8 @@
 
       .thumbnail-wrapper {
         position: relative;
+        overflow: hidden;
+
         a {
 
           h3 {
@@ -52,8 +51,20 @@
             opacity: 0;
           }
 
+          &:hover img {
+            // transition: transform .2s ease;
+
+            // -webkit-transform: scale(2);
+            //    -moz-transform: scale(2);
+            //     -ms-transform: scale(2);
+            //      -o-transform: scale(2);
+            //         transform: scale(2);
+          }
+
           &:hover p {
             @include element-padding;
+            transition: opacity .3s ease-in-out;
+
             display: block;
             width: 100%;
             background-color: blue;
@@ -62,14 +73,12 @@
             bottom: 64px;
             margin: 0;
             padding: $page-element-padding;
-
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
             clip: auto;
             opacity: 0.75;
-            transition: opacity 1s ease-in-out;
             text-align: center;
 
             span {

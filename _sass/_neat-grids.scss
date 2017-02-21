@@ -7,13 +7,13 @@ $neat-grid: (
 //Tablet
 $grid-tablet: (
   columns: 12,
-  gutter: 24px,
+  gutter: 28px,
   media: $tablet-size,
 );
 
 //Desktop
 $grid-desktop: (
   columns: 12,
-  gutter: 28px,
+  gutter: 32px,
   media: $desktop-size,
 );

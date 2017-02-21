@@ -4,12 +4,14 @@ layout: compress
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body>
-  {% include header.html %}
-  <main{% if page.class %} class="{{ page.class }}"{% endif %} id="maincontent">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-  {% include scripts.html %}
+<body{% if page.accent %} class="{% include accent.html %}"{% endif %}>
+  <div class="global-wrapper">
+    {% include header.html %}
+    <main{% if page.class %} class="{{ page.class }}"{% endif %} id="maincontent">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </div>
 </body>
 </html>

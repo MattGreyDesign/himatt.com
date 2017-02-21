@@ -1,7 +1,7 @@
 %btn {
   @include element-padding;
 
-  @include media($mobile-size) {
+  @include grid-media($grid-desktop) {
     display: inline-block;
     width: auto;
   }

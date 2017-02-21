@@ -12,15 +12,8 @@
 
   {% if page.accent %}
   <style>
-    .accent {
+    body.accent {
       background-color: {{ page.accent.color }};
-      p {
-        color: red;
-      }
-    }
-
-    p a, li a {
-      border-color: {{ page.accent.color }};
     }
   </style>
   {% endif %}

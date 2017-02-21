@@ -1,11 +1,12 @@
-body > header {
+.global-wrapper > header {
   .header-content {
+
 
     .logo-nav-wrapper {
        @include grid-container;
 
       .logo-title-wrapper {
-        @include grid-column(12);
+        @include grid-column(9);
 
         @include grid-media($grid-tablet){
           @include grid-column(6);
@@ -17,8 +18,7 @@ body > header {
       }
 
       nav.navigation {
-        @include grid-column(12);
-        background: orange;
+        @include grid-column(3);
 
         @include grid-media($grid-tablet) {
           @include grid-column(6);
@@ -59,8 +59,13 @@ body > header {
     }
 
     .logo {
+      transition: width 200ms ease,
+                  margin-right 200ms ease,;
       vertical-align: top;
       display: inline-block;
+      margin-right: 1em;
+      width: 56px;
+      height: 56px;
 
       a {
         &:focus,
@@ -72,6 +77,11 @@ body > header {
           border-left: none;
           opacity: 1;
           outline: 0;
+        }
+
+        svg {
+          height: 100%;
+          width: 100%;
         }
       }
 
@@ -94,13 +104,13 @@ body > header {
     }
 
     h1 {
-      margin-left: .4em;
-      vertical-align: center;
+      transition: font-size 200ms ease,
+                  margin-top 200ms ease;
       color: white;
       margin-top: .1em;
       letter-spacing: .02em;
-      font-size: $font-size-xxxxlarge;
-      line-height: 1.1;
+      font-size: 1.95rem;
+      line-height: 1.5;
     }
   }
 
@@ -130,7 +140,59 @@ body > header {
   }
 }
 
+// Sticky header behaviour
+.global-wrapper > header {
+  will-change: transform,
+               background,
+               padding-top,
+               padding-bottom;
 
-body > header, body > footer {
+  transition: transform 200ms ease,
+              background 200ms ease,
+              padding-top 300ms ease,
+              padding-bottom 200ms ease;
 
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  padding-top: $measure-medium;
+  padding-bottom: $measure-small;
+
+  &.slideDown {
+    transform: translateY(0%);
+  }
+
+  &.slideUp {
+    transform: translateY(-100%);
+  }
+
+  &.top {
+
+  }
+
+  &.notTop {
+    background: $site-background-color;
+    padding-top: $measure-xsmall;
+    padding-bottom: $measure-xsmall;
+
+    .logo {
+      width: 44px;
+      margin-right: .6em;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 0.35em;
+    }
+  }
+
+  &.end {
+    transform: translateY(0%);
+  }
+
+  &.notEnd {
+  }
 }

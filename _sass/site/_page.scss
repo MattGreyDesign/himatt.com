@@ -15,41 +15,32 @@ body {
   background: $site-background-color;
 }
 
-main {
-  //background: red;
+.global-wrapper {
+  margin-top: 144px;
 }
 
+.header-content,
+main,
+footer {
+  margin-left: auto;
+  margin-right: auto;
 
-// Page element stacking order
-body {
- // z-index: 0;
+  @include grid-media($grid-tablet) {
+    max-width: $desktop-size;
+  }
 
- //  & > header {
-
- //    z-index: 1;
-
- //    & > nav {
- //      z-index: 2;
- //    }
-
- //  }
-
- //  & > main {
- //    z-index: inherit;
- //  }
-
- //  & > footer {
- //    z-index: inherit;
- //  }
+  @include grid-media($grid-tablet) {
+    max-width: $largedesktop-size;
+  }
 }
 
-// body.prevent-scroll {
-//   position: fixed;
-//   width: 100%;
-// }
+body.prevent-scroll {
+  position: fixed;
+  width: 100%;
+}
 
-// @include media($tablet-size) {
-//   body.prevent-scroll {
-//     position: relative;
-//   }
-// }
+@include grid-media($grid-tablet) {
+  body.prevent-scroll {
+    position: relative;
+  }
+}

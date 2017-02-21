@@ -1,14 +1,3 @@
-// @include media-query($mobile) { ... }
-// will compile to:
-//
-// @media only screen and (max-width: 480px) { ... }
-
-@mixin media($device: $desktop) { //desktop for default
-  @media only screen and ($device) {
-    @content;
-  }
-}
-
 @mixin visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -41,7 +30,7 @@
 
   padding: $set-padding-mobile;
 
-  @include media($mobile-size) {
+  @include grid-media($grid-desktop) {
     padding: $set-padding-desktop;
   }
 }
@@ -63,7 +52,7 @@
 
   margin: $set-margin-mobile;
 
-  @include media($mobile-size) {
+  @include grid-media($grid-desktop) {
     margin: $set-margin-desktop;
   }
 }

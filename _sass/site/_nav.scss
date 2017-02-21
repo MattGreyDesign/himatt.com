@@ -1,4 +1,6 @@
-body > header nav {
+.global-wrapper > header nav {
+  position: relative;
+  z-index: 100;
 
   &:before {
     opacity: 0;
@@ -19,7 +21,7 @@ body > header nav {
       bottom: 0;
       opacity: 1;
 
-      @include media($desktop-size) {
+      @include grid-media($grid-tablet) {
         display: none;
       }
     }
@@ -46,7 +48,7 @@ body > header nav {
     margin-top: 5px;
     border: 1px solid white;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
     color: white;
     text-decoration: none;
     position: static;
@@ -57,7 +59,7 @@ body > header nav {
       outline: 0;
     }
 
-    @include media($mobile-size) {
+    @include grid-media($grid-tablet) {
       display: none;
     }
   }
@@ -78,7 +80,7 @@ body > header nav {
     background: $site-color;
     border: 1px solid white;
     font-size: $font-size-xlarge;
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
     height: auto;
 
     li {
@@ -96,14 +98,23 @@ body > header nav {
         display: block;
         padding: $page-inner-padding-mobile;
 
-        &:hover,
+        &:hover {
+          background: rgba(#fff, .2);
+        }
         &.current {
-          background: rgba(#fff, 0.2);
+          background: rgba(#fff, .8);
+          &:after {
+            content: 'Current section';
+            text-transform: uppercase;
+            float: right;
+            font-size: 0.8em;
+            margin-top: 3px;
+          }
         }
       }
     }
 
-    @include media($mobile-size) {
+    @include grid-media($grid-tablet) {
       display: block;
       max-height: none;
       position: static;
@@ -111,12 +122,13 @@ body > header nav {
       background: inherit;
       opacity: 1;
       border: 0;
+      margin-top: 10px;
 
       li {
         display: inline-block;
         position: relative;
         padding-left: 1em;
-        padding-bottom: 1em;
+        padding-bottom: .6em;
         border: 0;
 
         a {
@@ -147,6 +159,10 @@ body > header nav {
             border-left: none;
             opacity: 1;
             background: inherit;
+
+            &:after {
+              @include visually-hidden;
+            }
           }
         }
       }

@@ -12,6 +12,8 @@
 
 //Base
 @import "site/base/variables";
+@import "neat-grids";
+
 @import "site/base/extends";
 @import "site/base/mixins-functions";
 @import "site/base/typography";
@@ -21,16 +23,12 @@
 @import "site/base/buttons";
 @import "site/base/forms";
 
-@import "neat-grids";
 
 // Partials / organisms
 @import "site/page";
 @import "site/header";
 @import "site/footer";
 @import "site/nav";
-
-// // Components
-// //@import "site/components/page-list";
 
 // // Layouts
 // @import "site/layouts/project";

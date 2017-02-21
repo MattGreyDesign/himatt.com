@@ -30,7 +30,7 @@ social-username:
   lastfm: "mattdabest"
 
 # Content
-cdn_path: "//static.himatt.com" # <img src="{{ site.cdn_path }}/projects/img.jpg">
+image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
 
 # Build settings
 markdown: kramdown

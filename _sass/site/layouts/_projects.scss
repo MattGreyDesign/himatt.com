@@ -35,62 +35,52 @@
       }
 
       .thumbnail-wrapper {
-        position: relative;
-        overflow: hidden;
-
         a {
 
           h3 {
             display: block;
             color: white;
-            background: black;
+            margin-top: .4em;
+            font-size: $font-size-normal;
           }
 
-          p {
-            @include visually-hidden;
-            opacity: 0;
-          }
-
-          &:hover img {
-            // transition: transform .2s ease;
-
-            // -webkit-transform: scale(2);
-            //    -moz-transform: scale(2);
-            //     -ms-transform: scale(2);
-            //      -o-transform: scale(2);
-            //         transform: scale(2);
-          }
-
-          &:hover p {
-            @include element-padding;
-            transition: opacity .3s ease-in-out;
-
+          .thumbnail-description-wrapper {
             display: block;
-            width: 100%;
-            background-color: blue;
-            position: absolute;
-            top: 0;
-            bottom: 64px;
-            margin: 0;
-            padding: $page-element-padding;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            clip: auto;
-            opacity: 0.75;
-            text-align: center;
+            position: relative;
+            line-height: 0;
 
-            span {
-              opacity: 1;
-              color: white;
+            p.thumbnail-description {
+              //Initially hidden
+              @include visually-hidden;
+              opacity: 0;
             }
           }
 
-          img {
-            background: $site-background-color;
-            display: block;
-            min-height: 150px;
+          &:hover .thumbnail-description-wrapper p.thumbnail-description {
+              transition: opacity .3s ease-in-out;
+              display: block;
+              width: 100%;
+              background-color: blue;
+              height: 100%;
+              clip: auto;
+              opacity: 0.75;
+              margin: 0;
+              @include element-padding;
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+
+              //center text all ways (text is in span)
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              span {
+                opacity: 1;
+                color: white;
+              }
           }
         }
       }

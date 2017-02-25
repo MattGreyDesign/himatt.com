@@ -59,13 +59,13 @@ releases:
 
   - version: v1.0
     releasedate: 05 January 2012
-    details: >
+    details: |
       - Commercial release
         - Now for sale on Myfonts.com in both regular and rounded versions
 
   - version: v2.0
     releasedate: 06 September 2012
-    details: >
+    details: |
       - New weight
         - Minimal
 
@@ -88,7 +88,7 @@ releases:
 
   - version: v3.0
     releasedate: 13 February 2013
-    details: >
+    details: |
       - New weights
         - Square
         - Outline
@@ -117,7 +117,7 @@ releases:
 
   - version: v3.5 (Closed beta)
     releasedate: 10 December 2015
-    details: >
+    details: |
       - New additions
         - Vine
         - Ask.fm
@@ -134,7 +134,7 @@ releases:
 
   - version: v4.0
     releasedate: 30 December 2016
-    details: >
+    details: |
       - There have been a few changes to the locations of existing icons, so if you cant find them, please refer to the icon map.
       - There are two new utility glyphs that allow you to apply a solid backing to icons, you can find out how to use these on the supplimentary character-map.html webpage provided.
       - Spacing to the left and right of the icons has been removed to allow for more practical and manageable positioning on layouts, for spacing, you can now use space characters (standard spacebar spaces).

@@ -1,22 +1,29 @@
 //Global site layout
 html {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-html {
+figure {
+  margin: 0;
+}
 
+img {
+  display: block;
 }
 
 body {
   background: $site-background-color;
+  color: white;
 }
 
 .global-wrapper {
-  margin-top: 144px;
+  margin-top: 100px;
 }
 
 .header-content,
@@ -31,16 +38,5 @@ footer {
 
   @include grid-media($grid-tablet) {
     max-width: $largedesktop-size;
-  }
-}
-
-body.prevent-scroll {
-  position: fixed;
-  width: 100%;
-}
-
-@include grid-media($grid-tablet) {
-  body.prevent-scroll {
-    position: relative;
   }
 }

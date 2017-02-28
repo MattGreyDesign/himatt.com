@@ -21,6 +21,8 @@
       a.license {
         text-decoration: none;
 
+        @include decorative-line-top;
+
         &:hover {
           border-bottom: 1px solid;
         }

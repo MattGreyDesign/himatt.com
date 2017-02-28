@@ -5,10 +5,6 @@ permalink: /about/
 priority: 0.8
 ---
 
-> “Some people think design means how it looks. But of course, if you dig deeper, it’s really how it works.”
->
-> — Steve Jobs, former CEO, Apple
-
 ## Some things
 I am a multi-disciplined designer, particularly focussed around User Experience (UX) and Usability.
 
@@ -16,29 +12,31 @@ I currently live and work as a UX designer in Southampton at [Alliants](http://a
 
 I studied Graphic Design at [Falmouth University](https://www.falmouth.ac.uk/graphicdesign).
 
-I mainly design multi-platform websites and apps, produce typefaces and develop branding.
+I design multi-platform websites and apps, produce typefaces and develop branding.
 
-I also work with print and illustration. In the past I have worked on album artwork, brochures and books.
+I also work with print and illustration on album artwork, brochures and books.
 
 I have an addiction to music.
 
-In my spare time I paint, cycle, travel.
+In my spare time I cycle, travel, ski.
 
-## What I know
+## What I use
 
 ### Tools
 - Sketch app
-- Adobe Suite
+- Adobe Creative Cloud Suite
+- Flinto
+- Glyphs app
 
 ### Languages and frameworks
-- HTML5
-- CSS, [Sass (SCSS)](http://sass-lang.com/) and media queries
+- HTML
+- CSS, [SASS (SCSS)](http://sass-lang.com/) and media queries
 - Jekyll
 
 ## This site
 Designed and made by Matt Grey, built from scratch using [Jekyll](https://jekyllrb.com/).
 
-Styles are mobile first and responsive and utilised [Sass](http://sass-lang.com/), [Bourbon Neat](http://neat.bourbon.io/) for the grid, and [Normalize.css](http://github.com/necolas/normalize.css).
+Styles are mobile first and responsive and utilised [SASS](http://sass-lang.com/), [Bourbon Neat](http://neat.bourbon.io/) for the grid, and [Normalize.css](http://github.com/necolas/normalize.css).
 
 The typeface used is [HK Grotesk](https://www.behance.net/gallery/28749913/HK-Grotesk-Open-Source-Typeface), from [Alfredo Marco Pradil](http://alfredomarcopradil.com/).
 

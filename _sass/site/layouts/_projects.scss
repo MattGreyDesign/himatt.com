@@ -7,7 +7,7 @@
     .projects {
 
       > article.project-listing {
-        @include grid-column(6);
+        @include grid-column(12);
 
         @include grid-media($grid-tablet) {
           @include grid-column(4);
@@ -22,7 +22,6 @@
 }
 
 //Styling
-
 .projects-page {
 
   .projects-wrapper {
@@ -36,6 +35,11 @@
 
       .thumbnail-wrapper {
         a {
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
 
           h3 {
             display: block;
@@ -47,7 +51,7 @@
           .thumbnail-description-wrapper {
             display: block;
             position: relative;
-            line-height: 0;
+            line-height: 1;
 
             p.thumbnail-description {
               //Initially hidden
@@ -57,30 +61,31 @@
           }
 
           &:hover .thumbnail-description-wrapper p.thumbnail-description {
-              transition: opacity .3s ease-in-out;
-              display: block;
-              width: 100%;
-              background-color: blue;
-              height: 100%;
-              clip: auto;
-              opacity: 0.75;
-              margin: 0;
-              @include element-padding;
-              position: absolute;
-              top: 0;
-              right: 0;
-              left: 0;
-              bottom: 0;
+            transition: opacity .3s ease-in-out;
+            display: block;
+            width: 100%;
+            background-color: blue;
+            height: 100%;
+            clip: auto;
+            opacity: 0.75;
+            margin: 0;
+            @include element-padding;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
 
-              //center text all ways (text is in span)
-              display: flex;
-              align-items: center;
-              justify-content: center;
+            //center text all ways (text is in span)
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
 
-              span {
-                opacity: 1;
-                color: white;
-              }
+            span {
+              opacity: 1;
+              color: white;
+            }
           }
         }
       }

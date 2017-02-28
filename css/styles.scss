@@ -23,15 +23,16 @@
 @import "site/base/buttons";
 @import "site/base/forms";
 
-
-// Partials / organisms
-@import "site/page";
-@import "site/header";
-@import "site/footer";
-@import "site/nav";
+// Components
+@import "site/components/header";
+@import "site/components/nav";
+@import "site/components/page-title";
+@import "site/components/footer";
 
 // // Layouts
-// @import "site/layouts/project";
+@import "site/page";
+
+@import "site/layouts/project";
 @import "site/layouts/projects";
 // @import "site/layouts/font";
 // @import "site/layouts/about";

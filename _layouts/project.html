@@ -1,40 +1,62 @@
 ---
 layout: default
+title-class: project
 ---
+<div class="project-wrapper">
+  <div class="project-info">
+    <section class="project-intro">{{ page.intro | markdownify  }}</section>
+    <aside class="project-details">
+      <div class="project-detail-wrapper">
 
-<section>{{ page.intro | markdownify  }}</section>
-<aside>
-  <p>{{ page.time_period }}</p>
-  {% if page.disciplines %}
-  <ul>
-  {% for discipline in page.disciplines %}
-    <li>{{ discipline }}</li>
-  {% endfor %}
-  </ul>
-  {% endif %}
-</aside>
+        {% if page.disciplines %}
+        <div class="project-detail-6 project-detail-first">
+          <h3 class="project-detail-property-title">Disciplines</h3>
+          <p>{{ page.disciplines }}</p>
+        </div>
+        {% endif %}
 
-<section>
-{% for entry in page.image_content %}
+        {% if page.time_period %}
+        <div class="project-detail-6">
+          <h3 class="project-detail-property-title">Year</h3>
+          <p>{{ page.time_period }}</p>
+        </div>
+        {% endif %}
 
-  <div class="{{ entry.section_layout }}">
-
-    {% for image in entry.images %}
-
-      {% capture stored_caption %}{% if image.description %}{{ image.description }}{% elsif image.caption %}{{ image.caption }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
-
-      <figure class="image-wrapper">
-        <img src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ stored_caption }}">
-        {% if image.description %}<figcaption>{{ image.description }}</figcaption>{% endif %}
-      </figure>
-
-    {% endfor %}
-
+        {% if page.website %}
+        <div class="project-detail-12">
+          <a href="{{ page.website.url }}" class="button-secondary">{{ page.website.button_text }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </aside>
   </div>
 
-{% endfor %}
-</section>
+  <section>
+  {% for entry in page.image_content %}
 
-<section>
-  {{ content }}
-</section>
+    <div class="layout-{{ entry.section_layout }}">
+
+      {% for image in entry.images %}
+
+        {% capture stored_caption %}{% if image.description %}{{ image.description }}{% elsif image.caption %}{{ image.caption }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
+
+        <figure class="image-wrapper">
+          <img src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ stored_caption }}">
+          {% if image.description %}<figcaption>{{ image.description }}</figcaption>{% endif %}
+        </figure>
+
+      {% endfor %}
+
+    </div>
+
+  {% endfor %}
+  </section>
+
+  {% if page.content %}
+  <section class="additional-content-wrapper">
+    <div class="additional-content">
+      {{ content }}
+    </div>
+  </section>
+  {% endif %}
+</div>

@@ -1,23 +1,26 @@
 ---
 date: 2014-02-20
-layout: project
 published: true
 title: "Press to Press"
 description: "The evolution of type on vinyl"
 categories: print, music
-disciplines:
-  - Illustration
-  - Typography
-  - Print
-  - Bookbinding
+disciplines: Print, Typography, Bookbinding, Illustration
+media: Book
+ownership: Personal
+client:
+time_period: 2014
 thumbnail: "/projects/press-to-press/plist-press-to-press.png"
 accent:
-time_period: 2014
+  color:
+  inverted:
+website:
+  button_text: Go to website
+  url: http://www.himatt.com
 
 intro: |
-  Press to Press is a very large concertina book documenting the various archetypal typographical styles associated with the subgenres of rock music with respect to vinyl covers, from Rock ‘n’ roll and Psychedelia to Punk and Indie.
+  Press to Press is a very large concertina book documenting various archetypal typographical styles associated with the subgenres of rock music, in respect to vinyl album covers.
 
-  The pages follow a chronological journey through the genres' defining decades, featuring hand crafted typography and lettering in a seamless stream, comparing influences and reasoning on the way. The book itself spans almost two metres when opened out and fits into a seven inch sleeve.
+  The pages follow a chronological journey through the defining decades of each genre, featuring hand crafted typography and lettering in a seamless stream, comparing influences and reasoning on the way. The book itself spans almost two metres when opened out, and fits into a seven inch sleeve.
 
 image_content:
   - section_layout: 1col

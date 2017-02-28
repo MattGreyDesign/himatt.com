@@ -1,6 +1,5 @@
 ---
 date: 2017-02-20
-layout: project
 published: true
 title: "Starta Space"
 description: "An ongoing project to create site/portfolio building service"

@@ -5,5 +5,6 @@ $(document).ready(function() {
       return label === 'Menu' ? '&times; Close' : 'Menu'
     })
     $("body").toggleClass("prevent-scroll");
+    $("header.main-header").toggleClass("prevent-scroll");
   });
 });

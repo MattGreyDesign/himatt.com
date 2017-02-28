@@ -8,14 +8,22 @@ priority: 0.8
 <div class="contact-wrapper">
 
   <div class="contact">
-    <aside>
-      <p>Blurb explaining how to contact me.</p>
+    <aside class="">
+      <p>Drop me a message</p>
+
+      <p>
+        You can follow me on <a href="https://twitter.com/{{ site.social-username.twitter }}">Twitter</a>
+        and <a href="https://instagram.com/{{ site.social-username.instagram }}">Instagram</a>, connect with me on
+        <a href="https://linkedin.com/in/{{ site.social-username.linkedin }}">Linkedin</a>,
+        read my articles on <a href="https://medium.com/{{ site.social-username.medium }}">Medium</a>,
+        see the inspiration I collect on <a href="https://pinterest.com/{{ site.social-username.pinterest }}">Pinterest</a>, or even
+        see what I'm listening to on <a href="https://spotify.com/user/{{ site.social-username.spotify }}">Spotify</a> and <a href="https://last.fm/user/{{ site.social-username.lastfm }}">Last.fm</a>.
+      </p>
     </aside>
 
-    <article>
+    <div class="contact-form-wrapper">
       <form action="https://getsimpleform.com/messages?form_api_token=00cc1007b3bff2ea60bb86e9bb4d9c49" method="post">
-        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+        <input type='hidden' name='redirect_to' value='{{ site.url }}/message-success' />
 
         <fieldset>
           <section>
@@ -36,7 +44,7 @@ priority: 0.8
           <input class="button-primary" type="submit" value="Send Message">
         </fieldset>
       </form>
-  </article>
+    </div>
   </div>
 
 </div>

@@ -8,6 +8,8 @@ layout: compress
   <div class="global-wrapper">
     {% include header.html %}
     <main{% if page.class %} class="{{ page.class }}"{% endif %} id="maincontent">
+      {% include page-title.html %}
+
       {{ content }}
     </main>
     {% include footer.html %}

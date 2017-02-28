@@ -1,6 +1,5 @@
 ---
 date: 2017-02-20
-layout: font
 published: false
 title: "Kunst"
 description: "Purely geometric"

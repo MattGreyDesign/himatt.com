@@ -1,6 +1,11 @@
 .global-wrapper > header {
-  .header-content {
 
+  //Prevent header from hiding
+  &.prevent-scroll {
+    transform: translateY(0%) !important;
+  }
+
+  .header-content {
 
     .logo-nav-wrapper {
        @include grid-container;
@@ -91,26 +96,26 @@
     }
   }
 
-  .page-title {
-    display: inline-block;
-    max-width: 400px;
-    hyphens: none;
+  .desktop-page-title {
+    display: none;
 
-    h2 {
-      color: white;
-      font-size: $font-size-small;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
+    @include grid-media($grid-desktop) {
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;
+      height: auto;
+      width: auto;
+      display: inline-block;
+      overflow: hidden;
+      max-width: 400px;
 
-    h1 {
-      transition: font-size 200ms ease,
-                  margin-top 200ms ease;
-      color: white;
-      margin-top: .1em;
-      letter-spacing: .02em;
-      font-size: 1.95rem;
-      line-height: 1.5;
+      h1 {
+        font-size: 1.5rem;
+        color: white;
+        margin-top: .45em;
+        letter-spacing: .02em;
+        line-height: 1.3;
+        hyphens: auto;
+      }
     }
   }
 
@@ -183,9 +188,12 @@
       margin-right: .6em;
     }
 
-    h1 {
-      font-size: 1.5rem;
-      margin-top: 0.35em;
+    .desktop-page-title {
+      @include grid-media($grid-tablet) {
+        opacity: 1;
+        height: auto;
+        width: auto;
+      }
     }
   }
 

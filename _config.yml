@@ -27,6 +27,7 @@ social-username:
   pinterest: "mattgreydesign"
   instagram: "mattgreydesign"
   flickr: "mattgreydesign"
+  spotify: "mattgreydesign"
   lastfm: "mattdabest"
 
 # Content
@@ -69,3 +70,15 @@ collections:
   fonts:
     output: true
     permalink: /fonts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "fonts"
+    values:
+      layout: "font"

@@ -1,0 +1,132 @@
+.project-wrapper {
+
+  .project-info {
+
+    @include grid-container;
+
+    .project-intro {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(7);
+        @include grid-shift(2);
+      }
+    }
+
+    .project-details {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(2);
+        @include grid-push(2);
+      }
+    }
+  }
+
+  .layout-2col {
+    @include grid-container;
+
+    .image-wrapper{
+      @include grid-column(6);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(6);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(6);
+      }
+    }
+  }
+
+  .layout-1col,
+  .additional-content-wrapper {
+    @include grid-container;
+
+    .image-wrapper,
+    .additional-content {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(12);
+      }
+    }
+  }
+
+  .project-details {
+    .project-detail-wrapper {
+      @include grid-container;
+      @include grid-collapse;
+
+      .project-detail-6 {
+        @include grid-column(6);
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(3);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(12);
+        }
+      }
+
+      .project-detail-12 {
+        @include grid-column(12);
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(3);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(12);
+        }
+      }
+    }
+  }
+
+  .image-wrapper {
+    @include responsive-padding;
+
+    figcaption {
+      margin-top: $measure-xsmall;
+      margin-bottom: $measure-small;
+    }
+  }
+
+  .project-intro {
+    margin-bottom: $measure-medium;
+  }
+
+  .project-details {
+    margin-bottom: $measure-medium;
+
+    .project-detail-wrapper {
+      .project-detail-property-title {
+        color: $color-white-fade;
+        font-size: $font-size-small;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing-medium;
+        margin-top: .5em;
+        margin-bottom: .4em;
+      }
+    }
+
+    .project-detail-first {
+      position: relative;
+
+      @include decorative-line-top;
+    }
+  }
+}

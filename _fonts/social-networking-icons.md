@@ -1,6 +1,5 @@
 ---
 date: 2017-02-21
-layout: font
 published: true
 title: "Social Networking Icons"
 description: "An icon font"

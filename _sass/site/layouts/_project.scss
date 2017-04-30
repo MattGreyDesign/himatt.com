@@ -1,5 +1,6 @@
 .project-wrapper {
 
+  //Layout
   .project-info {
 
     @include grid-container;
@@ -62,6 +63,25 @@
     }
   }
 
+  .project-text {
+    @include grid-container;
+
+    .project-text-wrapper {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(7);
+        @include grid-shift(1);
+      }
+    }
+  }
+
+  //Styles
+
   .image-wrapper {
     @include responsive-padding;
 
@@ -69,8 +89,13 @@
       margin-top: $measure-xsmall;
       margin-bottom: $measure-small;
     }
+
+    &.nudge-down-5 {
+      margin-top: 5%;
+    }
   }
 
+  .project-hero,
   .project-intro {
     margin-bottom: $measure-medium;
   }
@@ -94,5 +119,9 @@
 
       @include decorative-line-top;
     }
+  }
+
+  .project-text {
+    margin-bottom: $measure-small;
   }
 }

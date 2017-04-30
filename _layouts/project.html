@@ -2,21 +2,23 @@
 layout: default
 title-class: project
 ---
-
-{% unless page_layout_mode == hero %}
-  {% for entry in page.image_content %}
-    {% if forloop.index0 == 1 %}
-      {% break %}
-    {% endif %}
-
-    {% include layout.html %}
-
-  {% endfor %}
-{% endunless %}
-
 <div class="project-wrapper">
+
+{% if page.layout_mode == 'hero' %}
+  <div class="project-hero">
+    {% for entry in page.image_content %}
+      {% if forloop.index0 == 1 %}
+        {% break %}
+      {% endif %}
+
+      {% include layout.html %}
+
+    {% endfor %}
+  </div>
+{% endif %}
+
   <div class="project-info">
-    <section class="project-intro">{{ page.intro | markdownify  }}</section>
+    <section class="project-intro">{{ page.intro | markdownify }}</section>
     <aside class="project-details">
       <div class="project-detail-wrapper">
 
@@ -45,11 +47,11 @@ title-class: project
 
   <section>
   {% for entry in page.image_content %}
-    {% unless page.layout_mode == 'hero' %}
+    {% if page.layout_mode == 'hero' %}
       {% if forloop.index0 == 0 %}
         {% continue %}
       {% endif %}
-    {% endunless %}
+    {% endif %}
 
     {% include layout.html %}
 

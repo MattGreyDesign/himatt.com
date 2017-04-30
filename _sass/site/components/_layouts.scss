@@ -19,7 +19,7 @@
 .layout-2col {
   @include grid-container;
 
-  .image-wrapper{
+  .image-wrapper {
     @include grid-column(6);
 
     @include grid-media($grid-tablet) {
@@ -35,7 +35,7 @@
 .layout-2col {
   @include grid-container;
 
-  .image-wrapper{
+  .image-wrapper {
     @include grid-column(6);
 
     @include grid-media($grid-tablet) {
@@ -51,7 +51,7 @@
 .layout-3col {
   @include grid-container;
 
-  .image-wrapper{
+  .image-wrapper {
     @include grid-column(4);
 
     @include grid-media($grid-tablet) {
@@ -60,6 +60,34 @@
 
     @include grid-media($grid-desktop) {
       @include grid-column(4);
+    }
+  }
+}
+
+.layout-5col-7col {
+  @include grid-container;
+
+  figure:first-child {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(5);
+    }
+  }
+
+  figure:last-child {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(7);
     }
   }
 }

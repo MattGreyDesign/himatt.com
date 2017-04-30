@@ -48,6 +48,7 @@ image_content:
         url: '/projects/press-to-press/press-to-press-cover-back.png'
         width:
         height:
+
   - section_layout: 1col
     images:
       - caption:
@@ -60,4 +61,5 @@ image_content:
         url: '/projects/press-to-press/press-to-press-albums.jpg'
         width:
         height:
+
 ---

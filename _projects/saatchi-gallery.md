@@ -12,7 +12,7 @@ client:
 time_period: 2014
 thumbnail: "/projects/press-to-press/plist-press-to-press.png"
 accent:
-  color:
+  color: 353535
   inverted:
 website:
   button_text:

@@ -1,3 +1,10 @@
+//Variables
+$animation-time-in: .3s;
+$animation-ease-in: ease-in-out;
+
+$animation-time-out: .2s;
+$animation-ease-out: ease-in-out;
+
 //Layout
 .projects-page {
 
@@ -10,7 +17,7 @@
         @include grid-column(12);
 
         @include grid-media($grid-tablet) {
-          @include grid-column(4);
+          @include grid-column(6);
         }
 
         @include grid-media($grid-desktop) {
@@ -55,36 +62,76 @@
 
             p.thumbnail-description {
               //Initially hidden
-              @include visually-hidden;
               opacity: 0;
+
+              //animate out
+              transition-property: opacity;
+              transition-timing-function: $animation-ease-out;
+              transition-duration: $animation-time-out;
+
+              @include element-padding;
+
+              display: block;
+              background-color: blue;
+              margin: 0;
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              line-height: 1;
+
+              //center text all ways (text is in span)
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+
+              span.thumbnail-tag-media {
+                display: block;
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+              }
+
+              span {
+                color: white;
+                line-height: 1.4;
+
+                //offset for drop-in
+                -webkit-transform-style: preserve-3d;
+                transform: translate3d(0, 10px, 0);
+
+                //animate drop-in out
+                transition-property: transform;
+                transition-timing-function: $animation-ease-out;
+                transition-duration: $animation-time-out;
+              }
             }
           }
 
           &:hover .thumbnail-description-wrapper p.thumbnail-description {
-            transition: opacity .3s ease-in-out;
-            display: block;
-            width: 100%;
-            background-color: blue;
-            height: 100%;
-            clip: auto;
+            //semi-transparent background
             opacity: 0.75;
-            margin: 0;
-            @include element-padding;
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
 
-            //center text all ways (text is in span)
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            //animate fade in
+            transition-property: opacity;
+            transition-timing-function: $animation-ease-in;
+            transition-duration: $animation-time-in;
 
             span {
+              display: block;
+
+              //full opacity text
               opacity: 1;
-              color: white;
+
+              //drop-in is reset back to original position
+              transform: translate3d(0,0,0);
+
+              //animate drop-in in
+              transition-property: transform;
+              transition-timing-function: $animation-ease-in;
+              transition-duration: $animation-time-in;
             }
           }
         }

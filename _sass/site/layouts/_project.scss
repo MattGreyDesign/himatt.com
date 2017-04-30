@@ -13,7 +13,7 @@
 
       @include grid-media($grid-desktop) {
         @include grid-column(7);
-        @include grid-shift(2);
+        @include grid-shift(1);
       }
     }
 
@@ -27,40 +27,6 @@
       @include grid-media($grid-desktop) {
         @include grid-column(2);
         @include grid-push(2);
-      }
-    }
-  }
-
-  .layout-2col {
-    @include grid-container;
-
-    .image-wrapper{
-      @include grid-column(6);
-
-      @include grid-media($grid-tablet) {
-        @include grid-column(6);
-      }
-
-      @include grid-media($grid-desktop) {
-        @include grid-column(6);
-      }
-    }
-  }
-
-  .layout-1col,
-  .additional-content-wrapper {
-    @include grid-container;
-
-    .image-wrapper,
-    .additional-content {
-      @include grid-column(12);
-
-      @include grid-media($grid-tablet) {
-        @include grid-column(12);
-      }
-
-      @include grid-media($grid-desktop) {
-        @include grid-column(12);
       }
     }
   }

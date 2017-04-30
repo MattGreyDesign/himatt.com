@@ -51,14 +51,14 @@
   }
 }
 
-
 .button-secondary {
   @extend %btn;
   border: 1px solid $site-accent-color;
   color: $site-accent-color;
 
   &:hover {
-    background: rgba($site-accent-color, 0.2);
+    background: $site-accent-color;
+    color: black;
   }
 
   &:active {

@@ -5,8 +5,7 @@ permalink: /about/
 priority: 0.8
 ---
 
-## Some things
-I am a multi-disciplined designer, particularly focussed around User Experience (UX) and Usability.
+Matt Grey is a multi-disciplined designer, particularly focussed around Product design, User Experience (UX) and Usability.
 
 I currently live and work as a UX designer in Southampton at [Alliants](http://alliants.com).
 
@@ -38,6 +37,6 @@ Designed and made by Matt Grey, built from scratch using [Jekyll](https://jekyll
 
 Styles are mobile first and responsive and utilised [SASS](http://sass-lang.com/), [Bourbon Neat](http://neat.bourbon.io/) for the grid, and [Normalize.css](http://github.com/necolas/normalize.css).
 
-The typeface used is [HK Grotesk](https://www.behance.net/gallery/28749913/HK-Grotesk-Open-Source-Typeface), from [Alfredo Marco Pradil](http://alfredomarcopradil.com/).
+The typeface used is [HK Grotesk Pro](https://hanken.co/product/hk-grotesk-pro/), designed by [Alfredo Marco Pradil](http://alfredomarcopradil.com/) at Hanken Design Co.
 
-Other tools and libraries used include [jQuery](https://jquery.com/), [Zammu SimpleForm](https://getsimpleform.com/), [Dropbox](http://dropbox.com) and [Google Analytics](http://google.com/analytics).
+Other tools and libraries used include [jQuery](https://jquery.com/), [Headspace](https://github.com/gdub22/headspace) [Zammu SimpleForm](https://getsimpleform.com/), and [Google Analytics](http://google.com/analytics).

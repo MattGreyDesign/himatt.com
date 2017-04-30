@@ -1,0 +1,65 @@
+.layout-1col,
+.additional-content-wrapper {
+  @include grid-container;
+
+  .image-wrapper,
+  .additional-content {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(12);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(12);
+    }
+  }
+}
+
+.layout-2col {
+  @include grid-container;
+
+  .image-wrapper{
+    @include grid-column(6);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(6);
+    }
+  }
+}
+
+.layout-2col {
+  @include grid-container;
+
+  .image-wrapper{
+    @include grid-column(6);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(6);
+    }
+  }
+}
+
+.layout-3col {
+  @include grid-container;
+
+  .image-wrapper{
+    @include grid-column(4);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(4);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(4);
+    }
+  }
+}

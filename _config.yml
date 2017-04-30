@@ -6,17 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 gems: [bourbon, neat]
-exclude: ['README.markdown']
+exclude: ['readme.md, Gemfile, Gemfile.lock']
 
 # Site settings
 title: Matt Grey Design
 email: info@himatt.com
 description: "Portfolio of graphic, UX and type designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://himatt.com" # the base hostname & protocol for your site
+url: "//himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
 year: 2017
-sitemap: false
+sitemap: true
 
 # Social networks
 social-username:

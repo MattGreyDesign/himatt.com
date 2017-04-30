@@ -2,6 +2,18 @@
 layout: default
 title-class: project
 ---
+
+{% unless page_layout_mode == hero %}
+  {% for entry in page.image_content %}
+    {% if forloop.index0 == 1 %}
+      {% break %}
+    {% endif %}
+
+    {% include layout.html %}
+
+  {% endfor %}
+{% endunless %}
+
 <div class="project-wrapper">
   <div class="project-info">
     <section class="project-intro">{{ page.intro | markdownify  }}</section>
@@ -22,7 +34,7 @@ title-class: project
         </div>
         {% endif %}
 
-        {% if page.website %}
+        {% if page.website.url %}
         <div class="project-detail-12">
           <a href="{{ page.website.url }}" class="button-secondary">{{ page.website.button_text }}</a>
         </div>
@@ -33,21 +45,13 @@ title-class: project
 
   <section>
   {% for entry in page.image_content %}
+    {% unless page.layout_mode == 'hero' %}
+      {% if forloop.index0 == 0 %}
+        {% continue %}
+      {% endif %}
+    {% endunless %}
 
-    <div class="layout-{{ entry.section_layout }}">
-
-      {% for image in entry.images %}
-
-        {% capture stored_caption %}{% if image.description %}{{ image.description }}{% elsif image.caption %}{{ image.caption }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
-
-        <figure class="image-wrapper">
-          <img src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ stored_caption }}">
-          {% if image.description %}<figcaption>{{ image.description }}</figcaption>{% endif %}
-        </figure>
-
-      {% endfor %}
-
-    </div>
+    {% include layout.html %}
 
   {% endfor %}
   </section>

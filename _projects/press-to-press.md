@@ -2,7 +2,7 @@
 date: 2014-02-20
 published: true
 title: "Press to Press"
-description: "The evolution of type on vinyl"
+description: "A book about the evolution of typography on vinyl record covers"
 categories: print, music
 disciplines: Print, Typography, Bookbinding, Illustration
 media: Book
@@ -14,36 +14,50 @@ accent:
   color:
   inverted:
 website:
-  button_text: Go to website
-  url: http://www.himatt.com
+  button_text:
+  url:
 
 intro: |
-  Press to Press is a very large concertina book documenting various archetypal typographical styles associated with the subgenres of rock music, in respect to vinyl album covers.
+  Press to Press is a very large concertina book documenting various archetypal
+  typographical styles associated with the subgenres of rock music, in respect
+  to vinyl album covers.
 
-  The pages follow a chronological journey through the defining decades of each genre, featuring hand crafted typography and lettering in a seamless stream, comparing influences and reasoning on the way. The book itself spans almost two metres when opened out, and fits into a seven inch sleeve.
+  The pages follow a chronological journey through the defining decades of each
+  genre, featuring hand crafted typography and lettering in a seamless stream,
+  comparing influences and reasoning on the way. The book itself spans almost
+  two metres when opened out, and fits into a seven inch sleeve.
 
 image_content:
   - section_layout: 1col
     images:
       - caption:
-        description:
+        description: 'Full stretch'
         url: '/projects/press-to-press/press-to-press-whole.jpg'
+        width:
+        height:
 
   - section_layout: 2col
     images:
-      - caption: 'Front cover'
-        description:
+      - caption:
+        description: 'Front cover'
         url: '/projects/press-to-press/press-to-press-cover-front.png'
-      - caption: 'Back cover'
-        description:
+        width:
+        height:
+      - caption:
+        description: 'Back cover'
         url: '/projects/press-to-press/press-to-press-cover-back.png'
-
+        width:
+        height:
   - section_layout: 1col
     images:
       - caption:
-        description:
+        description: 'Back full stretch'
         url: '/projects/press-to-press/press-to-press-typography.jpg'
-      - caption:
-        description: 'The back view shows exemplary albums picked from each decade'
+        width:
+        height:
+      - caption: 'The back view shows exemplary albums picked from each decade'
+        description:
         url: '/projects/press-to-press/press-to-press-albums.jpg'
+        width:
+        height:
 ---

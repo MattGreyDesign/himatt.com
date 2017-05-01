@@ -11,10 +11,27 @@
   <meta name="robots" content="noindex" /> <!-- MAKE CONDITIONAL WHEN READY TO GO LIVE -->
 
   {% if page.accent %}
-  <style>
+  {% capture stored_scss %}
+    //Accent styles
     body.accent {
-      background-color: #{{ page.accent.color }};
+      {% if page.accent.background_color %}
+        background: #{{ page.accent.background_color }};
+        {% if page.accent.gradient %}
+          background: linear-gradient({{ page.accent.gradient }});
+
+          .global-wrapper>header.notTop {
+            background: #{{ page.accent.background_color }};
+          }
+        {% endif %}
+        color: #{{ page.accent.color }} !important;
+      {% endif %}
     }
+
+  {% endcapture %}
+
+  <style>
+    {{ stored_scss | scssify }}
   </style>
+
   {% endif %}
 </head>

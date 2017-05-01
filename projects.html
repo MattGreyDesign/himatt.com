@@ -8,7 +8,7 @@ priority: 0.8
 
 <div class="projects-wrapper">
   <div class="projects">
-  {% for project in site.projects limit:include.limit %}
+  {% for project in site.projects reversed limit:include.limit %}
     <article class="project-listing">
       <div class="thumbnail-wrapper">
         <a href="{{ project.url | prepend: site.baseurl }}">

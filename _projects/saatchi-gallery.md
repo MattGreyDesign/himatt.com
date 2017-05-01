@@ -1,18 +1,19 @@
 ---
 date: 2014-11-30
-layout_mode: 'hero'
 published: true
 title: "Saatchi Gallery"
 description: "Re-branding concept for the Saatchi Gallery"
-categories: branding
+categories: branding, digital
 disciplines: Brand, Print, Digital, Typography
 media: Book
 ownership: Personal
 client:
 time_period: 2014
-thumbnail: "/projects/press-to-press/plist-press-to-press.png"
+thumbnail: "/projects/saatchi-gallery/plist-saatchi-gallery.jpg"
 accent:
-  color: 353535
+  background_color:
+  gradient:
+  color:
   inverted:
 website:
   button_text:
@@ -30,27 +31,18 @@ intro: |
   various outlets (in-gallery, online and magazine) has diluted the potential of
   the Saatchi name.
 
-image_content:
-
-image_content:
-  - section_layout: 2col
+content_layout:
+  - section_layout: 5col-7col
     images:
       - caption:
         description: 'Proposed logo'
         url: '/projects/saatchi-gallery/saatchi-logo.png'
+        border: light
         width:
         height:
-
-  - section_layout: 5col-7col
-    images:
       - caption:
-        description: 'Newspaper magazine'
+        description: 'Magazine'
         url: '/projects/saatchi-gallery/saatchi-magazine.jpg'
-        width:
-        height:
-      - caption:
-        description: 'Magazine article'
-        url: '/projects/saatchi-gallery/saatchi-magazine-article.jpg'
         positioning: nudge-down-5
         width:
         height:
@@ -62,12 +54,34 @@ image_content:
       and confidence, which I hinted at in the logo by introducing sharp 45°
       angles which give a suggestion of brash menace.
 
+  - section_layout: 2col
+    images:
+      - caption:
+        description: 'Magazine article'
+        url: '/projects/saatchi-gallery/saatchi-magazine-article.jpg'
+        positioning: nudge-down-5
+        width:
+        height:
+      - caption:
+        description: 'Newspaper magazine'
+        url: '/projects/saatchi-gallery/saatchi-magazine-article-inner.jpg'
+        width:
+        height:
+
   - section_layout: text
     content: |
-      I wanted to re-imagine the brand to project a more more modern image which
+      I wanted to re-imagine the brand to project a more modern image which
       could comfortably extend across digital and print platforms, from the
       responsive website to promotional items such as posters and banners, as
       well as magazines that I chose to be in the format of newspapers to
       reflect the cutting edge, newsworthy art being displayed within the
       gallery.
+
+  - section_layout: 1col
+    images:
+      - caption:
+        description: 'Newspaper magazine'
+        url: '/projects/saatchi-gallery/saatchi-website.jpg'
+        width:
+        height:
 ---

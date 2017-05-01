@@ -6,7 +6,7 @@ title-class: project
 
 {% if page.layout_mode == 'hero' %}
   <div class="project-hero">
-    {% for entry in page.image_content %}
+    {% for entry in page.content_layout %}
       {% if forloop.index0 == 1 %}
         {% break %}
       {% endif %}
@@ -46,7 +46,7 @@ title-class: project
   </div>
 
   <section>
-  {% for entry in page.image_content %}
+  {% for entry in page.content_layout %}
     {% if page.layout_mode == 'hero' %}
       {% if forloop.index0 == 0 %}
         {% continue %}

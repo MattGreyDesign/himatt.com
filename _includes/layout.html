@@ -21,7 +21,7 @@
       {% endcapture %}
 
       <figure class="image-wrapper {{ image.positioning }}">
-        <img src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ stored_description | normalize_whitespace }}">
+        <img class="{{ image.border }}" src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ stored_description | normalize_whitespace }}">
         {% if image.caption %}
           <figcaption>{{ image.caption }}</figcaption>
         {% endif %}

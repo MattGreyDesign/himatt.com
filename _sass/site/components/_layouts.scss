@@ -20,6 +20,39 @@
   @include grid-container;
 
   .image-wrapper {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(6);
+    }
+  }
+}
+
+.layout-1col-10-centered {
+  @include grid-container;
+
+  .image-wrapper {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(12);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(10);
+      @include grid-push(1);
+    }
+  }
+}
+
+.layout-2col_mobile {
+  @include grid-container;
+
+  .image-wrapper {
     @include grid-column(6);
 
     @include grid-media($grid-tablet) {
@@ -32,18 +65,18 @@
   }
 }
 
-.layout-2col {
+.layout-3col.layout-2col_mobile {
   @include grid-container;
 
   .image-wrapper {
     @include grid-column(6);
 
     @include grid-media($grid-tablet) {
-      @include grid-column(6);
+      @include grid-column(4);
     }
 
     @include grid-media($grid-desktop) {
-      @include grid-column(6);
+      @include grid-column(4);
     }
   }
 }
@@ -52,7 +85,7 @@
   @include grid-container;
 
   .image-wrapper {
-    @include grid-column(4);
+    @include grid-column(12);
 
     @include grid-media($grid-tablet) {
       @include grid-column(4);
@@ -67,7 +100,7 @@
 .layout-5col-7col {
   @include grid-container;
 
-  figure:first-child {
+  .image-wrapper:first-child {
     @include grid-column(12);
 
     @include grid-media($grid-tablet) {
@@ -79,7 +112,7 @@
     }
   }
 
-  figure:last-child {
+  .image-wrapper:last-child {
     @include grid-column(12);
 
     @include grid-media($grid-tablet) {
@@ -88,6 +121,34 @@
 
     @include grid-media($grid-desktop) {
       @include grid-column(7);
+    }
+  }
+}
+
+.layout-7col-5col {
+  @include grid-container;
+
+  .image-wrapper:first-child {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(7);
+    }
+  }
+
+  .image-wrapper:last-child {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(5);
     }
   }
 }

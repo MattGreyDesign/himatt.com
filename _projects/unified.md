@@ -1,7 +1,7 @@
 ---
 date: 2016-02-20
 published: true
-title: "Unified"
+title: "Unified Icon Set"
 description: "An extensive icon system with a unified style"
 categories: icons
 disciplines: Icon design
@@ -25,7 +25,7 @@ intro: |
   Unified is an ongoing project with icons being added constantly, to date there
   are around 500 icons, not all yet available for purchase.
 
-image_content:
+content_layout:
   - section_layout: 1col
     images:
       - caption: |

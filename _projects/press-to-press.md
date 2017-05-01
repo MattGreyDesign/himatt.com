@@ -27,7 +27,7 @@ intro: |
   comparing influences and reasoning on the way. The book itself spans almost
   two metres when opened out, and fits into a seven inch sleeve.
 
-image_content:
+content_layout:
   - section_layout: 1col
     images:
       - caption:

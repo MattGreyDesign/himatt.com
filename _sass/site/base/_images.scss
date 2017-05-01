@@ -1,4 +1,9 @@
 img {
   max-width: 100%;
   height: auto;
+
+  //image border
+  &.light {
+    border: 1px solid rgba(white, .3);
+  }
 }

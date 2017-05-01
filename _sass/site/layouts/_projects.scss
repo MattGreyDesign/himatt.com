@@ -42,6 +42,8 @@ $animation-ease-out: ease-in-out;
 
       .thumbnail-wrapper {
         a {
+          outline: 0;
+
           img {
             width: 100%;
             height: auto;
@@ -68,11 +70,10 @@ $animation-ease-out: ease-in-out;
               transition-property: opacity;
               transition-timing-function: $animation-ease-out;
               transition-duration: $animation-time-out;
-
-              @include element-padding;
+              padding: ($measure-xsmall / 1.5) $measure-medium;
 
               display: block;
-              background-color: blue;
+              background-color: rgba(blue, .85);
               margin: 0;
               position: absolute;
               top: 0;
@@ -110,9 +111,11 @@ $animation-ease-out: ease-in-out;
             }
           }
 
-          &:hover .thumbnail-description-wrapper p.thumbnail-description {
+          &:hover .thumbnail-description-wrapper p.thumbnail-description,
+          &:focus .thumbnail-description-wrapper p.thumbnail-description {
+
             //semi-transparent background
-            opacity: 0.75;
+            opacity: 1;
 
             //animate fade in
             transition-property: opacity;
@@ -121,10 +124,6 @@ $animation-ease-out: ease-in-out;
 
             span {
               display: block;
-
-              //full opacity text
-              opacity: 1;
-
               //drop-in is reset back to original position
               transform: translate3d(0,0,0);
 

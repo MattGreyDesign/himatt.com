@@ -45,7 +45,7 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: 10;
+        z-index: 200;
         width: auto;
         height: auto;
         padding: 0 10px;
@@ -124,18 +124,18 @@
 
     &:focus {
       top: 0;
-      left: 0;
-      right: 0;
+      text-align: center;
+      left: calc(50% - (300px/2));
       z-index: 10;
-      width: auto;
+      width: 300px;
       height: auto;
       padding: 0 10px;
       clip: auto;
       font-weight: bold;
       line-height: 49px;
-      color: white;
+      color: black;
       text-decoration: none;
-      background: black;
+      background: white;
       outline: 0;
 
       &:hover {

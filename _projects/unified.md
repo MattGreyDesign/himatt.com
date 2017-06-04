@@ -22,8 +22,8 @@ intro: |
   universally appropriate icons suitable for projects I work on, both
   commercially and personally.
 
-  Unified is an ongoing project with icons being added constantly, to date there
-  are around 500 icons, not all yet available for purchase.
+  This icon set is an ongoing project with icons being added constantly, to date there
+  are around 500 icons, not all of which are available for purchase yet.
 
 content_layout:
   - section_layout: 1col

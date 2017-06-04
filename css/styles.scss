@@ -14,6 +14,7 @@
 @import "site/base/variables";
 @import "neat-grids";
 
+@import "site/base/utilities";
 @import "site/base/extends";
 @import "site/base/mixins-functions";
 @import "site/base/typography";
@@ -37,4 +38,4 @@
 @import "site/layouts/projects";
 // @import "site/layouts/font";
 // @import "site/layouts/about";
-// @import "site/layouts/contact";
+@import "site/layouts/contact";

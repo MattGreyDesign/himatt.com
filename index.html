@@ -1,31 +1,27 @@
 ---
-layout: default
-title: Matt Grey
+layout: page
+title: "Projects"
+class: projects-page
+priority: 1.0
+sitemap: false #dont worry, root is hardcoded in the sitemap
 ---
 
-<!-- <style>
-  .nts {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 60;
-  }
-
-  .nts p, .nts h1 {
-    text-align: center;
-  }
-</style> -->
-
-<div class="nts">
-  <div>
-    <h1>Nothing to see here... Yet</h1>
-    <p><a href="http://www.himatt.com">Hi Matt</a></p>
+<div class="projects-wrapper">
+  <div class="projects">
+  {% for project in site.projects reversed limit:include.limit %}
+    <article class="project-listing">
+      <div class="thumbnail-wrapper">
+        <a href="{{ project.url | prepend: site.baseurl }}">
+          <span class="thumbnail-description-wrapper paragraph-main">
+            <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600px" height="450px">
+            <p class="thumbnail-description">
+              <span>{{ project.description }}</span>
+            </p>
+          </span>
+          <h3>{{ project.title }}</h3>
+        </a>
+      </div>
+    </article>
+  {% endfor %}
   </div>
 </div>

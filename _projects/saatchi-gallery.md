@@ -49,7 +49,7 @@ content_layout:
 
   - section_layout: text
     content: |
-      I carried the concept of the institution's cutting-edge nature into
+      I carried the concept of the institution's cutting-edge reputation into
       reality. The Saatchi gallery is known for it’s sometimes controversial art
       and confidence, which I hinted at in the logo by introducing sharp 45°
       angles which give a suggestion of brash menace.

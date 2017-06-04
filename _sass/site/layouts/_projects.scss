@@ -43,6 +43,7 @@ $animation-ease-out: ease-in-out;
       .thumbnail-wrapper {
         a {
           outline: 0;
+          text-decoration: none;
 
           img {
             width: 100%;
@@ -52,7 +53,7 @@ $animation-ease-out: ease-in-out;
 
           h3 {
             display: block;
-            color: white;
+            color: $site-text-color;
             margin-top: .4em;
             font-size: $font-size-normal;
           }

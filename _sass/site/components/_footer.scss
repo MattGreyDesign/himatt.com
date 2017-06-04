@@ -29,7 +29,7 @@
       }
 
       a.made-by {
-        color: white;
+        color: $site-text-color;
         font-size: $font-size-large/2;
         text-transform: uppercase;
         text-decoration: none;
@@ -39,7 +39,7 @@
         word-wrap: break-word;
         right: 0;
         padding-bottom: 1em;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $site-text-color;
         -ms-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);

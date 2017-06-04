@@ -14,6 +14,8 @@ $largedesktop-size: em(1200px);
  */
 
 //Base
+$measure-xxxsmall: 4px;
+$measure-xxsmall: 8px;
 $measure-xsmall: 12px;
 $measure-small: 20px;
 $measure-normal: 28px;
@@ -45,6 +47,7 @@ $page-element-padding-mobile: $measure-xsmall;
  */
 
 //Base
+$font-size-xsmall: rem(12px);
 $font-size-small: rem(14px);
 $font-size-normal: rem(16px);
 $font-size-large: rem(18px);
@@ -57,7 +60,7 @@ $font-size-xxxxxlarge: rem(56px);
 $h1-font-size: $font-size-xxxlarge;
 $h2-font-size: $font-size-xxlarge;
 
-$body-font-size-desktop: $font-size-xlarge;
+$body-font-size-desktop: $font-size-large;
 $body-font-size-tablet: $font-size-large;
 $body-font-size-mobile: $font-size-large;
 
@@ -68,11 +71,14 @@ $letter-spacing-medium: 0.06rem;
  */
 
 //Base
-$site-color: red;
+$site-color: blue;
 $site-accent-color: #65ff80;
 $site-accent-inverted-color: black;
-$site-background-color: #171717; //141414, ececec
+$site-background-color: #171717; //f7f7f7, 141414, ececec
+$site-text-color: white; //#252525
 $site-line-color: #e2e2e2;
+
+$color-rgb-opacity: 0.6;
 
 //Accent tints
 $site-accent-color-lightest: mix($site-accent-color, white, 80%);
@@ -80,4 +86,3 @@ $site-accent-color-light: mix($site-accent-color, white, 60%);
 $site-accent-color-dark: mix($site-accent-color, black, 90%);
 $site-accent-color-darkest: mix($site-accent-color, black, 85%);
 
-$color-white-fade: rgba(white, 0.6);

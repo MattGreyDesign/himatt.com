@@ -6,7 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 gems: [bourbon, neat]
-exclude: ['readme.md, Gemfile, Gemfile.lock']
+exclude: ["readme.md", "Gemfile", "Gemfile.lock"]
+include: ["_pages"]
 
 # Site settings
 title: Matt Grey Design
@@ -54,13 +55,15 @@ compress_html: # http://jch.penibelst.de/
 # Structure
 navigation:
   - title: Projects
-    url: /projects
-  - title: Fonts
-    url: /fonts
+    url: / #projects
+  # - title: Fonts
+  #   url: /fonts
   - title: About
     url: /about
   - title: Contact
     url: /contact
+
+permalink: /:title/
 
 # Configure site collections
 collections:
@@ -68,7 +71,7 @@ collections:
     output: true
     permalink: /projects/:path/
   fonts:
-    output: true
+    output: false
     permalink: /fonts/:path/
 
 defaults:

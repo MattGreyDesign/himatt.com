@@ -19,7 +19,15 @@ img {
 
 body {
   background: $site-background-color;
-  color: white;
+  color: $site-text-color;
+
+  &.prevent-scroll-mobile {
+    overflow: hidden;
+
+    @include grid-media($grid-tablet) {
+      overflow: auto;
+    }
+  }
 }
 
 .global-wrapper {

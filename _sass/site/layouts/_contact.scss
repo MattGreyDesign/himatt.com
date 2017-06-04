@@ -2,14 +2,14 @@
 
   .contact {
     @include grid-container;
-    @include padding(full);
 
-    > aside {
-      @include grid-column(6);
+    .contact-intro {
+      @include grid-column(5);
     }
 
-    > article {
+    .contact-form {
       @include grid-column(6);
+      @include grid-shift(1);
     }
   }
 }

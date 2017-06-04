@@ -37,6 +37,10 @@
       @include grid-container;
       @include grid-collapse;
 
+      .project-detail {
+        margin-bottom: $measure-xsmall;
+      }
+
       .project-detail-6 {
         @include grid-column(6);
 
@@ -105,12 +109,12 @@
 
     .project-detail-wrapper {
       .project-detail-property-title {
-        color: $color-white-fade;
+        color: rgba($site-text-color, $color-rgb-opacity);
         font-size: $font-size-small;
         text-transform: uppercase;
         letter-spacing: $letter-spacing-medium;
         margin-top: .5em;
-        margin-bottom: .4em;
+        margin-bottom: $measure-xxxsmall;
       }
     }
 

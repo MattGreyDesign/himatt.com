@@ -3,9 +3,9 @@
 
 $(function () {
   Headspace(document.querySelector('[data-header]'), {
-    startOffset: 90,     // default: height of element
-    tolerance: 5,        // default: 8
-    showAtBottom: false, // default: true
+    startOffset: 90,
+    tolerance: 5,
+    showAtBottom: false,
     classNames: {
       base: 'sticky-header',
       fixed: 'sticky-header--fixed',

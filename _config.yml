@@ -47,7 +47,7 @@ sass:
 compress_html: # http://jch.penibelst.de/
   enabled: true # compress html
   clippings: all # clip safe tags
-  blanklines: true # boolean - strip blank lines and breaks
+  blanklines: false # boolean - strip blank lines and breaks
   #profile: true # boolean - print table of data saved
   #ignore:
   #envs: [local]

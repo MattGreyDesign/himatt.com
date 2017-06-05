@@ -100,7 +100,6 @@
 
     li {
       display: block;
-
       border-bottom: 1px solid $site-text-color;
 
       &:last-of-type {
@@ -157,7 +156,7 @@
           text-decoration: none;
           padding: 0 0 .2em 0;
           background-color: inherit;
-          border-bottom: 0px solid;
+          border-bottom: 1px solid transparent;
           opacity: 0.7;
           transition: all 100ms ease-in-out;
 

@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 gems: [bourbon, neat]
-exclude: ["readme.md", "Gemfile", "Gemfile.lock"]
+exclude: ["robots.txt", "readme.md", "Gemfile", "Gemfile.lock"] #include robots on release
 include: ["_pages"]
 
 # Site settings

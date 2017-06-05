@@ -25,7 +25,10 @@
           <ul class="mobile-dropdown">
           {% for link in site.navigation %}
             {% assign current = nil %}
-            {% if page.url contains link.url %}
+            {% capture current_page %}{{ page.url | downcase | remove: '/' }}{% endcapture %}
+            {% capture current_page_nav %}{{ link.url | downcase | remove: '/' }}{% endcapture %}
+
+            {% if current_page == current_page_nav %}
                 {% assign current = ' class="current"' %}
             {% endif %}
             <li>

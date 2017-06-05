@@ -12,7 +12,7 @@ sitemap: false #dont worry, root is hardcoded in the sitemap
     <article class="project-listing">
       <div class="thumbnail-wrapper">
         <a href="{{ project.url | prepend: site.baseurl }}">
-          <span class="thumbnail-description-wrapper paragraph-main">
+          <span class="thumbnail-description-wrapper">
             <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600px" height="450px">
             <p class="thumbnail-description">
               <span>{{ project.description }}</span>

@@ -56,3 +56,15 @@ h4 {
     font-size: $font-size-small;
   }
 }
+
+.paragraph-large {
+  font-size: $body-font-size-mobile;
+
+  @include grid-media($grid-tablet) {
+    font-size: $font-size-xxlarge;
+  }
+
+  @include grid-media($grid-desktop) {
+    font-size: 32px;
+  }
+}

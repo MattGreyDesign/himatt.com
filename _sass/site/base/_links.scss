@@ -7,9 +7,11 @@
 }
 
 a {
-  color: $site-accent-color;
+  color: $site-text-color;
 }
 
-main p a, main li a {
+main p a,
+main li a {
+  color: $site-accent-color;
   @extend %link-style;
 }

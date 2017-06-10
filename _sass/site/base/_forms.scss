@@ -23,14 +23,17 @@ form {
   }
 
   #{$all-text-inputs} {
-    border: 1px solid $site-line-color;
+    border: 4px solid white;
     outline: 0;
   }
 
-  #{$all-text-inputs-focus},
-  #{$all-text-inputs-active},
   #{$all-text-inputs-hover} {
-    border-color: mix($site-line-color, black, 90%);
+    border: 4px solid $site-line-color;
+  }
+
+  #{$all-text-inputs-focus},
+  #{$all-text-inputs-active} {
+    border: 4px solid $site-accent-color;
   }
 
   textarea {

@@ -16,6 +16,24 @@
   }
 }
 
+.layout-1col-narrow {
+  @include grid-container;
+
+  .image-wrapper {
+    img { width: 100%; }
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(12);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+  }
+}
+
 .layout-2col {
   @include grid-container;
 

@@ -49,6 +49,12 @@ $animation-ease-out: ease-in-out;
             width: 100%;
             height: auto;
             display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            text-align: center;
           }
 
           h3 {
@@ -62,6 +68,10 @@ $animation-ease-out: ease-in-out;
             display: block;
             position: relative;
             line-height: 1;
+            background-color: $site-color;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 75%;
 
             p.thumbnail-description {
               //Initially hidden

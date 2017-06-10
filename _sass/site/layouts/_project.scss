@@ -85,7 +85,6 @@
   }
 
   //Styles
-
   .image-wrapper {
     @include responsive-padding;
 
@@ -119,9 +118,8 @@
     }
 
     .project-detail-first {
-      position: relative;
-
       @include decorative-line-top;
+      position: relative;
     }
   }
 

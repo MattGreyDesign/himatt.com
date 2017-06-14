@@ -1,4 +1,13 @@
-//Global site layout
+::-moz-selection {
+    color: white;
+    background: $site-color;
+}
+
+::selection {
+    color: white;
+    background: $site-color;
+}
+
 html {
   box-sizing: border-box;
 }

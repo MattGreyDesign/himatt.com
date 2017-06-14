@@ -1,0 +1,11 @@
+---
+# will generate redirects from redirect_from in page frontmatter
+---
+
+/projects / 301
+
+{% for page in site.posts %}{% if page.redirect_from %}{{ page.redirect_from }} {{ page.url }} 301
+{% endif %}{% endfor %}{% for page in site.html_pages %}{% if page.redirect_from %}{{ page.redirect_from }} {{ page.url }} 301
+{% endif %}{% endfor %}{% for collection in site.collections %}{% unless collection.last.output == false or collection.output == false or collection.label == 'posts' %}{% for doc in collection.last.docs %}{% if doc.redirect_from %}{{ doc.redirect_from }} {{ doc.url | replace:'/index.html','/' | normalize_url }} 301
+{% endif %}{% endfor %}{% for doc in collection.docs %}{% if doc.redirect_from %}
+{{ doc.redirect_from }} {{ doc.url | replace:'/index.html','/' | normalize_url }} 301{% endif %}{% endfor %}{% endunless %}{% endfor %}

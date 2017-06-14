@@ -87,6 +87,7 @@
   //Styles
   .image-wrapper {
     @include responsive-padding;
+    .image-wrapper img { width: 100%; }
 
     figcaption {
       margin-top: $measure-xsmall;

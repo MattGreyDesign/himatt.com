@@ -26,6 +26,25 @@ intro: |
   are around 500 icons, not all of which are available for purchase yet.
 
 content_layout:
+  - section_layout: 3col
+    images:
+      - caption:
+        description:
+        url: '/projects/unified/globe-icon-guides.png'
+        width:
+        height:
+
+      - caption:
+        description:
+        url: '/projects/unified/watch-icon-guides.png'
+        width:
+        height:
+      - caption:
+        description:
+        url: '/projects/unified/fill-icon-guides.png'
+        width:
+        height:
+
   - section_layout: 1col
     images:
       - caption: |

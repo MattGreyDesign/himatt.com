@@ -1,4 +1,8 @@
 img {
+  //Fix blink opacity bug
+  -webkit-transform: translateZ(0);
+  width: calc(100% + .49px);
+
   max-width: 100%;
   height: auto;
 

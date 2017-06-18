@@ -29,33 +29,31 @@ content_layout:
   - section_layout: 3col
     images:
       - caption:
-        description:
-        url: '/projects/unified/globe-icon-guides.png'
+        description: Globe icon
+        url: '/projects/unified/unified-globe-icon-guides.png'
         width:
         height:
 
       - caption:
-        description:
-        url: '/projects/unified/watch-icon-guides.png'
+        description: Watch icon
+        url: '/projects/unified/unified-watch-icon-guides.png'
         width:
         height:
+
       - caption:
-        description:
-        url: '/projects/unified/fill-icon-guides.png'
+        description: Paint bucket icon
+        url: '/projects/unified/unified-fill-icon-guides.png'
         width:
         height:
 
   - section_layout: 1col
     images:
       - caption: |
-          I developed a design system with a set of rules to ensure the icons
+          The design system was set out with rules to ensure the icons
           could be used in a wide range of circumstances — like for different
-          cultures, at small sizes and with and without labels. Some of the
-          rules include the dimensions and unit measurements, definitions for
-          line thickness, and rules like never using text unless absolutely
-          necessary.
-        description:
-        url: '/projects/unified/image.jpg'
+          cultures, at small sizes and with and without labels.
+        description: Icon set specimen
+        url: '/projects/unified/unified-icon-specimen.png'
         width:
         height:
 

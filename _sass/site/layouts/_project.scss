@@ -2,7 +2,6 @@
 
   //Layout
   .project-info {
-
     @include grid-container;
 
     .project-intro {
@@ -36,10 +35,6 @@
     .project-detail-wrapper {
       @include grid-container;
       @include grid-collapse;
-
-      .project-detail {
-        margin-bottom: $measure-xsmall;
-      }
 
       .project-detail-6 {
         @include grid-column(6);
@@ -102,6 +97,10 @@
   .project-hero,
   .project-intro {
     margin-bottom: $measure-medium;
+  }
+
+  .project-detail {
+    margin-bottom: $measure-xsmall;
   }
 
   .project-details {

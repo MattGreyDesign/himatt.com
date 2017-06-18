@@ -116,6 +116,22 @@
   }
 }
 
+.layout-4col {
+  @include grid-container;
+
+  .image-wrapper {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(3);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(3);
+    }
+  }
+}
+
 .layout-5col-7col {
   @include grid-container;
 

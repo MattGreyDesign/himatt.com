@@ -3,9 +3,9 @@ date: 2014-07-1
 published: true
 title: "Find My Bus"
 description: "App design and branding for a unique bus tracking app"
-categories: app, ux, brand
+categories: app, ux, brand, mobile
 disciplines: UX, App design, Information Architecture, Branding
-media: Book
+media: Mobile App
 ownership: Personal
 client:
 time_period: 2014

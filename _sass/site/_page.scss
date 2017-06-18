@@ -1,11 +1,11 @@
 ::-moz-selection {
     color: white;
-    background: $site-color;
+    background: $site-accent-color-secondary;
 }
 
 ::selection {
     color: white;
-    background: $site-color;
+    background: $site-accent-color-secondary;
 }
 
 html {
@@ -54,4 +54,8 @@ footer {
   @include grid-media($grid-tablet) {
     max-width: $largedesktop-size;
   }
+}
+
+.page-header-spacer {
+  height: 2em;
 }

@@ -22,8 +22,9 @@ intro: |
   universally appropriate icons suitable for projects I work on, both
   commercially and personally.
 
-  This icon set is an ongoing project with icons being added constantly, to date there
-  are around 500 icons, not all of which are available for purchase yet.
+  This icon set is an ongoing project with new icons being introduced
+  constantly, to date there are around 500 icons, not all of which are available
+  for purchase yet.
 
 content_layout:
   - section_layout: 3col

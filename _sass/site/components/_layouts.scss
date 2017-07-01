@@ -2,7 +2,7 @@
 
 .layout-1col,
 .additional-content-wrapper {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper,
   .additional-content {
@@ -19,7 +19,7 @@
 }
 
 .layout-1col-narrow {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(12);
@@ -36,7 +36,7 @@
 }
 
 .layout-2col {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(12);
@@ -52,7 +52,7 @@
 }
 
 .layout-1col-10-centered {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(12);
@@ -69,7 +69,7 @@
 }
 
 .layout-2col_mobile {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -85,7 +85,7 @@
 }
 
 .layout-3col.layout-2col_mobile {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -101,7 +101,7 @@
 }
 
 .layout-3col {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(12);
@@ -117,7 +117,7 @@
 }
 
 .layout-4col {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper {
     @include grid-column(12);
@@ -133,7 +133,7 @@
 }
 
 .layout-5col-7col {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper:first-child {
     @include grid-column(12);
@@ -161,7 +161,7 @@
 }
 
 .layout-7col-5col {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .image-wrapper:first-child {
     @include grid-column(12);

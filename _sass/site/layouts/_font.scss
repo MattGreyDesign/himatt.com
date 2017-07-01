@@ -6,7 +6,7 @@
 
 .font-header {
   .font-header-content {
-    @include grid-container;
+    @extend %layout-grid-container;
 
     > section {
       @include grid-column(9);

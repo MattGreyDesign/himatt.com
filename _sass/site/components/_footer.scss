@@ -4,7 +4,7 @@
   padding-top: $measure-medium;
 
   .footer-content {
-    @include grid-container;
+    @extend %layout-grid-container;
     position: relative;
 
     .footer-content-wrapper {

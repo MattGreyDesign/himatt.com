@@ -1,5 +1,5 @@
 .page-title-wrapper {
-  @include grid-container;
+  @extend %layout-grid-container;
 
   .page-title {
     @include grid-column(12);

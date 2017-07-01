@@ -1,7 +1,7 @@
 .contact-wrapper {
 
   .contact {
-    @include grid-container;
+    @extend %layout-grid-container;
 
     .contact-intro {
       @include grid-column(12);

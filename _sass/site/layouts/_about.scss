@@ -1,0 +1,51 @@
+.about-wrapper {
+
+  .about {
+    @extend %layout-grid-container;
+
+    .about-intro {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(5);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(5);
+      }
+    }
+
+    .about-attributes {
+      @extend %layout-grid-container;
+
+      .about-tools,
+      .about-skills,
+      .about-education {
+        @include grid-column(12);
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(4);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(3);
+        }
+      }
+    }
+  }
+}
+
+.about-wrapper {
+  .about {
+    .about-section {
+      border-top: 1px solid rgba(white, .6);
+      margin-bottom: $measure-medium;
+    }
+
+    .about-section-title {
+      padding-top: $measure-xxsmall;
+      padding-bottom: $measure-xxsmall;
+      margin-bottom: .5rem;
+    }
+  }
+}

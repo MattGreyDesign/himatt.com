@@ -7,7 +7,7 @@ layout: compress
 <body{% if page.accent %} class="{% include accent.html %}"{% endif %}>
   <div class="global-wrapper">
     {% include header.html %}
-    <main{% if page.class %} class="{{ page.class }}"{% endif %} id="maincontent">
+    <main class="main-content {% if page.class %}{{ page.class }}{% endif %}" id="maincontent">
       {% include page-title.html %}
 
       {{ content }}

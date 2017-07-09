@@ -1,0 +1,16 @@
+.four-o-four-wrapper {
+  @extend %layout-grid-container;
+
+  .four-o-four {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(8);
+      @include grid-shift(2);
+      margin-top: 5vh;
+      margin-bottom: 8vh;
+    }
+  }
+}
+
+.four-o-four p { @extend .paragraph-large; }

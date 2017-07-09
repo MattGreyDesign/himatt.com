@@ -18,19 +18,36 @@ website:
   url: https://www.skisolutions.com
 
 intro: |
-  Ski Solutions is a social networking app which aims at connecting skilled
-  creatives across any discipline.
+  The lack of responsiveness was impacting on Ski Solution's search engine
+  rankings considerably. The solution to improve SEO and drive enquiries was to
+  re-design and optimise the website experience from the bottom up.
 
-  One of the most important goals of Ski Solutions is to provide reassurance to
-  artists that they still have the rights any work they upload, and that their
-  privacy is respected. One of the cases for this is
+  Working from a mobile first, I redesigned the site to work across as many
+  devices as possible, creating a css styleguide and icon font to maintain
+  consistency with the colours, geometry and component styles.
 
 content_layout:
   - section_layout: 1col
     images:
       - caption:
-        description: 'Full stretch'
-        url: '/projects/find-my-bus/find-my-bus-whole.jpg'
+        description: 'Homepage'
+        url: '/projects/ski-solutions/ski-solutions-homepage.jpg'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption:
+        description: 'Property listing'
+        url: '/projects/ski-solutions/ski-solutions-listing.jpg'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption:
+        description: 'Property'
+        url: '/projects/ski-solutions/ski-solutions-property.jpg'
         width:
         height:
 ---

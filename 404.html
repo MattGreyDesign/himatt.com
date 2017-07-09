@@ -3,6 +3,16 @@ layout: page
 title: 404
 sitemap: false
 permalink: /404
+
+intro: |
+  Sorry but this page could not be found, either it moved, or it never existed
+  in the first place.
+
+  [Return to homepage](/)
 ---
 
-Sorry but this page does not exist
+<div class="four-o-four-wrapper">
+  <div class="four-o-four">
+    {{ page.intro | markdownify }}
+  </div>
+</div>

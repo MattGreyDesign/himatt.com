@@ -18,9 +18,9 @@ website:
   url: https://findmybus.uk/
 
 intro: |
-  Find My Bus is one of the UK's first live bus tracking apps which gives bus
-  passengers a better idea of when their bus will be at their stop by using GPS
-  and bus route data.
+  Find My Bus is one of the UK's first live bus tracking apps. The aim is to
+  give bus passengers a better idea of when their bus will be at their stop by
+  using GPS and bus route data combined to provide a more connected experience.
 
   My role as lead designer included creating brand guidelines and marketing
   material, designing the app's user interface and user experience for the
@@ -32,8 +32,24 @@ content_layout:
   - section_layout: 1col
     images:
       - caption:
-        description: 'Full stretch'
-        url: '/projects/find-my-bus/find-my-bus-whole.jpg'
+        description: 'Route view'
+        url: '/projects/find-my-bus/find-my-bus-route.jpg'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption:
+        description: 'Icon system'
+        url: '/projects/find-my-bus/find-my-bus-icons.png'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption:
+        description: 'Functional menu'
+        url: '/projects/find-my-bus/find-my-bus-functional.jpg'
         width:
         height:
 ---

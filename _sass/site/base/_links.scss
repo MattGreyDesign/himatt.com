@@ -1,17 +1,14 @@
-%link-style {
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: 1px solid $site-accent-color;
-  }
-}
-
 a {
   color: $site-text-color;
 }
 
 main p a,
 main li a {
+  text-decoration: none;
   color: $site-accent-color;
-  @extend %link-style;
+
+  &:hover {
+    border-bottom: 1px dashed $site-accent-color;
+    opacity: 1;
+  }
 }

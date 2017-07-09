@@ -108,12 +108,7 @@
 
     .project-detail-wrapper {
       .project-detail-property-title {
-        color: rgba($site-text-color, $color-rgb-opacity);
-        font-size: $font-size-small;
-        text-transform: uppercase;
-        letter-spacing: $letter-spacing-medium;
-        margin-top: .5em;
-        margin-bottom: $measure-xxxsmall;
+        @extend %title-label;
       }
     }
 

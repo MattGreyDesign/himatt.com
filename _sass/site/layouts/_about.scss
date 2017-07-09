@@ -4,14 +4,45 @@
     @extend %layout-grid-container;
 
     .about-intro {
-      @include grid-column(12);
+      @extend %layout-grid-container;
+      margin-bottom: $measure-small;
 
-      @include grid-media($grid-tablet) {
-        @include grid-column(5);
+      .about-intro-image {
+        @include grid-column(12);
+
+        @include grid-media($grid-mobile-large) {
+          @include grid-column(6);
+          @include grid-shift(6);
+        }
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(4);
+          @include grid-shift(8);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(4);
+          @include grid-shift(8);
+        }
       }
 
-      @include grid-media($grid-desktop) {
-        @include grid-column(5);
+      .about-intro-description {
+        @include grid-column(12);
+
+        @include grid-media($grid-mobile-large) {
+          @include grid-column(6);
+          @include grid-shift(-6);
+        }
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(8);
+          @include grid-shift(-4);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(8);
+          @include grid-shift(-4);
+        }
       }
     }
 
@@ -23,6 +54,10 @@
       .about-education {
         @include grid-column(12);
 
+        @include grid-media($grid-mobile-large) {
+          @include grid-column(6);
+        }
+
         @include grid-media($grid-tablet) {
           @include grid-column(4);
         }
@@ -32,18 +67,40 @@
         }
       }
     }
+
+    .about-site {
+      @extend %layout-grid-container;
+
+      .about-site-description {
+        @include grid-column(12);
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(8);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(6);
+        }
+      }
+    }
   }
 }
 
 .about-wrapper {
   .about {
+    .about-intro-image { margin-bottom: $measure-medium; }
+
     .about-section {
-      border-top: 1px solid rgba(white, .6);
+      border-top: 1px solid rgba(white, .3);
       margin-bottom: $measure-medium;
+      padding-top: $measure-xxsmall;
+
+      &.about-section-no-title {
+        padding-top: $measure-xsmall;
+      }
     }
 
     .about-section-title {
-      padding-top: $measure-xxsmall;
       padding-bottom: $measure-xxsmall;
       margin-bottom: .5rem;
     }

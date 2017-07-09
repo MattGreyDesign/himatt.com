@@ -57,6 +57,11 @@ h4 {
   }
 }
 
+.paragraph-small p {
+  margin-bottom: 0.7em;
+  font-size: $font-size-normal;
+}
+
 .paragraph-large {
   font-size: $body-font-size-mobile;
 

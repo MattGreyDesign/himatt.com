@@ -1,0 +1,31 @@
+.homepage-background {
+  background-image: url('/images/homepage-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homepage-wrapper {
+  @extend %layout-grid-container;
+
+  .homepage {
+    @include grid-column(12);
+  }
+}
+
+.homepage-hello {
+  @include grid-media($grid-tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin-bottom: -24%;
+    margin-right: -17%;
+
+    .homepage-hello-text {
+      user-select: none;
+      pointer-events: none;
+      font-size: 36vw;
+    }
+  }
+}

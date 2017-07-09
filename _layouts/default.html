@@ -2,9 +2,9 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="{% if page.html_class %}{{ page.html_class }}{% endif %}">
 {% include head.html %}
-<body{% if page.accent %} class="{% include accent.html %}"{% endif %}>
+<body class="{% if page.accent %}{% include accent.html %}{% endif %}">
   <div class="global-wrapper">
     {% include header.html %}
     <main class="main-content {% if page.class %}{{ page.class }}{% endif %}" id="maincontent">

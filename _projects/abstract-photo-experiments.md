@@ -16,8 +16,8 @@ accent:
 
 intro: |
   An experimental photo-series aimed at exploring elements of photographs and
-  how they can be merged to create an an alternative environment with reduced
-  frames of reference.
+  how they can be merged and manipulated to create an alternative environment,
+  with warped frames of reference for the viewer.
 
 content_layout:
   - section_layout: 1col-10-centered

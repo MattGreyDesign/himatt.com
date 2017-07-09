@@ -10,6 +10,8 @@
 
 html {
   box-sizing: border-box;
+  background: $site-background-color;
+  height: 100%;
 }
 
 *, *:before, *:after {
@@ -25,7 +27,6 @@ img {
 }
 
 body {
-  background: $site-background-color;
   color: $site-text-color;
 
   &.prevent-scroll-mobile {

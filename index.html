@@ -2,27 +2,15 @@
 layout: page
 title: "Projects"
 redirect_from: /portfolio
-class: projects-page
+html_class: homepage-background
+class: homepage-page
 priority: 1.0
 sitemap: false #dont worry, root is hardcoded in the sitemap
 ---
+<div class="homepage-wrapper">
+  <div class="homepage">Hi, I'm Matt</div>
+</div>
 
-<div class="projects-wrapper">
-  <div class="projects">
-  {% for project in site.projects reversed limit:include.limit %}
-    <article class="project-listing">
-      <div class="thumbnail-wrapper">
-        <a href="{{ project.url | prepend: site.baseurl }}">
-          <div class="thumbnail-description-wrapper">
-            <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
-            <p class="thumbnail-description">
-              <span>{{ project.description }}</span>
-            </p>
-          </div>
-          <h3>{{ project.title }}</h3>
-        </a>
-      </div>
-    </article>
-  {% endfor %}
-  </div>
+<div class="homepage-hello">
+  <span class="homepage-hello-text">hello.</span>
 </div>

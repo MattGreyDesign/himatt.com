@@ -9,7 +9,7 @@ media: Mobile App
 ownership: Personal
 client:
 time_period: 2014
-thumbnail: "/projects/find-my-bus/plist-find-my-bus.jpg"
+thumbnail: "/projects/find-my-bus/plist-find-my-bus.png"
 accent:
   color:
   inverted:

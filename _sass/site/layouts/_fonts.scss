@@ -7,8 +7,8 @@
     @include grid-media($grid-tablet) {
       @include grid-column(8);
       @include grid-shift(2);
-      margin-top: 10vh;
-      margin-bottom: 13vh;
+      margin-top: 5vh;
+      margin-bottom: 8vh;
     }
   }
 }

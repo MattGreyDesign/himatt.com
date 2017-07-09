@@ -3,6 +3,10 @@
   .contact {
     @extend %layout-grid-container;
 
+    @include grid-media($grid-tablet) {
+      margin-top: 5vh
+    }
+
     .contact-intro {
       @include grid-column(12);
 

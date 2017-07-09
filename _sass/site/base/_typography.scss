@@ -63,6 +63,7 @@ h4 {
 }
 
 .paragraph-large {
+  margin-bottom: 0.7em;
   font-size: $body-font-size-mobile;
 
   @include grid-media($grid-tablet) {

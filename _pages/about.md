@@ -18,9 +18,9 @@ intro: |
   brochures and books.
 
   In 2010 I founded a [font foundry](https://www.myfonts.com/foundry/Matt_Grey/),
-  which has released a number of commercial [fonts](/fonts).
+  which has released a number of free and commercial [fonts](/fonts).
 
-profile_picture: /images/profile.jpg
+profile_picture: /images/profile-bw.jpg
 
 education:
   - course: Foundation Certificate in User Experience
@@ -80,7 +80,7 @@ about_site: |
         <img src="{{ page.profile_picture }}" alt="">
       </div>
 
-      <div class="about-intro-description two-columns paragraph-main">
+      <div class="about-intro-description paragraph-main">
         {{ page.intro | markdownify }}
       </div>
     </div>
@@ -123,7 +123,7 @@ about_site: |
 
     <div class="about-site">
       <div class="about-section about-site-description">
-        <h3 class="about-section-title">About this site</h3>
+        <h3 class="about-section-title">Colophon: about this site</h3>
         <div class="paragraph-small">{{ page.about_site | markdownify }}</div>
       </div>
     </div>

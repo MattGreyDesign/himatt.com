@@ -12,10 +12,10 @@ intro: |
   For now you can find some of my fonts and their details on
   [Myfonts](https://www.myfonts.com/foundry/Matt_Grey/),
   [Fontspring](https://www.fontspring.com/foundry/matt-grey-design),
-  and [Dafont](http://www.dafont.com/matt-grey.d3130)
+  and [Dafont](http://www.dafont.com/matt-grey.d3130).
 
-  If you have any questions about any purchases, feel free to
-  [contact me](/contact)
+  If you have any queries about any past or future purchases and commissions,
+  please feel free to [contact me](/contact).
 
 ---
 

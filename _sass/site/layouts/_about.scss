@@ -40,7 +40,7 @@
         }
 
         @include grid-media($grid-desktop) {
-          @include grid-column(6);
+          @include grid-column(7);
           @include grid-shift(-4);
         }
       }

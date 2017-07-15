@@ -21,7 +21,7 @@ include:
   - _redirects
 
 # Site settings
-title: Matt Grey Design
+title: Matt Grey
 email: info@himatt.com
 description: "Portfolio of graphic, UX and type designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog

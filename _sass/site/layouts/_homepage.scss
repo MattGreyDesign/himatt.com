@@ -3,17 +3,33 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .homepage-wrapper {
   @extend %layout-grid-container;
+  @include grid-column(12);
 
   .homepage {
-    @include grid-column(12);
+    @include grid-media($grid-desktop) {
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
   }
 }
 
+.homepage-intro {
+  margin-top: 7vw;
+  font-size: $font-size-xxxlarge;
+  text-align: center;
+  background: rgba(black, 0.9);
+  padding: $measure-normal;
+  background-blend-mode: color-dodge;
+}
+
 .homepage-hello {
+  display: none;
+
   @include grid-media($grid-tablet) {
     position: absolute;
     right: 0;

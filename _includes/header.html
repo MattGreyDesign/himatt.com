@@ -8,9 +8,16 @@
         <div class="logo">
           <a href="{{ site.baseurl }}/">
             {% include logo.svg %}
-            <span>{{ site.title }} Home</span>
           </a>
         </div>
+
+        {% if page.layout == "page" %}
+        <a href="{{ site.baseurl }}/">
+          <div class="site-title">
+            <h2>{{ site.title }}</h2>
+          </div>
+        </a>
+        {% endif %}
 
         {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
         <div class="desktop-page-title">
@@ -25,7 +32,7 @@
           <ul class="mobile-dropdown">
           {% for link in site.navigation %}
             {% assign current = nil %}
-            {% capture current_page %}{{ page.url | downcase | replace_first: '/', '' | remove: '/' }}{% if page.url == '/' %}projects{% endif %}{% endcapture %}
+            {% capture current_page %}{{ page.url | downcase | replace_first: '/', '' | remove: '/' }}{% if page.url == '/' %}{% endif %}{% endcapture %}
             {% capture current_page_nav %}{{ link.title | downcase }}{% endcapture %}
 
             {% if current_page contains current_page_nav %}

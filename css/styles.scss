@@ -33,6 +33,7 @@
 
 // // Layouts
 @import "site/page";
+@import "site/layouts/generic-page";
 
 @import "site/layouts/homepage";
 @import "site/layouts/projects";
@@ -40,5 +41,6 @@
 @import "site/layouts/fonts";
 // @import "site/layouts/font";
 @import "site/layouts/about";
+@import "site/layouts/where-ive-been";
 @import "site/layouts/contact";
 @import "site/layouts/404";

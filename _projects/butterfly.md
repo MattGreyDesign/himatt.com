@@ -21,16 +21,43 @@ intro: |
   Butterfly is a social networking app which aims at connecting skilled
   creatives across any discipline.
 
-  One of the most important goals of butterfly is to provide reassurance to
+  One of the most important goals of Butterfly is to provide reassurance to
   artists that they still have the rights any work they upload, and that their
-  privacy is respected. One of the cases for this is
+  privacy is respected.
+
+  I created the architecture, data requirements and UX flow of the application,
+  first making a low fidelity prototype to test with users.
 
 content_layout:
   - section_layout: 1col
     images:
-      - caption:
-        description: 'Full stretch'
-        url: '/projects/find-my-bus/find-my-bus-whole.jpg'
+      - caption: Main functional tabs
+        description: 'Navigation'
+        url: '/projects/butterfly/butterfly-main-navigation.jpg'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption: Public profile media
+        description: 'Profile screens'
+        url: '/projects/butterfly/butterfly-profile.jpg'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption: Onboarding
+        description: 'Onboarding'
+        url: '/projects/butterfly/butterfly-onboarding.jpg'
+        width:
+        height:
+
+  - section_layout: 1col
+    images:
+      - caption: Chat
+        description: 'Chat'
+        url: '/projects/butterfly/butterfly-chat.jpg'
         width:
         height:
 ---

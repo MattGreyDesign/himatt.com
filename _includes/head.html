@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta name="robots" content="noindex"/> <!-- MAKE CONDITIONAL WHEN READY TO GO LIVE -->
+  <meta name="robots" content="{% if page.sitemap == false %}noindex{% else %}index{% endif %}"/>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">

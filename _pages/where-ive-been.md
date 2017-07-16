@@ -2,7 +2,8 @@
 layout: page
 title: Where I've been
 permalink: /about/where-ive-been
-priority: 0.9
+sitemap: false
+# priority: 0.9
 ---
 
 <div class="generic-page-wrapper">

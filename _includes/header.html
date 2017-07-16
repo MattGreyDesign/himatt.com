@@ -32,7 +32,7 @@
           <ul class="mobile-dropdown">
           {% for link in site.navigation %}
             {% assign current = nil %}
-            {% capture current_page %}{{ page.url | downcase | replace_first: '/', '' | remove: '/' }}{% if page.url == '/' %}{% endif %}{% endcapture %}
+            {% capture current_page %}{{ page.url | downcase | replace_first: '/', '' | remove: '/' }}{% if page.url == '/' %}projects{% endif %}{% endcapture %}
             {% capture current_page_nav %}{{ link.title | downcase }}{% endcapture %}
 
             {% if current_page contains current_page_nav %}

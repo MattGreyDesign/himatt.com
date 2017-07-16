@@ -8,20 +8,65 @@
 
   <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta name="robots" content="noindex" /> <!-- MAKE CONDITIONAL WHEN READY TO GO LIVE -->
+  <meta name="robots" content="{% if page.sitemap == false %}noindex{% else %}index{% endif %}"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#171717">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#171717">
+  {% if page.is_post %}
+    {% assign type = "article" %}
+  {% else %}
+    {% assign type = "website" %}
+  {% endif %}
+
+  <meta property="og:type" content="{{ type }}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}"/>
+  {% if page.thumbnail %}
+  <meta property="og:image" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}{{ page.thumbnail.path }}"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="900"/>
+  {% endif %}
+  {% if page.is_post %}
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  {% endif %}
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="{{ site.social-username.twitter }}"/>
+  <meta name="twitter:creator" content="{{ site.social-username.twitter }}"/>
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}"/>
+  {% if page.thumbnail %}
+  <meta name="twitter:image" content="{{ prepend: site.baseurl | prepend: '/images' | prepend: site.url }}{{ page.thumbnail }}"/>
+  {% endif %}
 
   {% if page.accent %}
-  <style>
-    .accent {
-      background-color: {{ page.accent.color }};
-      p {
-        color: red;
-      }
-    }
+  {% capture stored_scss %}
+    //Accent styles
+    body.accent {
+      {% if page.accent.background_color %}
+        background: #{{ page.accent.background_color }};
+        {% if page.accent.gradient %}
+          background: linear-gradient({{ page.accent.gradient }});
 
-    p a, li a {
-      border-color: {{ page.accent.color }};
+          .global-wrapper>header.notTop {
+            background: #{{ page.accent.background_color }};
+          }
+        {% endif %}
+        color: #{{ page.accent.color }} !important;
+      {% endif %}
     }
+  {% endcapture %}
+
+  <style>
+    {{ stored_scss | scssify }}
   </style>
+
   {% endif %}
 </head>

@@ -1,0 +1,31 @@
+%layout-grid-container {
+  @include grid-container;
+}
+
+%title-label {
+  color: rgba($site-text-color, $color-rgb-opacity);
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-medium;
+  margin-top: .5em;
+  margin-bottom: $measure-xxxsmall;
+}
+
+
+.two-columns {
+  column-count: 1;
+
+  @include grid-media($grid-mobile-large) {
+    column-count: 1;
+  }
+
+  @include grid-media($grid-tablet) {
+    column-gap: $page-global-padding-tablet;
+    column-count: 1;
+  }
+
+  @include grid-media($grid-desktop) {
+    column-gap: $page-global-padding-desktop;
+    column-count: 2;
+  }
+}

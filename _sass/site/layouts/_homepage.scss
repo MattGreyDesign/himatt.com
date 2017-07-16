@@ -1,0 +1,47 @@
+.homepage-background {
+  background-image: url('/images/homepage-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.homepage-wrapper {
+  @extend %layout-grid-container;
+  @include grid-column(12);
+
+  .homepage {
+    @include grid-media($grid-desktop) {
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+  }
+}
+
+.homepage-intro {
+  margin-top: 7vw;
+  font-size: $font-size-xxxlarge;
+  text-align: center;
+  background: rgba(black, 0.9);
+  padding: $measure-normal;
+  background-blend-mode: color-dodge;
+}
+
+.homepage-hello {
+  display: none;
+
+  @include grid-media($grid-tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin-bottom: -24%;
+    margin-right: -17%;
+
+    .homepage-hello-text {
+      user-select: none;
+      pointer-events: none;
+      font-size: 36vw;
+    }
+  }
+}

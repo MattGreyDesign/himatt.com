@@ -1,0 +1,19 @@
+.fonts-wrapper {
+  @extend %layout-grid-container;
+
+  .fonts {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(8);
+      @include grid-shift(2);
+      margin-top: 5vh;
+      margin-bottom: 8vh;
+    }
+  }
+}
+
+.fonts {
+
+  p { @extend .paragraph-large; }
+}

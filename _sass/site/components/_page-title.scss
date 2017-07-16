@@ -1,0 +1,37 @@
+.page-title-wrapper {
+  @extend %layout-grid-container;
+
+  .page-title {
+    @include grid-column(12);
+
+    @include grid-media($grid-tablet) {
+      @include grid-column(12);
+    }
+
+    @include grid-media($grid-desktop) {
+      @include grid-column(6);
+    }
+
+    &.project {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(6);
+        @include grid-shift(1);
+      }
+    }
+  }
+
+  .page-title {
+    h1 {
+      font-size: $font-size-xxxxlarge;
+      line-height: 1.2;
+    }
+
+    padding-bottom: 2em;
+  }
+}

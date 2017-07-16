@@ -1,0 +1,33 @@
+<div class="layout-{{ entry.section_layout }}">
+
+  {% if entry.section_layout == 'text' %}
+    <section class="project-text">
+      <div class="project-text-wrapper paragraph-main">
+        {{ entry.content | markdownify }}
+      </div>
+    </section>
+  {% else %}
+
+    {% for image in entry.images %}
+
+      {% capture stored_description %}
+        {% if image.description %}
+          {{ image.description }}
+        {% elsif image.caption %}
+          {{ image.caption }}
+        {% else %}
+          {{ page.title }}
+        {% endif %}
+      {% endcapture %}
+
+      <figure class="image-wrapper {{ image.positioning }}">
+        <img class="{{ image.border }}" src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ stored_description | normalize_whitespace }}">
+        {% if image.caption %}
+          <figcaption>{{ image.caption }}</figcaption>
+        {% endif %}
+      </figure>
+
+    {% endfor %}
+  {% endif %}
+
+</div>

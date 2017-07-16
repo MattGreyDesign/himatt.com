@@ -1,0 +1,26 @@
+//Mobile
+$neat-grid: (
+  columns: 12,
+  gutter: $page-global-padding-desktop,
+);
+
+//Mobile Large
+$grid-mobile-large: (
+  columns: 12,
+  gutter: $page-global-padding-tablet,
+  media: $mobile-size,
+);
+
+//Tablet
+$grid-tablet: (
+  columns: 12,
+  gutter: $page-global-padding-tablet,
+  media: $tablet-size,
+);
+
+//Desktop
+$grid-desktop: (
+  columns: 12,
+  gutter: $page-global-padding-desktop,
+  media: $desktop-size,
+);

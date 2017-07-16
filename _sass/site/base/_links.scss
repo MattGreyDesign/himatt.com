@@ -1,15 +1,14 @@
-%link-style {
-  color: inherit;
-  border-bottom: 2px solid $site-accent-color;
-  text-decoration: none;
-
-  &:hover {}
-}
-
 a {
-  color: inherit;
+  color: $site-text-color;
 }
 
-main p a, main li a {
-  @extend %link-style;
+main p a,
+main li a {
+  text-decoration: none;
+  color: $site-accent-color;
+
+  &:hover {
+    border-bottom: 1px dashed $site-accent-color;
+    opacity: 1;
+  }
 }

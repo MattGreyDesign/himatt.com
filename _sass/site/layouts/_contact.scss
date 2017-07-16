@@ -1,15 +1,41 @@
 .contact-wrapper {
 
   .contact {
-    @include outer-container;
-    @include padding(full);
+    @extend %layout-grid-container;
 
-    > aside {
-      @include span-columns(6);
+    @include grid-media($grid-tablet) {
+      margin-top: 5vh
     }
 
-    > article {
-      @include span-columns(6);
+    .contact-intro {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(5);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(5);
+      }
+    }
+
+    .contact-form {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(6);
+        @include grid-shift(1);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(6);
+        @include grid-shift(1);
+      }
     }
   }
+
+  .contact-intro {
+    margin-bottom: $page-element-padding;
+  }
 }
+

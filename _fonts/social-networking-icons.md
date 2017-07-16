@@ -1,15 +1,15 @@
 ---
-layout: font
+date: 2017-02-21
 published: true
 title: "Social Networking Icons"
 description: "An icon font"
 categories: on sale, icons
-thumbnail: "/fonts/sni/overview.png"
+thumbnail: "/fonts/sni/flist-sni.svg"
 banner: "/fonts/sni/overview.png"
-pricing: commercial
+licensetype: Commercial
 
 accent:
-  color: "#189ACA"
+  color: "#1EA5D5"
   inverted: false
 
 features:
@@ -17,6 +17,9 @@ features:
   - Opentype accessible features
   - Webpage embedding
   - Free updates
+
+charactersets:
+  - Latin
 
 font_weights:
   - "Regular"
@@ -32,6 +35,10 @@ in_use:
     link: "http://www.myfonts.com"
 
 vendors:
+  - title: "Sellfy"
+    licence: Desktop
+    url: "https://sellfy.com/p/NrMR/"
+
   - title: "Myfonts"
     licence: Webfont & Desktop
     url: "https://www.myfonts.com/fonts/matt-grey/social-networking-icons/"
@@ -78,7 +85,6 @@ releases:
         - Map Marker
         - Multiple utilities (tick, face, music note, sun, infinity etc.)
 
-
   - version: v3.0
     releasedate: 13 February 2013
     details: >
@@ -124,8 +130,77 @@ releases:
       - Removed
         - Grooveshark
         - Forrst
+
+  - version: v4.0
+    releasedate: 30 December 2016
+    details: >
+      - There have been a few changes to the locations of existing icons, so if you cant find them, please refer to the icon map.
+      - There are two new utility glyphs that allow you to apply a solid backing to icons, you can find out how to use these on the supplimentary character-map.html webpage provided.
+      - Spacing to the left and right of the icons has been removed to allow for more practical and manageable positioning on layouts, for spacing, you can now use space characters (standard spacebar spaces).
+
+      - New
+        - Ask.fm
+        - Camera\*
+        - Codepen
+        - Dropbox
+        - Google Drive
+        - Google Hangouts
+        - Link\*
+        - Medium
+        - Meetup
+        - Microphone\*
+        - Mouse\*
+        - Path
+        - Periscope
+        - Phone\*
+        - Print\*
+        - Quora
+        - Shopify
+        - Slack
+        - Snapchat
+        - VK (ВКонтакте)
+        - Wechat (微信)
+        - Weibo (新浪微博)
+        - Yelp
+
+      - Updated
+        - App Store
+        - Bandcamp
+        - Bing
+        - Deviantart
+        - Discogs
+        - Foursquare
+        - Google\+
+        - Instagram
+        - Myspace
+        - Paypal
+        - Soundcloud
+        - Speech bubble\*
+        - Tumblr
+
+      Also additional adjustments on nearly all icons.
+
+      - Removed
+        - AIM
+        - Bebo
+        - Forrst
+        - Grooveshark
+        - Meerkat †
+        - Metacafe
+        - MSN
+        - Newsvine
+        - Picasa
+        - Slash dot
+        - Technorati
+        - Vine †
+        - Virb
+
+      \* - Utility icons
+      † - Icons removed just before v4.0 release, due to service closure.
+
+      Please note that a few unused utility icons from 3.0 have been removed.
 ---
 
 Back in mid-2011 I was working on a website that required some links to social network pages, and struggled to find a set of flat, uniform vector website icons that I could use readily for any application. I decided that it would be useful to collect them into a portable and well supported format—a font.
 
-I released a trial version a month later which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which has proven to be popular; it has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor [Myfonts](www.myfonts.com). The latest version of Social Networking Icons (3.0), now includes 158 individual icons in 6 different styles.
+I released a trial version a month later which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which has proven to be popular; it has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor [Myfonts](www.myfonts.com). The latest version of Social Networking Icons (4.0), now includes 158 individual icons in 6 different styles.

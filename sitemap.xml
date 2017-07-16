@@ -13,12 +13,12 @@
     <loc>{{ site.url }}{{ page.url }}</loc>
     <priority>{{ page.priority }}</priority>
   </url>
-  {% endfor %}{% for page in site.html_pages %}
+  {% endfor %}{% for page in site.html_pages %}{% unless page.sitemap == false %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>{% if page.priority %}
     <priority>{{ page.priority }}</priority>{% endif %}
   </url>
-  {% endfor %}{% for collection in site.collections %}{% unless collection.last.output == false or collection.output == false or collection.label == 'posts' %}{% for doc in collection.last.docs %}{% unless doc.sitemap == false %}
+  {% endunless %}{% endfor %}{% for collection in site.collections %}{% unless collection.last.output == false or collection.output == false or collection.label == 'posts' %}{% for doc in collection.last.docs %}{% unless doc.sitemap == false %}
   <url>
     <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url | normalize_url }}</loc>
     <priority>0.7</priority>

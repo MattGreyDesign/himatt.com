@@ -5,18 +5,30 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-gems: [bourbon, neat]
-exclude: ['README.markdown']
+gems:
+  - bourbon
+  - neat
+
+exclude:
+  - robots.txt
+  - readme.md
+  - Gemfile
+  - Gemfile.lock #include robots on release
+  - LICENSE
+
+include:
+  - _pages
+  - _redirects
 
 # Site settings
-title: Matt Grey Design
+title: Matt Grey
 email: info@himatt.com
 description: "Portfolio of graphic, UX and type designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://himatt.com" # the base hostname & protocol for your site
+url: "//himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
-year: 2016
-sitemap: false
+year: 2017
+sitemap: true
 
 # Social networks
 social-username:
@@ -27,10 +39,11 @@ social-username:
   pinterest: "mattgreydesign"
   instagram: "mattgreydesign"
   flickr: "mattgreydesign"
+  spotify: "mattgreydesign"
   lastfm: "mattdabest"
 
 # Content
-cdn_path: "http://static.himatt.com" # <img src="{{ site.cdn_path }}/projects/img.jpg">
+image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
 
 # Build settings
 markdown: kramdown
@@ -45,7 +58,7 @@ sass:
 compress_html: # http://jch.penibelst.de/
   enabled: true # compress html
   clippings: all # clip safe tags
-  blanklines: true # boolean - strip blank lines and breaks
+  blanklines: false # boolean - strip blank lines and breaks
   #profile: true # boolean - print table of data saved
   #ignore:
   #envs: [local]
@@ -53,7 +66,7 @@ compress_html: # http://jch.penibelst.de/
 # Structure
 navigation:
   - title: Projects
-    url: /projects
+    url: /
   - title: Fonts
     url: /fonts
   - title: About
@@ -61,31 +74,25 @@ navigation:
   - title: Contact
     url: /contact
 
+permalink: /:title/
+
 # Configure site collections
 collections:
   projects:
     output: true
     permalink: /projects/:path/
   fonts:
-    output: true
+    output: false
     permalink: /fonts/:path/
 
-# Set default post types
-
-# defaults:
-#   -
-#     scope:
-#       path: "projects"
-#       type: "pages"
-#     values:
-#       layout: "project"
-#       author: "Matt"
-#       category: "project"
-#   -
-#     scope:
-#       path: "fonts"
-#       type: "pages"
-#     values:
-#       layout: "font"
-#       author: "Matt"
-#       category: "font"
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  # - scope:
+  #     path: ""
+  #     type: "fonts"
+  #   values:
+  #     layout: "font"

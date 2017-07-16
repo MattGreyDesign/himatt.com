@@ -1,0 +1,124 @@
+.project-wrapper {
+
+  //Layout
+  .project-info {
+    @extend %layout-grid-container;
+
+    .project-intro {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(7);
+        @include grid-shift(1);
+      }
+    }
+
+    .project-details {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(2);
+        @include grid-push(2);
+      }
+    }
+  }
+
+  .project-details {
+    .project-detail-wrapper {
+      @extend %layout-grid-container;
+      @include grid-collapse;
+
+      .project-detail-6 {
+        @include grid-column(6);
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(3);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(12);
+        }
+      }
+
+      .project-detail-12 {
+        @include grid-column(12);
+
+        @include grid-media($grid-tablet) {
+          @include grid-column(3);
+        }
+
+        @include grid-media($grid-desktop) {
+          @include grid-column(12);
+        }
+      }
+    }
+  }
+
+  .project-text {
+    @extend %layout-grid-container;
+
+    .project-text-wrapper {
+      @include grid-column(12);
+
+      @include grid-media($grid-tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media($grid-desktop) {
+        @include grid-column(7);
+        @include grid-shift(1);
+      }
+    }
+  }
+
+  //Styles
+  .image-wrapper {
+    @include responsive-padding;
+    .image-wrapper img { width: 100%; }
+
+    figcaption {
+      margin-top: $measure-xsmall;
+      margin-bottom: $measure-small;
+    }
+
+    &.nudge-down-5 {
+      margin-top: 5%;
+    }
+  }
+
+  .project-hero,
+  .project-intro {
+    margin-bottom: $measure-medium;
+  }
+
+  .project-detail {
+    margin-bottom: $measure-xsmall;
+  }
+
+  .project-details {
+    margin-bottom: $measure-medium;
+
+    .project-detail-wrapper {
+      .project-detail-property-title {
+        @extend %title-label;
+      }
+    }
+
+    .project-detail-first {
+      @include decorative-line-top;
+      position: relative;
+    }
+  }
+
+  .project-text {
+    margin-bottom: $measure-small;
+  }
+}

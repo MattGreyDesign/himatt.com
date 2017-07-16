@@ -1,3 +1,0 @@
----
----
-{% include /javascript/menu.js %}

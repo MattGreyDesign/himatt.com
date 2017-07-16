@@ -1,13 +1,6 @@
 %btn {
   @include element-padding;
-
-  @include media($mobile-size) {
-    display: inline-block;
-    width: auto;
-  }
-
-  display: block;
-  width: 100%;
+  display: inline-block;
   text-align: center;
   cursor: pointer;
   vertical-align: middle;
@@ -29,6 +22,15 @@
   }
 }
 
+.button-adaptive {
+  width: 100%;
+
+  @include grid-media($grid-desktop) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
 .button-primary {
   @extend %btn;
 
@@ -47,5 +49,27 @@
   &.disabled{
     background: $site-accent-color-lightest;
   }
+}
 
+.button-secondary {
+  @extend %btn;
+  border: 1px solid $site-accent-color;
+  color: $site-accent-color;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    background: $site-accent-color;
+    color: black;
+  }
+
+  &:active {
+    background: $site-accent-color-lightest;
+    color: black;
+  }
+
+  &:disabled,
+  &.disabled{
+    background: $site-accent-color-lightest;
+  }
 }

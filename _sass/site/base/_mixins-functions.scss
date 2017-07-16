@@ -13,6 +13,18 @@
   padding: ($measure-xsmall / 1.5) $measure-xsmall;
 }
 
+@mixin responsive-padding() {
+  padding-bottom: $page-global-padding-desktop;
+
+  @include grid-media($grid-tablet) {
+    padding-bottom: $page-global-padding-tablet;
+  }
+
+  @include grid-media($grid-desktop) {
+    padding-bottom: $page-global-padding-desktop;
+  }
+}
+
 @mixin padding($type: sides) {
   $set-padding-mobile: 0;
   $set-padding-desktop: 0;
@@ -30,7 +42,7 @@
 
   padding: $set-padding-mobile;
 
-  @include media($mobile-size) {
+  @include grid-media($grid-desktop) {
     padding: $set-padding-desktop;
   }
 }
@@ -52,18 +64,20 @@
 
   margin: $set-margin-mobile;
 
-  @include media($mobile-size) {
+  @include grid-media($grid-desktop) {
     margin: $set-margin-desktop;
   }
 }
 
-// @include media-query($mobile) { ... }
-// will compile to:
-//
-// @media only screen and (max-width: 480px) { ... }
 
-@mixin media-query($device: $desktop) { //desktop for default
-  @media only screen and ($responsive-property: $device) {
-    @content;
+@mixin decorative-line-top($decoration-height: 1px, $decoration-width: 20px) {
+    &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: white;
+    top: (-10px - $decoration-height);
+    width: $decoration-width;
+    height: $decoration-height;
   }
 }

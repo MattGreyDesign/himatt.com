@@ -1,28 +1,46 @@
-<header class="{% include accent.html %}">
+<header class="main-header" data-header>
   <div class="header-content">
 
     <a class="accessibility-skip" href="#maincontent">Skip to main content</a>
 
     <div class="logo-nav-wrapper">
+      <div class="logo-title-wrapper">
+        <div class="logo">
+          <a href="{{ site.baseurl }}/">
+            {% include logo.svg %}
+          </a>
+        </div>
 
-      <div class="logo">
+        {% if page.layout == "page" %}
         <a href="{{ site.baseurl }}/">
-          {% include logo.svg %}
-          <span>{{ site.title }} Home</span>
+          <div class="site-title">
+            <h2>{{ site.title }}</h2>
+          </div>
         </a>
+        {% endif %}
+
+        {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
+        <div class="desktop-page-title">
+          <h1>{{ page.title }}</h1>
+        </div>
+        {% endif %}
       </div>
 
-      <nav class="navigation" role="navigation" aria-label="main navigation">
-        <a href="javascript:void(0)" class="mobile-nav {% include accent.html %}">Menu</a>
+      <nav class="navigation" aria-label="main navigation">
+        <a href="javascript:void(0)" class="mobile-nav">Menu</a>
         <div class="mobile-nav-wrapper">
-          <ul class="mobile-dropdown {% include accent.html %}">
+          <ul class="mobile-dropdown">
           {% for link in site.navigation %}
             {% assign current = nil %}
-            {% if page.url contains link.url %}
-                {% assign current = ' class="current"' %}
+            {% capture current_page %}{{ page.url | downcase | replace_first: '/', '' | remove: '/' }}{% if page.url == '/' %}projects{% endif %}{% endcapture %}
+            {% capture current_page_nav %}{{ link.title | downcase }}{% endcapture %}
+
+            {% if current_page contains current_page_nav %}
+              {% assign current = ' class="current"' %}
             {% endif %}
+
             <li>
-              <a{{ current }} href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+              <a{{ current }} href="{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
           </ul>
@@ -30,12 +48,6 @@
       </nav>
 
     </div>
-
-    {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
-    <div id="maincontent" class="page-title">
-      <h1>{{ page.title }}</h1>
-    </div>
-    {% endif %}
 
   </div>
 </header>

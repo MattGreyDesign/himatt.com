@@ -4,16 +4,19 @@
 @charset "utf-8";
 
 // Vendor
-@import "bourbon/bourbon";
-@import 'neat-config';
-@import "neat/neat";
+// @import 'neat-config';
+@import "bourbon";
+@import "neat";
 
 @import "normalize";
 
-// Base
+//Base
 @import "site/base/variables";
-@import "site/base/extends";
+@import "neat-grids";
+
 @import "site/base/mixins-functions";
+@import "site/base/extends";
+@import "site/base/utilities";
 @import "site/base/typography";
 @import "site/base/links";
 @import "site/base/images";
@@ -21,18 +24,23 @@
 @import "site/base/buttons";
 @import "site/base/forms";
 
-// Partials / organisms
-@import "site/page";
-@import "site/header";
-@import "site/footer";
-@import "site/nav";
-
 // Components
-//@import "site/components/page-list";
+@import "site/components/header";
+@import "site/components/nav";
+@import "site/components/page-title";
+@import "site/components/layouts";
+@import "site/components/footer";
 
-// Layouts
-@import "site/layouts/project";
+// // Layouts
+@import "site/page";
+@import "site/layouts/generic-page";
+
+@import "site/layouts/homepage";
 @import "site/layouts/projects";
-@import "site/layouts/font";
+@import "site/layouts/project";
+@import "site/layouts/fonts";
+// @import "site/layouts/font";
 @import "site/layouts/about";
+@import "site/layouts/where-ive-been";
 @import "site/layouts/contact";
+@import "site/layouts/404";

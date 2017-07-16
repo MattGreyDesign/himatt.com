@@ -1,33 +1,39 @@
+//Variables
+$animation-time-in: .3s;
+$animation-ease-in: ease-in-out;
+
+$animation-time-out: .2s;
+$animation-ease-out: ease-in-out;
+
 //Layout
+.projects-page {
 
-.projects-wrapper {
-  @include outer-container;
+  .projects-wrapper {
+    @extend %layout-grid-container;
 
-  .projects {
-    @include padding(full);
+    .projects {
 
-    > article {
-      @include media($tablet-size) {
-        @include span-columns(6);
-      }
+      > article.project-listing {
+        @include grid-column(12);
 
-      @include media($desktop-size) {
-        @include span-columns(4);
-      }
+        @include grid-media($grid-tablet) {
+          @include grid-column(6);
+        }
 
-      @include media($largedesktop-size) {
-        @include span-columns(3);
+        @include grid-media($grid-desktop) {
+          @include grid-column(4);
+        }
       }
     }
   }
 }
 
-.projects {
+//Styling
+.projects-page {
 
   .projects-wrapper {
 
     article {
-
       padding-bottom: $measure-medium;
 
       &:last-of-type {
@@ -35,70 +41,112 @@
       }
 
       .thumbnail-wrapper {
-        position: relative;
         a {
+          outline: 0;
+          text-decoration: none;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+          }
 
           h3 {
             display: block;
-            color: white;
-            background: black;
+            color: $site-text-color;
+            margin-top: .4em;
+            font-size: $font-size-normal;
           }
 
-          p {
-            @include visually-hidden;
-            opacity: 0;
-          }
-
-          &:hover p {
-            @include element-padding;
+          .thumbnail-description-wrapper {
             display: block;
+            position: relative;
+            line-height: 1;
+            background-color: transparent;
+            overflow: hidden;
             width: 100%;
-            background-color: blue;
-            position: absolute;
-            top: 0;
-            bottom: 64px;
-            margin: 0;
-            padding: $page-element-padding;
+            padding-top: 75%;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            clip: auto;
-            opacity: 0.75;
-            transition: opacity 1s ease-in-out;
-            text-align: center;
+            p.thumbnail-description {
+              //Initially hidden
+              opacity: 0;
 
-            span {
-              opacity: 1;
-              color: white;
+              //animate out
+              transition-property: opacity;
+              transition-timing-function: $animation-ease-out;
+              transition-duration: $animation-time-out;
+              padding: ($measure-xsmall / 1.5) $measure-medium;
+
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: rgba($site-accent-color-secondary, .85);
+              margin: 0;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              line-height: 1;
+
+              //center text all ways (text is in span)
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+
+              span.thumbnail-tag-media {
+                display: block;
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+              }
+
+              span {
+                display: block;
+                color: white;
+                line-height: 1.4;
+                font-size: 1.3rem;
+
+                //offset for drop-in
+                -webkit-transform-style: preserve-3d;
+                transform: translate3d(0, 10px, 0);
+
+                //animate drop-in out
+                transition-property: transform;
+                transition-timing-function: $animation-ease-out;
+                transition-duration: $animation-time-out;
+              }
             }
           }
 
-          img {
-            background: $site-background-color;
-            display: block;
-            min-height: 150px;
+          &:hover .thumbnail-description-wrapper p.thumbnail-description,
+          &:focus .thumbnail-description-wrapper p.thumbnail-description {
+
+            //semi-transparent background
+            opacity: 1;
+
+            //animate fade in
+            transition-property: opacity;
+            transition-timing-function: $animation-ease-in;
+            transition-duration: $animation-time-in;
+
+            span {
+              //drop-in is reset back to original position
+              transform: translate3d(0,0,0);
+
+              //animate drop-in in
+              transition-property: transform;
+              transition-timing-function: $animation-ease-in;
+              transition-duration: $animation-time-in;
+            }
           }
-        }
-      }
-    }
-
-    @include media($tablet-size) {
-      > article {
-        background: red;
-
-        a {
-          text-decoration: none;
-
-          h3 {
-
-          }
-
-          p {
-
-          }
-
         }
       }
     }

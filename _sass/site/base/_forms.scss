@@ -6,7 +6,7 @@ form {
   }
 
   label {
-    width: 100%;
+    display: block;
     font-size: $font-size-large;
   }
 
@@ -23,17 +23,28 @@ form {
   }
 
   #{$all-text-inputs} {
-    border: 2px solid $site-line-color;
+    border: 0;
+    border-bottom: 4px solid white;
     outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #{$all-text-inputs-hover} {
+    border: 0;
+    border-bottom: 4px solid $site-line-color;
   }
 
   #{$all-text-inputs-focus},
-  #{$all-text-inputs-active},
-  #{$all-text-inputs-hover} {
-    border-color: mix($site-line-color, black, 90%);
+  #{$all-text-inputs-active} {
+    border: 0;
+    border-bottom: 4px solid $site-accent-color;
   }
 
   textarea {
     resize: vertical;
   }
+
+  .bot-field { @include visually-hidden; }
 }

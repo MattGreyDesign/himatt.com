@@ -1,65 +1,64 @@
-//Global site layout
+::-moz-selection {
+    color: white;
+    background: $site-accent-color-secondary;
+}
+
+::selection {
+    color: white;
+    background: $site-accent-color-secondary;
+}
+
 html {
+  box-sizing: border-box;
   background: $site-background-color;
+  height: 100%;
+}
 
-  @include media($tablet-size) {
-    padding: $page-padding;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 body {
-  overflow: hidden;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  color: $site-text-color;
 
-  @include media($tablet-size) {
-    min-height: calc(100vh - #{($page-padding*2)});
-  }
-}
+  &.prevent-scroll-mobile {
+    overflow: hidden;
 
-main {
-  flex: 1;
-  background: white;
-}
-
-@include media($tablet-size) {
-  main {
-    margin-bottom: $measure-small;
-    margin-top: $measure-small;
-  }
-}
-
-// Page element stacking order
-body {
- z-index: 0;
-
-  & > header {
-
-    z-index: 1;
-
-    & > nav {
-      z-index: 2;
+    @include grid-media($grid-tablet) {
+      overflow: auto;
     }
-
-  }
-
-  & > main {
-    z-index: inherit;
-  }
-
-  & > footer {
-    z-index: inherit;
   }
 }
 
-// body.prevent-scroll {
-//   position: fixed;
-//   width: 100%;
-// }
+.global-wrapper {
+  margin-top: 100px;
+}
 
-// @include media($tablet-size) {
-//   body.prevent-scroll {
-//     position: relative;
-//   }
-// }
+.header-content,
+main,
+footer {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include grid-media($grid-tablet) {
+    max-width: $desktop-size;
+  }
+
+  @include grid-media($grid-tablet) {
+    max-width: $largedesktop-size;
+  }
+}
+
+.main-content { min-height: calc(100vh - 193px); }
+
+.page-header-spacer {
+  height: 2em;
+}

@@ -2,6 +2,7 @@
 layout: page
 title: "Fonts"
 permalink: /fonts/
+redirect_from: /projects/typefaces
 priority: 0.9
 sitemap: false
 

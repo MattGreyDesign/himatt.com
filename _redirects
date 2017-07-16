@@ -2,7 +2,12 @@
 # will generate redirects from redirect_from in page frontmatter
 ---
 
+/portfolio / 301
 /projects / 301
+/projects/social-networking-icons / 301
+/projects/all-things-iced / 301
+/projects/saving-lives-sea / 301
+/projects/usa-just-brand / 301
 
 {% for page in site.posts %}{% if page.redirect_from %}{{ page.redirect_from }} {{ page.url }} 301
 {% endif %}{% endfor %}{% for page in site.html_pages %}{% if page.redirect_from %}{{ page.redirect_from }} {{ page.url }} 301

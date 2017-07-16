@@ -55,14 +55,17 @@
   @extend %btn;
   border: 1px solid $site-accent-color;
   color: $site-accent-color;
+  background: transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $site-accent-color;
     color: black;
   }
 
   &:active {
     background: $site-accent-color-lightest;
+    color: black;
   }
 
   &:disabled,

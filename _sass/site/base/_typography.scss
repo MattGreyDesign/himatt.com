@@ -45,7 +45,7 @@ h4 {
 }
 
 .paragraph-main p {
-  margin-bottom: 0.7em;
+  margin-bottom: .9em;
   font-size: $body-font-size-mobile;
 
   @include grid-media($grid-desktop) {

@@ -16,8 +16,8 @@ intro: |
 
   I design multi-platform websites and apps, prototype them with programs like
   flinto or html and css and sometimes develop branding and styleguides. I have
-  also worked with print and illustration producing album artwork, brochures and
-  books.
+  also worked with print and illustration, producing album artwork, brochures
+  and books.
 
   In 2010 I founded a [font foundry](https://www.myfonts.com/foundry/Matt_Grey/),
   which has released a number of free and commercial [fonts](/fonts).

@@ -10,7 +10,6 @@ gems:
   - neat
 
 exclude:
-  - robots.txt
   - readme.md
   - Gemfile
   - Gemfile.lock #include robots on release

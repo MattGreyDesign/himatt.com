@@ -22,7 +22,7 @@ include:
 # Site settings
 title: Matt Grey
 email: info@himatt.com
-description: "Portfolio of graphic, UX and type designer Matt Grey"
+description: "Portfolio of UX, font and graphic designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "//himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London

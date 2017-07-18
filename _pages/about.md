@@ -75,6 +75,22 @@ about_site: |
   {:.list--dashed .list--small}
 ---
 
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Person",
+    "name": "Matt Grey",
+    "jobTitle": "UX Designer",
+    "nationality": "British",
+    "url": "http://www.himatt.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "United Kingdom"
+    }
+  }
+</script>
+
 <div class="about-wrapper">
   <div class="about">
     <div class="about-intro">

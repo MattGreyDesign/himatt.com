@@ -1,3 +1,19 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Matt Grey",
+    "alternateName": "Matt Grey Design",
+    "url": "http://www.himatt.com"
+  }
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "http://www.himatt.com",
+    "logo": "http://www.himatt.com/images/mg-logo.png"
+  }
+</script>
+
 <header class="main-header" data-header>
   <div class="header-content">
 
@@ -26,7 +42,7 @@
         {% endif %}
       </div>
 
-      <nav class="navigation" aria-label="main navigation">
+      <nav class="navigation" aria-label="main navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <a href="javascript:void(0)" class="mobile-nav">Menu</a>
         <div class="mobile-nav-wrapper">
           <ul class="mobile-dropdown">
@@ -39,8 +55,8 @@
               {% assign current = ' class="current"' %}
             {% endif %}
 
-            <li>
-              <a{{ current }} href="{{ link.url }}">{{ link.title }}</a>
+            <li itemprop="name">
+              <a{{ current }} itemprop="url" href="{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
           </ul>

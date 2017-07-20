@@ -29,17 +29,20 @@ form {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    transition: border-bottom-color $timing-interaction;
   }
 
   #{$all-text-inputs-hover} {
     border: 0;
     border-bottom: 4px solid $site-line-color;
+    transition: border-bottom-color $timing-interaction;
   }
 
   #{$all-text-inputs-focus},
   #{$all-text-inputs-active} {
     border: 0;
     border-bottom: 4px solid $site-accent-color;
+    transition: border-bottom-color $timing-interaction;
   }
 
   textarea {

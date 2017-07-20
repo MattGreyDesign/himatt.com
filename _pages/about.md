@@ -70,8 +70,11 @@ about_site: |
   [Google Analytics](http://google.com/analytics).
 
   - All the code for this site is open source and available on
-  [Github](https://github.com/mattgreydesign/mattgreydesign.github.io), and
-  deployed and hosted using [Netlify](http://netlify.com/).
+  [Github](https://github.com/mattgreydesign/mattgreydesign.github.io), deployed
+  and hosted using [Netlify](http://netlify.com/).
+
+  - Although the code is opensource under the GNU General Public License v3, all
+  content is Copyrighted. [Read more](https://github.com/MattGreyDesign/mattgreydesign.github.io/blob/master/LICENSE)
   {:.list--dashed .list--small}
 ---
 

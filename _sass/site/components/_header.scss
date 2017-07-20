@@ -99,7 +99,7 @@
     display: none;
 
     @include grid-media($grid-desktop) {
-      transition: opacity 0.2s ease-in-out;
+      transition: opacity $timing-interaction ease-in-out;
       height: auto;
       width: auto;
       display: inline-block;

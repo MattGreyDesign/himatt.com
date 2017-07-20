@@ -18,12 +18,12 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
   <meta name="theme-color" content="#171717">
+
   {% if page.is_post %}
     {% assign type = "article" %}
   {% else %}
     {% assign type = "website" %}
   {% endif %}
-
   <meta property="og:type" content="{{ type }}"/>
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>

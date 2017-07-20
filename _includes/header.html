@@ -42,10 +42,10 @@
         {% endif %}
       </div>
 
-      <nav class="navigation" aria-label="main navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <nav class="navigation" aria-label="main navigation">
         <a href="javascript:void(0)" class="mobile-nav">Menu</a>
         <div class="mobile-nav-wrapper">
-          <ul class="mobile-dropdown">
+          <ul class="mobile-dropdown" itemscope itemtype="http://schema.org/SiteNavigationElement">
           {% for link in site.navigation %}
             {% assign current = nil %}
             {% capture current_page %}{{ page.url | downcase | replace_first: '/', '' | remove: '/' }}{% if page.url == '/' %}projects{% endif %}{% endcapture %}
@@ -55,8 +55,8 @@
               {% assign current = ' class="current"' %}
             {% endif %}
 
-            <li itemprop="name">
-              <a{{ current }} itemprop="url" href="{{ link.url }}">{{ link.title }}</a>
+            <li>
+              <a{{ current }} itemprop="url" href="{{ link.url }}"><span itemprop="name">{{ link.title }}</span></a>
             </li>
           {% endfor %}
           </ul>

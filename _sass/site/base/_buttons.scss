@@ -6,6 +6,9 @@
   vertical-align: middle;
   text-decoration: none;
   font-size: $font-size-large;
+  transition:
+    color $timing-interaction,
+    background $timing-interaction;
 
   &:focus {
     outline:0;

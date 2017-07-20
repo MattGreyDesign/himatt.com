@@ -8,7 +8,8 @@ sitemap: false
 
 intro: |
   I am in the process of creating a resource with information about my fonts
-  here — this will include licenses, release details and technical support.
+  here — this will include licenses, release details, version history,
+  technical support and future releases.
 
   For now you can find some of my fonts and their details on
   [Myfonts](https://www.myfonts.com/foundry/Matt_Grey/),

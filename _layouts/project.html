@@ -2,6 +2,30 @@
 layout: default
 title-class: project
 ---
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "{{ site.url | append: '/projects/' }}",
+        "name": "Projects"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "{{ site.url | append: page.url }}",
+        "name": "{{ page.title }}",
+        "image": "{{ site.url | append: '/images' | append: page.thumbnail }}"
+      }
+    }]
+  }
+</script>
+
 <div class="project-wrapper">
 
 {% if page.layout_mode == 'hero' %}

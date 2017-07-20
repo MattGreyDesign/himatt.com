@@ -1,8 +1,8 @@
 //Variables
-$animation-time-in: .3s;
+$animation-time-in: $timing-interaction;
 $animation-ease-in: ease-in-out;
 
-$animation-time-out: .2s;
+$animation-time-out: $timing-interaction;
 $animation-ease-out: ease-in-out;
 
 //Layout
@@ -35,10 +35,6 @@ $animation-ease-out: ease-in-out;
 
     article {
       padding-bottom: $measure-medium;
-
-      &:last-of-type {
-        padding-bottom: 0;
-      }
 
       .thumbnail-wrapper {
         a {

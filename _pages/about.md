@@ -10,14 +10,14 @@ intro: |
   the gap between design and technical implementation by working alongside
   developers to deliver products with engaging user experiences.
 
-  I currently live and work in Southampton as a UX designer and consultant at
+  I currently live and work in Southampton as a UX designer and Consultant at
   [Alliants](http://alliants.com). I've worked for clients such as Ski Solutions,
   Babylon Health, CooperVision/Specsavers, Channel 5 and OpenJaw Technologies.
 
   I design multi-platform websites and apps, prototype them with programs like
-  flinto or html and css and sometimes develop branding and styleguides. I have
-  also worked with print and illustration, producing album artwork, brochures
-  and books.
+  Flinto — or simply with HTML and CSS — and sometimes develop branding and
+  styleguides. I have also worked with print and illustration, producing album
+  artwork, brochures and books.
 
   In 2010 I founded a [font foundry](https://www.myfonts.com/foundry/Matt_Grey/),
   which has released a number of free and commercial [fonts](/fonts).

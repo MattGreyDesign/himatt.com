@@ -56,9 +56,3 @@ DEPENDENCIES
   jekyll (= 3.5.2)
   neat (= 2.0.0)
   tzinfo-data
-
-RUBY VERSION
-   ruby 2.1.0p0
-
-BUNDLED WITH
-   1.14.6

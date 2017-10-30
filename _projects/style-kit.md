@@ -13,9 +13,6 @@ thumbnail: "/projects/style-kit/plist-style-kit.png"
 accent:
   color:
   inverted:
-website:
-  button_text: View live site
-  url: http://alliants-fs-web-styleguide-prod-latest.s3-website-eu-west-1.amazonaws.com/
 
 intro: |
   Style kit is a digital styleguide for a luxury international hotel and resort

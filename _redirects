@@ -5,6 +5,7 @@ https://www.mattgreydesign.com/* {{ site.url }}/:splat 301!
 https://mattgreydesign.com/* {{ site.url }}/:splat 301!
 http://www.mattgreydesign.com/* {{ site.url }}/:splat 301!
 http://mattgreydesign.com/* {{ site.url }}/:splat 301!
+/blog/* {{ site.url }}/:splat 301
 
 /portfolio / 301
 /projects / 301

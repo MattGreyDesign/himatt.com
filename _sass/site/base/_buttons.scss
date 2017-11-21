@@ -1,4 +1,4 @@
-%btn {
+%button {
   @include element-padding;
   display: inline-block;
   text-align: center;
@@ -6,6 +6,9 @@
   vertical-align: middle;
   text-decoration: none;
   font-size: $font-size-large;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
   transition:
     color $timing-interaction,
     background $timing-interaction;
@@ -35,7 +38,7 @@
 }
 
 .button-primary {
-  @extend %btn;
+  @extend %button;
 
   background: $site-accent-color;
   border: none;
@@ -55,7 +58,7 @@
 }
 
 .button-secondary {
-  @extend %btn;
+  @extend %button;
   border: 1px solid $site-accent-color;
   color: $site-accent-color;
   background: transparent;

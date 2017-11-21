@@ -7,7 +7,7 @@ categories: ux, ui, styleguide
 disciplines: Styleguide, UX, UI, CSS
 media: Live Styleguide
 ownership: Alliants
-client: Butterfly
+client: Confidential
 time_period: 2016
 thumbnail: "/projects/style-kit/plist-style-kit.png"
 accent:

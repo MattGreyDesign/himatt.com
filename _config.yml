@@ -21,7 +21,7 @@ include:
 
 # Site settings
 title: Matt Grey
-email: info@himatt.com
+email: mattgreydesign@gmail.com
 description: "Portfolio of UX, font and graphic designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://himatt.com" # the base hostname & protocol for your site

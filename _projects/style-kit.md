@@ -1,6 +1,6 @@
 ---
 date: 2016-01-1
-published: false
+published: true
 title: "Style kit"
 description: "Styleguide for a leading international luxury hotel and resort chain"
 categories: ux, ui, styleguide

@@ -15,7 +15,7 @@ accent:
   inverted:
 website:
   button_text: View / Buy
-  url: https://www.iconfinder.com/MattGrey
+  url: https://www.iconfinder.com/MattGrey?ref=MattGrey
 
 intro: |
   Unified was created in response to the ever-growing demand for a set of

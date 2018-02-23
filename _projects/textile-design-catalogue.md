@@ -20,11 +20,11 @@ website:
 intro: |
   A project to design a catalogue for graduates of the Textile Design course
   (2013) at Falmouth University. I was asked to create something that did not
-  favour any one graduate’s work another. For the cover I came up with the idea
-  of using fine set typography and different layered materials like clear
-  acetate and thickness of paper — without actually showing any work — to create
-  a sense of delicate texture and layering, which reflects the weave and
-  materials of textile work.
+  favour any one graduate’s work over another. For the cover I came up with the
+  idea of using fine set typography and different tactile materials like clear
+  acetate and a varying thickness of paper — without actually showing any work
+  — to create a delicate sense of texture and layering, which mirrors the
+  delicate weave and material of textile work.
 
 content_layout:
 

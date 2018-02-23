@@ -18,12 +18,12 @@ website:
   url: https://www.skisolutions.com
 
 intro: |
-  The lack of responsiveness was impacting on Ski Solution's search engine
-  rankings considerably. The solution to improve SEO and drive enquiries was to
-  re-design and optimise the website experience from the bottom up.
+  The lack of responsiveness was negatively impacting on Ski Solution's search
+  engine rankings considerably. The solution to improve SEO and drive enquiries
+  was to re-design and optimise the website experience from the bottom up.
 
   Working from a mobile first, I redesigned the site to work across as many
-  devices as possible, creating a css styleguide and icon font to maintain
+  devices as possible, creating a CSS framework and icon font to maintain
   consistency with the colours, geometry and component styles.
 
 content_layout:

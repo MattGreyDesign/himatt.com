@@ -23,9 +23,16 @@ main ul li {
 }
 
 dl.relational-list {
-  dd {
+  dt.relational-list__title {}
+  dd.relational-list__description {
     font-size: $font-size-small;
     opacity: $color-rgb-opacity;
     margin-bottom: 1rem;
+
+    &.relational-list__description--period {
+      margin-bottom: .2em;
+      text-transform: uppercase;
+      font-size: $font-size-xsmall;
+    }
   }
 }

@@ -10,18 +10,21 @@ intro: |
   the gap between design and technical implementation by working alongside
   developers to deliver products with engaging user experiences.
 
-  I currently live and work in Southampton as a UX designer and Consultant at
-  [Alliants](http://alliants.com). I've worked for clients such as
-  Four Seasons Hotels and Resorts,
-  Sun Life Financial,
-  Travelodge,
-  Ski Solutions,
-  Babylon Health,
-  CooperVision/Specsavers,
-  Channel 5,
-  butterfly.life,
-  VisitBritain,
-  and OpenJaw Technologies.
+  I currently live and work in Central London as a UI designer for
+  [Tesco](//www.tesco.com/).
+
+  Before that I was working in Southampton as a UX designer and Consultant at
+  [Alliants](http://alliants.com) where I've worked with clients such as
+  <!-- [Four Seasons Hotels and Resorts](//fourseasons.com), -->
+  [Travelodge](//travelodge.co.uk),
+  [Ski Solutions](//skisolutions.com),
+  [Babylon Health](//babylonhealth.com),
+  [Sun Life Financial (Canada)](//www.sunlife.com),
+  [CooperVision/Specsavers](//www.specsavers.co.uk/contact-lenses/coopervision),
+  [Channel 5](//channel5.com),
+  [butterfly.life](//itunes.apple.com/gb/app/butterfly-life/id1258575969),
+  [VisitBritain](//www.visitbritain.com/gb/en),
+  and [OpenJaw Technologies](//www.openjawtech.com).
 
   I design and prototype multi-platform websites and apps, sometimes developing
   branding and living styleguides if necessary. In the past I have also worked
@@ -32,8 +35,29 @@ intro: |
 
 profile_picture: /images/profile-bw.jpg
 
+experience:
+  - company: Tesco Stores Ltd.
+    position: UI Designer
+    period: March 2018 - Present
+
+  - company: Alliants
+    position: Visual/UX designer and Consultant
+    period: Jun 2014 - Feb 2018
+
+  - company: Techbods
+    position: Graphic Designer
+    period: Jul 2013 - Sep 2013
+
+  - company: Leepeckgroup
+    position: Work Experience - Designer
+    period: Sep 2010
+
+  - company: Hampshire County Council
+    position: Work Experience - Graphic Designer
+    period: Oct 2009
+
 education:
-  - course: Two-day user experience design bootcamp
+  - course: Two-day User Experience Design Bootcamp
     place: General Assembly
 
   - course: Foundation Certificate in User Experience
@@ -56,8 +80,8 @@ skills:
   - Contextual inquiry
 
 tools:
-  - Sketch app, Flinto, Balsamiq, Adobe XD, Invision, Zeplin, Marvel app
-  - Adobe Creative Cloud Suite (Photoshop, Illustrator, After Effects...)
+  - Sketch app, Flinto, Balsamiq, Invision, Zeplin, Marvel app
+  - Adobe Creative Cloud Suite (Photoshop, XD, Illustrator, After Effects...)
   - Glyphs app, Fontlab, Fontographer
   - HTML
   - CSS and SASS (SCSS)
@@ -119,13 +143,26 @@ about_site: |
     </div>
 
     <div class="about-attributes">
+      <div class="about-experience">
+        <div class="about-section">
+          <h3 class="about-section-title">Experience</h3>
+          <dl class="relational-list">
+            {% for experience-item in page.experience %}
+              <dt class="relational-list__title">{{ experience-item.company | markdownify}}</dt>
+              <dd class="relational-list__description relational-list__description--period">{{ experience-item.period | markdownify}}</dd>
+              <dd class="relational-list__description">{{ experience-item.position | markdownify}}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+
       <div class="about-education">
         <div class="about-section">
           <h3 class="about-section-title">Education</h3>
           <dl class="relational-list">
             {% for education-item in page.education %}
-              <dt>{{ education-item.course | markdownify}}</dt>
-              <dd>{{ education-item.place | markdownify}}</dd>
+              <dt class="relational-list__title">{{ education-item.course | markdownify}}</dt>
+              <dd class="relational-list__description">{{ education-item.place | markdownify}}</dd>
             {% endfor %}
           </dl>
         </div>

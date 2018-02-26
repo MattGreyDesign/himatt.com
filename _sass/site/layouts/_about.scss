@@ -51,7 +51,8 @@
 
       .about-tools,
       .about-skills,
-      .about-education {
+      .about-education,
+      .about-experience {
         @include grid-column(12);
 
         @include grid-media($grid-mobile-large) {

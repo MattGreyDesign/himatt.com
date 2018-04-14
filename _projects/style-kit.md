@@ -4,7 +4,7 @@ published: true
 title: "Style kit"
 description: "Styleguide for a leading international luxury hotel and resort chain"
 categories: ux, ui, styleguide
-disciplines: Styleguide, UX, UI, CSS
+disciplines: Styleguide, UX, UI, HTML/CSS
 media: Live Styleguide
 ownership: Alliants
 client: Confidential
@@ -23,7 +23,12 @@ intro: |
   The need for a visual language guide became apparent when it came to
   rebranding the whole digital presence, both internally and externally. The
   inconsistency that arose from initiating new projects with no reference for
-  identity meant that a universal resource was an urgent need.
+  identity meant that a universal resource was in urgent need.
+
+  I set out common taxonomies for elements and coded the frontend markup and
+  styles required, tuning and perfecting the micro-interactions in the process.
+  The project was a marked success, efficiently being used across the world by a
+  multitude of development teams across platforms.
 
 content_layout:
   - section_layout: 2col

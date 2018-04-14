@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "3.5.2"
-gem "neat", "2.0.0"
+gem "neat", "2.1.0"
 gem "bourbon", "4.2.7"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

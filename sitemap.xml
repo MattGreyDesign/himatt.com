@@ -1,7 +1,8 @@
 ---
+layout: sitemap
 ---
-{% if site.sitemap %}<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+{% if site.sitemap %}
 {% capture site_url %}{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ site.github.url }}{% endif %}{% endcapture %}
   <url>
     <loc>{{ site.url }}/</loc>
@@ -13,12 +14,12 @@
     <loc>{{ site.url }}{{ page.url }}</loc>
     <priority>{{ page.priority }}</priority>
   </url>
-  {% endfor %}{% for page in site.html_pages %}{% unless page.sitemap == false %}
+  {% endfor %}{% for page in site.html_pages %}{% unless page.sitemap == false %}{% assign page_url = site.url | append: page.url %}{% assign site_base_url = site.url | append: '/' %}{% unless page_url == site_base_url %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>{% if page.priority %}
     <priority>{{ page.priority }}</priority>{% endif %}
   </url>
-  {% endunless %}{% endfor %}{% for collection in site.collections %}{% unless collection.last.output == false or collection.output == false or collection.label == 'posts' %}{% for doc in collection.last.docs %}{% unless doc.sitemap == false %}
+  {% endunless %}{% endunless %}{% endfor %}{% for collection in site.collections %}{% unless collection.last.output == false or collection.output == false or collection.label == 'posts' %}{% for doc in collection.last.docs %}{% unless doc.sitemap == false %}
   <url>
     <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url | normalize_url }}</loc>
     <priority>0.7</priority>

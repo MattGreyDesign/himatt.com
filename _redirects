@@ -10,6 +10,7 @@ http://mattgreydesign.com/* {{ site.url }}/:splat 301!
 /portfolio / 301
 /projects / 301
 /projects/social-networking-icons /fonts/ 301
+/fonts/social-networking-icons /fonts/ 301
 /projects/all-things-iced / 301
 /projects/saving-lives-sea / 301
 /projects/usa-just-brand / 301

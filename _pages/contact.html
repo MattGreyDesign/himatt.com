@@ -35,7 +35,7 @@ priority: 0.9
     </aside>
 
     <div class="contact-form">
-      <form netlify netlify-honeypot="flasfhjla" action="thank-you">
+      <form netlify action="thank-you">
         <fieldset>
           <section>
             <label for="name">Name
@@ -55,7 +55,7 @@ priority: 0.9
             </label>
           </section>
 
-          <p class="bot-field"><label>Do not fill in this field <input type="text" name="flasfhjla" tabindex="-1"></label></p>
+          <div data-netlify-recaptcha></div>
 
           <input class="button-secondary" type="submit" value="Send Message">
         </fieldset>

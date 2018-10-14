@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.5.2"
+gem "jekyll", "3.8.4"
 gem "neat", "2.1.0"
 gem "bourbon", "4.2.7"
 

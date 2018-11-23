@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "short_name": "Matt Grey",
+    "name": "Matt Grey Design",
     "icons": [
         {
             "src": "/images/favicons/android-chrome-192x192.png",
@@ -9,6 +10,11 @@
         {
             "src": "/images/favicons/android-chrome-256x256.png",
             "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],

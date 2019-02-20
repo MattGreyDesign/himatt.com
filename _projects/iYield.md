@@ -1,7 +1,7 @@
 ---
 sitemap: false
 date: 2017-02-10
-published: true
+published: false
 title: "iYield"
 description: "Prototyping and branding an investment tool for a fintech startup"
 categories: ux, ui, branding

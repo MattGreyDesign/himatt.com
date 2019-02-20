@@ -1,6 +1,7 @@
 ---
 date: 2017-01-1
-published: false
+published: true
+sitemap: false
 title: "Butterfly"
 description: "Experience, architecture and design for a social networking app made for creatives"
 categories: app, ux, mobile

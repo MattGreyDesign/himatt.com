@@ -51,6 +51,12 @@ $animation-ease-out: ease-in-out;
             left: 0;
             bottom: 0;
             text-align: center;
+            filter: grayscale(0%);
+
+            // Animate filters
+            transition-property: filter;
+            transition-timing-function: $animation-ease-out;
+            transition-duration: $animation-time-out;
           }
 
           h3 {
@@ -142,6 +148,14 @@ $animation-ease-out: ease-in-out;
               transition-timing-function: $animation-ease-in;
               transition-duration: $animation-time-in;
             }
+          }
+
+          &:hover .thumbnail-description-wrapper img,
+          &:focus .thumbnail-description-wrapper img {
+            filter:
+              grayscale(100%)
+              //contrast(200%)
+            ;
           }
         }
       }

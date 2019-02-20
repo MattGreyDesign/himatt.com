@@ -18,10 +18,11 @@ website:
   url: https://www.skisolutions.com
 
 intro: |
-  The lack of responsive functionality across modern devices was negatively
-  impacting on Ski Solution's search engine rankings considerably. The solution
-  to improve SEO and drive enquiries was to re-design and optimise the website
-  experience from the bottom up.
+  The absence of full mobile device support was negatively impacting on
+  Ski Solution's conversions and search engine rankings considerably. The site
+  at the time had a separate mobile site with a stripped down feature-set. The
+  solution was to create a fully redesigned responsive experience and optimise
+  the website from the bottom up to improve SEO and drive enquiries.
 
   Working from a mobile first approach, I redesigned the site to work across
   mobile, tablet and desktop, creating a CSS framework and icon font to maintain

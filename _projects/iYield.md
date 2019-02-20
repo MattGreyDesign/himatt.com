@@ -1,9 +1,9 @@
 ---
 sitemap: false
 date: 2017-02-10
-published: false
+published: true
 title: "iYield"
-description: "Branding and prototyping an investment tool for a fintech company"
+description: "Prototyping and branding an investment tool for a fintech startup"
 categories: ux, ui, branding
 disciplines: UX, Wireframing, Prototyping, UI, HTML/CSS, Branding
 media: Website
@@ -20,10 +20,10 @@ website:
 
 intro: |
   _iYield_ is a tool for calculating and visualising the estimated returns on
-  crowd funded property investment.
-
-  To design a responsive interactive tool that could be embedded in franchised
-  websites alongside the details of a property.
+  crowdfunded property investment. This project centred around an interactive
+  tool that could be embedded in franchised property websites and sit alongside
+  the details of a property to show potential ROI based on market data and
+  upfront costs.
 
   The eventual solution involved working alongside a frontend developer to build
   out a comprehensive frontend prototype that could be tested out with real data

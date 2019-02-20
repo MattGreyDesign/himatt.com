@@ -39,7 +39,6 @@ social-username:
   instagram: "mattgreydesign"
   flickr: "mattgreydesign"
   spotify: "mattgreydesign"
-  lastfm: "mattdabest"
 
 # Content
 image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">

@@ -27,11 +27,14 @@
   }
 
   .page-title {
-    h1 {
-      font-size: $font-size-xxxxlarge;
-      line-height: 1.2;
+    padding-bottom: 1em;
+
+    @include grid-media($grid-tablet) {
+      padding-bottom: 1em;
     }
 
-    padding-bottom: 2em;
+    @include grid-media($grid-desktop) {
+      padding-bottom: 2em;
+    }
   }
 }

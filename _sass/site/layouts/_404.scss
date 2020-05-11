@@ -1,5 +1,5 @@
 .four-o-four-wrapper {
-  @extend %layout-grid-container;
+  @extend .grid-container;
 
   .four-o-four {
     @include grid-column(12);

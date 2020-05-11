@@ -2,7 +2,7 @@
 
   //Layout
   .project-info {
-    @extend %layout-grid-container;
+    @extend .grid-container;
 
     .project-intro {
       @include grid-column(12);
@@ -33,7 +33,7 @@
 
   .project-details {
     .project-detail-wrapper {
-      @extend %layout-grid-container;
+      @extend .grid-container;
       @include grid-collapse;
 
       .project-detail-6 {
@@ -63,7 +63,7 @@
   }
 
   .project-text {
-    @extend %layout-grid-container;
+    @extend .grid-container;
 
     .project-text-wrapper {
       @include grid-column(12);

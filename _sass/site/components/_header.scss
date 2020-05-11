@@ -7,7 +7,7 @@
   .header-content {
 
     .logo-nav-wrapper {
-       @extend %layout-grid-container;
+       @extend .grid-container;
 
       .logo-title-wrapper {
         @include grid-column(9);

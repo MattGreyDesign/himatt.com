@@ -9,7 +9,7 @@ $animation-ease-out: ease-in-out;
 .projects-page {
 
   .projects-wrapper {
-    @extend %layout-grid-container;
+    @extend .grid-container;
 
     .projects {
 

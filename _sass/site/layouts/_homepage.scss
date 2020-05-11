@@ -7,7 +7,7 @@
 }
 
 .homepage-wrapper {
-  @extend %layout-grid-container;
+  @extend .grid-container;
   @include grid-column(12);
 
   .homepage {

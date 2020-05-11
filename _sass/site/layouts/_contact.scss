@@ -1,7 +1,7 @@
 .contact-wrapper {
 
   .contact {
-    @extend %layout-grid-container;
+    @extend .grid-container;
 
     @include grid-media(tablet) {
       margin-top: 5vh

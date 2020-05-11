@@ -1,5 +1,5 @@
 .fonts-wrapper {
-  @extend %layout-grid-container;
+  @extend .grid-container;
 
   .fonts {
     @include grid-column(12);

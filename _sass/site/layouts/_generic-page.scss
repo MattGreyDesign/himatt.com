@@ -1,5 +1,5 @@
 .generic-page-wrapper {
-  @extend %layout-grid-container;
+  @extend .grid-container;
 
   .generic-page {
     @include grid-column(12);

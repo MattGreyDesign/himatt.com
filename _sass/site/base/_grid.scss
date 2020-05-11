@@ -3,19 +3,23 @@ $tablet-size: 768px;
 $desktop-size: 1260px;
 $largedesktop-size: 1512px;
 
-@mixin grid-media($device-size: 'phablet') {
+@mixin grid-media($device-size: phablet) {
   $default-feature: min-width;
 
-  @if $device-size == 'phablet' {
+  @if $device-size == phablet {
     @media only screen and (#{$default-feature}: #{$phablet-size}) {
       @content;
     }
-  } @else if $device-size == 'tablet' {
+  } @else if $device-size == tablet {
     @media only screen and (#{$default-feature}: #{$tablet-size}) {
       @content;
     }
-  } @else if $device-size == 'desktop' {
+  } @else if $device-size == desktop {
     @media only screen and (#{$default-feature}: #{$desktop-size}) {
+      @content;
+    }
+  } @else if $device-size == largedesktop {
+    @media only screen and (#{$default-feature}: #{$largedesktop-size}) {
       @content;
     }
   }
@@ -28,21 +32,31 @@ $largedesktop-size: 1512px;
   grid-column-gap: var(--mainPad);
   grid-row-gap: var(--mainPad);
 
-  @include grid-media($phablet-size) {
+  @include grid-media(phablet) {
     grid-column-gap: var(--mainPad);
     grid-row-gap: var(--mainPad);
   }
 
-  @include grid-media($tablet-size) {
+  @include grid-media(tablet) {
     grid-column-gap: var(--mainPad);
     grid-row-gap: var(--mainPad);
   }
 
-  @include grid-media($desktop-size) {
+  @include grid-media(desktop) {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: var(--mainPad);
     grid-row-gap: var(--mainPad);
   }
+
+  @include grid-media(largedesktop) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: var(--mainPad);
+    grid-row-gap: var(--mainPad);
+  }
+}
+
+.grid-container { //Use for extend
+  @extend .grid-container;
 }
 
 @mixin column-from-to($from: 1, $to: 12,) {

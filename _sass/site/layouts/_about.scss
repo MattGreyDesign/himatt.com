@@ -1,10 +1,10 @@
 .about-wrapper {
 
   .about {
-    @extend %layout-grid-container;
+    @extend .grid-container;
 
     .about-intro {
-      @extend %layout-grid-container;
+      @extend .grid-container;
       margin-bottom: $measure-small;
 
       .about-intro-image {
@@ -47,7 +47,7 @@
     }
 
     .about-attributes {
-      @extend %layout-grid-container;
+      @extend .grid-container;
 
       .about-tools,
       .about-skills,
@@ -70,7 +70,7 @@
     }
 
     .about-site {
-      @extend %layout-grid-container;
+      @extend .grid-container;
 
       .about-site-description {
         @include grid-column(12);

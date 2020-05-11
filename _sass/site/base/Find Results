@@ -696,7 +696,7 @@ Searching 271 files for "$grid-tablet"
    80          }
 
 /Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_contact.scss:
-    4      @extend %layout-grid-container;
+    4      @extend .grid-container;
     5
     6:     @include grid-media($grid-tablet) {
     7        margin-top: 5vh
@@ -1578,7 +1578,7 @@ Searching 271 files for "$grid-"
    84          }
 
 /Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_contact.scss:
-    4      @extend %layout-grid-container;
+    4      @extend .grid-container;
     5
     6:     @include grid-media($grid-tablet) {
     7        margin-top: 5vh

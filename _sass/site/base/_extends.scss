@@ -1,5 +1,5 @@
 %layout-grid-container {
-  @include grid-container;
+  @extend .grid-container;
 }
 
 %title-label {

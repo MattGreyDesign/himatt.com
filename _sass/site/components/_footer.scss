@@ -10,11 +10,11 @@
     .footer-content-wrapper {
       @include grid-column(8);
 
-      @include grid-media($grid-tablet) {
+      @include grid-media(tablet) {
         @include grid-column(8);
       }
 
-      @include grid-media($grid-desktop) {
+      @include grid-media(desktop) {
         @include grid-column(8);
       }
 

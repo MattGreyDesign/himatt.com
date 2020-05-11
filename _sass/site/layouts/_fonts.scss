@@ -4,7 +4,7 @@
   .fonts {
     @include grid-column(12);
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       @include grid-column(8);
       @include grid-shift(2);
       margin-top: 5vh;

@@ -5,21 +5,21 @@ $neat-grid: (
 );
 
 //Mobile Large
-$grid-mobile-large: (
+mobile-large: (
   columns: 12,
   gutter: $page-global-padding-tablet,
-  media: $mobile-size,
+  media: $phablet-size,
 );
 
 //Tablet
-$grid-tablet: (
+tablet: (
   columns: 12,
   gutter: $page-global-padding-tablet,
   media: $tablet-size,
 );
 
 //Desktop
-$grid-desktop: (
+desktop: (
   columns: 12,
   gutter: $page-global-padding-desktop,
   media: $desktop-size,

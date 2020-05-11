@@ -21,7 +21,7 @@
       bottom: 0;
       opacity: 1;
 
-      @include grid-media($grid-tablet) {
+      @include grid-media(tablet) {
         display: none;
       }
     }
@@ -74,7 +74,7 @@
       background: rgba($site-text-color, 0.3);
     }
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       display: none;
     }
   }
@@ -135,7 +135,7 @@
       }
     }
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       display: block;
       max-height: none;
       position: static;

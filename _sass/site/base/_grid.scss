@@ -1,0 +1,50 @@
+$phablet-size: 480px;
+$tablet-size: 768px;
+$desktop-size: 1260px;
+$largedesktop-size: 1512px;
+
+@mixin grid-media($device-size: 'phablet') {
+  $default-feature: min-width;
+
+  @if $device-size == 'phablet' {
+    @media only screen and (#{$default-feature}: #{$phablet-size}) {
+      @content;
+    }
+  } @else if $device-size == 'tablet' {
+    @media only screen and (#{$default-feature}: #{$tablet-size}) {
+      @content;
+    }
+  } @else if $device-size == 'desktop' {
+    @media only screen and (#{$default-feature}: #{$desktop-size}) {
+      @content;
+    }
+  }
+}
+
+@mixin grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: var(--mainPad);
+  grid-row-gap: var(--mainPad);
+
+  @include grid-media($phablet-size) {
+    grid-column-gap: var(--mainPad);
+    grid-row-gap: var(--mainPad);
+  }
+
+  @include grid-media($tablet-size) {
+    grid-column-gap: var(--mainPad);
+    grid-row-gap: var(--mainPad);
+  }
+
+  @include grid-media($desktop-size) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: var(--mainPad);
+    grid-row-gap: var(--mainPad);
+  }
+}
+
+@mixin column-from-to($from: 1, $to: 12,) {
+  grid-column: $from / ($to - 1);
+}

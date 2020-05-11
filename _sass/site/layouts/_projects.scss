@@ -16,11 +16,11 @@ $animation-ease-out: ease-in-out;
       > article.project-listing {
         @include grid-column(12);
 
-        @include grid-media($grid-tablet) {
+        @include grid-media(tablet) {
           @include grid-column(6);
         }
 
-        @include grid-media($grid-desktop) {
+        @include grid-media(desktop) {
           @include grid-column(4);
         }
       }
@@ -89,7 +89,7 @@ $animation-ease-out: ease-in-out;
               width: 100%;
               height: 100%;
               display: block;
-              background-color: rgba($site-accent-color-secondary, .85);
+              background-color: rgba($site-highlight, .85);
               margin: 0;
               top: 0;
               right: 0;

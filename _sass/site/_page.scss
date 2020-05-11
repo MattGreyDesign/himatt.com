@@ -1,11 +1,11 @@
 ::-moz-selection {
     color: white;
-    background: $site-accent-color-secondary;
+    background: $site-highlight;
 }
 
 ::selection {
     color: white;
-    background: $site-accent-color-secondary;
+    background: $site-highlight;
 }
 
 html {
@@ -32,7 +32,7 @@ body {
   &.prevent-scroll-mobile {
     overflow: hidden;
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       overflow: auto;
     }
   }
@@ -48,11 +48,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-  @include grid-media($grid-tablet) {
+  @include grid-media(tablet) {
     max-width: $desktop-size;
   }
 
-  @include grid-media($grid-tablet) {
+  @include grid-media(tablet) {
     max-width: $largedesktop-size;
   }
 }

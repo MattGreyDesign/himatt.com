@@ -4,22 +4,22 @@
   .page-title {
     @include grid-column(12);
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       @include grid-column(12);
     }
 
-    @include grid-media($grid-desktop) {
+    @include grid-media(desktop) {
       @include grid-column(6);
     }
 
     &.project {
       @include grid-column(12);
 
-      @include grid-media($grid-tablet) {
+      @include grid-media(tablet) {
         @include grid-column(12);
       }
 
-      @include grid-media($grid-desktop) {
+      @include grid-media(desktop) {
         @include grid-column(6);
         @include grid-shift(1);
       }
@@ -29,11 +29,11 @@
   .page-title {
     padding-bottom: 1em;
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       padding-bottom: 1em;
     }
 
-    @include grid-media($grid-desktop) {
+    @include grid-media(desktop) {
       padding-bottom: 2em;
     }
   }

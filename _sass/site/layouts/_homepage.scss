@@ -11,7 +11,7 @@
   @include grid-column(12);
 
   .homepage {
-    @include grid-media($grid-desktop) {
+    @include grid-media(desktop) {
       @include grid-column(8);
       @include grid-shift(2);
     }
@@ -30,7 +30,7 @@
 .homepage-hello {
   display: none;
 
-  @include grid-media($grid-tablet) {
+  @include grid-media(tablet) {
     position: absolute;
     right: 0;
     bottom: 0;

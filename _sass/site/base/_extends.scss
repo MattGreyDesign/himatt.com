@@ -15,16 +15,16 @@
 .two-columns {
   column-count: 1;
 
-  @include grid-media($grid-mobile-large) {
+  @include grid-media($phablet-size) {
     column-count: 1;
   }
 
-  @include grid-media($grid-tablet) {
+  @include grid-media(tablet) {
     column-gap: $page-global-padding-tablet;
     column-count: 1;
   }
 
-  @include grid-media($grid-desktop) {
+  @include grid-media(desktop) {
     column-gap: $page-global-padding-desktop;
     column-count: 2;
   }

@@ -7,11 +7,11 @@
     .project-intro {
       @include grid-column(12);
 
-      @include grid-media($grid-tablet) {
+      @include grid-media(tablet) {
         @include grid-column(12);
       }
 
-      @include grid-media($grid-desktop) {
+      @include grid-media(desktop) {
         @include grid-column(7);
         @include grid-shift(1);
       }
@@ -20,11 +20,11 @@
     .project-details {
       @include grid-column(12);
 
-      @include grid-media($grid-tablet) {
+      @include grid-media(tablet) {
         @include grid-column(12);
       }
 
-      @include grid-media($grid-desktop) {
+      @include grid-media(desktop) {
         @include grid-column(2);
         @include grid-push(2);
       }
@@ -39,11 +39,11 @@
       .project-detail-6 {
         @include grid-column(6);
 
-        @include grid-media($grid-tablet) {
+        @include grid-media(tablet) {
           @include grid-column(3);
         }
 
-        @include grid-media($grid-desktop) {
+        @include grid-media(desktop) {
           @include grid-column(12);
         }
       }
@@ -51,11 +51,11 @@
       .project-detail-12 {
         @include grid-column(12);
 
-        @include grid-media($grid-tablet) {
+        @include grid-media(tablet) {
           @include grid-column(3);
         }
 
-        @include grid-media($grid-desktop) {
+        @include grid-media(desktop) {
           @include grid-column(12);
         }
       }
@@ -68,11 +68,11 @@
     .project-text-wrapper {
       @include grid-column(12);
 
-      @include grid-media($grid-tablet) {
+      @include grid-media(tablet) {
         @include grid-column(12);
       }
 
-      @include grid-media($grid-desktop) {
+      @include grid-media(desktop) {
         @include grid-column(7);
         @include grid-shift(1);
       }

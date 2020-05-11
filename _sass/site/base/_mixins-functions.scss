@@ -16,11 +16,11 @@
 @mixin responsive-padding() {
   padding-bottom: $page-global-padding-desktop;
 
-  @include grid-media($grid-tablet) {
+  @include grid-media(tablet) {
     padding-bottom: $page-global-padding-tablet;
   }
 
-  @include grid-media($grid-desktop) {
+  @include grid-media(desktop) {
     padding-bottom: $page-global-padding-desktop;
   }
 }
@@ -42,7 +42,7 @@
 
   padding: $set-padding-mobile;
 
-  @include grid-media($grid-desktop) {
+  @include grid-media(desktop) {
     padding: $set-padding-desktop;
   }
 }
@@ -64,7 +64,7 @@
 
   margin: $set-margin-mobile;
 
-  @include grid-media($grid-desktop) {
+  @include grid-media(desktop) {
     margin: $set-margin-desktop;
   }
 }

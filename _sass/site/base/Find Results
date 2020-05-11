@@ -1,0 +1,1690 @@
+Searching 271 files for "$site-accent-color"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_forms.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_links.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_projects.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/_page.scss:
+    1  ::-moz-selection {
+    2      color: white;
+    3:     background: $site-accent-color-secondary;
+    4  }
+    5
+    6  ::selection {
+    7      color: white;
+    8:     background: $site-accent-color-secondary;
+    9  }
+   10
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_buttons.scss:
+   41    @extend %button;
+   42
+   43:   background: $site-accent-color;
+   44    border: none;
+   45
+   46    &:hover {
+   47:     background: $site-accent-color-light;
+   48    }
+   49
+   50    &:active {
+   51:     background: $site-accent-color-lightest;
+   52    }
+   53
+   54    &:disabled,
+   55    &.disabled{
+   56:     background: $site-accent-color-lightest;
+   57    }
+   58  }
+   ..
+   60  .button-secondary {
+   61    @extend %button;
+   62:   border: 1px solid $site-accent-color;
+   63:   color: $site-accent-color;
+   64    background: transparent;
+   65
+   66    &:hover,
+   67    &:focus {
+   68:     background: $site-accent-color;
+   69      color: black;
+   70    }
+   71
+   72    &:active {
+   73:     background: $site-accent-color-lightest;
+   74      color: black;
+   75    }
+   ..
+   77    &:disabled,
+   78    &.disabled{
+   79:     background: $site-accent-color-lightest;
+   80    }
+   81  }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_forms.scss:
+   42    #{$all-text-inputs-active} {
+   43      border: 0;
+   44:     border-bottom: 4px solid $site-accent-color;
+   45      transition: border-bottom-color $timing-interaction;
+   46    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_links.scss:
+    6  main li a {
+    7    text-decoration: none;
+    8:   color: $site-accent-color;
+    9    border-bottom: 1px dashed;
+   10    border-bottom-color: transparent;
+   ..
+   12
+   13    &:hover {
+   14:     border-bottom-color: $site-accent-color;
+   15      transition: border-bottom-color 0s;
+   16      opacity: 1;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   95
+   96  //Base
+   97: $site-accent-color-secondary: blue;
+   98: $site-accent-color: #65ff80;
+   99  $site-accent-inverted-color: black;
+  100  $site-background-color: #171717; //f7f7f7, 141414, ececec
+  ...
+  105
+  106  //Accent tints
+  107: $site-accent-color-lightest: mix($site-accent-color, white, 80%);
+  108: $site-accent-color-light: mix($site-accent-color, white, 60%);
+  109: $site-accent-color-dark: mix($site-accent-color, black, 90%);
+  110: $site-accent-color-darkest: mix($site-accent-color, black, 85%);
+  111
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_projects.scss:
+   90                height: 100%;
+   91                display: block;
+   92:               background-color: rgba($site-accent-color-secondary, .85);
+   93                margin: 0;
+   94                top: 0;
+
+50 matches across 12 files
+
+
+Searching 271 files for "$all-text-inputs-active"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_forms.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/9104f2c49874829183ffef1b40e5abfbde3a8c9e/_text-inputs.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_forms.scss:
+   40
+   41    #{$all-text-inputs-focus},
+   42:   #{$all-text-inputs-active} {
+   43      border: 0;
+   44      border-bottom: 4px solid $site-accent-color;
+
+5 matches across 3 files
+
+
+Searching 271 files for "buttons-lis"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/9104f2c49874829183ffef1b40e5abfbde3a8c9e/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/9460325124a73bd2988a43a7b4dbcddbe8e658a3/_buttons-list.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/9e7acd77da64b8f3080efea0f78c65b7cdd32871/_bourbon.scssc:
+    <binary>
+
+15 matches across 3 files
+
+
+Searching 271 files for "$measure-normal"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_footer.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_homepage.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   18  $measure-xsmall: 12px;
+   19  $measure-small: 20px;
+   20: $measure-normal: 28px;
+   21  $measure-medium: 32px;
+   22  $measure-large: 64px;
+   23
+   24: $page-global-padding-desktop: $measure-normal;
+   25  $page-global-padding-tablet: $measure-small;
+   26  $page-global-padding-mobile: $measure-xsmall;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_footer.scss:
+    1  .global-wrapper > footer {
+    2    color: #fff;
+    3:   padding-bottom: $measure-normal;
+    4    padding-top: $measure-medium;
+    5
+    .
+   22          @include decorative-line-top;
+   23          text-decoration: none;
+   24:         margin-top: $measure-normal;
+   25          color: $site-text-color;
+   26
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_homepage.scss:
+   24    text-align: center;
+   25    background: rgba(black, 0.9);
+   26:   padding: $measure-normal;
+   27    background-blend-mode: color-dodge;
+   28  }
+
+10 matches across 6 files
+
+
+Searching 271 files for "site-accent-color-light"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_buttons.scss:
+   45
+   46    &:hover {
+   47:     background: $site-accent-color-light;
+   48    }
+   49
+   50    &:active {
+   51:     background: $site-accent-color-lightest;
+   52    }
+   53
+   54    &:disabled,
+   55    &.disabled{
+   56:     background: $site-accent-color-lightest;
+   57    }
+   58  }
+   ..
+   71
+   72    &:active {
+   73:     background: $site-accent-color-lightest;
+   74      color: black;
+   75    }
+   ..
+   77    &:disabled,
+   78    &.disabled{
+   79:     background: $site-accent-color-lightest;
+   80    }
+   81  }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   88
+   89  //Accent tints
+   90: $site-accent-color-lightest: mix($site-accent-color, white, 80%);
+   91: $site-accent-color-light: mix($site-accent-color, white, 60%);
+   92  $site-accent-color-dark: mix($site-accent-color, black, 90%);
+   93  $site-accent-color-darkest: mix($site-accent-color, black, 85%);
+
+21 matches across 4 files
+
+
+\Searching 271 files for "site-accent-color-light"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_buttons.scss:
+   71
+   72    &:active {
+   73:     background: $site-accent-color-lightest;
+   74      color: black;
+   75    }
+   ..
+   77    &:disabled,
+   78    &.disabled{
+   79:     background: $site-accent-color-lightest;
+   80    }
+   81  }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   88
+   89  //Accent tints
+   90: $site-accent-color-lightest: mix($site-accent-color, white, 80%);
+   91: $site-accent-color-light: mix($site-accent-color, white, 60%);
+   92  $site-accent-color-dark: mix($site-accent-color, black, 90%);
+   93  $site-accent-color-darkest: mix($site-accent-color, black, 85%);
+
+18 matches across 4 files
+
+
+Searching 271 files for "site-accent-color-"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_projects.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/_page.scss:
+    1  ::-moz-selection {
+    2      color: white;
+    3:     background: $site-accent-color-secondary;
+    4  }
+    5
+    6  ::selection {
+    7      color: white;
+    8:     background: $site-accent-color-secondary;
+    9  }
+   10
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   78
+   79  //Base
+   80: $site-accent-color-secondary: blue;
+   81  $site-accent-color: #65ff80;
+   82  $site-accent-inverted-color: black;
+   ..
+   88
+   89  //Accent tints
+   90: $site-accent-color-lightest: mix($site-accent-color, white, 80%);
+   91: $site-accent-color-light: mix($site-accent-color, white, 60%);
+   92: $site-accent-color-dark: mix($site-accent-color, black, 90%);
+   93: $site-accent-color-darkest: mix($site-accent-color, black, 85%);
+   94
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_projects.scss:
+   90                height: 100%;
+   91                display: block;
+   92:               background-color: rgba($site-accent-color-secondary, .85);
+   93                margin: 0;
+   94                top: 0;
+
+34 matches across 7 files
+
+
+Searching 271 files for "site-accent-color-"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_projects.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/_page.scss:
+    1  ::-moz-selection {
+    2      color: white;
+    3:     background: $site-accent-color-secondary;
+    4  }
+    5
+    6  ::selection {
+    7      color: white;
+    8:     background: $site-accent-color-secondary;
+    9  }
+   10
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   88
+   89  //Accent tints
+   90: $site-accent-color-lightest: mix($site-accent-color, white, 80%);
+   91: $site-accent-color-light: mix($site-accent-color, white, 60%);
+   92: $site-accent-color-dark: mix($site-accent-color, black, 90%);
+   93: $site-accent-color-darkest: mix($site-accent-color, black, 85%);
+   94
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_projects.scss:
+   90                height: 100%;
+   91                display: block;
+   92:               background-color: rgba($site-accent-color-secondary, .85);
+   93                margin: 0;
+   94                top: 0;
+
+33 matches across 7 files
+
+
+Searching 271 files for "site-accent-color-"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_projects.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   88
+   89  //Accent tints
+   90: $site-accent-color-lightest: mix($site-accent-color, white, 80%);
+   91: $site-accent-color-light: mix($site-accent-color, white, 60%);
+   92: $site-accent-color-dark: mix($site-accent-color, black, 90%);
+   93: $site-accent-color-darkest: mix($site-accent-color, black, 85%);
+   94
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_projects.scss:
+   90                height: 100%;
+   91                display: block;
+   92:               background-color: rgba($site-accent-color-secondary, .85);
+   93                margin: 0;
+   94                top: 0;
+
+31 matches across 6 files
+
+
+Searching 271 files for "$grid-tablet"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_footer.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_header.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_layouts.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_nav.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_page-title.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_mixins-functions.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_typography.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_404.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_contact.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_fonts.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_homepage.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_project.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_projects.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+   13
+   14  //Tablet
+   15: $grid-tablet: (
+   16    columns: 12,
+   17    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/_page.scss:
+   33      overflow: hidden;
+   34
+   35:     @include grid-media($grid-tablet) {
+   36        overflow: auto;
+   37      }
+   ..
+   49    margin-right: auto;
+   50
+   51:   @include grid-media($grid-tablet) {
+   52      max-width: $desktop-size;
+   53    }
+   54
+   55:   @include grid-media($grid-tablet) {
+   56      max-width: $largedesktop-size;
+   57    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   20    }
+   21
+   22:   @include grid-media($grid-tablet) {
+   23      column-gap: $page-global-padding-tablet;
+   24      column-count: 1;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_grid.scss:
+    1: @mixin grid-media($device-type: $grid-tablet) {
+    2
+    3:   @if $device-type == $grid-tablet {
+    4
+    5:   } @else if $device-type == $grid-tablet {
+    6
+    7
+    8:   } @else if $device-type == $grid-tablet {
+    9
+   10    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_mixins-functions.scss:
+   17    padding-bottom: $page-global-padding-desktop;
+   18
+   19:   @include grid-media($grid-tablet) {
+   20      padding-bottom: $page-global-padding-tablet;
+   21    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_typography.scss:
+   28    font-size: $font-size-xxxlarge;
+   29
+   30:   @include grid-media($grid-tablet) {
+   31      font-size: $font-size-xxxxlarge;
+   32      line-height: 1.2;
+   ..
+   74    font-size: $body-font-size-mobile;
+   75
+   76:   @include grid-media($grid-tablet) {
+   77      font-size: $font-size-xxlarge;
+   78    }
+   ..
+   87    font-size: $font-size-xxlarge;
+   88
+   89:   @include grid-media($grid-tablet) {
+   90      font-size: $font-size-xxxlarge;
+   91    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_footer.scss:
+   11        @include grid-column(8);
+   12
+   13:       @include grid-media($grid-tablet) {
+   14          @include grid-column(8);
+   15        }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_header.scss:
+   13          @include grid-column(9);
+   14
+   15:         @include grid-media($grid-tablet) {
+   16            @include grid-column(6);
+   17          }
+   ..
+   25          @include grid-column(3);
+   26
+   27:         @include grid-media($grid-tablet) {
+   28            @include grid-column(6);
+   29          }
+   ..
+  199
+  200      .desktop-page-title {
+  201:       @include grid-media($grid-tablet) {
+  202          opacity: 1;
+  203          height: auto;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_layouts.scss:
+    9      @include grid-column(12);
+   10
+   11:     @include grid-media($grid-tablet) {
+   12        @include grid-column(12);
+   13      }
+   ..
+   25      @include grid-column(12);
+   26
+   27:     @include grid-media($grid-tablet) {
+   28        @include grid-column(12);
+   29      }
+   ..
+   42      @include grid-column(12);
+   43
+   44:     @include grid-media($grid-tablet) {
+   45        @include grid-column(6);
+   46      }
+   ..
+   58      @include grid-column(12);
+   59
+   60:     @include grid-media($grid-tablet) {
+   61        @include grid-column(12);
+   62      }
+   ..
+   75      @include grid-column(6);
+   76
+   77:     @include grid-media($grid-tablet) {
+   78        @include grid-column(6);
+   79      }
+   ..
+   91      @include grid-column(6);
+   92
+   93:     @include grid-media($grid-tablet) {
+   94        @include grid-column(4);
+   95      }
+   ..
+  107      @include grid-column(12);
+  108
+  109:     @include grid-media($grid-tablet) {
+  110        @include grid-column(4);
+  111      }
+  ...
+  123      @include grid-column(12);
+  124
+  125:     @include grid-media($grid-tablet) {
+  126        @include grid-column(3);
+  127      }
+  ...
+  139      @include grid-column(12);
+  140
+  141:     @include grid-media($grid-tablet) {
+  142        @include grid-column(6);
+  143      }
+  ...
+  151      @include grid-column(12);
+  152
+  153:     @include grid-media($grid-tablet) {
+  154        @include grid-column(6);
+  155      }
+  ...
+  167      @include grid-column(12);
+  168
+  169:     @include grid-media($grid-tablet) {
+  170        @include grid-column(6);
+  171      }
+  ...
+  179      @include grid-column(12);
+  180
+  181:     @include grid-media($grid-tablet) {
+  182        @include grid-column(6);
+  183      }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_nav.scss:
+   22        opacity: 1;
+   23
+   24:       @include grid-media($grid-tablet) {
+   25          display: none;
+   26        }
+   ..
+   75      }
+   76
+   77:     @include grid-media($grid-tablet) {
+   78        display: none;
+   79      }
+   ..
+  136      }
+  137
+  138:     @include grid-media($grid-tablet) {
+  139        display: block;
+  140        max-height: none;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_page-title.scss:
+    5      @include grid-column(12);
+    6
+    7:     @include grid-media($grid-tablet) {
+    8        @include grid-column(12);
+    9      }
+   ..
+   16        @include grid-column(12);
+   17
+   18:       @include grid-media($grid-tablet) {
+   19          @include grid-column(12);
+   20        }
+   ..
+   30      padding-bottom: 1em;
+   31
+   32:     @include grid-media($grid-tablet) {
+   33        padding-bottom: 1em;
+   34      }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_404.scss:
+    5      @include grid-column(12);
+    6
+    7:     @include grid-media($grid-tablet) {
+    8        @include grid-column(8);
+    9        @include grid-shift(2);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_about.scss:
+   16          }
+   17
+   18:         @include grid-media($grid-tablet) {
+   19            @include grid-column(4);
+   20            @include grid-shift(8);
+   ..
+   35          }
+   36
+   37:         @include grid-media($grid-tablet) {
+   38            @include grid-column(7);
+   39            @include grid-shift(-4);
+   ..
+   60          }
+   61
+   62:         @include grid-media($grid-tablet) {
+   63            @include grid-column(4);
+   64          }
+   ..
+   76          @include grid-column(12);
+   77
+   78:         @include grid-media($grid-tablet) {
+   79            @include grid-column(8);
+   80          }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_contact.scss:
+    4      @extend %layout-grid-container;
+    5
+    6:     @include grid-media($grid-tablet) {
+    7        margin-top: 5vh
+    8      }
+    .
+   11        @include grid-column(12);
+   12
+   13:       @include grid-media($grid-tablet) {
+   14          @include grid-column(5);
+   15        }
+   ..
+   23        @include grid-column(12);
+   24
+   25:       @include grid-media($grid-tablet) {
+   26          @include grid-column(6);
+   27          @include grid-shift(1);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_fonts.scss:
+    5      @include grid-column(12);
+    6
+    7:     @include grid-media($grid-tablet) {
+    8        @include grid-column(8);
+    9        @include grid-shift(2);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_homepage.scss:
+   31    display: none;
+   32
+   33:   @include grid-media($grid-tablet) {
+   34      position: absolute;
+   35      right: 0;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_project.scss:
+    8        @include grid-column(12);
+    9
+   10:       @include grid-media($grid-tablet) {
+   11          @include grid-column(12);
+   12        }
+   ..
+   21        @include grid-column(12);
+   22
+   23:       @include grid-media($grid-tablet) {
+   24          @include grid-column(12);
+   25        }
+   ..
+   40          @include grid-column(6);
+   41
+   42:         @include grid-media($grid-tablet) {
+   43            @include grid-column(3);
+   44          }
+   ..
+   52          @include grid-column(12);
+   53
+   54:         @include grid-media($grid-tablet) {
+   55            @include grid-column(3);
+   56          }
+   ..
+   69        @include grid-column(12);
+   70
+   71:       @include grid-media($grid-tablet) {
+   72          @include grid-column(12);
+   73        }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_projects.scss:
+   17          @include grid-column(12);
+   18
+   19:         @include grid-media($grid-tablet) {
+   20            @include grid-column(6);
+   21          }
+
+98 matches across 35 files
+
+
+Searching 271 files for "$grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-mobile-large) {
+   19      column-count: 1;
+   20    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_about.scss:
+   11          @include grid-column(12);
+   12
+   13:         @include grid-media($grid-mobile-large) {
+   14            @include grid-column(6);
+   15            @include grid-shift(6);
+   ..
+   30          @include grid-column(12);
+   31
+   32:         @include grid-media($grid-mobile-large) {
+   33            @include grid-column(6);
+   34            @include grid-shift(-6);
+   ..
+   56          @include grid-column(12);
+   57
+   58:         @include grid-media($grid-mobile-large) {
+   59            @include grid-column(6);
+   60          }
+
+10 matches across 6 files
+
+
+Searching 271 files for "$grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-mobile-large) {
+   19      column-count: 1;
+   20    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_about.scss:
+   11          @include grid-column(12);
+   12
+   13:         @include grid-media($grid-mobile-large) {
+   14            @include grid-column(6);
+   15            @include grid-shift(6);
+   ..
+   30          @include grid-column(12);
+   31
+   32:         @include grid-media($grid-mobile-large) {
+   33            @include grid-column(6);
+   34            @include grid-shift(-6);
+   ..
+   56          @include grid-column(12);
+   57
+   58:         @include grid-media($grid-mobile-large) {
+   59            @include grid-column(6);
+   60          }
+
+10 matches across 6 files
+
+
+Searching 271 files for "$grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-mobile-large) {
+   19      column-count: 1;
+   20    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_about.scss:
+   11          @include grid-column(12);
+   12
+   13:         @include grid-media($grid-mobile-large) {
+   14            @include grid-column(6);
+   15            @include grid-shift(6);
+   ..
+   30          @include grid-column(12);
+   31
+   32:         @include grid-media($grid-mobile-large) {
+   33            @include grid-column(6);
+   34            @include grid-shift(-6);
+   ..
+   56          @include grid-column(12);
+   57
+   58:         @include grid-media($grid-mobile-large) {
+   59            @include grid-column(6);
+   60          }
+
+10 matches across 6 files
+
+
+Searching 271 files for "$grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-mobile-large) {
+   19      column-count: 1;
+   20    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_about.scss:
+   11          @include grid-column(12);
+   12
+   13:         @include grid-media($grid-mobile-large) {
+   14            @include grid-column(6);
+   15            @include grid-shift(6);
+   ..
+   30          @include grid-column(12);
+   31
+   32:         @include grid-media($grid-mobile-large) {
+   33            @include grid-column(6);
+   34            @include grid-shift(-6);
+   ..
+   56          @include grid-column(12);
+   57
+   58:         @include grid-media($grid-mobile-large) {
+   59            @include grid-column(6);
+   60          }
+
+10 matches across 6 files
+
+
+Searching 271 files for "grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-mobile-large) {
+   19      column-count: 1;
+   20    }
+
+12 matches across 5 files
+
+
+Searching 271 files for "$grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-mobile-large) {
+   19      column-count: 1;
+   20    }
+
+7 matches across 5 files
+
+
+Searching 271 files for "$grid-mobile-large"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+
+6 matches across 4 files
+
+
+Searching 271 files for "$font-size-base"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_typography.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_typography.scss:
+   11    font-family: sans-serif;
+   12    font-family: "Himatt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   13:   font-size: $font-size-base;
+   14    line-height: 1.45;
+   15    -webkit-font-smoothing: antialiased;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+   53
+   54  //Base
+   55: $font-size-base: 18px;
+   56  $font-size-xsmall: 0.75rem; //12px
+   57  $font-size-small: 0.875rem; //14px
+
+4 matches across 4 files
+
+
+Searching 271 files for "$phablet-size"
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+   11:   media: $phablet-size,
+   12  );
+   13
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_grid.scss:
+   23    grid-row-gap: var(--mainPad);
+   24
+   25:   @include grid-media($phablet-size) {
+   26      grid-column-gap: var(--mainPad);
+   27      grid-row-gap: var(--mainPad);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_variables.scss:
+    4  $default-feature: min-width;
+    5
+    6: $phablet-size: 480px;
+    7  $tablet-size: 768px;
+    8  $desktop-size: 1260px;
+
+3 matches across 3 files
+
+
+Searching 271 files for "$default-feature: min-width;"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_grid.scss:
+    5
+    6  @mixin grid-media($device-size: $mobile-size) {
+    7:   $default-feature: min-width;
+    8
+    9    @if $device-size == $mobile-size {
+
+2 matches across 2 files
+
+
+Searching 271 files for "largedesktop-size"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_variables.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/_page.scss:
+   54
+   55    @include grid-media($grid-tablet) {
+   56:     max-width: $largedesktop-size;
+   57    }
+   58  }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_grid.scss:
+    2  $tablet-size: 768px;
+    3  $desktop-size: 1260px;
+    4: $largedesktop-size: 1512px;
+    5
+    6  @mixin grid-media($device-size: $mobile-size) {
+
+6 matches across 4 files
+
+
+Searching 271 files for "grid-phab"
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   16    column-count: 1;
+   17
+   18:   @include grid-media($grid-phablet) {
+   19      column-count: 1;
+   20    }
+
+1 match in 1 file
+
+
+Searching 271 files for "$grid-"
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_footer.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_header.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_layouts.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_nav.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/5f9fcfaa418979cba96d34aa2934a25f933df0ab/_page-title.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_buttons.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_extends.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_mixins-functions.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/6e1229ead9b2fddbb487b8980b4cd22a9c56a267/_typography.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/aa2f7acbe8a538bb67a3c179d05b81a0420fc5d9/_neat-append-grid-visual.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/ae2b0c8cef53260b0afd863e2ae5021255a2f57d/_page.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/c0c4e3817d951edf81f793b7ac2025931f3ebd63/_neat-grids.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_404.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_about.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_contact.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_fonts.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_homepage.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_project.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/.sass-cache/d3cb76b00039038be41253475cd335547a2599fb/_projects.scssc:
+    <binary>
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/_neat-grids.scss:
+    6
+    7  //Mobile Large
+    8: $grid-mobile-large: (
+    9    columns: 12,
+   10    gutter: $page-global-padding-tablet,
+   ..
+   13
+   14  //Tablet
+   15: $grid-tablet: (
+   16    columns: 12,
+   17    gutter: $page-global-padding-tablet,
+   ..
+   20
+   21  //Desktop
+   22: $grid-desktop: (
+   23    columns: 12,
+   24    gutter: $page-global-padding-desktop,
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/_page.scss:
+   33      overflow: hidden;
+   34
+   35:     @include grid-media($grid-tablet) {
+   36        overflow: auto;
+   37      }
+   ..
+   49    margin-right: auto;
+   50
+   51:   @include grid-media($grid-tablet) {
+   52      max-width: $desktop-size;
+   53    }
+   54
+   55:   @include grid-media($grid-tablet) {
+   56      max-width: $largedesktop-size;
+   57    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_buttons.scss:
+   32    width: 100%;
+   33
+   34:   @include grid-media($grid-desktop) {
+   35      display: inline-block;
+   36      width: auto;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_extends.scss:
+   20    }
+   21
+   22:   @include grid-media($grid-tablet) {
+   23      column-gap: $page-global-padding-tablet;
+   24      column-count: 1;
+   25    }
+   26
+   27:   @include grid-media($grid-desktop) {
+   28      column-gap: $page-global-padding-desktop;
+   29      column-count: 2;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_mixins-functions.scss:
+   17    padding-bottom: $page-global-padding-desktop;
+   18
+   19:   @include grid-media($grid-tablet) {
+   20      padding-bottom: $page-global-padding-tablet;
+   21    }
+   22
+   23:   @include grid-media($grid-desktop) {
+   24      padding-bottom: $page-global-padding-desktop;
+   25    }
+   ..
+   43    padding: $set-padding-mobile;
+   44
+   45:   @include grid-media($grid-desktop) {
+   46      padding: $set-padding-desktop;
+   47    }
+   ..
+   65    margin: $set-margin-mobile;
+   66
+   67:   @include grid-media($grid-desktop) {
+   68      margin: $set-margin-desktop;
+   69    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/base/_typography.scss:
+   32    font-size: $font-size-xxxlarge;
+   33
+   34:   @include grid-media($grid-tablet) {
+   35      font-size: $font-size-xxxxlarge;
+   36      line-height: 1.2;
+   37    }
+   38
+   39:   @include grid-media($grid-desktop) {
+   40      font-size: $font-size-xxxxxlarge;
+   41      line-height: 1.2;
+   ..
+   60    font-size: $body-font-size-mobile;
+   61
+   62:   @include grid-media($grid-desktop) {
+   63      font-size: $body-font-size-desktop;
+   64    }
+   ..
+   78    font-size: $body-font-size-mobile;
+   79
+   80:   @include grid-media($grid-tablet) {
+   81      font-size: $font-size-xxlarge;
+   82    }
+   83
+   84:   @include grid-media($grid-desktop) {
+   85      font-size: 28px;
+   86    }
+   ..
+   91    font-size: $font-size-xxlarge;
+   92
+   93:   @include grid-media($grid-tablet) {
+   94      font-size: $font-size-xxxlarge;
+   95    }
+   96
+   97:   @include grid-media($grid-desktop) {
+   98      font-size: $font-size-xxxxlarge;
+   99    }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_footer.scss:
+   11        @include grid-column(8);
+   12
+   13:       @include grid-media($grid-tablet) {
+   14          @include grid-column(8);
+   15        }
+   16
+   17:       @include grid-media($grid-desktop) {
+   18          @include grid-column(8);
+   19        }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_header.scss:
+   13          @include grid-column(9);
+   14
+   15:         @include grid-media($grid-tablet) {
+   16            @include grid-column(6);
+   17          }
+   18
+   19:         @include grid-media($grid-desktop) {
+   20            @include grid-column(6);
+   21          }
+   ..
+   25          @include grid-column(3);
+   26
+   27:         @include grid-media($grid-tablet) {
+   28            @include grid-column(6);
+   29          }
+   30
+   31:         @include grid-media($grid-desktop) {
+   32            @include grid-column(6);
+   33          }
+   ..
+   99      display: none;
+  100
+  101:     @include grid-media($grid-desktop) {
+  102        transition: opacity $timing-interaction ease-in-out;
+  103        height: auto;
+  ...
+  199
+  200      .desktop-page-title {
+  201:       @include grid-media($grid-tablet) {
+  202          opacity: 1;
+  203          height: auto;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_layouts.scss:
+    9      @include grid-column(12);
+   10
+   11:     @include grid-media($grid-tablet) {
+   12        @include grid-column(12);
+   13      }
+   14
+   15:     @include grid-media($grid-desktop) {
+   16        @include grid-column(12);
+   17      }
+   ..
+   25      @include grid-column(12);
+   26
+   27:     @include grid-media($grid-tablet) {
+   28        @include grid-column(12);
+   29      }
+   30
+   31:     @include grid-media($grid-desktop) {
+   32        @include grid-column(10);
+   33        @include grid-shift(1);
+   ..
+   42      @include grid-column(12);
+   43
+   44:     @include grid-media($grid-tablet) {
+   45        @include grid-column(6);
+   46      }
+   47
+   48:     @include grid-media($grid-desktop) {
+   49        @include grid-column(6);
+   50      }
+   ..
+   58      @include grid-column(12);
+   59
+   60:     @include grid-media($grid-tablet) {
+   61        @include grid-column(12);
+   62      }
+   63
+   64:     @include grid-media($grid-desktop) {
+   65        @include grid-column(10);
+   66        @include grid-push(1);
+   ..
+   75      @include grid-column(6);
+   76
+   77:     @include grid-media($grid-tablet) {
+   78        @include grid-column(6);
+   79      }
+   80
+   81:     @include grid-media($grid-desktop) {
+   82        @include grid-column(6);
+   83      }
+   ..
+   91      @include grid-column(6);
+   92
+   93:     @include grid-media($grid-tablet) {
+   94        @include grid-column(4);
+   95      }
+   96
+   97:     @include grid-media($grid-desktop) {
+   98        @include grid-column(4);
+   99      }
+  ...
+  107      @include grid-column(12);
+  108
+  109:     @include grid-media($grid-tablet) {
+  110        @include grid-column(4);
+  111      }
+  112
+  113:     @include grid-media($grid-desktop) {
+  114        @include grid-column(4);
+  115      }
+  ...
+  123      @include grid-column(12);
+  124
+  125:     @include grid-media($grid-tablet) {
+  126        @include grid-column(3);
+  127      }
+  128
+  129:     @include grid-media($grid-desktop) {
+  130        @include grid-column(3);
+  131      }
+  ...
+  139      @include grid-column(12);
+  140
+  141:     @include grid-media($grid-tablet) {
+  142        @include grid-column(6);
+  143      }
+  144
+  145:     @include grid-media($grid-desktop) {
+  146        @include grid-column(5);
+  147      }
+  ...
+  151      @include grid-column(12);
+  152
+  153:     @include grid-media($grid-tablet) {
+  154        @include grid-column(6);
+  155      }
+  156
+  157:     @include grid-media($grid-desktop) {
+  158        @include grid-column(7);
+  159      }
+  ...
+  167      @include grid-column(12);
+  168
+  169:     @include grid-media($grid-tablet) {
+  170        @include grid-column(6);
+  171      }
+  172
+  173:     @include grid-media($grid-desktop) {
+  174        @include grid-column(7);
+  175      }
+  ...
+  179      @include grid-column(12);
+  180
+  181:     @include grid-media($grid-tablet) {
+  182        @include grid-column(6);
+  183      }
+  184
+  185:     @include grid-media($grid-desktop) {
+  186        @include grid-column(5);
+  187      }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_nav.scss:
+   22        opacity: 1;
+   23
+   24:       @include grid-media($grid-tablet) {
+   25          display: none;
+   26        }
+   ..
+   75      }
+   76
+   77:     @include grid-media($grid-tablet) {
+   78        display: none;
+   79      }
+   ..
+  136      }
+  137
+  138:     @include grid-media($grid-tablet) {
+  139        display: block;
+  140        max-height: none;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/components/_page-title.scss:
+    5      @include grid-column(12);
+    6
+    7:     @include grid-media($grid-tablet) {
+    8        @include grid-column(12);
+    9      }
+   10
+   11:     @include grid-media($grid-desktop) {
+   12        @include grid-column(6);
+   13      }
+   ..
+   16        @include grid-column(12);
+   17
+   18:       @include grid-media($grid-tablet) {
+   19          @include grid-column(12);
+   20        }
+   21
+   22:       @include grid-media($grid-desktop) {
+   23          @include grid-column(6);
+   24          @include grid-shift(1);
+   ..
+   30      padding-bottom: 1em;
+   31
+   32:     @include grid-media($grid-tablet) {
+   33        padding-bottom: 1em;
+   34      }
+   35
+   36:     @include grid-media($grid-desktop) {
+   37        padding-bottom: 2em;
+   38      }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_404.scss:
+    5      @include grid-column(12);
+    6
+    7:     @include grid-media($grid-tablet) {
+    8        @include grid-column(8);
+    9        @include grid-shift(2);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_about.scss:
+   16          }
+   17
+   18:         @include grid-media($grid-tablet) {
+   19            @include grid-column(4);
+   20            @include grid-shift(8);
+   21          }
+   22
+   23:         @include grid-media($grid-desktop) {
+   24            @include grid-column(4);
+   25            @include grid-shift(8);
+   ..
+   35          }
+   36
+   37:         @include grid-media($grid-tablet) {
+   38            @include grid-column(7);
+   39            @include grid-shift(-4);
+   40          }
+   41
+   42:         @include grid-media($grid-desktop) {
+   43            @include grid-column(7);
+   44            @include grid-shift(-4);
+   ..
+   60          }
+   61
+   62:         @include grid-media($grid-tablet) {
+   63            @include grid-column(4);
+   64          }
+   65
+   66:         @include grid-media($grid-desktop) {
+   67            @include grid-column(3);
+   68          }
+   ..
+   76          @include grid-column(12);
+   77
+   78:         @include grid-media($grid-tablet) {
+   79            @include grid-column(8);
+   80          }
+   81
+   82:         @include grid-media($grid-desktop) {
+   83            @include grid-column(6);
+   84          }
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_contact.scss:
+    4      @extend %layout-grid-container;
+    5
+    6:     @include grid-media($grid-tablet) {
+    7        margin-top: 5vh
+    8      }
+    .
+   11        @include grid-column(12);
+   12
+   13:       @include grid-media($grid-tablet) {
+   14          @include grid-column(5);
+   15        }
+   16
+   17:       @include grid-media($grid-desktop) {
+   18          @include grid-column(5);
+   19        }
+   ..
+   23        @include grid-column(12);
+   24
+   25:       @include grid-media($grid-tablet) {
+   26          @include grid-column(6);
+   27          @include grid-shift(1);
+   28        }
+   29
+   30:       @include grid-media($grid-desktop) {
+   31          @include grid-column(6);
+   32          @include grid-shift(1);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_fonts.scss:
+    5      @include grid-column(12);
+    6
+    7:     @include grid-media($grid-tablet) {
+    8        @include grid-column(8);
+    9        @include grid-shift(2);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_homepage.scss:
+   12
+   13    .homepage {
+   14:     @include grid-media($grid-desktop) {
+   15        @include grid-column(8);
+   16        @include grid-shift(2);
+   ..
+   31    display: none;
+   32
+   33:   @include grid-media($grid-tablet) {
+   34      position: absolute;
+   35      right: 0;
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_project.scss:
+    8        @include grid-column(12);
+    9
+   10:       @include grid-media($grid-tablet) {
+   11          @include grid-column(12);
+   12        }
+   13
+   14:       @include grid-media($grid-desktop) {
+   15          @include grid-column(7);
+   16          @include grid-shift(1);
+   ..
+   21        @include grid-column(12);
+   22
+   23:       @include grid-media($grid-tablet) {
+   24          @include grid-column(12);
+   25        }
+   26
+   27:       @include grid-media($grid-desktop) {
+   28          @include grid-column(2);
+   29          @include grid-push(2);
+   ..
+   40          @include grid-column(6);
+   41
+   42:         @include grid-media($grid-tablet) {
+   43            @include grid-column(3);
+   44          }
+   45
+   46:         @include grid-media($grid-desktop) {
+   47            @include grid-column(12);
+   48          }
+   ..
+   52          @include grid-column(12);
+   53
+   54:         @include grid-media($grid-tablet) {
+   55            @include grid-column(3);
+   56          }
+   57
+   58:         @include grid-media($grid-desktop) {
+   59            @include grid-column(12);
+   60          }
+   ..
+   69        @include grid-column(12);
+   70
+   71:       @include grid-media($grid-tablet) {
+   72          @include grid-column(12);
+   73        }
+   74
+   75:       @include grid-media($grid-desktop) {
+   76          @include grid-column(7);
+   77          @include grid-shift(1);
+
+/Users/matt/Documents/personal/himatt.com/himatt/_sass/site/layouts/_projects.scss:
+   17          @include grid-column(12);
+   18
+   19:         @include grid-media($grid-tablet) {
+   20            @include grid-column(6);
+   21          }
+   22
+   23:         @include grid-media($grid-desktop) {
+   24            @include grid-column(4);
+   25          }
+
+188 matches across 37 files

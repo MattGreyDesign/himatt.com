@@ -10,7 +10,8 @@
 
 html {
   box-sizing: border-box;
-  background: $site-background-color;
+  background-color: var(--color-background);
+  color: var(--color-text);
   height: 100%;
 }
 
@@ -27,8 +28,6 @@ img {
 }
 
 body {
-  color: $site-text-color;
-
   &.prevent-scroll-mobile {
     overflow: hidden;
 
@@ -42,20 +41,24 @@ body {
   margin-top: 100px;
 }
 
-.header-content,
-main,
-footer {
-  margin-left: auto;
-  margin-right: auto;
+// .header-content,
+// main,
+// footer {
+//   margin-left: auto;
+//   margin-right: auto;
 
-  @include grid-media(tablet) {
-    max-width: $desktop-size;
-  }
+//   @include grid-media(tablet) {
+//     max-width: $desktop-size;
+//   }
 
-  @include grid-media(tablet) {
-    max-width: $largedesktop-size;
-  }
-}
+//   @include grid-media(desktop) {
+//     max-width: $largedesktop-size;
+//   }
+
+//   @include grid-media(largedesktop) {
+//     max-width: 90vw;
+//   }
+// }
 
 .main-content { min-height: calc(100vh - 193px); }
 

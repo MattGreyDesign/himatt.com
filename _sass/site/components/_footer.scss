@@ -1,7 +1,16 @@
 .global-wrapper > footer {
   color: #fff;
-  padding-bottom: $measure-normal;
-  padding-top: $measure-medium;
+  padding-bottom: $measure-large;
+  padding-top: $measure-large;
+  @extend .grid-container;
+
+  .license {
+    @include grid-column(8);
+  }
+
+  .made-by {
+    @include grid-column(4);
+  }
 
   .footer-content {
     @extend .grid-container;
@@ -19,10 +28,9 @@
       }
 
       a.license {
-        @include decorative-line-top;
         text-decoration: none;
         margin-top: $measure-normal;
-        color: $site-text-color;
+        color: var(--color-text);
 
         &:hover {
           border-bottom: 1px dashed;
@@ -30,7 +38,7 @@
       }
 
       a.made-by {
-        color: $site-text-color;
+        color: var(--color-text);
         font-size: $font-size-large/2;
         text-transform: uppercase;
         text-decoration: none;
@@ -40,7 +48,7 @@
         word-wrap: break-word;
         right: -12px;
         padding-bottom: 1em;
-        border-bottom: 1px solid $site-text-color;
+        border-bottom: 1px solid inherit;
         -ms-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);

@@ -1,6 +1,5 @@
 {% include /javascript/menu.js %}
 {% include /javascript/headspace.js %}
-{% include /javascript/currentyear.js %}
 
 $(function () {
   Headspace(document.querySelector('[data-header]'), {

@@ -6,6 +6,7 @@
 @import "normalize";
 
 //Base
+@import "site/base/media-queries";
 @import "site/base/variables";
 @import "site/base/grid";
 @import "site/base/mixins-functions";
@@ -27,9 +28,7 @@
 
 // // Layouts
 @import "site/page";
-@import "site/layouts/generic-page";
 
-@import "site/layouts/homepage";
 @import "site/layouts/projects";
 @import "site/layouts/project";
 @import "site/layouts/fonts";

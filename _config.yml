@@ -19,12 +19,14 @@ include:
 
 # Site settings
 title: Matt Grey
+long-title: Matt Grey Design
 email: mattgreydesign@gmail.com
-description: "The selected portfolio of London-based UX/UI, font, and graphic designer Matt Grey"
+description: "The selected portfolio of London based digital product designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
-year: 2018
+year: 2020
+start-year: 2010
 sitemap: true
 
 # Social networks

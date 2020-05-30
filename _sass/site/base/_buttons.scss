@@ -40,11 +40,11 @@
 .button-primary {
   @extend %button;
 
-  background: $site-accent-color;
+  background: var(--color-cta);
   border: none;
 
   &:hover {
-    background: $site-accent-color;
+    background: var(--color-cta);
   }
 
   &:active {
@@ -59,19 +59,19 @@
 
 .button-secondary {
   @extend %button;
-  border: 1px solid $site-accent-color;
-  color: $site-accent-color;
+  border: 1px solid var(--color-cta);
+  color: var(--color-cta);
   background: transparent;
 
   &:hover,
   &:focus {
-    background: $site-accent-color;
+    background: var(--color-cta);
     color: black;
   }
 
   &:active {
     opacity: .8;
-    background: $site-accent-color;
+    background: var(--color-cta);
     color: black;
   }
 

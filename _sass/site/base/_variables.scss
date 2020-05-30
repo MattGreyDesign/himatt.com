@@ -1,3 +1,20 @@
+:root {
+  --font-size-root: 16px;
+  --padding: 1.5rem;
+  --page-gutter: 2rem;
+  --color-background: #171717;
+  --color-text: white;
+  --color-cta: #65ff80;
+}
+
+@include grid-media(desktop) {
+  :root {
+    --font-size-root: 1.25vw;
+    --padding: 2rem;
+    --page-gutter: 6rem;
+  }
+}
+
 /*
  * GEOMETRY
  */
@@ -66,17 +83,8 @@ $letter-spacing-medium: 0.06rem;
  */
 
 //Base
-$site-accent-color: #65ff80;
 $site-accent-inverted-color: black;
-$site-background-color: #171717; //f7f7f7, 141414, ececec
-$site-text-color: white; //#252525
 $site-line-color: #e2e2e2;
 $site-highlight: blue;
 
 $color-rgb-opacity: 0.6;
-
-//Accent tints
-$site-accent-color-lightest: mix($site-accent-color, white, 80%);
-$site-accent-color-light: mix($site-accent-color, white, 60%);
-$site-accent-color-dark: mix($site-accent-color, black, 90%);
-$site-accent-color-darkest: mix($site-accent-color, black, 85%);

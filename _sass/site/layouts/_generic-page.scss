@@ -1,7 +1,0 @@
-.generic-page-wrapper {
-  @extend .grid-container;
-
-  .generic-page {
-    @include grid-column(12);
-  }
-}

@@ -5,8 +5,7 @@
     @include grid-column(12);
 
     @include grid-media(tablet) {
-      @include grid-column(8);
-      @include grid-shift(2);
+      @include grid-column-from-to(2, 5);
       margin-top: 5vh;
       margin-bottom: 8vh;
     }

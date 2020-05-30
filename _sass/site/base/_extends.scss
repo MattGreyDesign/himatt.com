@@ -2,20 +2,10 @@
   @extend .grid-container;
 }
 
-%title-label {
-  color: rgba($site-text-color, $color-rgb-opacity);
-  font-size: $font-size-small;
-  text-transform: uppercase;
-  letter-spacing: $letter-spacing-medium;
-  margin-top: .5em;
-  margin-bottom: $measure-xxxsmall;
-}
-
-
 .two-columns {
   column-count: 1;
 
-  @include grid-media($phablet-size) {
+  @include grid-media(phablet) {
     column-count: 1;
   }
 

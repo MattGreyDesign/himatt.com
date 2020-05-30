@@ -90,7 +90,7 @@ form {
   #{$all-text-inputs-focus},
   #{$all-text-inputs-active} {
     border: 0;
-    border-bottom: 4px solid $site-accent-color;
+    border-bottom: 4px solid var(--color-cta);
     transition: border-bottom-color $timing-interaction;
   }
 

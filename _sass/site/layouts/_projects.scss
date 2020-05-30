@@ -7,22 +7,22 @@ $animation-ease-out: ease-in-out;
 
 //Layout
 .projects-page {
-
-  .projects-wrapper {
+  .projects {
     @extend .grid-container;
 
-    .projects {
+    .project-listing {
+      @include grid-column(6);
 
-      > article.project-listing {
-        @include grid-column(12);
+      @include grid-media(phablet) {
+        @include grid-column(3);
+      }
 
-        @include grid-media(tablet) {
-          @include grid-column(6);
-        }
+      @include grid-media(tablet) {
+        @include grid-column(4);
+      }
 
-        @include grid-media(desktop) {
-          @include grid-column(4);
-        }
+      @include grid-media(desktop) {
+        @include grid-column(4);
       }
     }
   }
@@ -31,132 +31,132 @@ $animation-ease-out: ease-in-out;
 //Styling
 .projects-page {
 
-  .projects-wrapper {
+  .projects-intro {
+    @extend .paragraph-large;
+    text-align: center;
+  }
 
-    article {
-      padding-bottom: $measure-medium;
+  .project-listing {
 
-      .thumbnail-wrapper {
-        a {
-          outline: 0;
-          text-decoration: none;
+    .thumbnail-wrapper {
+      a {
+        outline: 0;
+        text-decoration: none;
 
-          img {
-            width: 100%;
-            height: auto;
-            display: block;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          text-align: center;
+          filter: grayscale(0%);
+
+          // Animate filters
+          transition-property: filter;
+          transition-timing-function: $animation-ease-out;
+          transition-duration: $animation-time-out;
+        }
+
+        h3 {
+          display: block;
+          color: var(--color-text);
+          margin-top: .4em;
+          font-size: $font-size-normal;
+        }
+
+        .thumbnail-description-wrapper {
+          display: block;
+          position: relative;
+          line-height: 1;
+          background-color: transparent;
+          overflow: hidden;
+          width: 100%;
+          padding-top: 75%;
+
+          p.thumbnail-description {
+            //Initially hidden
+            opacity: 0;
+
+            //animate out
+            transition-property: opacity;
+            transition-timing-function: $animation-ease-out;
+            transition-duration: $animation-time-out;
+            padding: ($measure-xsmall / 1.5) $measure-medium;
             position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: rgba($site-highlight, .85);
+            margin: 0;
             top: 0;
             right: 0;
             left: 0;
             bottom: 0;
-            text-align: center;
-            filter: grayscale(0%);
-
-            // Animate filters
-            transition-property: filter;
-            transition-timing-function: $animation-ease-out;
-            transition-duration: $animation-time-out;
-          }
-
-          h3 {
-            display: block;
-            color: $site-text-color;
-            margin-top: .4em;
-            font-size: $font-size-normal;
-          }
-
-          .thumbnail-description-wrapper {
-            display: block;
-            position: relative;
             line-height: 1;
-            background-color: transparent;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 75%;
 
-            p.thumbnail-description {
-              //Initially hidden
-              opacity: 0;
+            //center text all ways (text is in span)
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
 
-              //animate out
-              transition-property: opacity;
-              transition-timing-function: $animation-ease-out;
-              transition-duration: $animation-time-out;
-              padding: ($measure-xsmall / 1.5) $measure-medium;
-
-              position: absolute;
-              width: 100%;
-              height: 100%;
+            span.thumbnail-tag-media {
               display: block;
-              background-color: rgba($site-highlight, .85);
-              margin: 0;
-              top: 0;
-              right: 0;
-              left: 0;
-              bottom: 0;
-              line-height: 1;
-
-              //center text all ways (text is in span)
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-
-              span.thumbnail-tag-media {
-                display: block;
-                position: relative;
-                width: 100%;
-                margin-top: 10px;
-              }
-
-              span {
-                display: block;
-                color: white;
-                line-height: 1.4;
-                font-size: 1.3rem;
-
-                //offset for drop-in
-                -webkit-transform-style: preserve-3d;
-                transform: translate3d(0, 10px, 0);
-
-                //animate drop-in out
-                transition-property: transform;
-                transition-timing-function: $animation-ease-out;
-                transition-duration: $animation-time-out;
-              }
+              position: relative;
+              width: 100%;
+              margin-top: 10px;
             }
-          }
-
-          &:hover .thumbnail-description-wrapper p.thumbnail-description,
-          &:focus .thumbnail-description-wrapper p.thumbnail-description {
-
-            //semi-transparent background
-            opacity: 1;
-
-            //animate fade in
-            transition-property: opacity;
-            transition-timing-function: $animation-ease-in;
-            transition-duration: $animation-time-in;
 
             span {
-              //drop-in is reset back to original position
-              transform: translate3d(0,0,0);
+              display: block;
+              color: white;
+              line-height: 1.4;
+              font-size: 1.3rem;
 
-              //animate drop-in in
+              //offset for drop-in
+              -webkit-transform-style: preserve-3d;
+              transform: translate3d(0, 10px, 0);
+
+              //animate drop-in out
               transition-property: transform;
-              transition-timing-function: $animation-ease-in;
-              transition-duration: $animation-time-in;
+              transition-timing-function: $animation-ease-out;
+              transition-duration: $animation-time-out;
             }
           }
+        }
 
-          &:hover .thumbnail-description-wrapper img,
-          &:focus .thumbnail-description-wrapper img {
-            filter:
-              grayscale(100%)
-              //contrast(200%)
-            ;
+        &:hover .thumbnail-description-wrapper p.thumbnail-description,
+        &:focus .thumbnail-description-wrapper p.thumbnail-description {
+
+          //semi-transparent background
+          opacity: 1;
+
+          //animate fade in
+          transition-property: opacity;
+          transition-timing-function: $animation-ease-in;
+          transition-duration: $animation-time-in;
+
+          span {
+            //drop-in is reset back to original position
+            transform: translate3d(0, 0, 0);
+
+            //animate drop-in in
+            transition-property: transform;
+            transition-timing-function: $animation-ease-in;
+            transition-duration: $animation-time-in;
           }
+        }
+
+        &:hover .thumbnail-description-wrapper img,
+        &:focus .thumbnail-description-wrapper img {
+          filter:
+            grayscale(100%)
+            //contrast(200%)
+          ;
         }
       }
     }

@@ -25,51 +25,6 @@
   }
 }
 
-@mixin padding($type: sides) {
-  $set-padding-mobile: 0;
-  $set-padding-desktop: 0;
-
-  @if $type == sides {
-    $set-padding-mobile: 0 $page-inner-padding-mobile;
-    $set-padding-desktop: 0 $page-inner-padding;
-  } @else if $type == full {
-    $set-padding-mobile: $page-inner-padding-mobile;
-    $set-padding-desktop: $page-inner-padding;
-  } @else if $type == topbottom {
-    $set-padding-mobile: $page-inner-padding-mobile 0;
-    $set-padding-desktop: $page-inner-padding 0;
-  }
-
-  padding: $set-padding-mobile;
-
-  @include grid-media(desktop) {
-    padding: $set-padding-desktop;
-  }
-}
-
-@mixin margin($type: sides) {
-  $set-margin-mobile: 0;
-  $set-margin-desktop: 0;
-
-  @if $type == sides {
-    $set-margin-mobile: 0 $page-inner-padding-mobile;
-    $set-margin-desktop: 0 $page-inner-padding;
-  } @else if $type == full {
-    $set-margin-mobile: $page-inner-padding-mobile;
-    $set-margin-desktop: $page-inner-padding;
-  } @else if $type == topbottom {
-    $set-margin-mobile: $page-inner-padding-mobile 0;
-    $set-margin-desktop: $page-inner-padding 0;
-  }
-
-  margin: $set-margin-mobile;
-
-  @include grid-media(desktop) {
-    margin: $set-margin-desktop;
-  }
-}
-
-
 @mixin decorative-line-top($decoration-height: 1px, $decoration-width: 20px) {
     &:before {
     content: '';

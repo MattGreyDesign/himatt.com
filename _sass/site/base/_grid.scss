@@ -49,7 +49,6 @@ $largedesktop-size: 1512px;
   }
 
   @include grid-media(largedesktop) {
-    grid-template-columns: repeat(12, 1fr);
     grid-column-gap: var(--mainPad);
     grid-row-gap: var(--mainPad);
   }

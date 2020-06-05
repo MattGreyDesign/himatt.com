@@ -110,6 +110,7 @@
         text-decoration: none;
         color: var(--color-text);
         display: block;
+        padding: var(--inner-padding);
 
         &:hover {
           background: rgba(var(--color-text), .2);

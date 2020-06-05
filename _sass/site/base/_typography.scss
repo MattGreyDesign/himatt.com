@@ -2,13 +2,10 @@ html {
   font-family: sans-serif;
   font-family: 'DM Sans', -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
   font-size: var(--font-size-root);
-  line-height: 1.5;
+  line-height: var(--line-height-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
-
-@include grid-media(desktop) {
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
@@ -23,14 +20,7 @@ h1,h2 {
 
 .type-level-1 {
   font-size: var(--font-size-level-1);
-
-  @include grid-media(tablet) {
-    line-height: 1.2;
-  }
-
-  @include grid-media(desktop) {
-    line-height: 1.2;
-  }
+  line-height: var(--line-height-tight);
 }
 
 .type-level-2 {
@@ -39,7 +29,7 @@ h1,h2 {
 
 .type-level-3 {
   font-size: var(--font-size-level-3);
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
 }
 
 .type-level-4 {
@@ -51,13 +41,13 @@ h1,h2 {
   color: var(--color-text);
   font-size: $font-size-small;
   text-transform: uppercase;
-  letter-spacing: $letter-spacing-medium;
+  letter-spacing: 0.06rem;
   margin-top: .5em;
   margin-bottom: $measure-xxxsmall;
 }
 
 .paragraph-main p {
-  margin-bottom: .9em;
+  margin-bottom: var(--paragraph-spacing);
   font-size: $body-font-size-mobile;
 
   @include grid-media(desktop) {
@@ -70,12 +60,12 @@ h1,h2 {
 }
 
 .paragraph-small p {
-  margin-bottom: 0.7em;
+  margin-bottom: var(--paragraph-spacing);
   font-size: $font-size-normal;
 }
 
 .paragraph-large {
-  margin-bottom: 0.7em;
+  margin-bottom: var(--paragraph-spacing);
   font-size: $body-font-size-mobile;
 
   @include grid-media(tablet) {
@@ -88,7 +78,7 @@ h1,h2 {
 }
 
 .paragraph-huge {
-  margin-bottom: 0.7em;
+  margin-bottom: var(--paragraph-spacing);
   font-size: $font-size-xxlarge;
 
   @include grid-media(tablet) {

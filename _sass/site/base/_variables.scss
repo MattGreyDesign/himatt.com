@@ -12,6 +12,9 @@ $font-size-xxxxxlarge: 3.5rem; //56px
 :root {
   --font-size-root: 16px;
 
+  --line-height-regular: 1.5;
+  --line-height-tight: 1.3;
+
   --font-size-xsmall: 0.75rem; //12px
   --font-size-small: 0.875rem; //14px
   --font-size-normal: 1rem;
@@ -29,8 +32,12 @@ $font-size-xxxxxlarge: 3.5rem; //56px
   --font-size-body: var(--font-size-large);
   --font-size-body-small: var(--font-size-small);
 
+  --paragraph-spacing: 1rem;
+
   --gutter: 1.5rem;
   --page-margin: 2rem;
+  --inner-padding: 1rem;
+
   --color-background: #212121;
   --color-text: #fff;
   --color-cta: #65ff80;
@@ -38,16 +45,18 @@ $font-size-xxxxxlarge: 3.5rem; //56px
 
 @include grid-media(tablet) {
   :root {
-    --page-margin: 4rem;
     --font-size-level-1: var(--font-size-xxxxlarge);
+    --page-margin: 4rem;
+    --line-height-tight: 1.25;
   }
 }
 
 @include grid-media(desktop) {
   :root {
     --font-size-root: 17px;
-    --gutter: 2rem;
     --font-size-level-1: var(--font-size-xxxxxlarge);
+
+    --gutter: 2rem;
   }
 }
 
@@ -90,8 +99,6 @@ $timing-interaction: .2s;
 $body-font-size-desktop: $font-size-xlarge;
 $body-font-size-tablet: $font-size-large;
 $body-font-size-mobile: $font-size-large;
-
-$letter-spacing-medium: 0.06rem;
 
 /*
  * COLOUR

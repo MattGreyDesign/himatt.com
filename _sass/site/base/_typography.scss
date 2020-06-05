@@ -14,11 +14,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   margin: 0
 }
 
-h1,h2 {
-  font-family: 'DM Serif Text', serif;
-}
-
 .type-level-1 {
+  font-family: 'DM Serif Text', serif;
   font-size: var(--font-size-level-1);
   line-height: var(--line-height-tight);
 }

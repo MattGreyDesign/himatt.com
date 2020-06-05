@@ -56,10 +56,14 @@ sass:
 compress_html: # http://jch.penibelst.de/
   enabled: true # compress html
   clippings: all # clip safe tags
-  blanklines: false # boolean - strip blank lines and breaks
-  #profile: true # boolean - print table of data saved
+  comments: []
+  endings: []
   #ignore:
-  #envs: [local]
+    #envs: [local]
+  blanklines: false # boolean - strip blank lines and breaks
+  profile: false
+  startings: []
+
 
 # Structure
 navigation:

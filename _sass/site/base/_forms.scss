@@ -56,11 +56,11 @@ form {
 
   label {
     display: block;
-    font-size: $font-size-large;
+    font-size: $font-size-xlarge;
   }
 
   section {
-    margin-bottom: $measure-xsmall;
+    margin-bottom: 1.2rem;
   }
 
   input:not([type='submit']),
@@ -68,6 +68,7 @@ form {
     @include element-padding;
 
     width: 100%;
+    margin-top: .3rem;
     font-size: $font-size-xlarge;
   }
 
@@ -98,6 +99,4 @@ form {
     resize: vertical;
     min-height: 3em;
   }
-
-  .bot-field { @include visually-hidden; }
 }

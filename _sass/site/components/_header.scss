@@ -15,20 +15,12 @@
         @include grid-media(tablet) {
           @include grid-column(4);
         }
-
-        @include grid-media(desktop) {
-          @include grid-column(4);
-        }
       }
 
       nav.navigation {
         @include grid-column(2);
 
         @include grid-media(tablet) {
-          @include grid-column(8);
-        }
-
-        @include grid-media(desktop) {
           @include grid-column(8);
         }
       }
@@ -95,25 +87,16 @@
   }
 
   .site-title {
-
-    @include grid-media(desktop) {
-      transition: opacity $timing-interaction ease-in-out;
-      height: auto;
-      width: auto;
-      display: inline-block;
-      overflow: hidden;
-      text-decoration: none;
-
-      // h1,
-      // h2 {
-      //   font-size: 1.5rem;
-      //   color: var(--color-text);
-      //   margin-top: .45em;
-      //   letter-spacing: .02em;
-      //   line-height: 1.3;
-      //   hyphens: auto;
-      // }
-    }
+    display: inline-block;
+    transition: opacity $timing-interaction ease-in-out;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-size: .7rem !important;
+    letter-spacing: 1.5px;
   }
 
   a.accessibility-skip {
@@ -167,9 +150,9 @@
     z-index: 10000;
 
     .site-title {
-      opacity: 1;
-      height: auto;
-      width: auto;
+      opacity: 0;
+      height: 0;
+      width: 0;
     }
   }
 
@@ -189,9 +172,9 @@
     }
 
     .site-title {
-      opacity: 0;
-      height: 0;
-      width: 0;
+      opacity: 1;
+      height: auto;
+      width: auto;
     }
   }
 

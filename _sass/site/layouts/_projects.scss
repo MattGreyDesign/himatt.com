@@ -1,9 +1,9 @@
 //Variables
-$animation-time-in: $timing-interaction;
-$animation-ease-in: ease-in-out;
+$thumb-animation-time-in: $timing-interaction;
+$thumb-animation-ease-in: ease-in-out;
 
-$animation-time-out: $timing-interaction;
-$animation-ease-out: ease-in-out;
+$thumb-animation-time-out: $timing-interaction;
+$thumb-animation-ease-out: ease-in-out;
 
 //Layout
 .projects-page {
@@ -48,10 +48,13 @@ $animation-ease-out: ease-in-out;
 
 //Styling
 .projects-page {
-
   .projects-intro {
-    font-size: 2em;
-    text-align: center;
+    @include grid-media(phablet) {
+      text-align: center;
+    }
+
+    margin-top: 1rem;
+    margin-bottom: 4rem;
   }
 
   .project-listing {
@@ -75,8 +78,8 @@ $animation-ease-out: ease-in-out;
 
           // Animate filters
           transition-property: filter;
-          transition-timing-function: $animation-ease-out;
-          transition-duration: $animation-time-out;
+          transition-timing-function: $thumb-animation-ease-out;
+          transition-duration: $thumb-animation-time-out;
         }
 
         h3 {
@@ -101,8 +104,8 @@ $animation-ease-out: ease-in-out;
 
             //animate out
             transition-property: opacity;
-            transition-timing-function: $animation-ease-out;
-            transition-duration: $animation-time-out;
+            transition-timing-function: $thumb-animation-ease-out;
+            transition-duration: $thumb-animation-time-out;
             padding: ($measure-xsmall / 1.5) $measure-medium;
             position: absolute;
             width: 100%;
@@ -141,8 +144,8 @@ $animation-ease-out: ease-in-out;
 
               //animate drop-in out
               transition-property: transform;
-              transition-timing-function: $animation-ease-out;
-              transition-duration: $animation-time-out;
+              transition-timing-function: $thumb-animation-ease-out;
+              transition-duration: $thumb-animation-time-out;
             }
           }
         }
@@ -155,8 +158,8 @@ $animation-ease-out: ease-in-out;
 
           //animate fade in
           transition-property: opacity;
-          transition-timing-function: $animation-ease-in;
-          transition-duration: $animation-time-in;
+          transition-timing-function: $thumb-animation-ease-in;
+          transition-duration: $thumb-animation-time-in;
 
           span {
             //drop-in is reset back to original position
@@ -164,8 +167,8 @@ $animation-ease-out: ease-in-out;
 
             //animate drop-in in
             transition-property: transform;
-            transition-timing-function: $animation-ease-in;
-            transition-duration: $animation-time-in;
+            transition-timing-function: $thumb-animation-ease-in;
+            transition-duration: $thumb-animation-time-in;
           }
         }
 

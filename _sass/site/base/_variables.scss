@@ -23,7 +23,7 @@ $font-size-xxxxxlarge: 3.5rem; //56px
   --font-size-xxlarge: 1.5rem; //24px
   --font-size-xxxlarge: 2rem; //32px
   --font-size-xxxxlarge: 2.5rem; //40px
-  --font-size-xxxxxlarge: 3.5rem; //56px
+  --font-size-xxxxxlarge: 3.2rem; //56px
 
   --font-size-level-1: var(--font-size-xxxlarge);
   --font-size-level-2: var(--font-size-xxlarge);
@@ -39,7 +39,7 @@ $font-size-xxxxxlarge: 3.5rem; //56px
   --inner-padding: 1rem;
 
   --color-background: #212121;
-  --color-text: #fff;
+  --color-text: rgba(255,255,255,.95);
   --color-cta: #65ff80;
 }
 

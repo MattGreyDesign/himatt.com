@@ -7,6 +7,24 @@ $animation-ease-out: ease-in-out;
 
 //Layout
 .projects-page {
+
+
+  .projects-intro-wrapper {
+    @extend .grid-container;
+
+    .projects-intro {
+      @include grid-column(12);
+
+      @include grid-media(tablet) {
+        @include grid-column-from-to(3,10);
+      }
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(4,9);
+      }
+    }
+  }
+
   .projects {
     @extend .grid-container;
 
@@ -32,7 +50,7 @@ $animation-ease-out: ease-in-out;
 .projects-page {
 
   .projects-intro {
-    @extend .paragraph-large;
+    font-size: 2em;
     text-align: center;
   }
 

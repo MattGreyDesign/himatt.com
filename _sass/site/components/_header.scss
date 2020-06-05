@@ -94,9 +94,7 @@
     }
   }
 
-  .desktop-page-title,
   .site-title {
-    display: none;
 
     @include grid-media(desktop) {
       transition: opacity $timing-interaction ease-in-out;
@@ -104,18 +102,17 @@
       width: auto;
       display: inline-block;
       overflow: hidden;
-      max-width: 400px;
       text-decoration: none;
 
-      h1,
-      h2 {
-        font-size: 1.5rem;
-        color: var(--color-text);
-        margin-top: .45em;
-        letter-spacing: .02em;
-        line-height: 1.3;
-        hyphens: auto;
-      }
+      // h1,
+      // h2 {
+      //   font-size: 1.5rem;
+      //   color: var(--color-text);
+      //   margin-top: .45em;
+      //   letter-spacing: .02em;
+      //   line-height: 1.3;
+      //   hyphens: auto;
+      // }
     }
   }
 
@@ -169,12 +166,6 @@
     transition: transform 0.3s;
     z-index: 10000;
 
-    .desktop-page-title {
-      opacity: 0;
-      height: 0;
-      width: 0;
-    }
-
     .site-title {
       opacity: 1;
       height: auto;
@@ -195,14 +186,6 @@
 
     .logo {
       width: 44px;
-    }
-
-    .desktop-page-title {
-      @include grid-media(tablet) {
-        opacity: 1;
-        height: auto;
-        width: auto;
-      }
     }
 
     .site-title {

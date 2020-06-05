@@ -1,30 +1,29 @@
-// .project-wrapper {
+.project-wrapper {
 
-//   //Layout
-//   .project-info {
-//     @extend .grid-container;
+  //Layout
+  .project-info {
+    @extend .grid-container;
 
-//     .project-intro {
-//       @include grid-column(12);
+    .project-intro {
+      @include grid-column(12);
 
-//       @include grid-media(tablet) {
-//         @include grid-column(12);
-//       }
+      @include grid-media(tablet) {
+        @include grid-column(12);
+      }
 
-//       @include grid-media(desktop) {
-//         @include column-from-to(1, 7);
-//       }
-//     }
+      @include grid-media(desktop) {
+        @include grid-column-from-to(2,8);
+      }
+    }
 
-//     .project-details {
-//       @include grid-column(12);
+    .project-details {
+      @include grid-column(12);
 
-//       @include grid-media(desktop) {
-//         // @include grid-column(2);
-//         // @include grid-push(2);
-//       }
-//     }
-//   }
+      @include grid-media(desktop) {
+        @include grid-column-from-to(10,12);
+      }
+    }
+  }
 
 //   .project-details {
 //     .project-detail-wrapper {
@@ -76,7 +75,6 @@
 
 //   //Styles
 //   .image-wrapper {
-//     @include responsive-padding;
 //     .image-wrapper img { width: 100%; }
 
 //     figcaption {
@@ -87,9 +85,18 @@
 //     &.nudge-down-5 {
 //       margin-top: 5%;
 //     }
+
+    // padding-bottom: $page-global-padding-desktop;
+
+    // @include grid-media(tablet) {
+    //   padding-bottom: $page-global-padding-tablet;
+    // }
+
+    // @include grid-media(desktop) {
+    //   padding-bottom: $page-global-padding-desktop;
+    // }
 //   }
 
-//   .project-hero,
 //   .project-intro {
 //     margin-bottom: $measure-medium;
 //   }
@@ -113,4 +120,4 @@
 //   .project-text {
 //     margin-bottom: $measure-small;
 //   }
-// }
+}

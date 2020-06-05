@@ -96,6 +96,7 @@ form {
 
   textarea {
     resize: vertical;
+    min-height: 3em;
   }
 
   .bot-field { @include visually-hidden; }

@@ -1,59 +1,53 @@
-.global-wrapper > footer {
+footer.main-footer {
   color: #fff;
-  padding-bottom: $measure-large;
+  padding-bottom: $measure-medium;
   padding-top: $measure-large;
   @extend .grid-container;
 
-  .license {
-    @include grid-column(8);
+  .footer-license-wrapper {
+    @include grid-column(6);
+
+    @include grid-media(tablet) {
+      @include grid-column(10);
+    }
   }
 
-  .made-by {
-    @include grid-column(4);
-  }
-
-  .footer-content {
-    @extend .grid-container;
+  .made-by-wrapper {
     position: relative;
 
-    .footer-content-wrapper {
-      @include grid-column(8);
+    @include grid-column(6);
 
-      @include grid-media(tablet) {
-        @include grid-column(8);
-      }
+    @include grid-media(tablet) {
+      @include grid-column(2);
+    }
+  }
 
-      @include grid-media(desktop) {
-        @include grid-column(8);
-      }
+  a.license {
+    text-decoration: none;
+    margin-top: $measure-normal;
+    color: var(--color-text);
 
-      a.license {
-        text-decoration: none;
-        margin-top: $measure-normal;
-        color: var(--color-text);
+    &:hover {
+      border-bottom: 1px dashed;
+    }
+  }
 
-        &:hover {
-          border-bottom: 1px dashed;
-        }
-      }
+  a.made-by {
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--color-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    letter-spacing: 0.2em;
+    color: var(--color-text);
+    font-size: .6rem;
 
-      a.made-by {
-        color: var(--color-text);
-        font-size: $font-size-large/2;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.2em;
-        position: absolute;
-        width: $footer-height;
-        word-wrap: break-word;
-        right: -12px;
-        padding-bottom: 1em;
-        border-bottom: 1px solid inherit;
-        -ms-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        transform-origin: top;
-      }
+    @include grid-media(tablet) {
+      position: absolute;
+      width: 64px;
+      transform: rotate(-90deg);
+      right: -12px;
+      bottom: 12px;
     }
   }
 }

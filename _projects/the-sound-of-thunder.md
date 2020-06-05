@@ -17,7 +17,6 @@ accent:
 website:
   button_text:
   url:
-layout_mode: hero
 
 intro: |
   The Sound of Thunder is a handmade book featuring an illustrated exploration

@@ -60,7 +60,10 @@ body {
 //   }
 // }
 
-.main-content { min-height: calc(100vh - 193px); }
+.main-content {
+  min-height: calc(100vh - 224px);
+  padding-top: 2rem;
+}
 
 .page-header-spacer {
   height: 2em;

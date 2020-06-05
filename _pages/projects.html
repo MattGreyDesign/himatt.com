@@ -6,7 +6,9 @@ permalink: /
 class: projects-page
 priority: 1.0
 ---
-<p class="projects-intro">Matt Grey is a digital product designer living in London, UK.</p>
+<div class="projects-intro-wrapper">
+  <p class="projects-intro">Matt Grey is a product designer living in London, UK.</p>
+</div>
 
 <div class="projects">
 {% for project in site.projects reversed limit:include.limit %}

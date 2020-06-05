@@ -47,14 +47,14 @@
       overflow-y: auto;
       overflow-x: hidden;
       max-height: 80vh;
-      max-height: calc(100vh - #{(100px + $page-inner-padding-mobile)});
+      max-height: calc(100vh - (100px + var(--page-margin)));
     }
   }
 
   a.mobile-nav {
     display: inline-block;
     float: right;
-    right: $page-inner-padding-mobile;
+    right: var(--page-margin);
     padding: 10px 20px;
     margin-top: 5px;
     border: 1px solid var(--color-text);
@@ -87,8 +87,8 @@
     transition: max-height 150ms ease-in-out;
     position: fixed;
     overflow: hidden;
-    left: $page-inner-padding-mobile;
-    right: $page-inner-padding-mobile;
+    left: var(--page-margin);
+    right: var(--page-margin);
     top: 100px;
     list-style-type: none;
     background: var(--color-text);
@@ -110,7 +110,6 @@
         text-decoration: none;
         color: var(--color-text);
         display: block;
-        padding: $page-inner-padding-mobile;
 
         &:hover {
           background: rgba(var(--color-text), .2);

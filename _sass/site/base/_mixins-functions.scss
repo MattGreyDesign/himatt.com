@@ -13,18 +13,6 @@
   padding: ($measure-xsmall / 1.5) $measure-xsmall;
 }
 
-@mixin responsive-padding() {
-  padding-bottom: $page-global-padding-desktop;
-
-  @include grid-media(tablet) {
-    padding-bottom: $page-global-padding-tablet;
-  }
-
-  @include grid-media(desktop) {
-    padding-bottom: $page-global-padding-desktop;
-  }
-}
-
 @mixin decorative-line-top($decoration-height: 1px, $decoration-width: 20px) {
     &:before {
     content: '';

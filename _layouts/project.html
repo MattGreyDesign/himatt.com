@@ -28,19 +28,6 @@ title-class: project
 
 <div class="project-wrapper">
 
-{% if page.layout_mode == 'hero' %}
-  <div class="project-hero">
-    {% for entry in page.content_layout %}
-      {% if forloop.index0 == 1 %}
-        {% break %}
-      {% endif %}
-
-      {% include layout.html %}
-
-    {% endfor %}
-  </div>
-{% endif %}
-
   <div class="project-info">
     <section class="project-intro paragraph-main">{{ page.intro | markdownify }}</section>
     <aside class="project-details">
@@ -75,14 +62,7 @@ title-class: project
 
   <section>
   {% for entry in page.content_layout %}
-    {% if page.layout_mode == 'hero' %}
-      {% if forloop.index0 == 0 %}
-        {% continue %}
-      {% endif %}
-    {% endif %}
-
     {% include layout.html %}
-
   {% endfor %}
   </section>
 

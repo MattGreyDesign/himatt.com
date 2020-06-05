@@ -1,0 +1,28 @@
+I"ù<ul class="list--dashed list--small">
+  <li>
+    <p>Designed and built from scratch by me using
+<a href="https://jekyllrb.com/">Jekyll</a>.</p>
+  </li>
+  <li>
+    <p>The typefaces used are
+<a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>,
+<a href="https://fonts.google.com/specimen/DM+Serif+Display">DM Serif Display</a>, designed by
+<a href="https://www.colophon-foundry.org/">Colophon Foundry</a>.</p>
+  </li>
+  <li>
+    <p>Other tools and libraries used include, <a href="http://sass-lang.com/">SASS</a>,
+<a href="https://jquery.com/">jQuery</a>,
+<a href="https://github.com/gdub22/headspace">Headspace</a> and
+<a href="http://github.com/necolas/normalize.css">Normalize.css</a>.</p>
+  </li>
+  <li>
+    <p>All the code for this site is open source and available on
+<a href="https://github.com/mattgreydesign/mattgreydesign.github.io">Github</a>, deployed
+and hosted using <a href="http://netlify.com/">Netlify</a>.</p>
+  </li>
+  <li>
+    <p>Although the code is opensource under the GNU General Public License v3, all
+content is Copyrighted. <a href="https://github.com/MattGreyDesign/mattgreydesign.github.io/blob/master/LICENSE">Read more</a></p>
+  </li>
+</ul>
+:ET

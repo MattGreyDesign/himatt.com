@@ -9,31 +9,19 @@
     }
 
     @include grid-media(desktop) {
-      @include grid-column(6);
-    }
-
-    &.project {
-      @include grid-column(12);
-
-      @include grid-media(tablet) {
-        @include grid-column(12);
-      }
-
-      @include grid-media(desktop) {
-      @include grid-column-from-to(2, 6);
-      }
+    @include grid-column-from-to(2,7);
     }
   }
 
   .page-title {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 
     @include grid-media(tablet) {
-      padding-bottom: 1em;
+      padding-bottom: 1rem;
     }
 
     @include grid-media(desktop) {
-      padding-bottom: 2em;
+      padding-bottom: 2rem;
     }
   }
 }

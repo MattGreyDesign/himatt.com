@@ -1,41 +1,39 @@
-// .contact-wrapper {
+.contact-wrapper {
 
-//   .contact {
-//     @extend .grid-container;
+  .contact {
+    @extend .grid-container;
 
-//     @include grid-media(tablet) {
-//       margin-top: 5vh
-//     }
+    @include grid-media(tablet) {
+      margin-top: 5vh
+    }
 
-//     .contact-intro {
-//       @include grid-column(12);
+    .contact-intro {
+      @include grid-column(12);
 
-//       @include grid-media(tablet) {
-//         @include grid-column(5);
-//       }
+      @include grid-media(tablet) {
+        @include grid-column(5);
+      }
 
-//       @include grid-media(desktop) {
-//         @include grid-column(5);
-//       }
-//     }
+      @include grid-media(desktop) {
+        @include grid-column(5);
+      }
+    }
 
-//     .contact-form {
-//       @include grid-column(12);
+    .contact-form {
+      @include grid-column(12);
 
-//       @include grid-media(tablet) {
-//         @include grid-column(6);
-//         @include grid-shift(1);
-//       }
+      @include grid-media(tablet) {
+        @include grid-column-from-to(7,12);
+      }
 
-//       @include grid-media(desktop) {
-//         @include grid-column(6);
-//         @include grid-shift(1);
-//       }
-//     }
-//   }
+      @include grid-media(desktop) {
+        @include grid-column-from-to(7,12);
+      }
+    }
+  }
 
-//   .contact-intro {
-//     margin-bottom: $page-element-padding;
-//   }
-// }
+  .contact-intro {
+    margin-bottom: $page-element-padding;
+  }
+}
 

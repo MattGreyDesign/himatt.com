@@ -33,7 +33,7 @@
 
   --font-letter-spacing-subtle: .06rem;
 
-  --paragraph-spacing: 1rem;
+  --paragraph-spacing: 1.3rem;
 
   --gutter: #{rem(24px)};
   --gutter-row: #{rem(24px)};
@@ -50,6 +50,7 @@
 @include grid-media(tablet) {
   :root {
     --line-height-tight: 1.24;
+    --line-height-slight: 1.45;
 
     --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
     --font-size-level-1: var(--font-size-xxxxxlarge);

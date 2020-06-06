@@ -1,13 +1,10 @@
 main ul li {
   margin-bottom: .6rem;
-  font-size: var(--font-size-body);
 }
-
-.list--small li { font-size: var(--font-size-body); }
 
 .list--dashed {
   list-style-type: none;
-  margin-left: 14px;
+  margin-left: rem(20px);
 
   > li {
     list-style-type: none;
@@ -18,7 +15,8 @@ main ul li {
     content: "-";
     display: block;
     position: absolute;
-    left: -15px;
+    left: -#{rem(16px)};
+    opacity: var(--color-rgb-opacity-tint);
   }
 }
 
@@ -32,7 +30,8 @@ dl.relational-list {
     &.relational-list__description--period {
       margin-bottom: .2em;
       text-transform: uppercase;
-      font-size: var(--font-size-body-small);
+      letter-spacing: var(--font-letter-spacing-subtle);
+      font-size: var(--font-size-body-tiny);
     }
   }
 }

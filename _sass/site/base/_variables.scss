@@ -14,16 +14,16 @@
   --font-size-xxxlarge:#{rem(32px)};
   --font-size-xxxxlarge: #{rem(40px)};
   --font-size-xxxxxlarge: #{rem(56px)};
-  --font-size-xxxxxxlarge: #{rem(96px)}; //96px
+  --font-size-xxxxxxlarge: #{rem(96px)};
 
   --font-size-level-jumbo: var(--font-size-xxxxxlarge);
   --font-size-level-1: var(--font-size-xxxxlarge);
-  --font-size-level-2: var(--font-size-xxlarge);
+  --font-size-level-2: var(--font-size-xxxlarge);
   --font-size-level-3: var(--font-size-xxlarge);
   --font-size-level-4: var(--font-size-large);
   --font-size-body: var(--font-size-large);
   --font-size-body-tiny: var(--font-size-xsmall);
-  --font-size-body-small: var(--font-size-small);
+  --font-size-body-small: var(--font-size-normal);
   --font-size-body-large: var(--font-size-large);
   --font-size-body-huge: var(--font-size-xxlarge);
 
@@ -44,7 +44,7 @@
   --color-background: #212121;
   --color-text: rgba(255,255,255,.95);
   --color-cta: #65ff80;
-  --color-rgb-opacity-tint: .7;
+  --color-rgb-opacity-tint: .6;
 }
 
 @include grid-media(tablet) {
@@ -53,6 +53,8 @@
 
     --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
     --font-size-level-1: var(--font-size-xxxxxlarge);
+    --font-size-level-2: var(--font-size-xxxxlarge);
+    --font-size-body: var(--font-size-xlarge);
     --font-size-body-large: var(--font-size-xxlarge);
     --font-size-body-huge: var(--font-size-xxxlarge);
 

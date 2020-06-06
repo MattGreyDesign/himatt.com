@@ -6,7 +6,7 @@ main p a,
 main li a {
   text-decoration: none;
   color: var(--color-cta);
-  border-bottom: 1.5px dashed;
+  border-bottom: rem(1.2px) dashed;
   border-bottom-color: transparent;
 
   &:hover {

@@ -142,13 +142,13 @@
       background: inherit;
       opacity: 1;
       border: 0;
-      margin-top: 8px;
+      margin-top: rem(8px);
 
       li {
         display: inline-block;
         position: relative;
         padding-left: 1em;
-        padding-bottom: .6em;
+        padding-bottom: rem(9px);
         border: 0;
 
         a {

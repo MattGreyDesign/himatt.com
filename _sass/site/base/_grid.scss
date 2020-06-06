@@ -1,9 +1,13 @@
-@mixin grid-container {
+@mixin grid-base {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: auto;
   grid-column-gap: var(--gutter);
   grid-row-gap: var(--gutter-row);
+}
+
+@mixin grid-container {
+  @include grid-base;
   margin-left: var(--page-margin);
   margin-right: var(--page-margin);
 
@@ -16,16 +20,24 @@
   @include grid-container;
 }
 
-@mixin grid-container-nested {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: auto;
-  grid-column-gap: var(--gutter);
-  grid-row-gap: var(--gutter-row);
+@mixin grid-container-nested-small {
+  @include grid-base;
 }
 
-.grid-container-nested { //Use for extend
-  @include grid-container-nested;
+@mixin grid-container-nested-big {
+  @include grid-base;
+
+  @include grid-media(tablet) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.grid-container-nested-small { //Use for extend
+  @include grid-container-nested-small;
+}
+
+.grid-container-nested-big { //Use for extend
+  @include grid-container-nested-big;
 }
 
 @mixin grid-column-from-to($from: 1, $to: 12,) {

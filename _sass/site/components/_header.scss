@@ -11,6 +11,7 @@
 
       .logo-title-wrapper {
         @include grid-column(4);
+        display: flex;
 
         @include grid-media(tablet) {
           @include grid-column(4);
@@ -93,9 +94,14 @@
     width: 0;
     overflow: hidden;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: .6rem;
-    letter-spacing: .08rem;
+    display: flex;
+
+    span {
+      font-size: rem(16px);
+      letter-spacing: .08rem;
+      text-transform: uppercase;
+      align-self: center;
+    }
   }
 
   a.accessibility-skip {
@@ -167,12 +173,13 @@
     border-bottom: 1px solid rgba(white, .08);
 
     .logo {
-      width: 44px;
+      width: rem(44px);
+      height: rem(44px);
     }
 
     .site-title {
       opacity: 1;
-      height: auto;
+      height: rem(44px);
       width: auto;
     }
   }

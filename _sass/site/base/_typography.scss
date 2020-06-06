@@ -45,8 +45,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   font-size: var(--font-size-body-small);
   text-transform: uppercase;
   letter-spacing: var(--font-letter-spacing-subtle);
-  margin-top: .5em;
-  margin-bottom: $measure-xxxsmall;
+  margin-bottom: rem(4px);
 }
 
 .paragraph-normal p {

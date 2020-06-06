@@ -59,8 +59,8 @@
       vertical-align: top;
       display: inline-block;
       margin-right: .6em;
-      width: 48px;
-      height: 48px;
+      width: rem(48px);
+      height: rem(48px);
 
       a {
         &:focus,
@@ -93,9 +93,8 @@
     width: 0;
     overflow: hidden;
     text-decoration: none;
-    line-height: 48px;
     text-transform: uppercase;
-    font-size: .7rem !important;
+    font-size: .6rem;
     letter-spacing: .08rem;
   }
 
@@ -138,8 +137,8 @@
               padding-top 300ms ease,
               padding-bottom 200ms ease;
 
-  padding-top: $measure-medium;
-  padding-bottom: $measure-small;
+  padding-top: rem(32px);
+  padding-bottom: rem(20px);
 
   &.sticky-header {
     position: absolute;
@@ -162,8 +161,8 @@
 
   &.sticky-header--fixed {
     background-color: var(--color-background);
-    padding-top: $measure-xsmall;
-    padding-bottom: $measure-xsmall;
+    padding-top: rem(16px);
+    padding-bottom: rem(16px);
     position: fixed;
     border-bottom: 1px solid rgba(white, .08);
 

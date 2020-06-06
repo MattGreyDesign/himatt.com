@@ -1,8 +1,12 @@
 footer.main-footer {
-  color: #fff;
-  padding-bottom: $measure-medium;
-  padding-top: $measure-large;
   @extend .grid-container;
+  color: #fff;
+  padding-bottom: rem(32px);
+  padding-top: rem(32px);
+
+  @include grid-media(tablet) {
+    padding-top: rem(64px);
+  }
 
   .footer-license-wrapper {
     @include grid-column(6);
@@ -24,7 +28,6 @@ footer.main-footer {
 
   a.license {
     text-decoration: none;
-    margin-top: $measure-normal;
     color: var(--color-text);
 
     &:hover {

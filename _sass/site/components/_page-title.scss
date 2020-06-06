@@ -4,6 +4,10 @@
   .page-title {
     @include grid-column(12);
 
+    @include grid-media(tablet) {
+      @include grid-column-from-to(1,10);
+    }
+
     @include grid-media(desktop) {
       @include grid-column-from-to(2,7);
     }

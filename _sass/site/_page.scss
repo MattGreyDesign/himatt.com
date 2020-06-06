@@ -62,7 +62,11 @@ body {
 
 .main-content {
   min-height: calc(100vh - 224px);
-  padding-top: 2rem;
+  padding-top: 1rem;
+
+  @include grid-media(tablet) {
+    padding-top: 2rem;
+  }
 }
 
 .page-header-spacer {

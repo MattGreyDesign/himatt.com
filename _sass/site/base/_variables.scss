@@ -17,7 +17,7 @@
   --font-size-xxxxxxlarge: #{rem(96px)}; //96px
 
   --font-size-level-jumbo: var(--font-size-xxxxxlarge);
-  --font-size-level-1: var(--font-size-xxxlarge);
+  --font-size-level-1: var(--font-size-xxxxlarge);
   --font-size-level-2: var(--font-size-xxlarge);
   --font-size-level-3: var(--font-size-xxlarge);
   --font-size-level-4: var(--font-size-large);
@@ -49,13 +49,14 @@
 
 @include grid-media(tablet) {
   :root {
+    --line-height-tight: 1.24;
+
     --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
-    --font-size-level-1: var(--font-size-xxxxlarge);
+    --font-size-level-1: var(--font-size-xxxxxlarge);
     --font-size-body-large: var(--font-size-xxlarge);
     --font-size-body-huge: var(--font-size-xxxlarge);
 
     --page-margin: 4rem;
-    --line-height-tight: 1.25;
   }
 }
 
@@ -63,12 +64,12 @@
   :root {
     --font-size-root: 17px;
     --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
-    --font-size-level-1: var(--font-size-xxxxxlarge);
     --font-size-body: var(--font-size-xlarge);
     --font-size-body-large: var(--font-size-xxlarge-2);
     --font-size-body-huge: var(--font-size-xxxxlarge);
 
-    --gutter: 2rem;
+    --gutter: #{rem(32px)};
+    --gutter-row: #{rem(32px)};
   }
 }
 

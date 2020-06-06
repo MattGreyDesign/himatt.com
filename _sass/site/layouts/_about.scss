@@ -1,108 +1,99 @@
-// .about-wrapper {
+.about-wrapper {
 
-//   .about {
-//     @extend .grid-container;
+  .about {
+    @extend .grid-container;
 
-//     .about-intro {
-//       @extend .grid-container;
-//       margin-bottom: $measure-small;
+    .about-intro {
+      @extend .grid-container-nested;
+      margin-bottom: $measure-small;
 
-//       .about-intro-image {
-//         @include grid-column(12);
+      .about-intro-image {
+        @include grid-column(12);
 
-//         @include grid-media(phablet) {
-//           @include column-from-to(3, 12);
-//         }
+        @include grid-media(phablet) {
+          @include grid-column-from-to(3,12);
+        }
 
-//         @include grid-media(tablet) {
-//           @include grid-column(4);
-//           @include grid-shift(8);
-//         }
+        @include grid-media(tablet) {
+          @include grid-column-from-to(8,12);
+        }
+      }
 
-//         @include grid-media(desktop) {
-//           @include grid-column(4);
-//           @include grid-shift(8);
-//         }
-//       }
+      .about-intro-description {
+        @include grid-column(6);
 
-//       .about-intro-description {
-//         @include grid-column(12);
+        @include grid-media(phablet) {
+          @include grid-column(6);
+        }
 
-//         @include grid-media($phablet) {
-//           @include grid-column(6);
-//           @include grid-shift(-6);
-//         }
+        @include grid-media(tablet) {
+          @include grid-column(7);
+        }
 
-//         @include grid-media(tablet) {
-//           @include grid-column(7);
-//           @include grid-shift(-4);
-//         }
+        @include grid-media(desktop) {
+          @include grid-column(7);
+        }
+      }
+    }
 
-//         @include grid-media(desktop) {
-//           @include grid-column(7);
-//           @include grid-shift(-4);
-//         }
-//       }
-//     }
+    .about-attributes {
+      @extend .grid-container-nested;
 
-//     .about-attributes {
-//       @extend .grid-container;
+      .about-tools,
+      .about-skills,
+      .about-education,
+      .about-experience {
+        @include grid-column(6);
 
-//       .about-tools,
-//       .about-skills,
-//       .about-education,
-//       .about-experience {
-//         @include grid-column(12);
+        @include grid-media(phablet) {
+          @include grid-column(6);
+        }
 
-//         @include grid-media($phablet) {
-//           @include grid-column(6);
-//         }
+        @include grid-media(tablet) {
+          @include grid-column(4);
+        }
 
-//         @include grid-media(tablet) {
-//           @include grid-column(4);
-//         }
+        @include grid-media(desktop) {
+          @include grid-column(3);
+        }
+      }
+    }
 
-//         @include grid-media(desktop) {
-//           @include grid-column(3);
-//         }
-//       }
-//     }
+    .about-site {
+      @extend .grid-container;
 
-//     .about-site {
-//       @extend .grid-container;
+      .about-site-description {
+        @include grid-column(6);
 
-//       .about-site-description {
-//         @include grid-column(12);
+        @include grid-media(tablet) {
+          @include grid-column(8);
+        }
 
-//         @include grid-media(tablet) {
-//           @include grid-column(8);
-//         }
+        @include grid-media(desktop) {
+          @include grid-column(6);
+        }
+      }
+    }
+  }
+}
 
-//         @include grid-media(desktop) {
-//           @include grid-column(6);
-//         }
-//       }
-//     }
-//   }
-// }
+.about-wrapper {
+  .about {
+    .about-intro-image { margin-bottom: var(--gutter-row); }
 
-// .about-wrapper {
-//   .about {
-//     .about-intro-image { margin-bottom: $measure-medium; }
+    .about-section {
+      border-top: 2px solid rgba(white, .3);
+      margin-bottom: var(--gutter-row);
+      padding-top: $measure-xxsmall;
 
-//     .about-section {
-//       border-top: 2px solid rgba(white, .3);
-//       margin-bottom: $measure-medium;
-//       padding-top: $measure-xxsmall;
+      &.about-section-no-title {
+        padding-top: $measure-xsmall;
+      }
+    }
 
-//       &.about-section-no-title {
-//         padding-top: $measure-xsmall;
-//       }
-//     }
-
-//     .about-section-title {
-//       padding-bottom: $measure-xxsmall;
-//       margin-bottom: .5rem;
-//     }
-//   }
-// }
+    .about-section-title {
+      padding-bottom: $measure-xxsmall;
+      margin-bottom: .5rem;
+    }
+  }
+}

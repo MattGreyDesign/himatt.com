@@ -127,8 +127,8 @@
             content: 'Current section';
             text-transform: uppercase;
             float: right;
-            font-size: 0.8em;
-            margin-top: 3px;
+            font-size: var(--font-size-body-small);
+            margin-top: rem(4px);
           }
         }
       }

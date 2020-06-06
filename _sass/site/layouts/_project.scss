@@ -20,7 +20,7 @@
       @include grid-column(12);
 
       @include grid-media(desktop) {
-        @include grid-column-from-to(10,12);
+        @include grid-column-from-to(10,11);
       }
     }
   }
@@ -85,14 +85,14 @@
     }
 
     &.nudge-down-5 {
-      margin-top: 5%;
+      @include grid-media(desktop) {
+        margin-top: 5%;
+      }
     }
-
-    padding-bottom: var(--gutter-row);
   }
 
   .project-info {
-    margin-bottom: $measure-medium;
+    margin-bottom: rem(40px);
   }
 
 //   .project-detail {
@@ -111,7 +111,9 @@
 //     }
 //   }
 
-//   .project-text {
-//     margin-bottom: $measure-small;
-//   }
+  .project-text {
+    @include grid-media(desktop) {
+      margin-top: var(--gutter-row);
+    }
+  }
 }

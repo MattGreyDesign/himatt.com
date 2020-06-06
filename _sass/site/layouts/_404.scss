@@ -1,16 +1,22 @@
 .four-o-four-wrapper {
-  @extend %layout-grid-container;
+  @extend .grid-container;
 
   .four-o-four {
     @include grid-column(12);
 
-    @include grid-media($grid-tablet) {
-      @include grid-column(8);
-      @include grid-shift(2);
+    @include grid-media(tablet) {
+      @include grid-column-from-to(3,10);
       margin-top: 5vh;
       margin-bottom: 8vh;
+    }
+
+    @include grid-media(desktop) {
+      @include grid-column-from-to(4,9);
     }
   }
 }
 
-.four-o-four p { @extend .paragraph-large; }
+.four-o-four {
+  h1 { margin-bottom: 1rem; }
+  p { @extend .paragraph-large; }
+}

@@ -5,7 +5,7 @@
   cursor: pointer;
   vertical-align: middle;
   text-decoration: none;
-  font-size: $font-size-large;
+  font-size: var(--font-size-button);
   -webkit-appearance: none;
   appearance: none;
   border-radius: 0;
@@ -31,51 +31,37 @@
 .button-adaptive {
   width: 100%;
 
-  @include grid-media($grid-desktop) {
+  @include grid-media(desktop) {
     display: inline-block;
     width: auto;
   }
 }
 
-.button-primary {
-  @extend %button;
-
-  background: $site-accent-color;
-  border: none;
-
-  &:hover {
-    background: $site-accent-color-light;
-  }
-
-  &:active {
-    background: $site-accent-color-lightest;
-  }
-
-  &:disabled,
-  &.disabled{
-    background: $site-accent-color-lightest;
-  }
-}
-
 .button-secondary {
   @extend %button;
-  border: 1px solid $site-accent-color;
-  color: $site-accent-color;
+  border: 1px solid var(--color-cta);
+  color: var(--color-cta);
   background: transparent;
 
   &:hover,
   &:focus {
-    background: $site-accent-color;
     color: black;
+    background: var(--color-cta);
   }
 
   &:active {
-    background: $site-accent-color-lightest;
+    opacity: .8;
     color: black;
+    background: var(--color-cta);
   }
 
   &:disabled,
   &.disabled{
-    background: $site-accent-color-lightest;
+    opacity: .4;
+
+    &:hover {
+      color: var(--color-cta);
+      background: transparent;
+    }
   }
 }

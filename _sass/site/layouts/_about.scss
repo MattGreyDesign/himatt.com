@@ -1,87 +1,84 @@
 .about-wrapper {
 
   .about {
-    @extend %layout-grid-container;
+    @extend .grid-container;
 
-    .about-intro {
-      @extend %layout-grid-container;
-      margin-bottom: $measure-small;
+    .about-intro-image {
+      grid-row: 1;
+      @include grid-column-from-to(1,3);
 
-      .about-intro-image {
-        @include grid-column(12);
-
-        @include grid-media($grid-mobile-large) {
-          @include grid-column(6);
-          @include grid-shift(6);
-        }
-
-        @include grid-media($grid-tablet) {
-          @include grid-column(4);
-          @include grid-shift(8);
-        }
-
-        @include grid-media($grid-desktop) {
-          @include grid-column(4);
-          @include grid-shift(8);
-        }
+      @include grid-media(phablet) {
+        @include grid-column-from-to(1,4);
       }
 
-      .about-intro-description {
-        @include grid-column(12);
+      @include grid-media(tablet) {
+        @include grid-column-from-to(9,12);
+      }
 
-        @include grid-media($grid-mobile-large) {
-          @include grid-column(6);
-          @include grid-shift(-6);
-        }
+      @include grid-media(desktop) {
+        @include grid-column-from-to(9,12);
+      }
+    }
 
-        @include grid-media($grid-tablet) {
-          @include grid-column(7);
-          @include grid-shift(-4);
-        }
+    .about-intro-description {
+      grid-row: 2;
+      @include grid-column-from-to(1,6);
 
-        @include grid-media($grid-desktop) {
-          @include grid-column(7);
-          @include grid-shift(-4);
-        }
+      @include grid-media(phablet) {
+        @include grid-column-from-to(1,6);
+      }
+
+      @include grid-media(tablet) {
+        grid-row: 1;
+        @include grid-column-from-to(1,7);
+      }
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(1,7);
       }
     }
 
     .about-attributes {
-      @extend %layout-grid-container;
+      grid-row: 3;
+      @extend .grid-container-nested-big;
+      @include grid-column(6);
+
+      @include grid-media(tablet) {
+        grid-row: 2;
+        @include grid-column(12);
+      }
 
       .about-tools,
       .about-skills,
       .about-education,
       .about-experience {
-        @include grid-column(12);
+        @include grid-column(6);
 
-        @include grid-media($grid-mobile-large) {
+        @include grid-media(phablet) {
           @include grid-column(6);
         }
 
-        @include grid-media($grid-tablet) {
-          @include grid-column(4);
+        @include grid-media(tablet) {
+          @include grid-column(6);
         }
 
-        @include grid-media($grid-desktop) {
+        @include grid-media(desktop) {
           @include grid-column(3);
         }
       }
     }
 
     .about-site {
-      @extend %layout-grid-container;
+      grid-row: 4;
+      @include grid-column(6);
 
-      .about-site-description {
+      @include grid-media(tablet) {
+        grid-row: 3;
         @include grid-column(12);
+      }
 
-        @include grid-media($grid-tablet) {
-          @include grid-column(8);
-        }
-
-        @include grid-media($grid-desktop) {
-          @include grid-column(6);
-        }
+      @include grid-media(desktop) {
+        @include grid-column(6);
       }
     }
   }
@@ -89,20 +86,18 @@
 
 .about-wrapper {
   .about {
-    .about-intro-image { margin-bottom: $measure-medium; }
-
     .about-section {
-      border-top: 2px solid rgba(white, .3);
-      margin-bottom: $measure-medium;
-      padding-top: $measure-xxsmall;
+      border-top: 1px solid rgba(white, var(--color-rgb-opacity-tint));
+      margin-bottom: var(--gutter-row);
+      padding-top: rem(8px);
+    }
 
-      &.about-section-no-title {
-        padding-top: $measure-xsmall;
-      }
+    .about-section--nested {
+      margin-top: rem(40px);
     }
 
     .about-section-title {
-      padding-bottom: $measure-xxsmall;
+      padding-bottom: rem(8px);
       margin-bottom: .5rem;
     }
   }

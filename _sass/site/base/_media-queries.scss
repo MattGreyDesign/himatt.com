@@ -1,0 +1,26 @@
+  @mixin grid-media($device-size: phablet) {
+  $phablet-size: 480px;
+  $tablet-size: 768px;
+  $desktop-size: 1260px;
+  $largedesktop-size: 1512px;
+  $default-feature: min-width;
+
+  @if $device-size == cat {
+  } @else if $device-size == phablet {
+    @media only screen and (#{$default-feature}: #{$phablet-size}) {
+      @content;
+    }
+  } @else if $device-size == tablet {
+    @media only screen and (#{$default-feature}: #{$tablet-size}) {
+      @content;
+    }
+  } @else if $device-size == desktop {
+    @media only screen and (#{$default-feature}: #{$desktop-size}) {
+      @content;
+    }
+  } @else if $device-size == largedesktop {
+    @media only screen and (#{$default-feature}: #{$largedesktop-size}) {
+      @content;
+    }
+  }
+}

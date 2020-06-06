@@ -5,9 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-plugins:
-  - bourbon
-  - neat
+# plugins:
 
 exclude:
   - readme.md
@@ -21,12 +19,14 @@ include:
 
 # Site settings
 title: Matt Grey
+long-title: Matt Grey Design
 email: mattgreydesign@gmail.com
-description: "The selected portfolio of London-based UX/UI, font, and graphic designer Matt Grey"
+description: "The selected portfolio of London based digital product designer Matt Grey"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
-year: 2018
+year: 2020
+start-year: 2010
 sitemap: true
 
 # Social networks
@@ -56,10 +56,14 @@ sass:
 compress_html: # http://jch.penibelst.de/
   enabled: true # compress html
   clippings: all # clip safe tags
-  blanklines: false # boolean - strip blank lines and breaks
-  #profile: true # boolean - print table of data saved
+  comments: []
+  endings: []
   #ignore:
-  #envs: [local]
+    #envs: [local]
+  blanklines: false # boolean - strip blank lines and breaks
+  profile: false
+  startings: []
+
 
 # Structure
 navigation:

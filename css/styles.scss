@@ -3,18 +3,13 @@
 ---
 @charset "utf-8";
 
-// Vendor
-// @import 'neat-config';
-@import "bourbon";
-@import "neat";
-
 @import "normalize";
 
 //Base
-@import "site/base/variables";
-@import "neat-grids";
-
 @import "site/base/mixins-functions";
+@import "site/base/media-queries";
+@import "site/base/variables";
+@import "site/base/grid";
 @import "site/base/extends";
 @import "site/base/utilities";
 @import "site/base/typography";
@@ -33,9 +28,7 @@
 
 // // Layouts
 @import "site/page";
-@import "site/layouts/generic-page";
 
-@import "site/layouts/homepage";
 @import "site/layouts/projects";
 @import "site/layouts/project";
 @import "site/layouts/fonts";

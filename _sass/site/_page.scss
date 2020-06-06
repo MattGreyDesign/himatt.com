@@ -1,16 +1,17 @@
 ::-moz-selection {
     color: white;
-    background: $site-accent-color-secondary;
+    background: $site-highlight;
 }
 
 ::selection {
     color: white;
-    background: $site-accent-color-secondary;
+    background: $site-highlight;
 }
 
 html {
   box-sizing: border-box;
-  background: $site-background-color;
+  background-color: var(--color-background);
+  color: var(--color-text);
   height: 100%;
 }
 
@@ -27,12 +28,10 @@ img {
 }
 
 body {
-  color: $site-text-color;
-
   &.prevent-scroll-mobile {
     overflow: hidden;
 
-    @include grid-media($grid-tablet) {
+    @include grid-media(tablet) {
       overflow: auto;
     }
   }
@@ -42,22 +41,33 @@ body {
   margin-top: 100px;
 }
 
-.header-content,
-main,
-footer {
-  margin-left: auto;
-  margin-right: auto;
+// .header-content,
+// main,
+// footer {
+//   margin-left: auto;
+//   margin-right: auto;
 
-  @include grid-media($grid-tablet) {
-    max-width: $desktop-size;
-  }
+//   @include grid-media(tablet) {
+//     max-width: $desktop-size;
+//   }
 
-  @include grid-media($grid-tablet) {
-    max-width: $largedesktop-size;
+//   @include grid-media(desktop) {
+//     max-width: $largedesktop-size;
+//   }
+
+//   @include grid-media(largedesktop) {
+//     max-width: 90vw;
+//   }
+// }
+
+.main-content {
+  min-height: calc(100vh - 224px);
+  padding-top: 1rem;
+
+  @include grid-media(tablet) {
+    padding-top: 2rem;
   }
 }
-
-.main-content { min-height: calc(100vh - 193px); }
 
 .page-header-spacer {
   height: 2em;

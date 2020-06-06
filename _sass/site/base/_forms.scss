@@ -1,3 +1,52 @@
+/// Append pseudo-classes to a selector(s).
+///
+/// @argument {list | string} $inputs
+///   A selector, or list of selectors, to apply the pseudo-class to.
+///
+/// @argument {pseudo-class} $pseudo [null]
+///   The pseudo-class to be appended.
+///
+/// @return {list}
+///
+/// @access private
+
+@function assign-inputs($inputs, $pseudo: null) {
+  $list: ();
+
+  @each $input in $inputs {
+    $input: unquote($input);
+    $input: if($pseudo, $input + ":" + $pseudo, $input);
+    $list: append($list, $input, comma);
+  }
+
+  @return $list;
+}
+
+$text-inputs-list: (
+  "[type='color']",
+  "[type='date']",
+  "[type='datetime']",
+  "[type='datetime-local']",
+  "[type='email']",
+  "[type='month']",
+  "[type='number']",
+  "[type='password']",
+  "[type='search']",
+  "[type='tel']",
+  "[type='text']",
+  "[type='time']",
+  "[type='url']",
+  "[type='week']",
+  "input:not([type])",
+  "textarea",
+);
+
+$all-text-inputs: assign-inputs($text-inputs-list);
+$all-text-inputs-active: assign-inputs($text-inputs-list, active);
+$all-text-inputs-focus: assign-inputs($text-inputs-list, focus);
+$all-text-inputs-hover: assign-inputs($text-inputs-list, hover);
+
+
 form {
   fieldset {
     border: 0;
@@ -7,11 +56,11 @@ form {
 
   label {
     display: block;
-    font-size: $font-size-large;
+    font-size: var(--font-size-form-label);
   }
 
   section {
-    margin-bottom: $measure-xsmall;
+    margin-bottom: 1.2rem;
   }
 
   input:not([type='submit']),
@@ -19,7 +68,7 @@ form {
     @include element-padding;
 
     width: 100%;
-    font-size: $font-size-xlarge;
+    margin-top: .3rem;
   }
 
   #{$all-text-inputs} {
@@ -41,13 +90,12 @@ form {
   #{$all-text-inputs-focus},
   #{$all-text-inputs-active} {
     border: 0;
-    border-bottom: 4px solid $site-accent-color;
+    border-bottom: 4px solid var(--color-cta);
     transition: border-bottom-color $timing-interaction;
   }
 
   textarea {
     resize: vertical;
+    min-height: 3em;
   }
-
-  .bot-field { @include visually-hidden; }
 }

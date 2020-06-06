@@ -1,18 +1,15 @@
 a {
-  color: $site-text-color;
+  color: var(--color-text);
 }
 
 main p a,
 main li a {
   text-decoration: none;
-  color: $site-accent-color;
-  border-bottom: 1px dashed;
+  color: var(--color-cta);
+  border-bottom: rem(1.2px) dashed;
   border-bottom-color: transparent;
-  transition: border-bottom-color .2s;
 
   &:hover {
-    border-bottom-color: $site-accent-color;
-    transition: border-bottom-color 0s;
-    opacity: 1;
+    border-bottom-color: var(--color-cta);
   }
 }

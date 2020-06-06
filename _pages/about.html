@@ -5,11 +5,14 @@ permalink: /about/
 priority: 0.9
 
 intro: |
-  Hi, I'm Matt Grey, a multi-disciplined designer particularly focussed around
+  Hi, I'm Matt Grey, a multi-disciplined designer, particularly focussed around
   digital product design, user experience (UX), and usability. I aim to bridge
   the gap between design and technical implementation by working alongside
-  developers to research, prototype and deliver products with effective and
-  engaging user experiences.
+  developers to research, prototype and deliver products with effective,
+  engaging and accessible user experiences.
+
+  I design, test and prototype multi-platform websites and apps, as well as
+  creating and managing design systems to drive efficiency and consistency.
 
   I currently work (and live) in Central London as a Product Designer (UX/UI) at
   [Clearscore](//www.clearscore.com/).
@@ -37,12 +40,10 @@ intro: |
   [VisitBritain](//www.visitbritain.com/gb/en),
   and [OpenJaw Technologies](//www.openjawtech.com).
 
-  I design and prototype multi-platform websites and apps, sometimes developing
-  branding and living styleguides if necessary. In the past I have also worked
-  in print and illustration, producing album artwork, brochures and books.
-
   In 2010 I founded a [font foundry](https://www.myfonts.com/foundry/Matt_Grey/),
-  which has released a number of free and commercial [fonts](/fonts).
+  which has released a number of free and commercial [fonts](/fonts). In the
+  past I have also worked in print and illustration, producing album artwork,
+  brochures and books.
 
 profile_picture: /images/profile-pictures/profile.jpg
 
@@ -88,6 +89,15 @@ education:
   - course: Short course, Graphic design
     place: Central Saint Martins (UAL)
 
+competitions:
+  - event: RESI Hackathon
+    period: 2018
+    result: Winning team
+
+  - event: Culture Mile Fusion Prize
+    period: 2019 - 2020
+    result: Shortlisted (Ongoing)
+
 skills:
   - User Experience design (UX)
   - User Interface design (UI)
@@ -113,21 +123,18 @@ tools:
   - Frontend templating languages (ERB, Handlebars, Blade, Liquid)
 
 about_site: |
-  - Designed and built by Matt Grey, from scratch using
+  - Designed and built from scratch by me using
   [Jekyll](https://jekyllrb.com/).
 
-  - Styles are mobile first, responsive, and utilise
-  [SASS](http://sass-lang.com/), [Bourbon Neat](http://neat.bourbon.io/) for the
-  grid, and [Normalize.css](http://github.com/necolas/normalize.css).
+  - The typefaces used are
+  [DM Sans](https://fonts.google.com/specimen/DM+Sans) and
+  [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display),
+  designed by [Colophon Foundry](https://www.colophon-foundry.org/).
 
-  - The typeface used is
-  [HK Grotesk Pro](https://hanken.co/product/hk-grotesk-pro/), designed by
-  [Alfredo Marco Pradil](http://alfredomarcopradil.com/) at
-  [Hanken Design Co](https://hanken.co/).
-
-  - Other tools and libraries used include [jQuery](https://jquery.com/),
-  [Headspace](https://github.com/gdub22/headspace), and
-  [Google Analytics](http://google.com/analytics).
+  - Other tools and libraries used include, [SASS](http://sass-lang.com/),
+  [jQuery](https://jquery.com/),
+  [Headspace](https://github.com/gdub22/headspace) and
+  [Normalize.css](http://github.com/necolas/normalize.css).
 
   - All the code for this site is open source and available on
   [Github](https://github.com/mattgreydesign/mattgreydesign.github.io), deployed
@@ -156,20 +163,18 @@ about_site: |
 
 <div class="about-wrapper">
   <div class="about">
-    <div class="about-intro">
-      <div class="about-intro-image paragraph-main">
-        <img src="{{ page.profile_picture }}" alt="">
-      </div>
+    <div class="about-intro-image">
+      <img src="{{ page.profile_picture }}" alt="">
+    </div>
 
-      <div class="about-intro-description paragraph-main">
-        {{ page.intro | markdownify }}
-      </div>
+    <div class="about-intro-description paragraph-normal">
+      {{ page.intro | markdownify }}
     </div>
 
     <div class="about-attributes">
       <div class="about-experience">
         <div class="about-section">
-          <h3 class="about-section-title">Experience</h3>
+          <h3 class="about-section-title type-level-2">Experience</h3>
           <dl class="relational-list">
             {% for experience-item in page.experience %}
               <dt class="relational-list__title">{{ experience-item.company | markdownify}}</dt>
@@ -182,7 +187,7 @@ about_site: |
 
       <div class="about-education">
         <div class="about-section">
-          <h3 class="about-section-title">Education</h3>
+          <h3 class="about-section-title type-level-2">Education</h3>
           <dl class="relational-list">
             {% for education-item in page.education %}
               <dt class="relational-list__title">{{ education-item.course | markdownify}}</dt>
@@ -190,11 +195,22 @@ about_site: |
             {% endfor %}
           </dl>
         </div>
+
+        <div class="about-section about-section--nested">
+          <h3 class="about-section-title type-level-2">Competitions</h3>
+          <dl class="relational-list">
+            {% for competition-item in page.competitions %}
+              <dt class="relational-list__title">{{ competition-item.event | markdownify}}</dt>
+              <dd class="relational-list__description relational-list__description--period">{{ competition-item.period | markdownify}}</dd>
+              <dd class="relational-list__description">{{ competition-item.result | markdownify}}</dd>
+            {% endfor %}
+          </dl>
+        </div>
       </div>
 
       <div class="about-tools">
         <div class="about-section">
-          <h3 class="about-section-title">Tools &amp; Technologies</h3>
+          <h3 class="about-section-title type-level-2">Tools &amp; Technologies</h3>
           <ul class="list--dashed list--small">
             {% for tool in page.tools %}
               <li>{{ tool | markdownify }}</li>
@@ -205,8 +221,8 @@ about_site: |
 
       <div class="about-skills">
         <div class="about-section">
-          <h3 class="about-section-title">Skills</h3>
-          <ul class="list--dashed list--small">
+          <h3 class="about-section-title type-level-2">Skills</h3>
+          <ul class="list--dashed">
             {% for skill in page.skills %}
               <li>{{ skill }}</li>
             {% endfor %}
@@ -217,7 +233,7 @@ about_site: |
 
     <div class="about-site">
       <div class="about-section about-site-description">
-        <h3 class="about-section-title">Colophon: about this site</h3>
+        <h3 class="about-section-title type-level-2">Colophon: about this site</h3>
         <div class="paragraph-small">{{ page.about_site | markdownify }}</div>
       </div>
     </div>

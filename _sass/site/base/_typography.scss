@@ -1,21 +1,14 @@
-@font-face {
-    font-family: 'Himatt';
-    src: url('fonts/himatt.woff2') format('woff2'),
-         url('fonts/himatt.woff') format('woff');
-    font-display: swap;
-    font-weight: normal;
-    font-style: normal;
-}
+$font-family-primary: 'DM Sans', -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+$font-family-secondary: 'DM Serif Text', serif;
 
 html {
   font-family: sans-serif;
-  font-family: "Himatt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: $font-size-base;
-  line-height: 1.45;
+  font-family: $font-family-primary;
+  font-size: var(--font-size-root);
+  line-height: var(--line-height-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
@@ -24,73 +17,70 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   margin: 0
 }
 
-h1 {
-  font-size: $font-size-xxxlarge;
-
-  @include grid-media($grid-tablet) {
-    font-size: $font-size-xxxxlarge;
-    line-height: 1.2;
-  }
-
-  @include grid-media($grid-desktop) {
-    font-size: $font-size-xxxxxlarge;
-    line-height: 1.2;
-  }
+.type-level-jumbo {
+  font-family: $font-family-secondary;
+  font-size: var(--font-size-level-jumbo);
+  line-height: var(--line-height-tight);
 }
 
-h2 {
-  font-size: $font-size-xxlarge;
+.type-level-1 {
+  font-family: $font-family-secondary;
+  font-size: var(--font-size-level-1);
+  line-height: var(--line-height-tight);
 }
 
-h3 {
-  font-size: $font-size-xxxxlarge;
-  line-height: 1.2;
+.type-level-2 {
+  font-family: $font-family-secondary;
+  font-size: var(--font-size-level-2);
+  line-height: var(--line-height-tight);
 }
 
-h4 {
-  font-size: $font-size-large;
+.type-level-3 {
+  font-size: var(--font-size-level-3);
+  line-height: var(--line-height-tight);
 }
 
-.paragraph-main p {
-  margin-bottom: .9em;
-  font-size: $body-font-size-mobile;
-
-  @include grid-media($grid-desktop) {
-    font-size: $body-font-size-desktop;
-  }
-
-  small {
-    font-size: $font-size-small;
-  }
+.type-level-4 {
+  font-size: var(--font-size-level-4);
 }
 
+.title-label {
+  opacity: var(--color-rgb-opacity-tint);
+  color: var(--color-text);
+  font-size: var(--font-size-body-small);
+  text-transform: uppercase;
+  letter-spacing: var(--font-letter-spacing-subtle);
+  margin-bottom: rem(4px);
+}
+
+.paragraph-normal p {
+  margin-bottom: var(--paragraph-spacing);
+  font-size: var(--font-size-body);
+}
+
+.paragraph-small,
 .paragraph-small p {
-  margin-bottom: 0.7em;
-  font-size: $font-size-normal;
+  margin-bottom: var(--paragraph-spacing);
+  font-size: var(--font-size-body-small);
 }
 
-.paragraph-large {
-  margin-bottom: 0.7em;
-  font-size: $body-font-size-mobile;
+.paragraph-large,
+.paragraph-large p {
+  margin-bottom: var(--paragraph-spacing);
+  font-size: var(--font-size-body-large);
 
-  @include grid-media($grid-tablet) {
-    font-size: $font-size-xxlarge;
-  }
-
-  @include grid-media($grid-desktop) {
-    font-size: 28px;
-  }
+  a { border-bottom-width: 1.5px }
 }
 
-.paragraph-huge {
-  margin-bottom: 0.7em;
-  font-size: $font-size-xxlarge;
+.paragraph-huge,
+.paragraph-huge p {
+  margin-bottom: var(--paragraph-spacing);
+  font-size: var(--font-size-body-huge);
+  line-height: var(--line-height-slight);
 
-  @include grid-media($grid-tablet) {
-    font-size: $font-size-xxxlarge;
-  }
+  a { border-bottom-width: 2px }
+}
 
-  @include grid-media($grid-desktop) {
-    font-size: $font-size-xxxxlarge;
-  }
+small {
+  font-size: var(--font-size-body-tiny);
 }

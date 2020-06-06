@@ -1,12 +1,11 @@
 .fonts-wrapper {
-  @extend %layout-grid-container;
+  @extend .grid-container;
 
   .fonts {
     @include grid-column(12);
 
-    @include grid-media($grid-tablet) {
-      @include grid-column(8);
-      @include grid-shift(2);
+    @include grid-media(tablet) {
+      @include grid-column-from-to(3,10);
       margin-top: 5vh;
       margin-bottom: 8vh;
     }
@@ -14,6 +13,5 @@
 }
 
 .fonts {
-  transform: rotate(4deg);
   p { @extend .paragraph-large; }
 }

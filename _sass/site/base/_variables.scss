@@ -1,46 +1,99 @@
+:root {
+  --font-size-root: 16px;
 
-/*
- * MEDIA QUERIES
- */
-$default-feature: min-width;
+  --line-height-regular: 1.5;
+  --line-height-tight: 1.3;
 
-$mobile-size: 480px;
-$tablet-size: 768px;
-$desktop-size: 1260px;
-$largedesktop-size: 1512px;
+  --font-size-xsmall: #{rem(12px)};
+  --font-size-small: #{rem(14px)};
+  --font-size-normal: #{rem(16px)};
+  --font-size-large: #{rem(18px)};
+  --font-size-xlarge: #{rem(20px)};
+  --font-size-xxlarge: #{rem(24px)};
+  --font-size-xxlarge-2: #{rem(28px)};
+  --font-size-xxxlarge:#{rem(32px)};
+  --font-size-xxxxlarge: #{rem(40px)};
+  --font-size-xxxxxlarge: #{rem(56px)};
+  --font-size-xxxxxxlarge: #{rem(96px)};
+
+  --font-size-level-jumbo: var(--font-size-xxxxxlarge);
+  --font-size-level-1: var(--font-size-xxxxlarge);
+  --font-size-level-2: var(--font-size-xxxlarge);
+  --font-size-level-3: var(--font-size-xxlarge);
+  --font-size-level-4: var(--font-size-large);
+  --font-size-body: var(--font-size-large);
+  --font-size-body-tiny: var(--font-size-xsmall);
+  --font-size-body-small: var(--font-size-normal);
+  --font-size-body-large: var(--font-size-large);
+  --font-size-body-huge: var(--font-size-xxlarge);
+
+  --font-size-button: var(--font-size-large);
+  --font-size-form-label: var(--font-size-xlarge);
+  --font-size-nav: var(--font-size-xlarge);
+
+  --font-letter-spacing-subtle: .06rem;
+
+  --paragraph-spacing: 1.3rem;
+
+  --gutter: #{rem(24px)};
+  --gutter-row: #{rem(24px)};
+  --page-margin: #{rem(32px)};
+  --inner-padding: #{rem(16px)};
+  --inner-padding-horizontal: #{rem(12px)};
+
+  --color-background: #212121;
+  --color-text: rgba(255,255,255,.95);
+  --color-cta: #65ff80;
+  --color-rgb-opacity-tint: .6;
+}
+
+@include grid-media(tablet) {
+  :root {
+    --line-height-tight: 1.24;
+    --line-height-slight: 1.45;
+
+    --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
+    --font-size-level-1: var(--font-size-xxxxxlarge);
+    --font-size-level-2: var(--font-size-xxxxlarge);
+    --font-size-body: var(--font-size-xlarge);
+    --font-size-body-large: var(--font-size-xxlarge);
+    --font-size-body-huge: var(--font-size-xxxlarge);
+
+    --page-margin: 4rem;
+  }
+}
+
+@include grid-media(desktop) {
+  :root {
+    --font-size-root: 17px;
+    --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
+    --font-size-body: var(--font-size-xlarge);
+    --font-size-body-large: var(--font-size-xxlarge-2);
+    --font-size-body-huge: var(--font-size-xxxxlarge);
+
+    --gutter: #{rem(32px)};
+    --gutter-row: #{rem(32px)};
+  }
+}
+
+@include grid-media(largedesktop) {
+  :root {
+    --font-size-root: 1.2vw;
+  }
+}
 
 /*
  * GEOMETRY
  */
 
 //Base
-$measure-xxxsmall: 4px;
-$measure-xxsmall: 8px;
-$measure-xsmall: 12px;
-$measure-small: 20px;
-$measure-normal: 28px;
-$measure-medium: 32px;
-$measure-large: 64px;
-
-$page-global-padding-desktop: $measure-normal;
-$page-global-padding-tablet: $measure-small;
-$page-global-padding-mobile: $measure-xsmall;
-
-$page-padding: $measure-medium;
-$page-inner-padding: $measure-large;
-$page-inner-padding-tablet: $measure-medium;
-$page-inner-padding-mobile: $measure-small;
-
-$page-inner-margin: $measure-xsmall;
-$page-inner-margin-tablet: 0;
-$page-inner-margin-mobile: 0;
-
-$footer-height: ($measure-medium * 2);
-
-$accent-behind-height: 200px;
-
-$page-element-padding: $measure-small;
-$page-element-padding-mobile: $measure-xsmall;
+$measure-xxxsmall: rem(4px);
+$measure-xxsmall: rem(8px);
+$measure-xsmall: rem(12px);
+$measure-small: rem(20px);
+$measure-normal: rem(28px);
+$measure-medium: rem(32px);
+$measure-large: rem(64px);
 
 /*
  * GEOMETRY
@@ -49,46 +102,9 @@ $page-element-padding-mobile: $measure-xsmall;
 $timing-interaction: .2s;
 
 /*
- * TYPOGRAPHY
- */
-
-//Base
-$font-size-base: 18px;
-$font-size-xsmall: 0.75rem; //12px
-$font-size-small: 0.875rem; //14px
-$font-size-normal: 1rem;
-$font-size-large: 1.125rem; //18px
-$font-size-xlarge: 1.25rem; //20px
-$font-size-xxlarge: 1.5rem; //24px
-$font-size-xxxlarge: 2rem; //32px
-$font-size-xxxxlarge: 2.5rem; //40px
-$font-size-xxxxxlarge: 3.5rem; //56px
-
-$h1-font-size: $font-size-xxxlarge;
-$h2-font-size: $font-size-xxlarge;
-
-$body-font-size-desktop: $font-size-xlarge;
-$body-font-size-tablet: $font-size-large;
-$body-font-size-mobile: $font-size-large;
-
-$letter-spacing-medium: 0.06rem;
-
-/*
  * COLOUR
  */
 
 //Base
-$site-accent-color-secondary: blue;
-$site-accent-color: #65ff80;
-$site-accent-inverted-color: black;
-$site-background-color: #171717; //f7f7f7, 141414, ececec
-$site-text-color: white; //#252525
 $site-line-color: #e2e2e2;
-
-$color-rgb-opacity: 0.6;
-
-//Accent tints
-$site-accent-color-lightest: mix($site-accent-color, white, 80%);
-$site-accent-color-light: mix($site-accent-color, white, 60%);
-$site-accent-color-dark: mix($site-accent-color, black, 90%);
-$site-accent-color-darkest: mix($site-accent-color, black, 85%);
+$site-highlight: blue;

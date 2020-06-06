@@ -2,8 +2,8 @@
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "Matt Grey",
-    "alternateName": "Matt Grey Design",
+    "name": "{{ site.title }}",
+    "alternateName": "{{ site.long-title }}",
     "url": "http://www.himatt.com"
   }
   {
@@ -27,19 +27,9 @@
           </a>
         </div>
 
-        {% if page.layout == "page" %}
-        <a href="{{ site.baseurl }}/">
-          <div class="site-title">
-            <h2>{{ site.title }}</h2>
-          </div>
+        <a class="site-title" href="{{ site.baseurl }}/">
+          <span>{{ site.title }}</span>
         </a>
-        {% endif %}
-
-        {% if page.layout == "font" or page.layout == "project" or page.layout == "page" %}
-        <div class="desktop-page-title">
-          <h1>{{ page.title }}</h1>
-        </div>
-        {% endif %}
       </div>
 
       <nav class="navigation" aria-label="main navigation">

@@ -1,25 +1,29 @@
 ---
 sitemap: false
-date: 2017-02-10
+date: 2019-06-01
 published: false
-title: "Hero Doctor"
-description: "Designing an appointment booking app for a private medical practice"
-categories: ux, ui, branding
-disciplines: UX, UI, Prototyping, Branding
-media: Website
-ownership: Alliants
-client: iYield
-time_period: Late 2017
+title: "Knolo"
+description: "Creating an app for tracking and evidencing extra-curricular education"
+categories: ux, ui, branding, ia, app
+disciplines: UX, UI, Prototyping, Branding, Strategy
+media: App
+ownership: Personal
+client: Knolo
+time_period: 2019 Onwards
 thumbnail: "/projects/iyield/plist-iyield.jpg"
 accent:
   color:
   inverted:
 website:
   button_text: Visit Hero Doctor
-  url: //herodoctors.co.uk/styleguide
+  url: //www.culturemile.london/fusion-prize-shortlist/knolo
 
 intro: |
-  Hero Doctor is an appointment booking app for a private medical practice.
+  A project currently shortlisted for the
+  [Culture Mile Fusion prize](https://www.culturemile.london/fusionprize). Knolo
+  enables young people develop and gain accreditation of their soft skills, by
+  using gamification mechanics to track and showcase their hobbies and
+  interests, to develop their skillset and increase their employability.
 
 content_layout:
   - section_layout: 1col

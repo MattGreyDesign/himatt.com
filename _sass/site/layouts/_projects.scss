@@ -8,12 +8,15 @@ $thumb-animation-ease-out: ease-in-out;
 //Layout
 .projects-page {
 
-
   .projects-intro-wrapper {
     @extend .grid-container;
 
     .projects-intro {
-      @include grid-column(12);
+      @include grid-column(6);
+
+      @include grid-media(phablet) {
+        @include grid-column-from-to(2,5);
+      }
 
       @include grid-media(tablet) {
         @include grid-column-from-to(3,10);
@@ -49,12 +52,19 @@ $thumb-animation-ease-out: ease-in-out;
 //Styling
 .projects-page {
   .projects-intro {
+    position: relative;
+    margin-bottom: 2.5rem;
+
     @include grid-media(phablet) {
       text-align: center;
+      margin-bottom: 4rem;
     }
 
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    @include grid-media(desktop) {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 7rem;
+    }
   }
 
   .project-listing {
@@ -86,7 +96,7 @@ $thumb-animation-ease-out: ease-in-out;
           display: block;
           color: var(--color-text);
           margin-top: .4em;
-          font-size: $font-size-normal;
+          font-size: var(--font-size-body);
         }
 
         .thumbnail-description-wrapper {

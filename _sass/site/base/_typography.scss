@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   margin: 0
 }
 
+.type-level-jumbo {
+  font-family: 'DM Serif Text', serif;
+  font-size: var(--font-size-level-jumbo);
+  line-height: var(--line-height-tight);
+}
+
 .type-level-1 {
   font-family: 'DM Serif Text', serif;
   font-size: var(--font-size-level-1);
@@ -34,55 +40,38 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
 }
 
 .title-label {
-  color: rgba(var(--color-text), $color-rgb-opacity);
+  opacity: var(--color-rgb-opacity-tint);
   color: var(--color-text);
-  font-size: $font-size-small;
+  font-size: var(--font-size-body-small);
   text-transform: uppercase;
-  letter-spacing: 0.06rem;
+  letter-spacing: var(--font-letter-spacing-subtle);
   margin-top: .5em;
   margin-bottom: $measure-xxxsmall;
 }
 
-.paragraph-main p {
+.paragraph-normal p {
   margin-bottom: var(--paragraph-spacing);
-  font-size: $body-font-size-mobile;
-
-  @include grid-media(desktop) {
-    font-size: $body-font-size-desktop;
-  }
-
-  small {
-    font-size: $font-size-small;
-  }
+  font-size: var(--font-size-body);
 }
 
+.paragraph-small,
 .paragraph-small p {
   margin-bottom: var(--paragraph-spacing);
-  font-size: $font-size-normal;
+  font-size: var(--font-size-body-small);
 }
 
-.paragraph-large {
+.paragraph-large,
+.paragraph-large p {
   margin-bottom: var(--paragraph-spacing);
-  font-size: $body-font-size-mobile;
-
-  @include grid-media(tablet) {
-    font-size: $font-size-xxlarge;
-  }
-
-  @include grid-media(desktop) {
-    font-size: 28px;
-  }
+  font-size: var(--font-size-body-large);
 }
 
-.paragraph-huge {
+.paragraph-huge,
+.paragraph-huge p {
   margin-bottom: var(--paragraph-spacing);
-  font-size: $font-size-xxlarge;
+  font-size: var(--font-size-body-huge);
+}
 
-  @include grid-media(tablet) {
-    font-size: $font-size-xxxlarge;
-  }
-
-  @include grid-media(desktop) {
-    font-size: $font-size-xxxxlarge;
-  }
+small {
+  font-size: var(--font-size-body-tiny);
 }

@@ -9,8 +9,12 @@
   width: 1px;
 }
 
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
 @mixin element-padding {
-  padding: ($measure-xsmall / 1.5) $measure-xsmall;
+  padding: var(--inner-padding-horizontal) var(--inner-padding);
 }
 
 @mixin decorative-line-top($decoration-height: 1px, $decoration-width: 20px) {

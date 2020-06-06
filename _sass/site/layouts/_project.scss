@@ -25,36 +25,35 @@
     }
   }
 
-//   .project-details {
-//     .project-detail-wrapper {
-//       @extend .grid-container;
-//       @include grid-collapse;
+  .project-details {
+    .project-detail-wrapper {
+      @extend .grid-container-nested;
 
-//       .project-detail-6 {
-//         @include grid-column(6);
+      .project-detail-6 {
+        @include grid-column(6);
 
-//         @include grid-media(tablet) {
-//           @include grid-column(3);
-//         }
+        @include grid-media(tablet) {
+          @include grid-column(3);
+        }
 
-//         @include grid-media(desktop) {
-//           @include grid-column(12);
-//         }
-//       }
+        @include grid-media(desktop) {
+          @include grid-column(6);
+        }
+      }
 
-//       .project-detail-12 {
-//         @include grid-column(12);
+      .project-detail-12 {
+        @include grid-column(6);
 
-//         @include grid-media(tablet) {
-//           @include grid-column(3);
-//         }
+        @include grid-media(tablet) {
+          @include grid-column(3);
+        }
 
-//         @include grid-media(desktop) {
-//           @include grid-column(12);
-//         }
-//       }
-//     }
-//   }
+        @include grid-media(desktop) {
+          @include grid-column(6);
+        }
+      }
+    }
+  }
 
 //   .project-text {
 //     @extend .grid-container;

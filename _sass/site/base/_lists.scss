@@ -1,9 +1,9 @@
 main ul li {
   margin-bottom: .6rem;
-  font-size: $body-font-size-desktop;
+  font-size: var(--font-size-body);
 }
 
-.list--small li { font-size: $font-size-normal; }
+.list--small li { font-size: var(--font-size-body); }
 
 .list--dashed {
   list-style-type: none;
@@ -25,14 +25,14 @@ main ul li {
 dl.relational-list {
   dt.relational-list__title {}
   dd.relational-list__description {
-    font-size: $font-size-small;
-    opacity: $color-rgb-opacity;
+    font-size: var(--font-size-body-small);
+    opacity: var(--color-rgb-opacity-tint);
     margin-bottom: 1rem;
 
     &.relational-list__description--period {
       margin-bottom: .2em;
       text-transform: uppercase;
-      font-size: $font-size-xsmall;
+      font-size: var(--font-size-body-small);
     }
   }
 }

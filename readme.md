@@ -17,12 +17,12 @@ go to http://localhost:4000/ in your browser
 
 ## General information
 - Continuously deployed using Netlify
-- Uses [Neat](https://neat.bourbon.io/) for grids and
-[Bourbon](https://bourbon.io/) Sass tools
+- Optimised for efficient [Pagespeed](https://developers.google.com/speed/pagespeed/insights/) (still more to do in this space)
+- No plugin dependancies (previously used Bourbon and Neat, now uses CSS Grid and CSS Custom properties)
 
 ## Licenses
-### Underlying Source Code
-[GNU General Public License v3.0](LICENSE)
+### Underlying source code
+[GNU General Public License v3.0](LICENSE) (open source)
 
 ### Content
 © Matthew Grey and himatt.com. Unauthorised use and/or duplication and

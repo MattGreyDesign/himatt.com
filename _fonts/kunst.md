@@ -35,17 +35,13 @@ in_use:
     link: "http://www.myfonts.com"
 
 vendors:
-  - title: "Sellfy"
-    licence: Desktop
-    url: "https://sellfy.com/p/NrMR/"
-
   - title: "Myfonts"
     licence: Webfont & Desktop
-    url: "https://www.myfonts.com/fonts/matt-grey/social-networking-icons/"
+    url: "https://www.myfonts.com/fonts/matt-grey/kunst/"
 
   - title: "Fontspring"
     licence: Webfont & Desktop
-    url: "https://www.fontspring.com/fonts/matt-grey-design/social-networking-icons"
+    url: "https://www.fontspring.com/fonts/matt-grey-design/kunst"
 
 initial_release: 2017
 

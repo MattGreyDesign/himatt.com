@@ -6,8 +6,10 @@ redirect_from: /projects/typefaces
 priority: 0.9
 sitemap: true
 ---
+
 <div class="fonts-wrapper">
   <div class="fonts">
+
   {% assign fontslist = site.fonts | sort: 'date' %}
   {% for font in fontslist reversed limit:include.limit %}
 
@@ -16,9 +18,9 @@ sitemap: true
 
       <a href="{{  font.url | prepend: site.baseurl }}">
         <h2 class="type-level-3">{{ font.title }}</h2>
-        <p>{{ font.description }}</p>
-        {{ font.font_weights | size }} Styles
+        <p>{{ font.font_weights | size }} Styles</p>
       </a>
+
     </div>
 
     <div class="font-listing-preview">

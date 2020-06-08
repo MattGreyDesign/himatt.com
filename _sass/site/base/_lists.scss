@@ -16,7 +16,7 @@ main ul li {
     display: block;
     position: absolute;
     left: -#{rem(16px)};
-    opacity: var(--color-rgb-opacity-tint-mid);
+    color: var(--color-line);
   }
 }
 

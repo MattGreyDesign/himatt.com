@@ -40,13 +40,23 @@
   --gutter-row: #{rem(24px)};
   --page-margin: #{rem(32px)};
   --inner-padding: #{rem(16px)};
-  --inner-padding-horizontal: #{rem(12px)};
+  --inner-padding-horizontal: #{rem(10px)};
 
-  --color-background: #212121;
-  --color-text: rgba(255,255,255,.95);
-  --color-cta: #65ff80;
-  --color-highlight:  #0000FF;
-  --color-highlight-rgb: 0, 0, 255;
+  --color-primary: 255,255,255;
+  --color-secondary: 33,33,33;
+  --color-tertiary: 0, 0, 255;
+  --color-action: #65ff80;
+
+  --color-highlight-rgb: var(--color-tertiary);
+  --color-highlight: rgb(--color-highlight-rgb);
+
+  --color-background: rgba(var(--color-secondary), 1);
+  --color-line: rgba(var(--color-primary), var(--color-rgb-opacity-tint-mid));
+  --color-text: rgba(var(--color-primary),.95);
+  --color-text-inverted: rgba(var(--color-secondary),.95);
+
+  --color-cta: var(--color-action);
+
   --color-rgb-opacity-tint-mid: .6;
   --color-rgb-opacity-tint-dark: .85;
 }

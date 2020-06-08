@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="760px" height="144px" viewBox="0 0 760 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>flist-krank</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Krank-Regular, Krank" font-size="144" font-weight="normal">
-        <g id="Artboard-Copy-2" transform="translate(-174.000000, -1759.000000)" fill="#FFFFFF">
-            <text id="flist-krank">
-                <tspan x="174" y="1903">Krank</tspan>
-            </text>
-        </g>
-    </g>
-</svg>
+<svg height="144" viewBox="0 0 761 144" width="761" xmlns="http://www.w3.org/2000/svg"><path d="m212.016 1903 33.984-33.984 33.984 33.984h38.016v-38.016l-33.984-33.984 33.984-33.984v-38.016h-38.016l-33.984 33.984-33.984-33.984h-38.016v144zm154.08 0 33.984-33.984 33.984 33.984h38.016v-38.016l-33.984-33.984 33.984-33.984v-38.016h-144v144zm260.064 0v-110.016l-33.984-33.984h-76.032l-33.984 33.984v110.016zm14.256-.432 33.84-33.84 33.84 33.84h71.856v-143.568h-4.176l-33.84 33.84-33.84-33.84h-71.856v143.568zm187.632.432 33.984-33.984 33.984 33.984h38.016v-38.016l-33.984-33.984 33.984-33.984v-38.016h-38.016l-33.984 33.984-33.984-33.984h-38.016v144z" fill="#fff" transform="translate(-174 -1759)"/></svg>

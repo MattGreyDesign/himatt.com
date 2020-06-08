@@ -34,10 +34,12 @@
 }
 
 .font-listing {
-  border-top: 1px solid rgba(white, var(--color-rgb-opacity-tint-mid));
+  border-top: 1px solid var(--color-line);
+  margin-top: var(--gutter-row);
+  padding-top: 1rem;
 
   .font-listing-preview img {
     width: auto;
-    height: rem(64px);
+    max-height: rem(64px);
   }
 }

@@ -83,7 +83,7 @@
 @include grid-media(largedesktop) {
   :root {
     --font-size-root: 20px;
-    --page-margin: #{rem(96px)};
+    --page-margin: #{rem(128px)};
   }
 }
 

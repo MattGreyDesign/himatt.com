@@ -8,15 +8,13 @@ thumbnail: "/fonts/sni/flist-sni.svg"
 banner: "/fonts/sni/overview.png"
 licensetype: Commercial
 
-accent:
-  color: "#1EA5D5"
-  inverted: false
-
 features:
   - 6 available styles
   - Opentype accessible features
-  - Webpage embedding
-  - Free updates
+
+available_licenses:
+  - Web
+  - Desktop
 
 charactersets:
   - Latin

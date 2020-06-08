@@ -84,7 +84,7 @@ collections:
     output: true
     permalink: /projects/:path/
   fonts:
-    output: false
+    output: true
     permalink: /fonts/:path/
 
 defaults:
@@ -93,8 +93,8 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  # - scope:
-  #     path: ""
-  #     type: "fonts"
-  #   values:
-  #     layout: "font"
+  - scope:
+      path: ""
+      type: "fonts"
+    values:
+      layout: "font"

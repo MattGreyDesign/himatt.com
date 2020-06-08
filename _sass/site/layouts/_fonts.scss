@@ -1,17 +1,43 @@
 .fonts-wrapper {
-  @extend .grid-container;
 
-  .fonts {
-    @include grid-column(12);
+  .font-listing {
+    @extend .grid-container;
 
-    @include grid-media(tablet) {
-      @include grid-column-from-to(3,10);
-      margin-top: 5vh;
-      margin-bottom: 8vh;
+    .font-listing-details {
+      @include grid-column-from-to(1,6);
+
+      @include grid-media(tablet) {
+        @include grid-column-from-to(1,12);
+      }
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(1,4);
+      }
+    }
+
+    .font-listing-preview {
+      @include grid-column-from-to(1,6);
+
+      @include grid-media(tablet) {
+        @include grid-column-from-to(1,12);
+      }
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(5,12);
+      }
     }
   }
 }
 
 .fonts {
-  p { @extend .paragraph-large; }
+  // p { @extend .paragraph-large; }
+}
+
+.font-listing {
+  border-top: 1px solid rgba(white, var(--color-rgb-opacity-tint-mid));
+
+  .font-listing-preview img {
+    width: auto;
+    height: rem(64px);
+  }
 }

@@ -95,22 +95,6 @@
     margin-bottom: rem(40px);
   }
 
-//   .project-detail {
-//     margin-bottom: $measure-xsmall;
-//   }
-
-//   .project-details {
-//     margin-bottom: $measure-medium;
-
-    .project-detail-wrapper {
-    }
-
-//     .project-detail-first {
-//       @include decorative-line-top;
-//       position: relative;
-//     }
-//   }
-
   .project-text {
     @include grid-media(desktop) {
       margin-top: var(--gutter-row);

@@ -5,6 +5,7 @@ html {
   font-family: sans-serif;
   font-family: $font-family-primary;
   font-size: var(--font-size-root);
+  color: var(--color-text);
   line-height: var(--line-height-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
 .type-level-jumbo {
   font-family: $font-family-secondary;
   font-size: var(--font-size-level-jumbo);
-  line-height: var(--line-height-tight);
+  line-height: var(--line-height-tiny);
 }
 
 .type-level-1 {
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
 }
 
 .title-label {
-  opacity: var(--color-rgb-opacity-tint);
+  opacity: var(--color-rgb-opacity-tint-mid);
   color: var(--color-text);
   font-size: var(--font-size-body-small);
   text-transform: uppercase;

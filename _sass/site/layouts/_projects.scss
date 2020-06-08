@@ -121,7 +121,7 @@ $thumb-animation-ease-out: ease-in-out;
             width: 100%;
             height: 100%;
             display: block;
-            background-color: rgba($site-highlight, .85);
+            background-color: rgba(var(--color-highlight-rgb), var(--color-rgb-opacity-tint-dark));
             margin: 0;
             top: 0;
             right: 0;

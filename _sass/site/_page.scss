@@ -1,17 +1,16 @@
 ::-moz-selection {
-    color: white;
-    background: $site-highlight;
+    color: var(--color-text);
+    background: var(--color-highlight);
 }
 
 ::selection {
-    color: white;
-    background: $site-highlight;
+    color: var(--color-text);
+    background: var(--color-highlight);
 }
 
 html {
   box-sizing: border-box;
   background-color: var(--color-background);
-  color: var(--color-text);
   height: 100%;
 }
 
@@ -41,31 +40,16 @@ body {
   margin-top: 100px;
 }
 
-// .header-content,
-// main,
-// footer {
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   @include grid-media(tablet) {
-//     max-width: $desktop-size;
-//   }
-
-//   @include grid-media(desktop) {
-//     max-width: $largedesktop-size;
-//   }
-
-//   @include grid-media(largedesktop) {
-//     max-width: 90vw;
-//   }
-// }
-
 .main-content {
-  min-height: calc(100vh - 224px);
+  min-height: calc(100vh - 268px);
   padding-top: 1rem;
 
   @include grid-media(tablet) {
+    min-height: calc(100vh - 248px);
     padding-top: 2rem;
+  }
+  @include grid-media(desktop) {
+    min-height: calc(100vh - 254px);
   }
 }
 

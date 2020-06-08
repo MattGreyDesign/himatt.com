@@ -16,7 +16,7 @@ main ul li {
     display: block;
     position: absolute;
     left: -#{rem(16px)};
-    opacity: var(--color-rgb-opacity-tint);
+    opacity: var(--color-rgb-opacity-tint-mid);
   }
 }
 
@@ -24,7 +24,7 @@ dl.relational-list {
   dt.relational-list__title {}
   dd.relational-list__description {
     font-size: var(--font-size-body-small);
-    opacity: var(--color-rgb-opacity-tint);
+    opacity: var(--color-rgb-opacity-tint-mid);
     margin-bottom: 1rem;
 
     &.relational-list__description--period {

@@ -35,15 +35,17 @@ in_use:
     link: "http://www.myfonts.com"
 
 vendors:
-  - title: "Myfonts"
-    licence: Webfont & Desktop
-    url: "https://www.myfonts.com/fonts/matt-grey/kunst/"
-
   - title: "Fontspring"
     licence: Webfont & Desktop
     url: "https://www.fontspring.com/fonts/matt-grey-design/kunst"
 
+  - title: "Myfonts"
+    licence: Webfont & Desktop
+    url: "https://www.myfonts.com/fonts/matt-grey/kunst/"
+
+
 initial_release: 2017
+designed_from: 2014
 
 releases:
   - version: v1.5
@@ -53,6 +55,15 @@ releases:
         - Released on Myfonts and Fontspring
 ---
 
-Back in mid-2011 I was working on a website that required some links to social network pages, and struggled to find a set of flat, uniform vector website icons that I could use readily for any application. I decided that it would be useful to collect them into a portable and well supported format—a font.
+The idea for Kunst was seeded by a visit to Amsterdam back in 2014, where I met
+up with [David Quay](http://davidquaydesign.com/), a type designer and
+co-founder of [The Foundry](https://www.fontshop.com/foundries/the-foundry).
+David was responsible for digitising legendary designer
+[Wim Crouwel](https://www.youtube.com/watch?v=RT9fCoDfir0)'s classic typeface
+[Gridnik](https://en.wikipedia.org/wiki/Gridnik), of which Kunst was partially
+inspired by.
 
-I released a trial version a month later which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which has proven to be popular; it has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor [Myfonts](www.myfonts.com). The latest version of Social Networking Icons (4.0), now includes 158 individual icons in 6 different styles.
+Influenced by queues from a European brutalist design aesthetic, Kunst strives
+for form dominated by pure geometric precision, utilising 45° angles based on a
+strict grid. The name "Kunst" is a word for art in Estonian, Danish, Dutch,
+German, and Norwegian languages.

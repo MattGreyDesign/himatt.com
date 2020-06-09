@@ -170,7 +170,7 @@
     padding-top: rem(16px);
     padding-bottom: rem(16px);
     position: fixed;
-    border-bottom: 1px solid rgba(white, .08);
+    border-bottom: 1px solid var(--color-line-subtle);
 
     .logo {
       width: rem(44px);

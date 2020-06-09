@@ -79,6 +79,7 @@ form {
     -moz-appearance: none;
     appearance: none;
     transition: border-bottom-color $timing-interaction;
+    background-color: var(--color-form-background);
   }
 
   #{$all-text-inputs-hover} {

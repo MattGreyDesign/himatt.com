@@ -1,10 +1,10 @@
 ---
 date: 2017-02-20
 published: true
-title: "Kunst"
+title: "Kunst Imprint"
 description: "Purely geometric"
 categories: on sale, icons
-thumbnail: "/fonts/kunst/flist-kunst.svg"
+thumbnail: "/fonts/kunst-imprint/flist-kunst-imprint.svg"
 banner: "/fonts/kunst/overview.png"
 licensetype: Commercial
 
@@ -37,15 +37,11 @@ in_use:
 vendors:
   - title: "Fontspring"
     licence: Webfont & Desktop
-    url: "https://www.fontspring.com/fonts/matt-grey-design/kunst"
+    url: "https://www.fontspring.com/fonts/matt-grey-design/kunst-imprint"
 
   - title: "Myfonts"
     licence: Webfont & Desktop
-    url: "https://www.myfonts.com/fonts/matt-grey/kunst/"
-
-#  - title: "Youworkforthem"
-#    licence: Webfont & Desktop
-#    url: "https://www.myfonts.com/fonts/matt-grey/kunst/"
+    url: "https://www.myfonts.com/fonts/matt-grey/kunst-imprint"
 
 
 initial_release: 2017

@@ -80,8 +80,8 @@
     .image-wrapper img { width: 100%; }
 
     figcaption {
-      margin-top: $measure-xsmall;
-      margin-bottom: $measure-small;
+      margin-top: rem(12px);
+      margin-bottom: rem(16px);
     }
 
     &.nudge-down-5 {

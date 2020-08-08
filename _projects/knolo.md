@@ -11,9 +11,7 @@ ownership: Personal
 client: Knolo
 time_period: 2019 Onwards
 thumbnail: "/projects/iyield/plist-iyield.jpg"
-accent:
-  color:
-  inverted:
+
 website:
   button_text: Visit Hero Doctor
   url: //www.culturemile.london/fusion-prize-shortlist/knolo

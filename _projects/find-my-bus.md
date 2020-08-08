@@ -10,9 +10,7 @@ ownership: Personal
 client:
 time_period: 2014
 thumbnail: "/projects/find-my-bus/plist-find-my-bus.png"
-accent:
-  color:
-  inverted:
+
 website:
   button_text: Visit the site
   url: https://findmybus.uk/

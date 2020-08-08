@@ -11,9 +11,7 @@ ownership: Alliants
 client: iYield
 time_period: 2017
 thumbnail: "/projects/iyield/plist-iyield.jpg"
-accent:
-  color:
-  inverted:
+
 website:
   button_text: Visit iYield
   url: //www.iyield.co/

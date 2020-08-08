@@ -10,14 +10,6 @@ ownership: Personal
 client:
 time_period: 2014
 thumbnail: "/projects/saatchi-gallery/plist-saatchi-gallery.jpg"
-accent:
-  background_color:
-  gradient:
-  color:
-  inverted:
-website:
-  button_text:
-  url:
 
 intro: |
   The Saatchi gallery is revered for its ability to introduce almost unknown

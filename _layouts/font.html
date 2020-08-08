@@ -12,12 +12,30 @@ layout: default
         <h2>Buy</h2>
         {% if page.vendors %}
           {% for vendor in page.vendors %}
-          <section>
-            <header>
-              <a class="button {{ vendor.title | downcase }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
-              <p>{{ vendor.licence }}</p>
-            </header>
-          </section>
+
+            {% if vendor.title == "Gumroad" %}
+              <script src="https://gumroad.com/js/gumroad.js"></script>
+
+              <section>
+                <header>
+                  <h3 class="type-level-4">Gumroad (Best value)</h3>
+                  <a class="gumroad-button" href="https://gum.co/socialnetworkingicons"
+                  style="background-image: none !important; color: var(--color-text-inverted) !important; border-radius: 0 !important"
+                  target="_blank">Buy direct</a>
+                  <p>{{ vendor.licence }}</p>
+                </header>
+              </section>
+
+            {% else %}
+
+              <section>
+                <header>
+                  <a class="button-secondary {{ vendor.title | downcase }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
+                  <p>{{ vendor.licence }}</p>
+                </header>
+              </section>
+            {% endif %}
+
           {% endfor %}
         {% endif %}
       </section>
@@ -62,7 +80,7 @@ layout: default
   {% if page.releases %}
     {% for release in page.releases reversed %}
       {% if forloop.first == true %}
-        <dd>{{ release.version }}: {{ release.releasedate }}</dd>
+        <dd>{{ release.version }} ({{ release.releasedate }})</dd>
       {% endif %}
     {% endfor %}
   {% endif %}
@@ -72,7 +90,7 @@ layout: default
 
 <section class="releases">
   <header>
-    <h2>Releases</h2>
+    <h2>Version history</h2>
   </header>
   {% if page.releases %}
     {% for release in page.releases reversed %}

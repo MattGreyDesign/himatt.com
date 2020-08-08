@@ -6,8 +6,8 @@
   <title>{% if page.title_override %}{{ page.title_override | escape }}{% elsif page.title %}{{ page.title | escape }} | {{site.title | escape}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ '/css/styles.css' | prepend: site.baseurl }}">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" rel="preload" href="{{ '/css/styles.css' | prepend: site.baseurl }}" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Text&display=swap">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.sitemap == false %}<meta name="robots" content="nofollow, noindex"/>{% endif %}
@@ -16,10 +16,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
   <link rel="manifest" href="/images/favicons/manifest.json">
-  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#171717">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#212121">
   <link rel="shortcut icon" href="/favicon.ico">
   <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#171717">
+  <meta name="theme-color" content="#212121">
 
   {% if page.is_post %}
     {% assign type = "article" %}
@@ -48,27 +48,4 @@
   <meta name="twitter:image" content="{{ prepend: site.baseurl | prepend: '/images' | prepend: site.url }}{{ page.thumbnail }}"/>
   {% endif %}
 
-  {% if page.accent %}
-  {% capture stored_scss %}
-    //Accent styles
-    body.accent {
-      {% if page.accent.background_color %}
-        background: #{{ page.accent.background_color }};
-        {% if page.accent.gradient %}
-          background: linear-gradient({{ page.accent.gradient }});
-
-          .global-wrapper>header.notTop {
-            background: #{{ page.accent.background_color }};
-          }
-        {% endif %}
-        color: #{{ page.accent.color }} !important;
-      {% endif %}
-    }
-  {% endcapture %}
-
-  <style>
-    {{ stored_scss | scssify }}
-  </style>
-
-  {% endif %}
 </head>

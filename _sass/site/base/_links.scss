@@ -3,7 +3,8 @@ a {
 }
 
 main p a,
-main li a {
+main li a,
+.formatted-link {
   text-decoration: none;
   color: var(--color-cta);
   border-bottom: rem(1.2px) dashed;

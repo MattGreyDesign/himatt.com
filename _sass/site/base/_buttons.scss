@@ -3,7 +3,6 @@
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  vertical-align: middle;
   text-decoration: none;
   font-size: var(--font-size-button);
   -webkit-appearance: none;
@@ -25,15 +24,6 @@
   &.disabled{
     cursor: not-allowed;
     transform: scale(1);
-  }
-}
-
-.button-adaptive {
-  width: 100%;
-
-  @include grid-media(desktop) {
-    display: inline-block;
-    width: auto;
   }
 }
 
@@ -64,4 +54,8 @@
       background: transparent;
     }
   }
+}
+
+.button--small {
+  padding: calc(var(--inner-padding-horizontal) - .3rem) calc(var(--inner-padding) - .3rem);
 }

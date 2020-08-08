@@ -1,25 +1,23 @@
 ---
 date: 2017-02-21
 published: true
+order_number: 1
 title: "Social Networking Icons"
 description: "An icon font"
 categories: on sale, icons
-thumbnail: "/fonts/sni/flist-sni.svg"
-banner: "/fonts/sni/overview.png"
+thumbnail: "/fonts/social-networking-icons/flist-social-networking-icons.svg"
+banner: "/fonts/social-networking-icons/overview.png"
 licensetype: Commercial
-
-accent:
-  color: "#1EA5D5"
-  inverted: false
 
 features:
   - 6 available styles
   - Opentype accessible features
-  - Webpage embedding
-  - Free updates
 
-charactersets:
-  - Latin
+available_licenses:
+  - Web
+  - Desktop
+
+supported_languages:
 
 font_weights:
   - "Regular"
@@ -29,25 +27,21 @@ font_weights:
   - "Outline"
   - "Unboxed"
 
-in_use:
-  - image: ""
-    title: Myfonts.com
-    link: "http://www.myfonts.com"
-
 vendors:
-  - title: "Sellfy"
-    licence: Desktop
-    url: "https://sellfy.com/p/NrMR/"
-
-  - title: "Myfonts"
-    licence: Webfont & Desktop
-    url: "https://www.myfonts.com/fonts/matt-grey/social-networking-icons/"
+  - title: "Gumroad"
+    licence: Desktop only
+    url: "https://gum.co/socialnetworkingicons"
 
   - title: "Fontspring"
     licence: Webfont & Desktop
     url: "https://www.fontspring.com/fonts/matt-grey-design/social-networking-icons"
 
+  - title: "Myfonts"
+    licence: Webfont & Desktop
+    url: "https://www.myfonts.com/fonts/matt-grey/social-networking-icons/"
+
 initial_release: 2012
+designed_from: 2011
 
 releases:
   - version: v0.2
@@ -135,7 +129,9 @@ releases:
     releasedate: 30 December 2016
     details: >
       - There have been a few changes to the locations of existing icons, so if you cant find them, please refer to the icon map.
+
       - There are two new utility glyphs that allow you to apply a solid backing to icons, you can find out how to use these on the supplimentary character-map.html webpage provided.
+
       - Spacing to the left and right of the icons has been removed to allow for more practical and manageable positioning on layouts, for spacing, you can now use space characters (standard spacebar spaces).
 
       - New
@@ -201,6 +197,15 @@ releases:
       Please note that a few unused utility icons from 3.0 have been removed.
 ---
 
-Back in mid-2011 I was working on a website that required some links to social network pages, and struggled to find a set of flat, uniform vector website icons that I could use readily for any application. I decided that it would be useful to collect them into a portable and well supported format—a font.
+Back in mid-2011 I was working on a website that required some links to social
+network pages, and struggled to find a set of flat, uniform vector website icons
+that I could use readily for any application. I decided that it would be useful
+to collect them into a portable and well supported format—a font.
 
-I released a trial version a month later which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which has proven to be popular; it has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor [Myfonts](www.myfonts.com). The latest version of Social Networking Icons (4.0), now includes 158 individual icons in 6 different styles.
+I released a trial version a month later which received over 150,000 downloads
+in less than half a year. I then went on to create a refined commercial version
+ which has proven to be popular; it has been used by over 200 companies, studios
+ and designers worldwide on both the web and in print, including the largest
+ digital font vendor [Myfonts](www.myfonts.com). The latest version of Social
+ Networking Icons (4.0), now includes 158 individual icons in 6 different
+ styles.

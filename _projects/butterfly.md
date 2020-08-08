@@ -11,9 +11,7 @@ ownership:
 client: Butterfly
 time_period: 2017
 thumbnail: "/projects/butterfly/plist-butterfly.jpg"
-accent:
-  color:
-  inverted:
+
 website:
   button_text: Visit the site
   url: https://www.butterfly.life/

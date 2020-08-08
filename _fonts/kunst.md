@@ -1,206 +1,64 @@
 ---
 date: 2017-02-20
-published: false
+published: true
+order_number: 3
 title: "Kunst"
-description: "Purely geometric"
-categories: on sale, icons
+description: "Purely geometric core"
+categories: on sale, geometric
 thumbnail: "/fonts/kunst/flist-kunst.svg"
-banner: "/fonts/sni/overview.png"
+banner: "/fonts/kunst/overview.png"
 licensetype: Commercial
 
-accent:
-  color: "#1EA5D5"
-  inverted: false
+available_licenses:
+  - Web
+  - Desktop
 
-features:
-  - 6 available styles
-  - Opentype accessible features
-  - Webpage embedding
-  - Free updates
-
-charactersets:
-  - Latin
+supported_languages:
+  - Western Europe
+  - Central/Eastern Europe
+  - Baltic
+  - Turkish
+  - Romanian
+  - Cyrillic
 
 font_weights:
-  - "Regular"
-  - "Square"
-  - "Rounded"
-  - "Minimal"
-  - "Outline"
-  - "Unboxed"
-
-in_use:
-  - image: ""
-    title: Myfonts.com
-    link: "http://www.myfonts.com"
+  - 12 Hairline
+  - 24 Thin
+  - 48 Light
+  - 72 Regular
+  - 96 Medium
+  - 120 Bold
+  - 144 Heavy
 
 vendors:
-  - title: "Sellfy"
-    licence: Desktop
-    url: "https://sellfy.com/p/NrMR/"
+  - title: "Fontspring"
+    licence: Webfont & Desktop
+    url: "//www.fontspring.com/fonts/matt-grey-design/kunst"
 
   - title: "Myfonts"
     licence: Webfont & Desktop
-    url: "https://www.myfonts.com/fonts/matt-grey/social-networking-icons/"
+    url: "//www.myfonts.com/fonts/matt-grey/kunst/"
 
-  - title: "Fontspring"
-    licence: Webfont & Desktop
-    url: "https://www.fontspring.com/fonts/matt-grey-design/social-networking-icons"
-
-initial_release: 2012
+initial_release: 2017
+designed_from: 2014
 
 releases:
-  - version: v0.2
-    releasedate: April 2011
+  - version: v1.5
+    releasedate: November 2017
     details: >
-      - Free trial
-        - Released on Dafont and fontspace
-
-  - version: v1.0
-    releasedate: 05 January 2012
-    details: |
-      - Commercial release
-        - Now for sale on Myfonts.com in both regular and rounded versions
-
-  - version: v2.0
-    releasedate: 06 September 2012
-    details: |
-      - New weight
-        - Minimal
-
-      - Opentype support
-        - Can merge multiple glyphs and access additional icons
-
-      - New Icons Added/replaced
-        - 500px
-        - New StumbleUpon (Replaced)
-        - Additional Digg (Logo Text)
-        - Google+
-        - Twitter (Bird Icon)
-        - Instagram
-        - Pinterest
-        - Spotify
-        - Steam
-        - Speech bubble (Apple Style)
-        - Map Marker
-        - Multiple utilities (tick, face, music note, sun, infinity etc.)
-
-  - version: v3.0
-    releasedate: 13 February 2013
-    details: |
-      - New weights
-        - Square
-        - Outline
-        - Unboxed
-
-      - New additions
-        - Discogs
-        - Reverbnation
-        - Foursquare
-        - Bandcamp
-        - Google Play
-        - Android
-        - Grooveshark
-        - Fork Repository
-
-      - Updated
-        - Google +
-        - Github
-        - MSN
-        - Youtube
-        - Facebook
-        - Ebay
-        - Spotify
-        - Microsoft
-        - All other utility icons
-
-  - version: v3.5 (Closed beta)
-    releasedate: 10 December 2015
-    details: |
-      - New additions
-        - Vine
-        - Ask.fm
-        - Slack
-
-      - Updated
-        - Google
-        - Foursquare
-        - Deviantart
-
-      - Removed
-        - Grooveshark
-        - Forrst
-
-  - version: v4.0
-    releasedate: 30 December 2016
-    details: |
-      - There have been a few changes to the locations of existing icons, so if you cant find them, please refer to the icon map.
-      - There are two new utility glyphs that allow you to apply a solid backing to icons, you can find out how to use these on the supplimentary character-map.html webpage provided.
-      - Spacing to the left and right of the icons has been removed to allow for more practical and manageable positioning on layouts, for spacing, you can now use space characters (standard spacebar spaces).
-
-      - New
-        - Ask.fm
-        - Camera\*
-        - Codepen
-        - Dropbox
-        - Google Drive
-        - Google Hangouts
-        - Link\*
-        - Medium
-        - Meetup
-        - Microphone\*
-        - Mouse\*
-        - Path
-        - Periscope
-        - Phone\*
-        - Print\*
-        - Quora
-        - Shopify
-        - Slack
-        - Snapchat
-        - VK (ВКонтакте)
-        - Wechat (微信)
-        - Weibo (新浪微博)
-        - Yelp
-
-      - Updated
-        - App Store
-        - Bandcamp
-        - Bing
-        - Deviantart
-        - Discogs
-        - Foursquare
-        - Google\+
-        - Instagram
-        - Myspace
-        - Paypal
-        - Soundcloud
-        - Speech bubble\*
-        - Tumblr
-
-      Also additional adjustments on nearly all icons.
-
-      - Removed
-        - AIM
-        - Bebo
-        - Forrst
-        - Grooveshark
-        - Meerkat †
-        - Metacafe
-        - MSN
-        - Newsvine
-        - Picasa
-        - Slash dot
-        - Technorati
-        - Vine †
-        - Virb
-
-      \* - Utility icons
-      † - Icons removed just before v4.0 release, due to service closure.
-
-      Please note that a few unused utility icons from 3.0 have been removed.
+      - Initial release
+        - Released on Myfonts and Fontspring
 ---
 
-Back in mid-2011 I was working on a website that required some links to social network pages, and struggled to find a set of flat, uniform vector website icons that I could use readily for any application. I decided that it would be useful to collect them into a portable and well supported format—a font.
+The idea for Kunst was seeded by a visit to Amsterdam back in 2014, where I met
+up with [David Quay](//davidquaydesign.com/), a type designer and
+co-founder of [The Foundry](//www.fontshop.com/foundries/the-foundry).
+David was responsible for digitising legendary designer
+[Wim Crouwel](//www.youtube.com/watch?v=RT9fCoDfir0)'s classic typeface
+[Gridnik](//en.wikipedia.org/wiki/Gridnik), of which Kunst was partially
+inspired by.
 
-I released a trial version a month later which received over 150,000 downloads in less than half a year. I then went on to create a refined commercial version which has proven to be popular; it has been used by over 100 companies, studios and designers worldwide on both the web and in print, including the largest digital font vendor [Myfonts](www.myfonts.com). The latest version of Social Networking Icons (4.0), now includes 158 individual icons in 6 different styles.
+Influenced by queues from a European brutalist design aesthetic, Kunst strives
+for form dominated by pure geometric precision, utilising 45° angles based on a
+strict grid. The name "Kunst" is a word for art in Estonian, Danish, Dutch,
+German, and Norwegian languages.

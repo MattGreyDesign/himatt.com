@@ -10,9 +10,7 @@ ownership: Personal
 client:
 time_period: 2014
 thumbnail: "/projects/press-to-press/plist-press-to-press.jpg"
-accent:
-  color:
-  inverted:
+
 website:
   button_text:
   url:

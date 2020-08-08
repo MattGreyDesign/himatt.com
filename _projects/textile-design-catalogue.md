@@ -10,12 +10,6 @@ ownership: Personal
 client:
 time_period: 2014
 thumbnail: "/projects/fu-textile-design/plist-fu-textile-design.jpg"
-accent:
-  color:
-  inverted:
-website:
-  button_text:
-  url:
 
 intro: |
   A project to design a catalogue for graduates of the Textile Design course

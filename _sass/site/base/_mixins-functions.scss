@@ -16,15 +16,3 @@
 @mixin element-padding {
   padding: var(--inner-padding-horizontal) var(--inner-padding);
 }
-
-@mixin decorative-line-top($decoration-height: 1px, $decoration-width: 20px) {
-    &:before {
-    content: '';
-    position: absolute;
-    display: block;
-    background: white;
-    top: (-10px - $decoration-height);
-    width: $decoration-width;
-    height: $decoration-height;
-  }
-}

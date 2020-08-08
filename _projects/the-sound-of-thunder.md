@@ -11,12 +11,6 @@ ownership: Personal
 client:
 time_period: 2011
 thumbnail: "/projects/sound-of-thunder/plist-sound-of-thunder.jpg"
-accent:
-  color:
-  inverted:
-website:
-  button_text:
-  url:
 
 intro: |
   The Sound of Thunder is a handmade book featuring an illustrated exploration

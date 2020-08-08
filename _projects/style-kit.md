@@ -10,9 +10,6 @@ ownership: Alliants
 client: Confidential
 time_period: 2016
 thumbnail: "/projects/style-kit/plist-style-kit.png"
-accent:
-  color:
-  inverted:
 
 intro: |
   Style kit is a digital styleguide for a luxury international hotel and resort

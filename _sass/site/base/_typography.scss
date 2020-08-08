@@ -15,7 +15,7 @@ html {
 h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   font-weight: 400;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 .type-level-jumbo {
@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   margin-bottom: rem(4px);
 }
 
+.paragraph-normal,
 .paragraph-normal p {
   margin-bottom: var(--paragraph-spacing);
   font-size: var(--font-size-body);
@@ -85,4 +86,5 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
 small,
 figcaption {
   font-size: var(--font-size-body-tiny);
+  line-height: var(--line-height-tiny);
 }

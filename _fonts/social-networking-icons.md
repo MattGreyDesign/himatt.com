@@ -1,11 +1,12 @@
 ---
 date: 2017-02-21
 published: true
+order_number: 1
 title: "Social Networking Icons"
 description: "An icon font"
 categories: on sale, icons
-thumbnail: "/fonts/sni/flist-sni.svg"
-banner: "/fonts/sni/overview.png"
+thumbnail: "/fonts/social-networking-icons/flist-social-networking-icons.svg"
+banner: "/fonts/social-networking-icons/overview.png"
 licensetype: Commercial
 
 features:
@@ -16,8 +17,7 @@ available_licenses:
   - Web
   - Desktop
 
-charactersets:
-  - Latin
+supported_languages:
 
 font_weights:
   - "Regular"
@@ -26,11 +26,6 @@ font_weights:
   - "Minimal"
   - "Outline"
   - "Unboxed"
-
-in_use:
-  - image: ""
-    title: Myfonts.com
-    link: "http://www.myfonts.com"
 
 vendors:
   - title: "Gumroad"

@@ -10,9 +10,6 @@ ownership: Personal
 client:
 time_period: 2010
 thumbnail: "/projects/abstract-photography/plist-abstract-photography.jpg"
-accent:
-  color:
-  inverted:
 
 intro: |
   An experimental photo-series aimed at exploring elements of photographs and

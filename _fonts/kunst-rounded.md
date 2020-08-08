@@ -1,9 +1,10 @@
 ---
 date: 2017-02-20
 published: true
+order_number: 4
 title: "Kunst Rounded"
-description: "Purely geometric"
-categories: on sale, icons
+description: "Purely geometric core with rounded terminals"
+categories: on sale, geometric
 thumbnail: "/fonts/kunst-rounded/flist-kunst-rounded.svg"
 banner: "/fonts/kunst/overview.png"
 licensetype: Commercial
@@ -21,7 +22,6 @@ supported_languages:
   - Cyrillic
 
 font_weights:
-  - 12 Hairline
   - 24 Thin
   - 48 Light
   - 72 Regular
@@ -29,20 +29,14 @@ font_weights:
   - 120 Bold
   - 144 Heavy
 
-in_use:
-  - image: ""
-    title: Myfonts.com
-    link: "http://www.myfonts.com"
-
 vendors:
   - title: "Fontspring"
     licence: Webfont & Desktop
-    url: "https://www.fontspring.com/fonts/matt-grey-design/kunst-rounded"
+    url: "//www.fontspring.com/fonts/matt-grey-design/kunst-rounded"
 
   - title: "Myfonts"
     licence: Webfont & Desktop
-    url: "https://www.myfonts.com/fonts/matt-grey/kunst-rounded"
-
+    url: "//www.myfonts.com/fonts/matt-grey/kunst-rounded"
 
 initial_release: 2017
 designed_from: 2014
@@ -56,11 +50,11 @@ releases:
 ---
 
 The idea for Kunst was seeded by a visit to Amsterdam back in 2014, where I met
-up with [David Quay](http://davidquaydesign.com/), a type designer and
-co-founder of [The Foundry](https://www.fontshop.com/foundries/the-foundry).
+up with [David Quay](//davidquaydesign.com/), a type designer and
+co-founder of [The Foundry](//www.fontshop.com/foundries/the-foundry).
 David was responsible for digitising legendary designer
-[Wim Crouwel](https://www.youtube.com/watch?v=RT9fCoDfir0)'s classic typeface
-[Gridnik](https://en.wikipedia.org/wiki/Gridnik), of which Kunst was partially
+[Wim Crouwel](//www.youtube.com/watch?v=RT9fCoDfir0)'s classic typeface
+[Gridnik](//en.wikipedia.org/wiki/Gridnik), of which Kunst was partially
 inspired by.
 
 Influenced by queues from a European brutalist design aesthetic, Kunst strives

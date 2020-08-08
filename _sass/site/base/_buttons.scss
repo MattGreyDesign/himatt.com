@@ -27,15 +27,6 @@
   }
 }
 
-.button-adaptive {
-  width: 100%;
-
-  @include grid-media(desktop) {
-    display: inline-block;
-    width: auto;
-  }
-}
-
 .button-secondary {
   @extend %button;
   border: 1px solid var(--color-cta);
@@ -63,4 +54,8 @@
       background: transparent;
     }
   }
+}
+
+.button--small {
+  padding: calc(var(--inner-padding-horizontal) - .3rem) calc(var(--inner-padding) - .3rem);
 }

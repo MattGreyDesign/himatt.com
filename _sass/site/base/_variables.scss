@@ -51,6 +51,7 @@
   --color-highlight: rgb(var(--color-highlight-rgb));
 
   --color-background: rgba(var(--color-secondary), 1);
+  --color-background-rgb: var(--color-secondary);
   --color-line: rgba(var(--color-primary), var(--color-rgb-opacity-tint-mid));
   --color-line-subtle: rgba(var(--color-primary), var(--color-rgb-opacity-tint-light));
   --color-text: rgba(var(--color-primary),.95);

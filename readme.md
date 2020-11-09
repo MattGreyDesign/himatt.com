@@ -1,7 +1,5 @@
 # himatt.com
 
----
-
 Personal portfolio made with [Jekyll](https://jekyllrb.com/), deployed via [Netlify](https://netlify.com/)
 
 ## Setup

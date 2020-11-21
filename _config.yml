@@ -18,27 +18,25 @@ include:
   - _redirects
 
 # Site settings
-title: Matt Grey
-long-title: Matt Grey Design
-email: mattgreydesign@gmail.com
-description: "The selected portfolio of London based digital product designer Matt Grey"
+title: Dan Nasko
+long-title: Dan Nasko
+email: dan.nasko@gmail.com
+description: "Background and musings of Dan Nasko, a data scientist in California"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://himatt.com" # the base hostname & protocol for your site
-timezone: Europe/London
+url: "https://dnasko.me" # the base hostname & protocol for your site
+timezone: North America/Pacific
 year: 2020
-start-year: 2010
+start-year: 2020
 sitemap: true
 
 # Social networks
 social-username:
-  twitter: "@mattgreydesign"
-  linkedin: "himatt"
-  github: "mattgreydesign"
-  medium: "@mattgreydesign"
-  pinterest: "mattgreydesign"
-  instagram: "mattgreydesign"
-  flickr: "mattgreydesign"
-  spotify: "mattgreydesign"
+  twitter: "@dnasko"
+  linkedin: "dan-nasko-49776124"
+  github: "dnasko"
+  instagram: "dannasko"
+  spotify: "dnasko"
+  peloton: "BikePhillies"
 
 # Content
 image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">

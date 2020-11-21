@@ -1,6 +1,6 @@
 {
-    "short_name": "Matt Grey",
-    "name": "Matt Grey Design",
+    "short_name": "Dan Nasko",
+    "name": "Dan Nasko does science",
     "icons": [
         {
             "src": "/images/favicons/android-chrome-192x192.png",
@@ -18,7 +18,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#212121",
-    "background_color": "#212121",
+    "theme_color": "#e15a83",
+    "background_color": "#e15a83",
     "display": "standalone"
 }

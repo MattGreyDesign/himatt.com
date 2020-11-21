@@ -5,30 +5,36 @@ permalink: /about/
 priority: 0.9
 
 intro: |
-  Hi, I’m Dan Nasko, a multi-disciplined data scientist, particularly
-  focused around microbial ecology, high-dimensional datasets, and
-  experimental systems. "Distilling terabytes of data into meaningful
-  insights" sounds like a catchy thing to say, but that’s a lot of what I do!
+  Hi, I'm Dan Nasko, a multi-disciplined designer, particularly focussed around
+  Digital Product Design, User Experience (UX), and Usability. Adopting a
+  user-centred process, I design, test and prototype multi-platform websites
+  and apps, as well as create and manage design systems to drive efficiency and
+  consistency.
 
-  My goal is to demystify data science for biologists by designing
-  analysis pipelines capable of generating meaningful and reproducible
-  insights from 'omics datasets. Data is good, metadata is great.
-  Working closely with biologist to understand their systems and
-  assumptions is critically important to downstream data analysis because it's
-  impossible to make biologically relevant conclusions from data without
-  metadata and context.
+  I aim to bridge the gaps between design, tech, and the business, by working
+  cross-functionally to research, prototype and deliver real products with
+  effective, engaging, and accessible user experiences.
 
-  I currently work and live in San Diego as a Senior Data Scientist at
-  [Biota Technology](//www.biota.com). Before that I was at
-  the University of Maryland where I worked with:
-  [Todd Treangen](//www.treangenlab.com) (Rice University),
-  [Mihai Pop](//pop-lab.org) (UMD UMIACS),
-  [Krista Ternus](https://scholar.google.com/citations?user=3ixmu7wAAAAJ&hl=en) (Signature Science),
-  [Don Milton](https://sph.umd.edu/people/donald-milton) (UMD SPH), and
-  [Amy Sapkota](https://sph.umd.edu/people/amy-r-sapkota) (UMD SPH).
+  I currently work (and live) in London as a Product Designer at
+  [Paymentsense](//www.paymentsense.com/), previously at
+  [ClearScore](//www.clearscore.com/), [Acuris](//www.acuris.com/) and
+  [Tesco](//www.tesco.com/).
 
-  And prior to all of that I was a PhD student in Eric Wommack and
-  Shawn Polson's Viral Ecology and Informatics Lab at the University of Delaware.
+  Prior to that I was working in Southampton as a Designer and Consultant at
+  [Alliants](//alliants.com), where I worked with a number of clients, including:
+  [Four Seasons Hotels and Resorts](//fourseasons.com),
+  [Babylon Health](//babylonhealth.com),
+  [Travelodge](//travelodge.co.uk),
+  [Ski Solutions](//skisolutions.com),
+  [Sun Life Financial](//www.sunlife.com),
+  [CooperVision/Specsavers](//www.specsavers.co.uk/contact-lenses/coopervision),
+  [Channel 5](//channel5.com),
+  [butterfly.life](//itunes.apple.com/gb/app/butterfly-life/id1258575969),
+  [VisitBritain](//www.visitbritain.com/gb/en),
+  and [OpenJaw Technologies](//www.openjawtech.com).
+
+  In 2010 I founded a [font foundry](https://www.myfonts.com/foundry/Matt_Grey/),
+  which has released a number of free and commercial [fonts](/fonts).
 
 profile_picture: /images/profile-pictures/profile.jpeg
 

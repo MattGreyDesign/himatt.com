@@ -1,4 +1,4 @@
-# himatt.com
+# dnasko.science
 
 Personal portfolio made with [Jekyll](https://jekyllrb.com/), deployed via [Netlify](https://netlify.com/)
 
@@ -57,9 +57,9 @@ This site runs on Jekyll, an opensource static site generating platform.
 
 ### Content
 
-© Matthew Grey and himatt.com. Unauthorised use and/or duplication and
+© Dan Nasko and dnasko.science. Unauthorised use and/or duplication and
 adaptation of this material (all image formats, text and additional media files)
 without express and written permission from this site’s author and/or owner is
 strictly prohibited. Excerpts and links may be used, provided that full and
-clear credit is given to Matthew Grey and/or himatt.com with appropriate and
+clear credit is given to Dan Nasko and/or dnasko.science with appropriate and
 specific direction to the original content.

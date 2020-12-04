@@ -62,44 +62,34 @@ education:
     place: West Chester University
     period: 2006-2010
 
-competitions:
-  - event: RESI Hackathon
-    period: 2018
-    result: Winners - Team FreeCycle
-    link: https://medium.com/@bemyapp/resi-hackathon-2018-cbf185c29838
+software:
+  - event: CASC 
+    period: A CRISPR finding tool
+    result: CASC A'int Simply CRT
+    link: https://github.com/dnasko/CASC
 
-  - event: Culture Mile Fusion Prize
-    period: 2019 - Present
-    result: Shortlisted (Ongoing) - Team Knolo
-    link: https://www.culturemile.london/fusion-prize-shortlist/knolo
+  - event: Rubble
+    period: Protein-protein BLAST-like tool
+    result: Rubble
+    link: https://github.com/dnasko/rubble
 
 skills:
-  - User Experience design (UX)
-  - User Interface design (UI)
-  - Graphic design
-  - Cross platform design (Desktop, Native Mobile, responsive, smartwatch, kiosk etc.)
-  - Design libraries and Styleguides
-  - User journey mapping
-  - User interviews and Usability testing
-  - Information Architecture
-  - Wireframing
-  - Interactive prototypes
-  - Contextual inquiry
+  - Meta-*-Omics data analysis
+  - Python
+  - Unix
+  - Parallel computing (e.g. Slurm, Torque PBS)
 
 tools:
-  - Sketch app, Figma
-  - Flinto, Balsamiq, Invision, Zeplin, Marvel app
-  - Adobe Creative Cloud Suite (Photoshop, XD, Illustrator, After Effects...)
-  - HTML
-  - CSS and SASS (SCSS)
-  - jQuery (for prototyping only)
-  - Jekyll
-  - Frontend templating languages (ERB, Handlebars, Blade, Liquid)
-  - Glyphs app, Fontlab, Fontographer
+  - AWS Services (e.g. EC2, RDS)
+  - Nextflow
+  - PostgreSQL
+  - Bioinformatics applications -- QIIME, BLAST, BWA, Bowtie, Samtools, PacBio® SMRT Analysis Software, CLC Genomics Workbench, MAFFT, MOTHUR, CD-HIT, USEARCH, MetaGene, de Bruijn graph and overlap consensus assemblers, Anvi-o, PhyML, Phylip, Jellyfish, Kraken, Cytoscape, BLAT, LAST.
+  - General applications -- Jupyter, LaTeX, Trello, Microsoft Word, Excel, Powerpoint, Adobe Illustrator.
 
 about_site: |
-  - Designed and built from scratch by Matt Gray using
-  [Jekyll](https://jekyllrb.com/). Updated by Dan Nasko.
+  - This site is forked from [Matt Gray's](https://github.com/MattGreyDesign/himatt.com) site,
+  which he designed and built with [Jekyll](https://jekyllrb.com/). Updates made
+  by Dan Nasko.
 
   - The typefaces used are
   [DM Sans](https://fonts.google.com/specimen/DM+Sans) and
@@ -112,11 +102,10 @@ about_site: |
   [Normalize.css](http://github.com/necolas/normalize.css).
 
   - All the code for this site is open source and available on
-  [Github](https://github.com/mattgreydesign/mattgreydesign.github.io), deployed
-  and hosted using [Netlify](http://netlify.com/).
+  [Github](https://github.com/dnasko/dnasko.github.io)
 
   - Although the code is opensource under the GNU General Public License v3, all
-  content is Copyrighted. [Read more](https://github.com/MattGreyDesign/mattgreydesign.github.io/blob/master/LICENSE)
+  content is Copyrighted. [Read more](https://github.com/dnasko/dnasko.github.io/blob/master/LICENSE)
   {:.list--dashed .list--small}
 ---
 
@@ -172,12 +161,12 @@ about_site: |
         </div>
 
         <div class="about-section about-section--nested">
-          <h3 class="about-section-title type-level-2">Competitions</h3>
+          <h3 class="about-section-title type-level-2">Software</h3>
           <dl class="relational-list">
-            {% for competition-item in page.competitions %}
-              <dt class="relational-list__title">{{ competition-item.event | markdownify}}</dt>
-              <dd class="relational-list__description relational-list__description--period">{{ competition-item.period | markdownify}}</dd>
-              <dd class="relational-list__description"><a href="{{ competition-item.link }}">{{ competition-item.result | markdownify}}</a></dd>
+            {% for software-item in page.software %}
+              <dt class="relational-list__title">{{ software-item.event | markdownify}}</dt>
+              <dd class="relational-list__description relational-list__description--period">{{ software-item.period | markdownify}}</dd>
+              <dd class="relational-list__description"><a href="{{ software-item.link }}">{{ software-item.result | markdownify}}</a></dd>
             {% endfor %}
           </dl>
         </div>

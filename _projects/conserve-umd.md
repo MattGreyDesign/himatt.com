@@ -17,46 +17,37 @@ website:
   url: http://conservewaterforfood.org
 
 intro: |
-  Butterfly is a social networking app which aims at connecting skilled
-  creatives across any discipline.
+  Lotic surface water sites (e.g. creeks) are important resources for 
+  localized agricultural irrigation. However, there is concern that 
+  microbial contaminants within untreated surface water may be 
+  transferred onto irrigated soil and crops.
+  
+  To evaluate this issue, water samples were collected between January 2017 and August 2018 
+  from a freshwater creek used to irrigate kale and radish plants on 
+  a small farm in the Mid-Atlantic, United States. In addition, on one 
+  sampling date, a field survey was conducted in which additional water 
+  and soil samples were collected to assess the viral and bacterial 
+  communities pre- and post-irrigation. 
+  
+  All samples were processed for DNA extracts and shotgun sequenced and 
+  the resulting metagenomic libraries were assembled de novo and 
+  taxonomic and functional features were assigned at the contig and 
+  peptide level.
 
-  One of the most important goals of Butterfly is to provide reassurance to
-  artists that they still have the rights any work they upload, and that their
-  privacy is respected.
-
-  I created the architecture, data requirements and UX flow of the application,
-  first making a low fidelity prototype to test with users.
+  I coordinated the computational analysis of the shotgun microbial and
+  viral metagenomes.
+  
+  Role: Metagenomics and data analysis
+  
+  PI: Amy Sapkota
 
 content_layout:
   - section_layout: 1col
     images:
-      - caption: Main functional tabs
-        description: 'Navigation'
-        url: '/projects/butterfly/butterfly-main-navigation.jpg'
+      - caption: Study design for the collection of water and soil samples for the year long CONSERVE field study. Microbial and viral shotgun metagenomes were sequenced and connections between host and phage were investigated over time.
+        description: 'Study design'
+        url: '/projects/conserve-umd/conserve_study_abstract.jpg'
         width:
         height:
 
-  - section_layout: 1col
-    images:
-      - caption: Public profile media
-        description: 'Profile screens'
-        url: '/projects/butterfly/butterfly-profile.jpg'
-        width:
-        height:
-
-  - section_layout: 1col
-    images:
-      - caption: Onboarding
-        description: 'Onboarding'
-        url: '/projects/butterfly/butterfly-onboarding.jpg'
-        width:
-        height:
-
-  - section_layout: 1col
-    images:
-      - caption: Chat
-        description: 'Chat'
-        url: '/projects/butterfly/butterfly-chat.jpg'
-        width:
-        height:
 ---

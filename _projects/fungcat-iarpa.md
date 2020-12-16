@@ -23,7 +23,8 @@ intro: |
   of genes of concern, with the goal of preventing the accidental or intentional 
   creation of a biological threat."
 
-  Role: Post-Doc / Developer
+  Role: Pipeline developer
+  
   PI: Todd Treangen and Krista Ternus
   
 ---

@@ -32,7 +32,7 @@ font_weights:
 vendors:
   - title: "Fontspring"
     licence: Webfont & Desktop
-    url: "//www.fontspring.com/fonts/matt-grey-design/kunst-rounded"
+    url: "//www.fontspring.com/fonts/matt-grey-design/kunst/kunst-rounded"
 
   - title: "Myfonts"
     licence: Webfont & Desktop

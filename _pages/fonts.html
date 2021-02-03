@@ -9,7 +9,7 @@ sitemap: true
 
 <div class="fonts-intro">
   <div class="fonts-intro-description type-level-4">
-    <p class="paragraph-huge">
+    <p class="paragraph-large">
       I established my type foundry in 2010 with the aim of producing a set 
       of versatile typefaces for designers, in a diverse range of styles.
     </p>
@@ -47,7 +47,8 @@ sitemap: true
     <h2 class="font-listing-title type-level-3"><a href="{{ firstVendorURL }}">{{ font.title }}</a></h2>
     <p class="font-listing-styles title-label">{{ font.font_weights | size }} Styles</p>
     {% for vendor in font.vendors limit:3 %}
-      <a class="{% if forloop.first == true %}button-secondary button--small {% else %}font-listing-link-tertiary{% endif %} font-listing-vendor-link formatted-link" href="{{ vendor.url }}" title="View/purchase on {{ vendor.title }} ({{ vendor.licence }} license)">{{ vendor.title }}</a> {% if forloop.last == false %}<span class="font-listing-vendor-link-separator">/</span>{% endif %}
+    {% capture vendorReferral %}{% if vendor.title == "Fontspring"%}?refby=mattgrey{% endif %}{% endcapture %}
+  <a class="{% if forloop.first == true %}button-secondary button--small {% else %}font-listing-link-tertiary{% endif %} font-listing-vendor-link formatted-link" href="{{ vendor.url | append: vendorReferral }}" title="View/purchase on {{ vendor.title }} ({{ vendor.licence }} license)">{{ vendor.title }}</a> {% if forloop.last == false %}<span class="font-listing-vendor-link-separator">/</span>{% endif %}
     {% endfor %}
   </div>
 

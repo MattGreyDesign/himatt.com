@@ -33,7 +33,7 @@ font_weights:
 vendors:
   - title: "Fontspring"
     licence: Webfont & Desktop
-    url: "//www.fontspring.com/fonts/matt-grey-design/kunst"
+    url: "//www.fontspring.com/fonts/matt-grey-design/kunst/kunst-collection"
 
   - title: "Myfonts"
     licence: Webfont & Desktop

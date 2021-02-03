@@ -32,7 +32,7 @@ font_weights:
 vendors:
   - title: "Fontspring"
     licence: Webfont & Desktop
-    url: "//www.fontspring.com/fonts/matt-grey-design/kunst-imprint"
+    url: "//www.fontspring.com/fonts/matt-grey-design/kunst/kunst-imprint"
 
   - title: "Myfonts"
     licence: Webfont & Desktop

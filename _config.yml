@@ -25,7 +25,7 @@ description: "The selected portfolio of London based digital product designer Ma
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://himatt.com" # the base hostname & protocol for your site
 timezone: Europe/London
-year: 2020
+year: 2021
 start-year: 2010
 sitemap: true
 

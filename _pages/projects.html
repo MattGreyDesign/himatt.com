@@ -8,7 +8,14 @@ priority: 1.0
 
 <div class="projects-intro-wrapper">
   <p class="projects-intro type-level-1">Matt&nbsp;Grey is a Product Designer living in London,&nbsp;UK.</p>
+
 </div>
+
+<div class="about-intro-description paragraph-normal">
+  {{ page.intro | markdownify }}
+</div>
+
+<h3 class="type-level-3">Project archive</h3>
 
 <div class="projects">
 {% for project in site.projects reversed limit:include.limit %}

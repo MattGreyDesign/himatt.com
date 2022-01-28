@@ -15,8 +15,6 @@ priority: 1.0
   {{ page.intro | markdownify }}
 </div>
 
-<h3 class="type-level-3">Project archive</h3>
-
 <div class="projects">
 {% for project in site.projects reversed limit:include.limit %}
   <article class="project-listing">

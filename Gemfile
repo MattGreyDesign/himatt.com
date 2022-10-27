@@ -10,7 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 source 'https://rubygems.org' do
   gem "ruby"
-  gem "jekyll", "4.2.2"
+  gem "jekyll", "4.3.1"
 end
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

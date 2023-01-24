@@ -20,7 +20,7 @@ GEM
       colorator (~> 1.0)
       em-websocket (~> 0.5)
       i18n (~> 1.0)
-      jekyll-sass-converter (>= 2.0, < 4.0)
+      jekyll-sass-converter (~> 2.0)
       jekyll-watch (~> 2.0)
       kramdown (~> 2.3, >= 2.3.1)
       kramdown-parser-gfm (~> 1.0)

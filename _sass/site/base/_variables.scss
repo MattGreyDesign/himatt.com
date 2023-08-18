@@ -64,6 +64,29 @@
   --color-rgb-opacity-tint-mid: .6;
   --color-rgb-opacity-tint-dark: .85;
 }
+[data-theme='dark'] {
+  --color-primary: 255,255,255;
+  --color-secondary: 33,33,33;
+  --color-tertiary: 0, 0, 255;
+  --color-action: #65ff80;
+
+  --color-highlight-rgb: var(--color-tertiary);
+  --color-highlight: rgb(var(--color-highlight-rgb));
+
+  --color-background: rgba(var(--color-secondary), 1);
+  --color-background-rgb: var(--color-secondary);
+  --color-line: rgba(var(--color-primary), var(--color-rgb-opacity-tint-mid));
+  --color-line-subtle: rgba(var(--color-primary), var(--color-rgb-opacity-tint-light));
+  --color-text: rgba(var(--color-primary),.95);
+  --color-form-background: rgba(var(--color-primary),.95);
+  --color-text-inverted: rgba(var(--color-secondary),.95);
+
+  --color-cta: var(--color-action);
+
+  --color-rgb-opacity-tint-light: .1;
+  --color-rgb-opacity-tint-mid: .6;
+  --color-rgb-opacity-tint-dark: .85;
+}
 
 @include grid-media(tablet) {
   :root {

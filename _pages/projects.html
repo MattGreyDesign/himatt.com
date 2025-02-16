@@ -11,21 +11,3 @@ priority: 1.0
 </div>
 
 <div class="projects-intro-wrapper"><p class="projects-intro type-level-3"><a href="/contact">Get in touch</a> if you'd like to see some of my latest work.</p></div>
-
-<div class="projects">
-{% for project in site.projects reversed limit:include.limit %}
-  <article class="project-listing">
-    <div class="thumbnail-wrapper">
-      <a href="{{ project.url | prepend: site.baseurl }}">
-        <div class="thumbnail-description-wrapper">
-          <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
-          <p class="thumbnail-description">
-            <span>{{ project.description }}</span>
-          </p>
-        </div>
-        <h3 aria-hidden="true">{{ project.title }}</h3>
-      </a>
-    </div>
-  </article>
-{% endfor %}
-</div>

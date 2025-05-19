@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="{% if page.html_class %}{{ page.html_class }}{% endif %}">
+{% include "head" %}
+<body>
+  <div class="global-wrapper">
+    {% include "header" %}
+    <main class="main-content {% if page.class %}{{ page.class }}{% endif %}" id="maincontent">
+      {% include page-"title" %}
+
+      {{ content }}
+    </main>
+    {% include "footer" %}
+    {% include "scripts" %}
+  </div>
+</body>
+</html>
+
+
+{%- comment -%} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="/favicon.ico">
+  <title>{{ title | default: "Portfolio" }}</title>
+</head>
+<body>
+  {% include "nav" %}
+  <main>
+    {{ content }}
+  </main>
+</body> 
+</html>
+{%- endcomment -%}
+

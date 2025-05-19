@@ -1,6 +1,50 @@
 ---
-title: CONTACT
-layout: base.liquid
+layout: base
+title: Contact
+permalink: /contact/
+priority: 0.9
 ---
-# CONTACT
-Welcome to the contact page.
+
+<div class="contact-wrapper">
+  <div class="contact">
+
+    <aside class="contact-intro">
+      <p class="paragraph-huge">
+        You can see what I'm up to on <a href="//instagram.com/{{ site.social-username.instagram }}">Instagram</a>, connect with me on
+        <a href="//linkedin.com/in/{{ site.social-username.linkedin }}">Linkedin</a>,
+        or hear what I'm listening to on <a href="//open.spotify.com/user/{{ site.social-username.spotify }}">Spotify</a>.
+      </p>
+    </aside>
+
+    <div class="contact-form">
+      <form netlify action="/contact/confirmation">
+        <fieldset>
+          <section>
+            <label for="name">Name
+              <input autofocus type="text" name="name" id="name">
+            </label>
+          </section>
+
+          <section>
+            <label for="email">Email
+              <input required type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </label>
+          </section>
+
+          <section>
+            <label for="message">Message
+              <textarea required name="message" id="message"></textarea>
+            </label>
+          </section>
+
+          <section>
+            <div data-netlify-recaptcha></div>
+          </section>
+
+          <input class="button-secondary" type="submit" value="Send Message">
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+</div>

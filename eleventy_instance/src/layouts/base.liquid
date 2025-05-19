@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="icon" href="/favicon.ico">
-  <title>{{ title | default: "Portfolio" }}</title>
-</head>
+<html lang="en" class="{% if page.html_class %}{{ page.html_class }}{% endif %}">
+{% include "head" %}
 <body>
-  {% include "nav" %}
-  <main>
-    {{ content }}
-  </main>
+  <div class="global-wrapper">
+    {%- comment -%} {% include "header" %} {%- endcomment -%}
+    <main class="main-content {% if page.class %}{{ page.class }}{% endif %}" id="maincontent">
+      {%- comment -%} {% include "page-title" %} {%- endcomment -%}
+
+      {{ content }}
+    </main>
+    {%- comment -%} {% include "footer" %} {%- endcomment -%}
+    {% include "scripts" %}
+  </div>
 </body>
 </html>
+{% include "nav" %}
+

@@ -53,3 +53,12 @@
 
   </div>
 </header>
+
+{% assign navPages = collections.all | eleventyNavigation %}
+<ul>
+{%- for entry in navPages %}
+  <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+    <a href="{{ entry.url }}">{{ entry.title }}</a>
+  </li>
+{%- endfor %}
+</ul>

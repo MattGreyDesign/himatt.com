@@ -1,8 +1,10 @@
 import path from "node:path";
 import fs from "node:fs";
 import * as sass from "sass";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default function(eleventyConfig) {
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.setTemplateFormats(["liquid", "md"]);
  	eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
